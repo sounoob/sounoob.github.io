@@ -10,6 +10,7 @@ dateformat: "%d-%m-%Y"
 # Gems
 gems:
   - jekyll-paginate
+  - jekyll-feed
 
 #Others
 markdown: kramdown
