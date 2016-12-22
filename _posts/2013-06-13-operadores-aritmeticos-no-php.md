@@ -27,7 +27,7 @@ $numero2 = 3; // Segundo número
   
 $resultado = $numero1 + $numero2; // Realizando o calculo
   
-echo $numero1 . &#8216; + &#8216; . $numero2 . &#8216; = &#8216; . $resultado; //Mostrando resultado{% endhighlight %} 
+echo $numero1 . " + " . $numero2 . " = " . $resultado; //Mostrando resultado{% endhighlight %} 
 
 ## Subtração
 
@@ -37,7 +37,7 @@ $numero2 = 3; // Segundo número
   
 $resultado = $numero1 &#8211; $numero2; // Realizando o calculo
   
-echo $numero1 . &#8216; &#8211; &#8216; . $numero2 . &#8216; = &#8216; . $resultado; //Mostrando resultado{% endhighlight %} 
+echo $numero1 . " &#8211; " . $numero2 . " = " . $resultado; //Mostrando resultado{% endhighlight %} 
 
 ## Multiplicação
 
@@ -47,7 +47,7 @@ $numero2 = 3; // Segundo número
   
 $resultado = $numero1 * $numero2; // Realizando o calculo
   
-echo $numero1 . &#8216; * &#8216; . $numero2 . &#8216; = &#8216; . $resultado; //Mostrando resultado{% endhighlight %} 
+echo $numero1 . " * " . $numero2 . " = " . $resultado; //Mostrando resultado{% endhighlight %} 
 
 ## Divisão
 
@@ -57,7 +57,7 @@ $numero2 = 3; // Segundo número
   
 $resultado = $numero1 / $numero2; // Realizando o calculo
   
-echo $numero1 . &#8216; / &#8216; . $numero2 . &#8216; = &#8216; . $resultado; //Mostrando resultado{% endhighlight %} 
+echo $numero1 . " / " . $numero2 . " = " . $resultado; //Mostrando resultado{% endhighlight %} 
 
 ## Resto da divisão
 
@@ -67,7 +67,7 @@ $numero2 = 3; // Segundo número
   
 $resultado = $numero1 % $numero2; // Realizando o calculo
   
-echo $numero1 . &#8216; % &#8216; . $numero2 . &#8216; = &#8216; . $resultado; //Mostrando resultado{% endhighlight %} 
+echo $numero1 . " % " . $numero2 . " = " . $resultado; //Mostrando resultado{% endhighlight %} 
 
 Simples né? Bom, assim como na matemática o PHP consegue realizar cálculos utilizando vários operadores ao mesmo tempo <del style="color: #f00;" datetime="2013-06-13T09:05:56+00:00">vulgo expressões matemáticas</del>, vamos ver alguns exemplos?
 

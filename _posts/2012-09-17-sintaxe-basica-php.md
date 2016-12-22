@@ -23,7 +23,7 @@ Como o PHP é uma linguagem que apenas o servidor irá ler e mais ninguém conse
 
 Abra um <a title="Escolhendo um editor PHP" href="./escolhendo-um-editor-php/" target="_blank">editor PHP</a> de sua preferência e vamos colocar essa teoria em pratica, escreva o código abaixo, salve como **sintaxe.php** e mante rodar no seu servidor.
 
-{% highlight php linenos %}<?php echo &#8216;Olá. Eu sou Goku&#8217;; ?>{% endhighlight %} 
+{% highlight php linenos %}<?php echo "Olá. Eu sou Goku"; ?>{% endhighlight %} 
 
 Veja o exemplo acima o que acabamos de aprender. Na primeira linha falamos para o servidor que vamos trabalhar com PHP, na segunda linha informamos o que queremos mostrar na tela, e por ultimo indicaremos que não iremos mais escrever em PHP. Outro item importante é os comentários, eles servem para incluir alguma informação para quem for atualizar o seu código futuramente  ou até mesmo como lembrete para você mesmo, de algo relacionado ao código que está fazendo. Os comentários não serão interpretados pelo servidor, eles servirão apenas para você. Para comentar uma linha inteira utilize duas barras (//) ou cerquilha (#),  tudo o que estiver do lado direito desses dessa marcação não será considerada um comentário. Veja o exemplo abaixo;
 
@@ -31,7 +31,7 @@ Veja o exemplo acima o que acabamos de aprender. Na primeira linha falamos para 
   
 //Esse é um comentário
   
-echo &#8216;Olá. Eu sou Goku&#8217;; #Apartir desse ponto tudo da linha será um comentário,
+echo "Olá. Eu sou Goku"; #Apartir desse ponto tudo da linha será um comentário,
   
 ?>{% endhighlight %} 
 

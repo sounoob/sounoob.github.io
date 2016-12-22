@@ -28,9 +28,9 @@ Vamos detalhar e exemplificar cada um deles?
 
 Podemos incluir basicamente qualquer coisa, incluiremos letras, números, caracteres especiais. A restrição é que usemos aspas para começar e para terminar (Este é o único tipo que precisamos incluir um aspas para começar e terminar a informação). Veja o exemplo:
 
-{% highlight php linenos %}$string = &#8216;Textos com acentuação, 1 número e interrogação?&#8217;;//Variavel
+{% highlight php linenos %}$string = "Textos com acentuação, 1 número e interrogação?";//Variavel
   
-define(&#8216;string&#8217;, &#8216;Textos com acentuação, 1 número e interrogação?&#8217;);//Constante{% endhighlight %} 
+define("string", "Textos com acentuação, 1 número e interrogação?");//Constante{% endhighlight %} 
 
 ## <a name="integer"></a>Integer
 
@@ -38,7 +38,7 @@ Esse tipo aceita qualquer número inteiro, como aprendemos na escola são os nú
 
 {% highlight php linenos %}$integer = 500;
   
-define(&#8216;integer&#8217;, 500);{% endhighlight %} 
+define("integer", 500);{% endhighlight %} 
 
 ## <a name="float"></a>Float
 
@@ -46,7 +46,7 @@ Trabalha com os números reais, aqueles com casas decimais, semelhante ao **Inte
 
 {% highlight php linenos %}$float = 500.99;
   
-define(&#8216;float&#8217;, 500.99);{% endhighlight %} 
+define("float", 500.99);{% endhighlight %} 
 
 ## <a name="boolean"></a>Boolean
 
@@ -56,7 +56,7 @@ Seria como TRUE para verdadeiro, e FALSE para falso. Exemplo:
 
 {% highlight php linenos %}$boolean = TRUE;
   
-define(&#8216;boolean&#8217;, TRUE);{% endhighlight %} 
+define("boolean", TRUE);{% endhighlight %} 
 
 Veja outros posts como este aqui:
   

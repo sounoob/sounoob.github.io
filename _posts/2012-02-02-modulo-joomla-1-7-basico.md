@@ -82,7 +82,7 @@ Por ultimo iremos informar os arquivos que corresponde ao nosso módulo, para is
 
 Nosso arquivo XML já está pronto, agora podemos partir para o arquivo PHP que se chamará mod\_sou\_goku.php, o que nesse caso ele não irá fazer muita coisa. Como falado no começo do post esse modulo irá apenas mostrar um texto simples. Então usaremos o echo e o nosso texto
 
-{% highlight php linenos %}echo &#8216;Olá, Eu sou goku&#8217;;{% endhighlight %} 
+{% highlight php linenos %}echo "Olá, Eu sou goku";{% endhighlight %} 
 
 Agora é só compactar o módulo e instalar no Joomla
 
@@ -128,4 +128,4 @@ Segue código na integra:
 
 {% highlight php linenos %}<?php
   
-echo &#8216;Olá, Eu sou goku&#8217;;{% endhighlight %} 
+echo "Olá, Eu sou goku";{% endhighlight %} 

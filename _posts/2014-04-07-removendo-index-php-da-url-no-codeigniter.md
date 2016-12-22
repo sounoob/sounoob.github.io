@@ -32,9 +32,9 @@ Este problema é muito simples de resolver, basta configurar o servidor para tra
 
 Primeiro a<span style="line-height: 18px;">bra o arquivo config.php dentro da pasta </span><strong style="line-height: 18px;">\application\config<strong></strong></strong> <span style="line-height: 18px;">e substitua as linhas abaixo:</span>
 
-**$config[&#8216;index_page&#8217;] = &#8216;index.php&#8217;;** para **$config[&#8216;index_page&#8217;] = &#8221;;
+**$config["index_page"] = "index.php";** para **$config["index_page"] = &#8221;;
   
-$config[&#8216;uri_protocol&#8217;] = &#8216;AUTO&#8217;;** para **$config[&#8216;uri\_protocol&#8217;] = &#8216;REQUEST\_URI&#8217;;**
+$config["uri_protocol"] = "AUTO";** para **$config["uri\_protocol"] = "REQUEST\_URI";**
 
 Se você estiver usando um apache crie um arquivo **.htacces** com o seguinte conteúdo:
 

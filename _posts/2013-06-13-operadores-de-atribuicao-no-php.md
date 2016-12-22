@@ -15,9 +15,9 @@ categories:
 ---
 O operador de atribuição mais básico é o sinal de igual (**=**), basicamente ela transfere o valor que estiver na sua direita para a variável ou constante que estiver em sua esquerda. Basicamente temos uma variável ou constante, depois um sinal de igual e o valor que a variável ou constante deverá receber.<!--more--> Veja o exemplo abaixo:
 
-{% highlight php linenos %}$variavel = &#8216;Valor que deverá ser atribuído para a variável&#8217;;
+{% highlight php linenos %}$variavel = "Valor que deverá ser atribuído para a variável";
   
-const constante = &#8216;Valor que deverá ser atribuído para a constante&#8217;;{% endhighlight %} 
+const constante = "Valor que deverá ser atribuído para a constante";{% endhighlight %} 
 
 Bom, se você estiver acompanhando nossa série de tutoriais e viu sobre <a title="Variáveis no PHP" href="./variaveis-php/" target="_blank">Variáveis</a> então já deve ter visto algo parecido com o que mostramos no exemplo acima.
 
@@ -49,23 +49,23 @@ $variavel %= 10; //Valor da variável é 5{% endhighlight %}
 
 Esses são todos? Resposta: Não. Tem um o qual sem dúvida é o mais utilizado entre os programadores, que é a concatenação com atribuição. (Falamos sobre concatenação no post sobre <a title="Variáveis no PHP" href="./variaveis-php/" target="_blank">variáveis</a>), o legal de usar essa combinação é que podemos no ir incrementando pedaços do texto no decorrer que nosso código é executado. Veja o exemplo abaixo.
 
-{% highlight php linenos %}$variavel = &#8216;sounoob.com.br&#8217;;
+{% highlight php linenos %}$variavel = "sounoob.com.br";
   
-$variavel .= &#8216; é um site de tutoriais e aulas&#8217;;
+$variavel .= " é um site de tutoriais e aulas";
   
-$variavel .= &#8216; para quem quer uma ajuda&#8217;;
+$variavel .= " para quem quer uma ajuda";
   
-$variavel .= &#8216; na hora de programar&#8217;;
+$variavel .= " na hora de programar";
   
-$variavel .= &#8216;, e isso é um exemplo&#8217;;
+$variavel .= ", e isso é um exemplo";
   
-$variavel .= &#8216; de como concatenar e atribuir&#8217;;
+$variavel .= " de como concatenar e atribuir";
   
-$variavel .= &#8216; o resultado tudo na mesma&#8217;;
+$variavel .= " o resultado tudo na mesma";
   
-$variavel .= &#8216; variável&#8217;;
+$variavel .= " variável";
   
-$variavel .= &#8216;. Afinal, variável varia.&#8217;;
+$variavel .= ". Afinal, variável varia.";
 
 echo $variavel;{% endhighlight %} 
 

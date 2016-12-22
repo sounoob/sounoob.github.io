@@ -84,7 +84,7 @@ class Home extends CI_Controller {
     }
 }{% endhighlight %} 
 
-Como visto acima, usei um array chamado **$data** para enviar as informações. Esss informações irão estar disponíveis na View, como variaveis. Ou seja, cada indice de array será uma variavel. No nosso caso temos **$data[&#8216;name&#8217;]** que estará disponivel como **$name** e teremos **$data[&#8216;age&#8217;]** que estará disponível como **$age. **Veja como ficará nossa View:
+Como visto acima, usei um array chamado **$data** para enviar as informações. Esss informações irão estar disponíveis na View, como variaveis. Ou seja, cada indice de array será uma variavel. No nosso caso temos **$data["name"]** que estará disponivel como **$name** e teremos **$data["age"]** que estará disponível como **$age. **Veja como ficará nossa View:
 
 {% highlight php linenos %}<html>
     <head>

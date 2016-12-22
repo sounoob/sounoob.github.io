@@ -125,7 +125,7 @@ Com todos os dados informados, é hora de tratar o array para converter no forma
 
 Agora que os dados já estão prontos basta sabermos onde iremos enviar esses dados, nesse caso será o endereço utilizaremos a variavel **$url** para inserir esse endereço.
 
-{% highlight php linenos %}$url = &#8216;http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx&#8217;;{% endhighlight %} 
+{% highlight php linenos %}$url = "http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx";{% endhighlight %} 
 
 Já podemos iniciar nossa conexão para isso usaremos o biblioteca **cURL**. Ao inciar iremos passar a URL seguido do http query criado anteriormente estilo get. Nesse caso juntaremos a URL mais o interrogação e os dados, mantendo criando assim o padrão GET.
 

@@ -17,30 +17,30 @@ Em resumo uma constante é aquela &#8220;variável&#8221; que não muda. <del st
 
 Criar uma constante é um pouco diferente da forma que criamos uma variável<!--more-->, ela deve ser criada como mostrado no exemplo abaixo:
 
-{% highlight php linenos %}define(&#8216;NOME&#8217;, &#8216;informação&#8217;);{% endhighlight %} 
+{% highlight php linenos %}define("NOME", "informação");{% endhighlight %} 
 
 Simples né? Não? Bom, quando você for criar sua constante você faz igual, trocando apenas o **NOME** pelo nome que você quer dá para sua constante e **informação** você troca pela informação que quer colocar na sua constante.
 
 Ainda difícil? Bom, o PHP facilita para você. Depois da versão 5.3 o PHP deixa você criar constantes de outra forma um pouco semelhante para ao jeito que é criado as variáveis. Basta escrever **const** depois o nome da constante o simbolo de igual e o valor da constante entre aspas. Veja o exemplo
 
-{% highlight php linenos %}const NOME = &#8216;informação&#8217;;{% endhighlight %} 
+{% highlight php linenos %}const NOME = "informação";{% endhighlight %} 
 
 Sei criar, mas como eu uso?
   
 Simples, só escrever o nome da constante&#8230; Veja no exemplo abaixo.
 
-{% highlight php linenos %}define(&#8216;FRASE&#8217;, &#8216;sounoob.com.br&#8217;);//Criamos uma constante
+{% highlight php linenos %}define("FRASE", "sounoob.com.br");//Criamos uma constante
   
 echo FRASE; //Mostramos a informação na tela{% endhighlight %} 
 
 Em pró de uma boa convivência temos algumas regrinhas para as constantes, vou tentar listar as que eu sei abaixo:
 
-  * Todo nome de uma constante deve ser iniciado utilizando letras ou sublinhados;{% highlight php linenos %}define(&#8216;1SITE&#8217;, &#8216;sounoob.com.br&#8217;); //Errado
+  * Todo nome de uma constante deve ser iniciado utilizando letras ou sublinhados;{% highlight php linenos %}define("1SITE", "sounoob.com.br"); //Errado
   
-    define(&#8216;_1SITE&#8217;, &#8216;sounoob.com.br&#8217;); //Correto{% endhighlight %} 
-  * Nunca coloque espaços no nome da constante;{% highlight php linenos %}define(&#8216;SITE SOUNOOB&#8217;, &#8216;sounoob.com.br&#8217;); //Errado
+    define("_1SITE", "sounoob.com.br"); //Correto{% endhighlight %} 
+  * Nunca coloque espaços no nome da constante;{% highlight php linenos %}define("SITE SOUNOOB", "sounoob.com.br"); //Errado
   
-    define(&#8216;SITESOUNOOB&#8217;, &#8216;sounoob.com.br&#8217;); //Correto{% endhighlight %} 
+    define("SITESOUNOOB", "sounoob.com.br"); //Correto{% endhighlight %} 
   * As variável são case sensitive, ou seja, **SITE** será diferente **Site**
   * Até poderá usar acentuação para definir o nome de uma constante, mas evite ao máximo fazer isso. Primeiro que é feio, segundo que poderá ocorrer erros dependendo do formato que você for salvar o arquivo.
 

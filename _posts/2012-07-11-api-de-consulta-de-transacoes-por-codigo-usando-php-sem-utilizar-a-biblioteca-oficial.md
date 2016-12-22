@@ -44,7 +44,7 @@ Para facilitar usarei a função do tutorial <a title="cURL. Feita para usar e 
 
 {% highlight php linenos %}$transaction = curlExec($url);{% endhighlight %} 
 
-Caso seu e-mail e token esteja incorreto o PagSeguro irá retornar uma string com o texto &#8216;Unauthorized&#8217;, nesse caso é precisamos fazer uma validação e tratar esse ponto.
+Caso seu e-mail e token esteja incorreto o PagSeguro irá retornar uma string com o texto "Unauthorized", nesse caso é precisamos fazer uma validação e tratar esse ponto.
 
 {% highlight php linenos %}if($transaction == 'Unauthorized') {
     //Insira seu código avisando que o sistema está com problemas

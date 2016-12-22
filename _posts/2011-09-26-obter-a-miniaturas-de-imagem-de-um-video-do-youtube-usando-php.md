@@ -63,7 +63,7 @@ Bom, essa é teoria, vamos na pratica?<a name="passo-a-passo"></a>
 
 Suponho que esse código será usado para gerar varias miniaturas então o ideal é criar uma função para representar todo o codigo, afim de não ficar repetindo coisa desnecessária. Nossa função terá um nome bem sugestivo **youtubeImage**, algo importante que nossa função irá precisar é a URL do vídeo, então iremos adicionar o parâmetro **$url** na função **youtubeImage**, como temos duas opções de imagem uma grande e outra pequena, seria interessante adicionar o parâmetro **$size** para definir qual será o tamanho da imagem gerada, claro que esse pode ser um parametro opcional, e que por padrão ele irá vim pequena (valor será small)
 
-{% highlight php linenos %}function youtubeImage($url, $size = &#8216;small&#8217;){
+{% highlight php linenos %}function youtubeImage($url, $size = "small"){
       
 //todo o código irá ficar aqui
   
@@ -71,7 +71,7 @@ Suponho que esse código será usado para gerar varias miniaturas então o ideal
 
 Vamos pegar o código do do vídeo, existem várias maneiras de obter o código do vídeo, a que vamos usar aqui é a forma mais bruta, que é quebrando a URL até sobrar somente o código. Primeiro vamos quebrar a URL onde tiver o parâmetro **_v=_** afinal é ai que estará o nosso vídeo
 
-{% highlight php linenos %}$url = explode(&#8216;v=&#8217;,$url);{% endhighlight %} 
+{% highlight php linenos %}$url = explode("v=",$url);{% endhighlight %} 
 
 Para a URL que estava igual a:
 
@@ -87,13 +87,13 @@ E dentro de **$url[1]** terá:
 
 O que nos importa é a segunda opção, porem como podem notar lá não tem outros dados além do que o código que precisamos, vamos quebrar esse texto onde termina o código.
 
-{% highlight php linenos %}$url = explode(&#8216;&&#8217;,$url[1]);{% endhighlight %} 
+{% highlight php linenos %}$url = explode("&",$url[1]);{% endhighlight %} 
 
 Pronto agora a função **explode** transformou aquele texto em vários pedacinhos, o código do vídeo deverá estar dentro do primeiro índice, portanto será **$url[0]**;
 
 De posse do código é a hora de verificar qual foi o tamanho que devemos gerar a imagem e montar a URL da mesma
 
-{% highlight php linenos %}$url = $size == &#8216;small&#8217; ? (&#8216;http://i1.ytimg.com/vi/&#8217; . $url[0] . &#8216;/default.jpg&#8217;) : (&#8216;http://img.youtube.com/vi/&#8217; . $url[0] . &#8216;/0.jpg&#8217;);{% endhighlight %} 
+{% highlight php linenos %}$url = $size == "small" ? ("http://i1.ytimg.com/vi/" . $url[0] . "/default.jpg") : ("http://img.youtube.com/vi/" . $url[0] . "/0.jpg");{% endhighlight %} 
 
 Outro passo não menos importante é a imagem
 
@@ -103,33 +103,33 @@ Como esse código estará dentro de uma função, devemos retornar a URL da imag
 
 Quando quiser carregar uma miniatura de imagem do vídeo do youtube basta chamar a função e inserir a URL do vídeo igual ao exemplo abaixo:
 
-{% highlight php linenos %}youtubeImage(&#8216;http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46&#8217;);{% endhighlight %} 
+{% highlight php linenos %}youtubeImage("http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46");{% endhighlight %} 
 
 Claro que isso irá gerar apenas a URL da imagem, e você precisa montar o código HTML que irá mostrar a imagem no seu site como abaixo:
 
-{% highlight php linenos %}<img src="<?php echo youtubeImage(&#8216;http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46&#8217;);?>;" alt="" />{% endhighlight %} 
+{% highlight php linenos %}<img src="<?php echo youtubeImage("http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46");?>;" alt="" />{% endhighlight %} 
 
 Um exemplo com a mesma imagem só que agora gerando ela de tamanho um pouco maior.
 
-{% highlight php linenos %}<img src="<?php echo youtubeImage(&#8216;http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46&#8217;, &#8216;big&#8217;);?>;" alt="" />;{% endhighlight %} 
+{% highlight php linenos %}<img src="<?php echo youtubeImage("http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46", "big");?>;" alt="" />;{% endhighlight %} 
 
 Segue código completo, com exemplo:
 
-{% highlight php linenos %}<!&#8211;?php <br ?&#8211;>function youtubeImage($url, $size = &#8216;small&#8217;){
+{% highlight php linenos %}<!&#8211;?php <br ?&#8211;>function youtubeImage($url, $size = "small"){
       
-$url = explode(&#8216;v=&#8217;,$url);
+$url = explode("v=",$url);
       
-$url = explode(&#8216;&&#8217;,$url[1]);
+$url = explode("&",$url[1]);
       
-$url = $size == &#8216;small&#8217; ? (&#8216;http://i1.ytimg.com/vi/&#8217; . $url[0] . &#8216;/default.jpg&#8217;) : (&#8216;http://img.youtube.com/vi/&#8217; . $url[0] . &#8216;/0.jpg&#8217;);
+$url = $size == "small" ? ("http://i1.ytimg.com/vi/" . $url[0] . "/default.jpg") : ("http://img.youtube.com/vi/" . $url[0] . "/0.jpg");
       
 return $url; }
   
 ?>
   
-<img src="<?php echo youtubeImage(&#8216;http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46&#8217;);?>" alt="" />
+<img src="<?php echo youtubeImage("http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46");?>" alt="" />
   
-<img src="<?php echo youtubeImage(&#8216;http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46&#8217;, &#8216;big&#8217;);?>" alt="" />{% endhighlight %} 
+<img src="<?php echo youtubeImage("http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46", "big");?>" alt="" />{% endhighlight %} 
 
 Veja nosso post mostrando como recuperar não só as imagens, como também outras **[informações do YouTube](./informacoes-youtube-usando-php/ "Informações do YouTube – Como capturar usando PHP")**
 
