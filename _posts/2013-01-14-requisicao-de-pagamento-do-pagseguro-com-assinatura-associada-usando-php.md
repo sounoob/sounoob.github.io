@@ -18,7 +18,7 @@ tags:
   - PagSeguro
   - recorrencia
 ---
-Agora a API de pagamentos conta com um novo &#8220;Upgrade&#8221;, que é a possibilidade de fazer uma requisição e incluir um pagamento recorrente tudo em &#8220;uma tacada só&#8221; . Para isso usaremos o que já foi descrito aqui em no tutorial para <a title="Criando uma requisição de pagamento do PagSeguro via parametros HTTP usando PHP – Sem utilizar a biblioteca oficial" href="./criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">Criando requisição de pagamento via HTTP</a> e <a title="Criando uma requisição de pagamento do PagSeguro via XML usando PHP – Sem utilizar a biblioteca oficial" href="./criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">Criando requisição de pagamento via XML</a>  será necessário apenas incluir uns dados adicionais para enviar ao PagSeguro, o resto segue do mesmo jeito.<!--more-->
+Agora a API de pagamentos conta com um novo "Upgrade", que é a possibilidade de fazer uma requisição e incluir um pagamento recorrente tudo em "uma tacada só" . Para isso usaremos o que já foi descrito aqui em no tutorial para <a title="Criando uma requisição de pagamento do PagSeguro via parametros HTTP usando PHP – Sem utilizar a biblioteca oficial" href="./criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">Criando requisição de pagamento via HTTP</a> e <a title="Criando uma requisição de pagamento do PagSeguro via XML usando PHP – Sem utilizar a biblioteca oficial" href="./criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">Criando requisição de pagamento via XML</a>  será necessário apenas incluir uns dados adicionais para enviar ao PagSeguro, o resto segue do mesmo jeito.<!--more-->
 
 No outro tutorial usamos array **$data** para enviar todos os dados, então continuaremos usar o mesmo campo para passar os dados referente a recorrência, no caso do XML criaremos uma tag e chamaremos de **preApproval **essa tag deverá estar dentro da tag **checkout**, depois incluiremos todos parâmetros lá dentro.
 
@@ -119,7 +119,7 @@ Nesse parâmetro deve ser informado qual valor total máximo que o PagSeguro ir�
 
 {% highlight php linenos %}<reviewURL>http://sounoob.com.br/produto1</reviewURL>{% endhighlight %} 
 
-Na documentação esse parâmetros deveria ser para informar a URL onde o usuário possa ver as regras da assinatura, mas&#8230; depois de testes eu vi que esse link aparece em: &#8220;Assinatura &#8211; alterar&#8221;, sendo assim ele possivelmente possa ser utilizado para dar outras opções ao assinante, como alteração de datas e afins&#8230;
+Na documentação esse parâmetros deveria ser para informar a URL onde o usuário possa ver as regras da assinatura, mas&#8230; depois de testes eu vi que esse link aparece em: "Assinatura - alterar", sendo assim ele possivelmente possa ser utilizado para dar outras opções ao assinante, como alteração de datas e afins&#8230;
 
 Enfim, suponhamos que temos que criar uma assinatura com periodicidade semanal nosso array **$data** estaria com os seguintes campos adicionais:
 

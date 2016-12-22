@@ -21,9 +21,9 @@ tags:
 ---
 Um dos maiores pontos fortes da API de pagamento é a possibilidade de enviar os dados, sem que o internauta consiga interceptar e alterar esses dados usando apenas a interface apresentada na tela, sem contar a possibilidade de mudar a URL de redirecionamento (não confunda com a URL de notificação).
 
-<!--more-->O que iremos utilizar para a comunicação irá ser a biblioteca do cURL, e para manipular os dados recebidos vamos usar função simplexml\_load\_string  para transformar o XML em objeto, igual utilizamos para receber as notificações em &#8220;
+<!--more-->O que iremos utilizar para a comunicação irá ser a biblioteca do cURL, e para manipular os dados recebidos vamos usar função simplexml\_load\_string  para transformar o XML em objeto, igual utilizamos para receber as notificações em "
 
-[Recebendo notificações do PagSeguro usando PHP](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial")&#8220;. Enfim, vamos ao que interessa&#8230; Código&#8230;
+[Recebendo notificações do PagSeguro usando PHP](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial")". Enfim, vamos ao que interessa&#8230; Código&#8230;
   
 <a name="passo-a-passo"></a>
   
@@ -86,7 +86,7 @@ O XML a ser enviado vou colocar na variável  **$XML**, para efeito de testes i
         </shipping>
     </checkout>';{% endhighlight %} 
 
-<span style="color: #000000;">Um campo que merece destaque é o <strong>redirectURL</strong>, onde o mesmo SÓ IRÁ FUNCIONAR SE NA SUA CONTA CONTA ESTIVER MARCADO &#8220;<strong><label for="onlyAcceptAPIPayments">Quero receber somente pagamentos via API&#8221;;</label></strong></span>
+<span style="color: #000000;">Um campo que merece destaque é o <strong>redirectURL</strong>, onde o mesmo SÓ IRÁ FUNCIONAR SE NA SUA CONTA CONTA ESTIVER MARCADO "<strong><label for="onlyAcceptAPIPayments">Quero receber somente pagamentos via API";</label></strong></span>
 
 Agora vamos chamar o cURL e passar como endereço, a URL que acabamos de montar.
 

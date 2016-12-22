@@ -1,6 +1,6 @@
 ---
 id: 74
-title: 'Utilizando as APIs do PagSeguro e PHP &#8211; Sem utilizar a biblioteca oficial.'
+title: 'Utilizando as APIs do PagSeguro e PHP - Sem utilizar a biblioteca oficial.'
 date: 2011-09-06T21:59:25+00:00
 author: Sena
 layout: post

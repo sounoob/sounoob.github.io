@@ -1,6 +1,6 @@
 ---
 id: 1005
-title: 'Removendo &#8220;index.php&#8221; da URL no CodeIgniter'
+title: 'Removendo "index.php" da URL no CodeIgniter'
 date: 2014-04-07T15:26:55+00:00
 author: Sena
 layout: post
@@ -32,7 +32,7 @@ Este problema é muito simples de resolver, basta configurar o servidor para tra
 
 Primeiro a<span style="line-height: 18px;">bra o arquivo config.php dentro da pasta </span><strong style="line-height: 18px;">\application\config<strong></strong></strong> <span style="line-height: 18px;">e substitua as linhas abaixo:</span>
 
-**$config["index_page"] = "index.php";** para **$config["index_page"] = &#8221;;
+**$config["index_page"] = "index.php";** para **$config["index_page"] = ";
   
 $config["uri_protocol"] = "AUTO";** para **$config["uri\_protocol"] = "REQUEST\_URI";**
 

@@ -1,6 +1,6 @@
 ---
 id: 319
-title: 'Módulo Joomla 1.7 &#8211; Básico'
+title: 'Módulo Joomla 1.7 - Básico'
 date: 2012-02-02T12:30:23+00:00
 author: Sena
 layout: post
@@ -18,9 +18,9 @@ tags:
 ---
 Todo modulo em Joomla deverá ter no mínimo dois arquivos, um arquivo XML o qual irá determinar todos os parâmetros e informações do módulo, e um arquivo PHP  o qual irá inicializar e/ou processar todas as tarefas.
 
-Vamos criar um exemplo simples apenas para representar algo básico, esse módulo irá se chamar: &#8220;mod\_sou\_goku&#8221;, esse modulo irá apenas mostrar na tela um texto básico.<!--more-->
+Vamos criar um exemplo simples apenas para representar algo básico, esse módulo irá se chamar: "mod\_sou\_goku", esse modulo irá apenas mostrar na tela um texto básico.<!--more-->
 
-Crie uma pasta com o nome do plug-in que no nosso caso será:  &#8220;mod\_sou\_goku&#8221;. Dentro da pasta crie um arquivo XML com o mesmo nome.
+Crie uma pasta com o nome do plug-in que no nosso caso será:  "mod\_sou\_goku". Dentro da pasta crie um arquivo XML com o mesmo nome.
 
 Como todo XML o nosso deverá ter a declaração padrão
 

@@ -21,7 +21,7 @@ Para saber se temos a biblioteca em nosso servidor, abra um arquivo PHP e insir
 
 {% highlight php linenos %}<?php phpinfo();{% endhighlight %} 
 
-Chame o arquivo na UR, ele deverá mostrar tudo que tem no seu servidor, procure por &#8220;**cURL support**&#8220;, se estiver marcado como **enabled**, então você poderá usar, caso contrário, chame o pessoal do suporte e solicite a instalação.
+Chame o arquivo na UR, ele deverá mostrar tudo que tem no seu servidor, procure por "**cURL support**", se estiver marcado como **enabled**, então você poderá usar, caso contrário, chame o pessoal do suporte e solicite a instalação.
 
 ## Mão na massa
 

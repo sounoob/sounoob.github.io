@@ -34,10 +34,10 @@ Okay, ainda não sei qual começar.
 
 Bom, vou listar alguns abaixo o qual eu achei interessante talvez, você possa gostar e usar também ou não
 
-  * **Notepad++** &#8211; Windows &#8211; <a title="Notepad++" href="http://notepad-plus-plus.org/" target="_blank">http://notepad-plus-plus.org/</a>
-  * **Sublime Text** &#8211; Windows/Linux/OSx &#8211; <a title="Sublime" href="http://www.sublimetext.com/2" target="_blank">http://www.sublimetext.com/2</a>
-  * **Eclipse** &#8211; Windows/Linux/OSx &#8211; <a title="Eclipse" href="http://www.eclipse.org/downloads/" target="_blank">http://www.eclipse.org/downloads/</a>
-  * **NetBeans** &#8211; Windows/Solaris/Linux/OSx &#8211; <a title="NetBeans" href="http://netbeans.org/downloads/" target="_blank">http://netbeans.org/downloads/</a>
+  * **Notepad++** - Windows - <a title="Notepad++" href="http://notepad-plus-plus.org/" target="_blank">http://notepad-plus-plus.org/</a>
+  * **Sublime Text** - Windows/Linux/OSx - <a title="Sublime" href="http://www.sublimetext.com/2" target="_blank">http://www.sublimetext.com/2</a>
+  * **Eclipse** - Windows/Linux/OSx - <a title="Eclipse" href="http://www.eclipse.org/downloads/" target="_blank">http://www.eclipse.org/downloads/</a>
+  * **NetBeans** - Windows/Solaris/Linux/OSx - <a title="NetBeans" href="http://netbeans.org/downloads/" target="_blank">http://netbeans.org/downloads/</a>
 
 Veja outros posts como este aqui:
   

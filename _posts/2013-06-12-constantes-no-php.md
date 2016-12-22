@@ -13,7 +13,7 @@ dsq_thread_id:
 categories:
   - Aulas
 ---
-Em resumo uma constante é aquela &#8220;variável&#8221; que não muda. <del style="color: #f00;" datetime="2013-06-12T21:45:16+00:00">Sim isso foi estranho porém necessário</del>
+Em resumo uma constante é aquela "variável" que não muda. <del style="color: #f00;" datetime="2013-06-12T21:45:16+00:00">Sim isso foi estranho porém necessário</del>
 
 Criar uma constante é um pouco diferente da forma que criamos uma variável<!--more-->, ela deve ser criada como mostrado no exemplo abaixo:
 
@@ -44,7 +44,7 @@ Em pró de uma boa convivência temos algumas regrinhas para as constantes, vou 
   * As variável são case sensitive, ou seja, **SITE** será diferente **Site**
   * Até poderá usar acentuação para definir o nome de uma constante, mas evite ao máximo fazer isso. Primeiro que é feio, segundo que poderá ocorrer erros dependendo do formato que você for salvar o arquivo.
 
-Eu particularmente prefiro deixar todos nomes de constantes em maiúsculo, acho que o código fica mais &#8220;bonito&#8221;, porem você pode escolher o jeito do nome que achar que fica melhor.
+Eu particularmente prefiro deixar todos nomes de constantes em maiúsculo, acho que o código fica mais "bonito", porem você pode escolher o jeito do nome que achar que fica melhor.
 
 Algumas palavras foram reservadas pelo PHP, e não poderão ser utilizadas como nome de constantes, nem mesmo em maiúsculo. (Obviamente não precisa decorar tudo, se o nome da sua constante for um nome o qual defina a informação que ela tiver, então raramente você terá problemas com esses nomes reservados)
 

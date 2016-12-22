@@ -1,6 +1,6 @@
 ---
 id: 1059
-title: 'Informações do YouTube &#8211; Como capturar usando PHP'
+title: 'Informações do YouTube - Como capturar usando PHP'
 date: 2014-05-15T18:59:07+00:00
 author: Sena
 layout: post

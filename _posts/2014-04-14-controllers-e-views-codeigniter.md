@@ -1,6 +1,6 @@
 ---
 id: 1023
-title: 'Controllers e Views &#8211; CodeIgniter'
+title: 'Controllers e Views - CodeIgniter'
 date: 2014-04-14T15:56:54+00:00
 author: Sena
 layout: post
@@ -21,7 +21,7 @@ O controller servirá como ponte entre o usuário e o nosso sistema, o usuário
 
 ### Como os controllers funcionam no CodeIgniter
 
-O CodeIgniter utiliza classes como controllers e essas classes podem ser acessadas pela URL, todo novo controller deve ser estendido do controller padrão do CodeIgniter, que é chamado de CI_Controller. As URLs do CodeIgniter por padrão são configuradas para trabalhar em cima desses controllers, ou seja, cada link diferente que o usuário acessar, possivelmente estará acessando um controller diferente. Considerando que nosso CodeIgniter pode ser acessado na URL _http://localhost/CI/_, vamos considerar a seguinte URL: _http://localhost/CI/home_ Ao acessar esta URL o CodeIgniter irá procurar um controller chamado &#8220;home&#8221; e carregará o método chamado index. Vamos tentar criar nosso primeiro controller.
+O CodeIgniter utiliza classes como controllers e essas classes podem ser acessadas pela URL, todo novo controller deve ser estendido do controller padrão do CodeIgniter, que é chamado de CI_Controller. As URLs do CodeIgniter por padrão são configuradas para trabalhar em cima desses controllers, ou seja, cada link diferente que o usuário acessar, possivelmente estará acessando um controller diferente. Considerando que nosso CodeIgniter pode ser acessado na URL _http://localhost/CI/_, vamos considerar a seguinte URL: _http://localhost/CI/home_ Ao acessar esta URL o CodeIgniter irá procurar um controller chamado "home" e carregará o método chamado index. Vamos tentar criar nosso primeiro controller.
 
 {% highlight php linenos %}<?php
 class Home extends CI_Controller {

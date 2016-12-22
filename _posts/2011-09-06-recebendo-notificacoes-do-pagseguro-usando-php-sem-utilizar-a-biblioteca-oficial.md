@@ -1,6 +1,6 @@
 ---
 id: 72
-title: 'Recebendo notificações do PagSeguro usando PHP &#8211; Sem utilizar a biblioteca oficial'
+title: 'Recebendo notificações do PagSeguro usando PHP - Sem utilizar a biblioteca oficial'
 date: 2011-09-06T22:10:00+00:00
 author: Sena
 layout: post

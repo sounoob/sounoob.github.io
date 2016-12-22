@@ -1,6 +1,6 @@
 ---
 id: 424
-title: 'Introdução &#8211; PHP para Noobs'
+title: 'Introdução - PHP para Noobs'
 date: 2012-08-06T17:17:03+00:00
 author: Sena
 layout: post
@@ -15,7 +15,7 @@ categories:
 ---
 ### O que é o PHP?
 
-Antigamente era um acrónimo para “Personal Home Page”, agora virou acrónimo recursivo para &#8220;PHP: Hypertext Preprocessor&#8221;. Confuso né? PHP significar PHP&#8230; enfim, o que você precisa saber é que o PHP é um meio de falar com o servidor como ele irá se comportar em relação a todos informações que serão mostradas para o usuário.<!--more-->
+Antigamente era um acrónimo para “Personal Home Page”, agora virou acrónimo recursivo para "PHP: Hypertext Preprocessor". Confuso né? PHP significar PHP&#8230; enfim, o que você precisa saber é que o PHP é um meio de falar com o servidor como ele irá se comportar em relação a todos informações que serão mostradas para o usuário.<!--more-->
 
 É importante entender que o que você escrever em PHP não será o que o usuário irá ver, será o que o servidor irá ver e dependendo do que você tenha escrito ele irá se comportar de um jeito diferente.
 

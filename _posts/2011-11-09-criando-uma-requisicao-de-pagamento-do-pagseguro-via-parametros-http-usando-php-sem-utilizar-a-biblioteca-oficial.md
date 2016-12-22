@@ -60,7 +60,7 @@ $data['shippingAddressState'] = 'SP';
 $data['shippingAddressCountry'] = 'BRA';
 $data['redirectURL'] = 'http://www.sounoob.com.br/paginaDeAgracedimento';{% endhighlight %} 
 
-Lembrando que o campo **redirectURL** SÓ IRÁ FUNCIONAR SE NA SUA CONTA CONTA ESTIVER MARCADO &#8220;**Quero receber somente pagamentos via API**&#8221;
+Lembrando que o campo **redirectURL** SÓ IRÁ FUNCIONAR SE NA SUA CONTA CONTA ESTIVER MARCADO "**Quero receber somente pagamentos via API**"
 
 Como os dados estão em array e o PagSeguro só será possivel completar a requisição enviando no formato similar ao GET, então usaremos a **http\_build\_query** para converter o array no formato correto
 

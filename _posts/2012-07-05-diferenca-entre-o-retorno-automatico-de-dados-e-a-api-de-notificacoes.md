@@ -29,7 +29,7 @@ Terceiro e não menos importante e que tanto o Retorno Automático de Dados e a 
 
 Agora para entender as diferenças entre ambas, separei em 3 passos os quais considero importante, os quais seguem abaixo
 
-##### 1 &#8211; Aquele POST que o PagSeguro faz sempre que encontra uma alteração no status da transação.
+##### 1 - Aquele POST que o PagSeguro faz sempre que encontra uma alteração no status da transação.
 
 **Retorno Automático de Dados**
   
@@ -39,7 +39,7 @@ O PagSeguro envia um POST com todos dados disponíveis da transação.
   
 O PagSeguro envia um POST com um código de notificação e o tipo da notificação
 
-##### 2 &#8211; Como receber os dados
+##### 2 - Como receber os dados
 
 **Retorno Automático de Dados**
   
@@ -49,7 +49,7 @@ Não é necessário pesquisar mais informações, todos dados da transação já
   
 Precisa requisitar os dados da transação enviando e-mail, token e o código da transação o qual quer mais detalhes.
 
-##### 3 &#8211; Verificação de segurança.
+##### 3 - Verificação de segurança.
 
 **Retorno Automático de Dados**
   

@@ -28,7 +28,7 @@ Não é nenhum bicho de sete cabeças usar o CI, pelo contrário, ele é um dos 
 
 ### Porque devo aprender CodeIgniter e não outro Framework?
 
-Existem muitos outros Frameworks no mercado, uns melhores que os outros, e boa parte deles são bem melhores que o CI, mas&#8230; a vantagem de utilizar o CI é que ele é extremamente simples de configurar e a documentação é bem simples de entender e não requer muita regra na hora de programar. Então todos que estiver começando não terá problemas de usar esse Framework, e quem já programa conseguirá criar sistemas simples de forma mais rápida e menos &#8220;burocrática&#8221;;
+Existem muitos outros Frameworks no mercado, uns melhores que os outros, e boa parte deles são bem melhores que o CI, mas&#8230; a vantagem de utilizar o CI é que ele é extremamente simples de configurar e a documentação é bem simples de entender e não requer muita regra na hora de programar. Então todos que estiver começando não terá problemas de usar esse Framework, e quem já programa conseguirá criar sistemas simples de forma mais rápida e menos "burocrática";
 
 Veja outros posts como este aqui:
   

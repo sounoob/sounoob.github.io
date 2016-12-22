@@ -115,7 +115,7 @@ Um exemplo com a mesma imagem só que agora gerando ela de tamanho um pouco maio
 
 Segue código completo, com exemplo:
 
-{% highlight php linenos %}<!&#8211;?php <br ?&#8211;>function youtubeImage($url, $size = "small"){
+{% highlight php linenos %}<!-?php <br ?->function youtubeImage($url, $size = "small"){
       
 $url = explode("v=",$url);
       

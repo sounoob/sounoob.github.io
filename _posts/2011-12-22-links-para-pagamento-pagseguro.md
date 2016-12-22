@@ -1,6 +1,6 @@
 ---
 id: 306
-title: 'Links para pagamento &#8211; PagSeguro'
+title: 'Links para pagamento - PagSeguro'
 date: 2011-12-22T15:41:02+00:00
 author: Sena
 layout: post

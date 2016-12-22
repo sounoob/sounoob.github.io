@@ -23,11 +23,11 @@ Para isso iremos utilizar apenas três funções, que é o **fopen** para abrir 
 
 <!--more-->
 
-<a name="passo-a-passo"></a>O primeiro passo é definir em qual arquivo vamos escrever (ou qual será o nome a ser criado), no nosso exemplo vou especificar um nome bem sugestivo como &#8220;arquivo.txt&#8221;, e jogar dentro da variável $file.
+<a name="passo-a-passo"></a>O primeiro passo é definir em qual arquivo vamos escrever (ou qual será o nome a ser criado), no nosso exemplo vou especificar um nome bem sugestivo como "arquivo.txt", e jogar dentro da variável $file.
 
 {% highlight php linenos %}$name = 'arquivo.txt';{% endhighlight %} 
 
-Outro dado muito importante, além de saber o nome do arquivo é saber o que vai escrever dentro dele, no nosso exemplo iremos inserir o texto &#8220;Olá. Eu sou Goku&#8221;, então inserir na variável **$text**.
+Outro dado muito importante, além de saber o nome do arquivo é saber o que vai escrever dentro dele, no nosso exemplo iremos inserir o texto "Olá. Eu sou Goku", então inserir na variável **$text**.
 
 {% highlight php linenos %}$text = 'Olá. Eu sou Goku';{% endhighlight %} 
 
@@ -35,9 +35,9 @@ Como seu sistema já sabe o nome do arquivo, usar a função **fopen** informar 
 
 {% highlight php linenos %}$file = fopen($name, 'a');{% endhighlight %} 
 
-Note que na função **fopen** além do nome do arquivo eu informei a letra &#8220;a&#8221;, como um parâmetro adicional, para que serve? Com esse parâmetro estou informando ao sistema a forma que ele irá abrir nosso arquivo, que nesse caso, ele deverá abrir e prepara-lo para escrita e o ponto de onde irei escrever será no final do ultimo texto que estiver no arquivo, e caso o arquivo não exista o sistema deverá cria-lo. Consulte outras opções na documentação do PHP <http://php.net/manual/pt_BR/function.fopen.php>
+Note que na função **fopen** além do nome do arquivo eu informei a letra "a", como um parâmetro adicional, para que serve? Com esse parâmetro estou informando ao sistema a forma que ele irá abrir nosso arquivo, que nesse caso, ele deverá abrir e prepara-lo para escrita e o ponto de onde irei escrever será no final do ultimo texto que estiver no arquivo, e caso o arquivo não exista o sistema deverá cria-lo. Consulte outras opções na documentação do PHP <http://php.net/manual/pt_BR/function.fopen.php>
 
-Uma informação muito importante&#8230; Se o arquivo não existir no seu servidor, e a pasta onde ele será escrito não tiver permissão de escrita, poderá resultar no erro &#8220;Failed to open stream: Permission denied in&#8230;&#8221;, para resolver isso, crie o arquivo manualmente, e dê permissão de escrita, ou dê a permissão de escrita para a pasta onde ele estará.
+Uma informação muito importante&#8230; Se o arquivo não existir no seu servidor, e a pasta onde ele será escrito não tiver permissão de escrita, poderá resultar no erro "Failed to open stream: Permission denied in&#8230;", para resolver isso, crie o arquivo manualmente, e dê permissão de escrita, ou dê a permissão de escrita para a pasta onde ele estará.
 
 Uma vez o arquivo aberto é hora de escrever alguma coisa nele, usaremos a função **fwrite**, informar o arquivo a ser aberto e o que colocar dentro dele.
 

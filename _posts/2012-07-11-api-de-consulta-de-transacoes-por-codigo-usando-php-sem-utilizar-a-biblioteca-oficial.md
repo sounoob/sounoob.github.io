@@ -1,6 +1,6 @@
 ---
 id: 384
-title: 'API de consulta de transações por código usando PHP &#8211; Sem utilizar a biblioteca oficial'
+title: 'API de consulta de transações por código usando PHP - Sem utilizar a biblioteca oficial'
 date: 2012-07-11T17:46:52+00:00
 author: Sena
 layout: post
@@ -18,7 +18,7 @@ tags:
   - PagSeguro
   - XML
 ---
-Uma das vantagens de utilizar a API de consulta de transações por código é a opção de poder consultar o detalhe da transação quando der na teia, até mesmo antes de <a title="Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial" href="./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">receber notificações da API de notificações</a>, sem contar que pode ser usada em conjunto com outras APIs, tornado sua integração mais &#8220;poderosa&#8221;.
+Uma das vantagens de utilizar a API de consulta de transações por código é a opção de poder consultar o detalhe da transação quando der na teia, até mesmo antes de <a title="Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial" href="./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">receber notificações da API de notificações</a>, sem contar que pode ser usada em conjunto com outras APIs, tornado sua integração mais "poderosa".
 
 Talvez você deva estar se perguntando: É difícil? Eu respondo que não. Ela é uma das APIs do PagSeguro mais fácil de trabalhar, e podemos utilizar a mesma lógica usada na [API de notificações](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial").<!--more-->
 
@@ -66,7 +66,7 @@ O PagSeguro ainda poderá mostra erros nesse caso precisamos criar outra valid
 
 Caso não tenha erros é só pegar pegar os dados os quais sua aplicação precisa, respeitando a hierarquia do XML <a href="https://pagseguro.uol.com.br/v2/guia-de-integracao/consulta-de-transacoes-por-codigo.html#v2-item-consulta-de-transacoes-por-codigo-parametros-resposta" target="_blank">retornado do PagSeguro</a>.
 
-Uma forma fácil de pegar as informações é olhar a <a href="https://pagseguro.uol.com.br/v2/guia-de-integracao/consulta-de-transacoes-por-codigo.html#v2-item-consulta-de-transacoes-por-codigo-parametros-resposta" target="_blank">tabela de parâmetros de resposta do PagSeguro</a> onde na coluna &#8220;Campo&#8221; (Primeira coluna) já possui a hierarquia correta de cada informação. Utilize o mesmo padrão para pegar os dados. Veja no exemplo abaixo como pegar por exemplo o e-mail do comprador:
+Uma forma fácil de pegar as informações é olhar a <a href="https://pagseguro.uol.com.br/v2/guia-de-integracao/consulta-de-transacoes-por-codigo.html#v2-item-consulta-de-transacoes-por-codigo-parametros-resposta" target="_blank">tabela de parâmetros de resposta do PagSeguro</a> onde na coluna "Campo" (Primeira coluna) já possui a hierarquia correta de cada informação. Utilize o mesmo padrão para pegar os dados. Veja no exemplo abaixo como pegar por exemplo o e-mail do comprador:
 
 Como está na <a href="https://pagseguro.uol.com.br/v2/guia-de-integracao/consulta-de-transacoes-por-codigo.html#v2-item-consulta-de-transacoes-por-codigo-parametros-resposta" target="_blank">tabela de parâmetros de resposta do PagSeguro</a>:
 

@@ -1,6 +1,6 @@
 ---
 id: 336
-title: 'Consultar frete utilizando webservice dos correios &#8211; PHP'
+title: 'Consultar frete utilizando webservice dos correios - PHP'
 date: 2012-02-08T07:48:51+00:00
 author: Sena
 layout: post
@@ -32,11 +32,11 @@ Código da sua empresa, se você tiver contrato com os correios saberá qual é 
 
 {% highlight php linenos %}$data['nCdEmpresa'] = '';{% endhighlight %} 
 
-Senha de acesso ao serviço. Geralmente é os 8 primeiros números do CNPJ correspondente ao código administrativo, caso não tiver é só passar o parâmetro em branco – Se quiser alterar a senha é só clicar aqui &#8211; http://www.corporativo.correios.com.br/encomendas/servicosonline/recuperaSenha
+Senha de acesso ao serviço. Geralmente é os 8 primeiros números do CNPJ correspondente ao código administrativo, caso não tiver é só passar o parâmetro em branco – Se quiser alterar a senha é só clicar aqui - http://www.corporativo.correios.com.br/encomendas/servicosonline/recuperaSenha
 
 {% highlight php linenos %}$data['sDsSenha'] = '';{% endhighlight %} 
 
-Um agora acho que o item mais importante que é o CEP de origem, no caso o CEP de onde sai à encomenda. Esse parametro precisa ser numérico, ou seja, você deverá formatar ele para que não entre o &#8220;-&#8221; (hífen) espaços ou algo diferente de um número.
+Um agora acho que o item mais importante que é o CEP de origem, no caso o CEP de onde sai à encomenda. Esse parametro precisa ser numérico, ou seja, você deverá formatar ele para que não entre o "-" (hífen) espaços ou algo diferente de um número.
 
 {% highlight php linenos %}$data['sCepOrigem'] = '43820080';{% endhighlight %} 
 
@@ -59,7 +59,7 @@ O comprimento, altura, largura e diametro deverá ser informado em centímetros 
  $data['nVlLargura'] = '15';
  $data['nVlDiametro'] = '0';{% endhighlight %} 
 
-Mão própria, nesse parâmetro você informa se quer a encomenda deverá ser entregue somente para uma determinada pessoa após confirmação por RG. Use &#8220;s&#8221; para declarar e &#8220;n&#8221; para não declarar.
+Mão própria, nesse parâmetro você informa se quer a encomenda deverá ser entregue somente para uma determinada pessoa após confirmação por RG. Use "s" para declarar e "n" para não declarar.
 
 {% highlight php linenos %}$data['sCdMaoPropria'] = 's';{% endhighlight %} 
 
@@ -67,9 +67,9 @@ O valor declarado serve para o caso de sua encomenda extraviar, então você pod
 
 {% highlight php linenos %}$data['nVlValorDeclarado'] = '200';{% endhighlight %} 
 
-Mão própria, nesse parâmetro você informa se quer a encomenda deverá ser entregue somente para uma determinada pessoa após confirmação por RG. Use &#8220;s&#8221;para declarar e &#8220;n&#8221; para não declarar
+Mão própria, nesse parâmetro você informa se quer a encomenda deverá ser entregue somente para uma determinada pessoa após confirmação por RG. Use "s"para declarar e "n" para não declarar
   
-No parâmetro aviso de recebimento, você informa se quer ser avisado sobre a entrega da encomenda. Para não avisar use &#8220;n&#8221;, para avisar use &#8220;s&#8221;.
+No parâmetro aviso de recebimento, você informa se quer ser avisado sobre a entrega da encomenda. Para não avisar use "n", para avisar use "s".
 
 {% highlight php linenos %}$data['sCdAvisoRecebimento'] = 'n';{% endhighlight %} 
 
@@ -153,7 +153,7 @@ Simples: Usaremos um **foreach** para percorrer todos os serviços solicitados 
 
 Agora dentro do **foreach** podemos pegar os dados de cada serviço o qual estará em **$row**
 
-Código do Serviço de Entrega &#8211; É o valor que você passou em nCdServico.
+Código do Serviço de Entrega - É o valor que você passou em nCdServico.
 
 {% highlight php linenos %}echo $row -> Codigo;{% endhighlight %} 
 

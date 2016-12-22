@@ -16,7 +16,7 @@ tags:
   - PagSeguro
 ---
 <p style="text-align: left;">
-  Tenho visto na internet muita gente reclamando que ao tentar implantar o PagSeguro no sistema é exibido o erro: &#8220;Transação inválida. Sempre inicie transações a partir de sites confiáveis.&#8221;<!--more-->
+  Tenho visto na internet muita gente reclamando que ao tentar implantar o PagSeguro no sistema é exibido o erro: "Transação inválida. Sempre inicie transações a partir de sites confiáveis."<!--more-->
 </p>
 
 <p style="text-align: left;">
@@ -26,7 +26,7 @@ tags:
 No dia 3 de agosto o PagSeguro lançou as famosas API, uma delas é a de pagamento, onde a finalidade é fazer uma integração mais dinâmica e ao mesmo tempo segura. O fato é que junto com o lançamento dessa API foi liberado uma opção que permite que a conta receba apenas pagamento usando essa nova API e demonstrarei abaixo o procedimento completo para corrigir o erro mostrado acima.
 
 <p style="text-align: left;">
-  <strong>1 &#8211; Acesse sua conta do PagSeguro &#8211; <a href="https://pagseguro.uol.com.br/">https://pagseguro.uol.com.br/</a></strong>
+  <strong>1 - Acesse sua conta do PagSeguro - <a href="https://pagseguro.uol.com.br/">https://pagseguro.uol.com.br/</a></strong>
 </p>
 
 <p style="text-align: center;">
@@ -34,7 +34,7 @@ No dia 3 de agosto o PagSeguro lançou as famosas API, uma delas é a de pagamen
 </p>
 
 <p style="text-align: left;">
-  <strong>Acesse no menu a opção &#8220;Integrações&#8221;.</strong>
+  <strong>Acesse no menu a opção "Integrações".</strong>
 </p>
 
 <p style="text-align: center;">
@@ -42,11 +42,11 @@ No dia 3 de agosto o PagSeguro lançou as famosas API, uma delas é a de pagamen
 </p>
 
 <p style="text-align: left;">
-  <strong>Escolha &#8220;Pagamentos via API&#8221;</strong>
+  <strong>Escolha "Pagamentos via API"</strong>
 </p>
 
 <p style="text-align: center;">
-  <img class="aligncenter" style="border: 1px solid black;" title="Menu - Integrações - Pagamento Via API" src="./uploads/2011/09/MenuIntegracoes_PagamentoViaAPI.jpg" alt="Menu - Integrações - Pagamento Via API" width="218" height="476" /><br /> <strong>Desmarque a opção &#8220;Quero receber somente pagamentos via API&#8221;.</strong>
+  <img class="aligncenter" style="border: 1px solid black;" title="Menu - Integrações - Pagamento Via API" src="./uploads/2011/09/MenuIntegracoes_PagamentoViaAPI.jpg" alt="Menu - Integrações - Pagamento Via API" width="218" height="476" /><br /> <strong>Desmarque a opção "Quero receber somente pagamentos via API".</strong>
 </p>
 
 <p style="text-align: center;">

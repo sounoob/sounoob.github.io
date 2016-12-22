@@ -44,7 +44,7 @@ Okay, não sei defender este quesito, mas se você usar postas especificas em su
 
 ### Grave logs de tudo que seja possível (de preferência em arquivo de texto).
 
-Espere. Antes de gravar logs, verifique se sua aplicação consegue gravar log, primeiro tenha na sua pagina APENAS uma instrução onde grava um teste de log. Exemplo: &#8220;Teste de log&#8221;. Realize o teste, se sua aplicação conseguir fazer esta tarefa então próximo passo é mandar gravar todos POSTs e GETs, assim você saberá o que está chegando via POST e o que está chegando via GET. PS: Se você usa PHP clique aqui e veja <a title="Escrevendo um arquivo de texto, usando PHP" href="./escrevendo-um-arquivo-de-texto-usando-php/" target="_blank">como gravar arquivo de log</a>.
+Espere. Antes de gravar logs, verifique se sua aplicação consegue gravar log, primeiro tenha na sua pagina APENAS uma instrução onde grava um teste de log. Exemplo: "Teste de log". Realize o teste, se sua aplicação conseguir fazer esta tarefa então próximo passo é mandar gravar todos POSTs e GETs, assim você saberá o que está chegando via POST e o que está chegando via GET. PS: Se você usa PHP clique aqui e veja <a title="Escrevendo um arquivo de texto, usando PHP" href="./escrevendo-um-arquivo-de-texto-usando-php/" target="_blank">como gravar arquivo de log</a>.
 
 ### Seu próprio teste.
 

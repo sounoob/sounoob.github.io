@@ -17,7 +17,7 @@ tags:
   - API PagSeguro
   - PagSeguro
 ---
-Desde que a API de pagamentos do PagSeguro foi lançada, alguns desenvolvedores reportaram erros como &#8220;senderName invalid&#8221;, o que já está se tornado um pouco comum a cada dia.
+Desde que a API de pagamentos do PagSeguro foi lançada, alguns desenvolvedores reportaram erros como "senderName invalid", o que já está se tornado um pouco comum a cada dia.
 
 Esse erro ocorre sempre que o nome do comprador é diferente do padrão estabelecido pelo PagSeguro, que é Nome + sobrenome, sem espaços duplicados e obrigatoriamente deve ter apenas letras e espaços, nada de números, o que é até coerente, desde que seu sistema esteja preparado para isso.
 
@@ -59,7 +59,7 @@ Perfeito agora sim não ocorrerá nenhum erro relacionado ao nome, juntaremos to
 
 {% highlight php linenos %}$name = implode(' ', $name);{% endhighlight %} 
 
-Pronto agora nunca mais você terá um erro [HTTP 400] &#8211; BAD_REQUEST [11011] &#8211; senderName invalid length ou [11012] &#8211; senderName invalid value
+Pronto agora nunca mais você terá um erro [HTTP 400] - BAD_REQUEST [11011] - senderName invalid length ou [11012] - senderName invalid value
 
 Veja o código na integra como fica:
 

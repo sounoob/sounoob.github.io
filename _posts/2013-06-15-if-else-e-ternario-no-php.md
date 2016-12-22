@@ -15,7 +15,7 @@ dsq_needs_sync:
 categories:
   - Aulas
 ---
-If, else e o ternário sem dúvida o são os recursos mais utilizados no PHP e na maioria das linguagens, afinal é o que deixa o sistema mais &#8220;inteligente&#8221;, afim de o código tomar algumas decisões com base as condições que foi previamente programado.<!--more-->
+If, else e o ternário sem dúvida o são os recursos mais utilizados no PHP e na maioria das linguagens, afinal é o que deixa o sistema mais "inteligente", afim de o código tomar algumas decisões com base as condições que foi previamente programado.<!--more-->
 
 
   
@@ -23,7 +23,7 @@ If, else e o ternário sem dúvida o são os recursos mais utilizados no PHP e n
 
 ### Vou começar explicando o if.
 
-Imagine que você tem uma variável chamada nome, o qual poderá conter qualquer nome. Para todo mundo você deverá mostrar o texto &#8220;You shall not pass&#8221;, porém se o valor foi igual à &#8220;Gandalf&#8221;, então, você irá mostrar o texto: &#8220;Welcome&#8221;.
+Imagine que você tem uma variável chamada nome, o qual poderá conter qualquer nome. Para todo mundo você deverá mostrar o texto "You shall not pass", porém se o valor foi igual à "Gandalf", então, você irá mostrar o texto: "Welcome".
 
 Com o **if** isso é possível de forma muito simples. Basta escrever **if** depois entre parenteses você inclui a condição especifica, logo em seguida entre chaves você inclui o que quer que seja feito caso a condição seja verdadeira. Veja o exemplo abaixo:
 
@@ -35,13 +35,13 @@ if($nome == 'Gandalf'){
 }
 echo $nome . ', ' . $saudacao;{% endhighlight %} 
 
-Vou tentar explicar esse pedaço de código: 1º linha criamos uma variável que foi atribuído para ela um o texto &#8220;Gandalf&#8221;; 2º Linha criamos outra variável com uma saudação &#8220;You shall not pass&#8221;; 3º Linha que deixamos o sistema um pouco mais &#8220;inteligente&#8221;, fazendo a verificação se o conteúdo da variável é igual ao texto &#8220;Gandalf&#8221;; 4º Linha alteramos o conteúdo da variável para &#8220;Welcome&#8221;; 6º Linha mostramos na tela o conteúdo da variável **$nome** seguido de virgula depois o conteúdo da variável **$saudacao**;
+Vou tentar explicar esse pedaço de código: 1º linha criamos uma variável que foi atribuído para ela um o texto "Gandalf"; 2º Linha criamos outra variável com uma saudação "You shall not pass"; 3º Linha que deixamos o sistema um pouco mais "inteligente", fazendo a verificação se o conteúdo da variável é igual ao texto "Gandalf"; 4º Linha alteramos o conteúdo da variável para "Welcome"; 6º Linha mostramos na tela o conteúdo da variável **$nome** seguido de virgula depois o conteúdo da variável **$saudacao**;
 
-Se você executar esse código provavelmente terá um texto na sua tela &#8220;Balrog, You shall not pass&#8221;.
+Se você executar esse código provavelmente terá um texto na sua tela "Balrog, You shall not pass".
 
 O que ocorreu?
   
-O conteúdo da variável foi diferente da condição imposta, tente alterar na linha 1 o conteúdo da variável **$nome** para &#8220;Gandalf&#8221; e veja o que acontece.
+O conteúdo da variável foi diferente da condição imposta, tente alterar na linha 1 o conteúdo da variável **$nome** para "Gandalf" e veja o que acontece.
 
 Você deve ter notado que utilizamos duas vezes o sinal de = no momento da condição, dai você lembrou do [operador de atribuição](./operadores-de-atribuicao-no-php/ "Operadores de Atribuição no PHP") e deve estar se perguntando <del style="color: #ff0000;" datetime="2013-06-15T16:11:18+00:00">WTF is it?</del> o que é isso? Não criemos pânico, deixe me explicar: Quando utilizamos somente um sinal de igual (=) estamos atribuindo algo para a variável, quando utilizamos dois sinais de iguais (**==**) então estamos comparando o que está a direita, com o que está na esquerda, o resultado disso será um valor booleano (TRUE ou FALSE).
 
