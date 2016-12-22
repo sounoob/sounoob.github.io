@@ -1,4 +1,18 @@
-theme: jekyll-theme-cayman
-title: [SouNoob]
-description: [Este blog é para essas pessoas que vivem estudando coisas complexas e esquecem de como fazer as coisas mais simples.]
-google_analytics: [UA-5016269-14]
+# Setup
+title: SouNoob
+tagline: A responsive theme for your project on GitHub Pages
+description: Este blog é para essas pessoas que vivem estudando coisas complexas e esquecem de como fazer as coisas mais simples.
+google_analytics: UA-5016269-14
+baseurl: ""
+paginate: 5
+dateformat: "%d-%m-%Y"
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
+
+permalink: /:title
+category_dir: topics
