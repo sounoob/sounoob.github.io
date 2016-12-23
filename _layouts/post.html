@@ -1,26 +1,45 @@
 ---
 layout: default
 ---
-<h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
+<div class="box">
+    {% if page.image %}
+    <div class="post_image">
+        <a href="{{ post.url }}" title="{{ page.title }}">
+            <img src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}">
+        </a>
+    </div>
+    {% endif %}
 
-<p class="meta">{{ post.date | date: site.dateformat }}</p>
-{{ content }}
+    <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
 
-<div class="addthis_inline_share_toolbox"></div>
+    {{ content }}
 
+    <div class="addthis_inline_share_toolbox"></div>
+
+    <div class="footer">
+        <p>Publicado em: {{ page.date | date: site.dateformat }}</span> por {{ page.author }}</p>
+        Tags:
+        <span class="tag-list">
+                {% for tag in page.tags %}
+                <span><a href="tag#{{ tag | slugify }}" title="{{ tag }}">{{ tag }}</a></span>
+                {% endfor %}
+            </span>
+    </div>
+</div>
 {% if site.comments %}
-<div id="disqus_thread"></div>
-<script>
-var disqus_config = function () {
-this.page.url = "{{ site.url }}{{ page.url }}";
-};
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//sounoob.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
+<div class="box">
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = "{{ site.url }}{{ page.url }}";
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = '//sounoob.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
 {% endif %}

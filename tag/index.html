@@ -1,0 +1,23 @@
+---
+layout: default
+---
+{% capture tags %}
+{% for tag in site.tags %}
+{{ tag[0] }}
+{% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | newline_to_br | strip_newlines | split:'<br />' | uniq | sort %}
+<div class="tag-list">
+    {% for tag in sortedtags %}
+    <div class="box" id="{{ tag | slugify }}">
+    <h3>
+        <a href="tag#{{ tag | slugify }}">{{ tag }}</a>
+    </h3>
+    <ul>
+        {% for post in site.tags[tag] %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+    </ul>
+    </div>
+    {% endfor %}
+</div>
