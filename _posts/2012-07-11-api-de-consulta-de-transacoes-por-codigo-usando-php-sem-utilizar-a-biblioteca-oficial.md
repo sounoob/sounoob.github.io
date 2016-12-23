@@ -99,7 +99,7 @@ if(count($transaction -> error) > 0) {
 }
 echo $transaction -> sender -> email;{% endhighlight %} 
 
-Bom acho que é isso&#8230; Qualquer dúvida postem nos comentários abaixo. Curtiu, gostou e quer ajudar o projeto não esqueça de fazer sua doação 🙂
+Bom acho que é isso… Qualquer dúvida postem nos comentários abaixo. Curtiu, gostou e quer ajudar o projeto não esqueça de fazer sua doação 🙂
 
 Veja outros posts como este aqui:
   

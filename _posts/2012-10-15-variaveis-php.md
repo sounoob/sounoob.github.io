@@ -34,8 +34,8 @@ No PHP temos algumas regrinhas quanto as variáveis, veja abaixo algumas delas:
   
     $variavel_14 = "Olá, Eu sou Goku"; //Correto{% endhighlight %} 
   * As variável são case sensitive, ou seja, **$variavel** será diferente **$Variavel**
-  * Não use o **$this**, o PHP reservou essa variável para alguns casos específicos. Mas&#8230; como falado anteriormente
-  * Até poderá usar acentuação para definir uma variável, isso irá funcionar<del style="color: #f00;" datetime="2013-06-12T21:39:10+00:00">, é a coisa mais nojenta de ser ver, mas&#8230; funciona</del> porem evite ao máximo fazer isso. Primeiro que é feio, segundo que poderá ocorrer erros dependendo do formato que você for salvar o arquivo.
+  * Não use o **$this**, o PHP reservou essa variável para alguns casos específicos. Mas… como falado anteriormente
+  * Até poderá usar acentuação para definir uma variável, isso irá funcionar<del style="color: #f00;" datetime="2013-06-12T21:39:10+00:00">, é a coisa mais nojenta de ser ver, mas… funciona</del> porem evite ao máximo fazer isso. Primeiro que é feio, segundo que poderá ocorrer erros dependendo do formato que você for salvar o arquivo.
 
 Para não mostrar o conteúdo da variável na tela usaremos o echo seguido da variável como mostrado no exemplo abaixo:
 
@@ -69,7 +69,7 @@ Lembre-se, um nome de variável não pode conter espaços, logo, se você prec
 
 {% highlight php linenos %}$minhaVariavelComNomeComposto = "Olá, Eu sou Goky";{% endhighlight %} 
 
-Até a próxima&#8230;
+Até a próxima…
 
 Veja outros posts como este aqui:
   

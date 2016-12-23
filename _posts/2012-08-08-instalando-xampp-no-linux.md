@@ -16,17 +16,15 @@ categories:
 tags:
   - xampp
 ---
-No Linux é bem mais fácil configurar um interpretador PHP (apache), e que para alegria dos nerds uma linha de comando resolveria a situação. Mas&#8230; Eu gosto muito do XAMPP e nesse tutorial vou mostrar como é simples instalar o XAMPP no Linux também&#8230;<!--more-->
+No Linux é bem mais fácil configurar um interpretador PHP (apache), e que para alegria dos nerds uma linha de comando resolveria a situação. Mas… Eu gosto muito do XAMPP e nesse tutorial vou mostrar como é simples instalar o XAMPP no Linux também…<!--more-->
 
   1. Baixe o arquivo do XAMPP. <a title="XAMPP versão 1.8 para linux" href="http://www.apachefriends.org/download.php?xampp-linux-1.8.0.tar.gz" target="_blank">http://www.apachefriends.org/download.php?xampp-linux-1.8.0.tar.gz</a>
   2. Usando o terminal navegue até a pasta onde foi realizado o download e descompacte o arquivo para o diretório /opt.
-  
-    Você poderá descompacatar e mover usando o comando abaixo:</p> 
+    Você poderá descompacatar e mover usando o comando abaixo:
     {% highlight php linenos %}sudo tar xvfz xampp-linux-1.8.0.tar.gz -C /opt{% endhighlight %} 
 
   3. Caso você esteja utilizando Ubuntu 64 bits será necessário baixar uma biblioteca adicional para fazer o XAMPP funcionar, para isso digite a comando abaixo no terminal: 
     {% highlight php linenos %}sudo apt-get install ia32-libs{% endhighlight %} 
-    
     Caso o sistema solicite confirmação para baixar arquivos adicionais confirme digitando Y.</li> 
     
       * Com o terminal acessando o arquivo lampp dentro da pasta lampp dentro de /opt, use o parâmetro start para iniciar e stop para finalizar, lembre-se de executar esses comandos como administrador.

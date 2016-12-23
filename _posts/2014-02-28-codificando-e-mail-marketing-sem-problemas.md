@@ -21,7 +21,7 @@ tags:
 ---
 Uma coisa eu odiava mais do que o IE6 <del style="color: #ff0000;">(e o funk)</del> era criar um e-mail marketing e fazer funcionar "bonitinho" em todos clientes de e-mail.
 
-Parte do meu trabalho <del style="color: #ff0000;">(Sim meu blog não paga minhas contas então tenho que trabalhar) XD</del> era fazer um monte destes e-mail marketing e como sou muito noob em relação a isso tudo, sofri bastante com e-mails com assuntos do tipo: _"E-mail marketing quebrado", "E-mail marketing sem formatação", "E-mail marketing com espaços entre as imagens"&#8230;_ nem preciso dizer que a lista de reclamações é imensa&#8230; foi por isso que gastei alguns milésimos de segundos do meu dia em pesquisas para evitar que o telefone toque, vou tentar passar algumas dicas afim de vocês também evitarem esses problemas.<!--more-->
+Parte do meu trabalho <del style="color: #ff0000;">(Sim meu blog não paga minhas contas então tenho que trabalhar) XD</del> era fazer um monte destes e-mail marketing e como sou muito noob em relação a isso tudo, sofri bastante com e-mails com assuntos do tipo: _"E-mail marketing quebrado", "E-mail marketing sem formatação", "E-mail marketing com espaços entre as imagens"…_ nem preciso dizer que a lista de reclamações é imensa… foi por isso que gastei alguns milésimos de segundos do meu dia em pesquisas para evitar que o telefone toque, vou tentar passar algumas dicas afim de vocês também evitarem esses problemas.<!--more-->
 
 ### Nada de sair "Fatiando"
 
@@ -45,16 +45,16 @@ Nunca use uma folha de estilo externa, procure utilizar sempre de forma inline, 
 
 ### Imagens - E se não carregar?
 
-Com o problema do uso limitado do CSS, muita gente acaba abusando das imagens, quando o único trabalho é que fazem é "Fatiar a arte" e dizer que o e-mail marketing está pronto. Não faça isso, os clientes de e-mail por padrão irão bloquear todas imagens dos e-mails até que quem estiver acessando marque a opção que deseja ver essas imagens&#8230; O que fazer? Utilize o mínimo de imagens possível, e sempre use o atributo **alt** para descrever o que essas imagens representa, assim quando alguém não visualizar a imagem, poderá ter uma noção do que deveria estar ali.
+Com o problema do uso limitado do CSS, muita gente acaba abusando das imagens, quando o único trabalho é que fazem é "Fatiar a arte" e dizer que o e-mail marketing está pronto. Não faça isso, os clientes de e-mail por padrão irão bloquear todas imagens dos e-mails até que quem estiver acessando marque a opção que deseja ver essas imagens… O que fazer? Utilize o mínimo de imagens possível, e sempre use o atributo **alt** para descrever o que essas imagens representa, assim quando alguém não visualizar a imagem, poderá ter uma noção do que deveria estar ali.
 
 ### Nada de Javascript, Flash, Vídeo e Formulários
 
-Por questões de segurança e privacidade os clientes de e-mails geralmente irão bater de frente contra isso&#8230;
+Por questões de segurança e privacidade os clientes de e-mails geralmente irão bater de frente contra isso…
 
 ### E-mail marketing não é um site.
 
-Acho que o item mais importante é saber seria este. Porque quem está acostumado desenvolver sites, provavelmente tudo que vai fazer já pensa em utilizar vários recursos do HTML 5, CSS3&#8230; Esqueça tudo isso, e volte alguns anos antes, quando a tag **<table>** reinava. Este será seu novo jeito de desenvolver HTML.
+Acho que o item mais importante é saber seria este. Porque quem está acostumado desenvolver sites, provavelmente tudo que vai fazer já pensa em utilizar vários recursos do HTML 5, CSS3… Esqueça tudo isso, e volte alguns anos antes, quando a tag **<table>** reinava. Este será seu novo jeito de desenvolver HTML.
 
-E lembre-se a ideia do e-mail marketing é mostrar alguma novidade para os leitores, só isso&#8230;
+E lembre-se a ideia do e-mail marketing é mostrar alguma novidade para os leitores, só isso…
 
-Bom acho que em resumo é isso&#8230; Quem tiver mais dicas, é só postar aqui em baixo.
+Bom acho que em resumo é isso… Quem tiver mais dicas, é só postar aqui em baixo.

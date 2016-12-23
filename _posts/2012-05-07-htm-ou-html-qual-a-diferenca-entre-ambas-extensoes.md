@@ -24,4 +24,4 @@ Com o Windows 95/98 os arquivos podiam utilizar até 256 caracteres logo as exte
 
 Agora pense comigo, passaram 14 anos e será muito difícil encontrar um servidor usando Windows 95 ou algo anterior a ele. Realmente vale a pena continuar usando o modo de compatibilidade?
 
-Em resumo, a diferença entre o html e o html são apenas 14 anos&#8230; você ainda vai continuar alimentando esse museu?
+Em resumo, a diferença entre o html e o html são apenas 14 anos… você ainda vai continuar alimentando esse museu?

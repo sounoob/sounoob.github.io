@@ -27,7 +27,7 @@ Os outros operadores de atribuição vamos descobrir juntos, antes disso vamos r
   
 $variavel = $variavel + 10;{% endhighlight %} 
 
-Criamos uma variável e incluímos o valor número 4 para ela, na linha abaixo pegamos o valor da variável (4) e adicionamos 10 e o resultado atribuímos para a mesma variável, o código irá funcionar normalmente, resultando em 14, mas&#8230; poderíamos fazer de uma outra forma mais simples. Veja no exemplo abaixo:
+Criamos uma variável e incluímos o valor número 4 para ela, na linha abaixo pegamos o valor da variável (4) e adicionamos 10 e o resultado atribuímos para a mesma variável, o código irá funcionar normalmente, resultando em 14, mas… poderíamos fazer de uma outra forma mais simples. Veja no exemplo abaixo:
 
 {% highlight php linenos %}$variavel = 4;
   
@@ -71,7 +71,7 @@ echo $variavel;{% endhighlight %}
 
 No código acima utilizamos uma única variável e adicionamos vários pedaços de textos, e ao final mandamos esse texto ser mostrado na tela. Note que o texto é mostrado por completo.
 
-Até a próxima&#8230;
+Até a próxima…
 
 Veja outros posts como este aqui:
   

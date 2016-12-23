@@ -18,7 +18,7 @@ tags:
 ---
 Muito utilizado nos e-commerces é a função para calculo de frete, o que dizer de uma loja virtual que não realiza calculo de frete automaticamente, seria péssimo para as vendas, né? Pois bem, você precisa apenas saber que é fácil e que não precisa pagar por esse serviço. Seu sistema poderá realizar a consulta diretamente nos correios de forma totalmente gratuita. Claro que você pode contratar os serviços dos correios, porem nesse caso já é outra história.<!--more-->
 
-Vamos ao que interessa&#8230;
+Vamos ao que interessa…
 
 Para esse script vamos utilizar a função do cURL para enviar os dados para os correios, e ao receber utilizaremos o simplexml\_load\_string para dar aquela ajudinha na hora de manipular os elementos.
 
@@ -28,7 +28,7 @@ Para o nosso cenário não iremos trabalhar dessa forma porque o código irá fi
 
 Do que o correios precisa?
 
-Código da sua empresa, se você tiver contrato com os correios saberá qual é esse código&#8230; Ele é opcional, se não tiver apenas envie o parâmetro em branco.
+Código da sua empresa, se você tiver contrato com os correios saberá qual é esse código… Ele é opcional, se não tiver apenas envie o parâmetro em branco.
 
 {% highlight php linenos %}$data['nCdEmpresa'] = '';{% endhighlight %} 
 
@@ -193,7 +193,7 @@ Descrição do erro (caso houver).
 
 {% highlight php linenos %}echo $row -> MsgErro;{% endhighlight %} 
 
-Como sempre, segue o código na integra&#8230;
+Como sempre, segue o código na integra…
 
 {% highlight php linenos %}<?php
  $data['nCdEmpresa'] = '';
@@ -238,6 +238,6 @@ Como sempre, segue o código na integra&#8230;
  echo '<hr>';
  }{% endhighlight %} 
 
-Só lembrando que caso houver dúvidas é só comentar que tentei ajudar até onde for possivel&#8230;
+Só lembrando que caso houver dúvidas é só comentar que tentei ajudar até onde for possivel…
 
-Curtiu? Então faz a doação para ajudar o blog&#8230; Não gostou? Manda sugestão que tentaremos melhorar.
+Curtiu? Então faz a doação para ajudar o blog… Não gostou? Manda sugestão que tentaremos melhorar.

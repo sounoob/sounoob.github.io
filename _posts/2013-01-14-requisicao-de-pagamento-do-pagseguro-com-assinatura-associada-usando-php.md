@@ -93,7 +93,7 @@ Utilize esse campo caso no parâmetro **preApprovalPeriod **esteja configurado
 
 {% highlight php linenos %}<initialDate>2015-01-17T19:20:30.45-03:00</initialDate>{% endhighlight %} 
 
-Esse é um parâmetro interessante, ele define quando que será o inicio da vigência da assinatura, assim seu sistema poderá enviar todos dados para o PagSeguro e só começar a cobrar tempos depois, será muito útil em promoções do tipo, compre agora e comece a pagar somente depois do carnaval&#8230;
+Esse é um parâmetro interessante, ele define quando que será o inicio da vigência da assinatura, assim seu sistema poderá enviar todos dados para o PagSeguro e só começar a cobrar tempos depois, será muito útil em promoções do tipo, compre agora e comece a pagar somente depois do carnaval…
   
 Valores desse parâmetro deve seguir o formato **YYYY-MM-DDThh:mm:ss.sTZD** <a title="clique para ver regras veja detalhes no site W3C" href="http://www.w3.org/TR/NOTE-datetime" target="_blank">clique para ver regras veja detalhes no site W3C</a>, lembrando que a data não deverá ser inferior a data atual, e não poderá ser superior a dois anos da data atual.
 
@@ -119,7 +119,7 @@ Nesse parâmetro deve ser informado qual valor total máximo que o PagSeguro ir�
 
 {% highlight php linenos %}<reviewURL>http://sounoob.com.br/produto1</reviewURL>{% endhighlight %} 
 
-Na documentação esse parâmetros deveria ser para informar a URL onde o usuário possa ver as regras da assinatura, mas&#8230; depois de testes eu vi que esse link aparece em: "Assinatura - alterar", sendo assim ele possivelmente possa ser utilizado para dar outras opções ao assinante, como alteração de datas e afins&#8230;
+Na documentação esse parâmetros deveria ser para informar a URL onde o usuário possa ver as regras da assinatura, mas… depois de testes eu vi que esse link aparece em: "Assinatura - alterar", sendo assim ele possivelmente possa ser utilizado para dar outras opções ao assinante, como alteração de datas e afins…
 
 Enfim, suponhamos que temos que criar uma assinatura com periodicidade semanal nosso array **$data** estaria com os seguintes campos adicionais:
 

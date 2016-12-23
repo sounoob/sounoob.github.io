@@ -13,9 +13,9 @@ dsq_thread_id:
 categories:
   - Comunicados
 ---
-Estava pensando sobre o conteúdo do meu blog, e me deparei na seguinte questão&#8230; como posso ter um blog voltado para pessoas noobs e passar um tutorial para elas montarem algo, sem antes explicar ao menos o basico de PHP? Pos é, realmente é necessário eu parar e começar do inicio&#8230;
+Estava pensando sobre o conteúdo do meu blog, e me deparei na seguinte questão… como posso ter um blog voltado para pessoas noobs e passar um tutorial para elas montarem algo, sem antes explicar ao menos o basico de PHP? Pos é, realmente é necessário eu parar e começar do inicio…
 
-Espero manter isso o mais simples possível, não sei explicar nada para ninguem então tentarei do meu jeito confuso de sempre&#8230; Para quem está começando agora não preciso que vocês saibam nada&#8230; apenas tenham vontade de aprender, o que aparecer de duvidas podemos achar uma solução juntos.
+Espero manter isso o mais simples possível, não sei explicar nada para ninguem então tentarei do meu jeito confuso de sempre… Para quem está começando agora não preciso que vocês saibam nada… apenas tenham vontade de aprender, o que aparecer de duvidas podemos achar uma solução juntos.
   
 <!--more-->
 
@@ -36,5 +36,5 @@ Vou usar esse post como índice das aulas, então acompanhem aqui quais estão d
   8. <a title="Operadores de Atribuição no PHP" href="./operadores-de-atribuicao-no-php/" target="_blank">Operadores de Atribuição</a>
   9. Estrutura de controle básica 
       * <a title="If, else e ternário no PHP" href="./if-else-e-ternario-no-php/" target="_blank">If, else e ternário</a>
-      * Elseif <span style="color: #ff0000;"><del style="line-height: 22px;">no forno&#8230;</del></span>
- 10. Incremento e Decremento <span style="color: #ff0000;"><del style="line-height: 22px;">no forno&#8230;</del></span>
+      * Elseif <span style="color: #ff0000;"><del style="line-height: 22px;">no forno…</del></span>
+ 10. Incremento e Decremento <span style="color: #ff0000;"><del style="line-height: 22px;">no forno…</del></span>

@@ -16,7 +16,7 @@ categories:
 tags:
   - PagSeguro
 ---
-Já faz muito tempo que vejo frases como estas em fóruns, a maioria são ditas por <del style="color: #ff0000;">pseudo-</del>desenvolvedores que já estão putos da vida pelo fato de não entender o motivo de não estar recebendo posts do PagSeguro. Então&#8230; vou tentar ajudar, listando alguns passos que devem ser seguidos, serão apenas alguns testes simples mas que poderão fazer a diferença futuramente.<!--more-->
+Já faz muito tempo que vejo frases como estas em fóruns, a maioria são ditas por <del style="color: #ff0000;">pseudo-</del>desenvolvedores que já estão putos da vida pelo fato de não entender o motivo de não estar recebendo posts do PagSeguro. Então… vou tentar ajudar, listando alguns passos que devem ser seguidos, serão apenas alguns testes simples mas que poderão fazer a diferença futuramente.<!--more-->
 
 ### Faça uma coisa de cada vez
 
@@ -32,7 +32,7 @@ Muita gente comete um erro grave ter uma URL para receber informações, e redir
 
 ### Não tenha regras no firewall
 
-Como citado no item anterior a URL deve ser acessível, mas isso não vale aplicar uma restrição para um IP ou para quem segue determinado caminho em seu sistema ou por uso de senhas&#8230; a URL deve ser acessível de forma instantânea para qualquer host externo. Esqueça a parte de segurança frenética que você tenha em seu servidor, para esta URL em especifica não poderá ter nenhuma restrição de acesso por parte do seu servidor.
+Como citado no item anterior a URL deve ser acessível, mas isso não vale aplicar uma restrição para um IP ou para quem segue determinado caminho em seu sistema ou por uso de senhas… a URL deve ser acessível de forma instantânea para qualquer host externo. Esqueça a parte de segurança frenética que você tenha em seu servidor, para esta URL em especifica não poderá ter nenhuma restrição de acesso por parte do seu servidor.
 
 ### Seja amigo dos _robots_
 

@@ -22,7 +22,7 @@ Depois de todos pedirem, depois de muito código, depois de muitos testes, enfim
 
 **Oh Wait,  o que é essa tal de Recorrência ?**
   
-Sabe a mensalidade que você paga da sua Internet, TV a cabo ou algo similar? Então, é isso&#8230;
+Sabe a mensalidade que você paga da sua Internet, TV a cabo ou algo similar? Então, é isso…
   
 Você fala que quer usar o serviço apenas uma vez, e todo mês chega a cobrança. No PagSeguro agora tem isso.<!--more-->
 

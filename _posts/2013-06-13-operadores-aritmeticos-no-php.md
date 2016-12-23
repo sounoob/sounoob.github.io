@@ -13,7 +13,7 @@ dsq_thread_id:
 categories:
   - Aulas
 ---
-Se você não sabe o que são os "Operadores Aritméticos" significa que você provavelmente fugiu da escola&#8230; Bom isso não importa, tentarei mostrar no PHP como usá-los de uma forma bem simples.
+Se você não sabe o que são os "Operadores Aritméticos" significa que você provavelmente fugiu da escola… Bom isso não importa, tentarei mostrar no PHP como usá-los de uma forma bem simples.
 
 Para você que não sabe, operadores aritméticos são simbolos que representam alguma coisa na matemática, dentre elas a adição (**+**), subtração (**-**), multiplicação (*****) e divisão (**/**). No caso do PHP incluiremos o simbolo **%** que representará o resto da divisão.<!--more-->
 

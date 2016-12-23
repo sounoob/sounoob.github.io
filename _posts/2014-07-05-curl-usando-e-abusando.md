@@ -73,7 +73,7 @@ $url = 'http://sounoob.com.br/labs/testeCurl.php?' . http_build_query($queryStri
 //envia a URL como parâmetro para o cURL;
 curl_setopt($ch, CURLOPT_URL, $url);{% endhighlight %} 
 
-Melhor assim né? Outros quem for dar manutenção ao seu código irá agradecer também&#8230;
+Melhor assim né? Outros quem for dar manutenção ao seu código irá agradecer também…
 
 ## Enviando via POST
 
@@ -105,7 +105,7 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
 curl_setopt($ch, CURLOPT_HTTPHEADER, Array('Content-Type: application/xml; charset=utf-8'));
 {% endhighlight %} 
 
-Algumas vezes alguns servidores possuem certificados de segurança e o cURL possui a opção de verificar se estes certificados é valido ou não. Não iremos abordar isso neste tutorial, mas&#8230; se precisar fazer uma conexão segura, desative a verificação SSL (Mas procure aprender futuramente sobre isso)
+Algumas vezes alguns servidores possuem certificados de segurança e o cURL possui a opção de verificar se estes certificados é valido ou não. Não iremos abordar isso neste tutorial, mas… se precisar fazer uma conexão segura, desative a verificação SSL (Mas procure aprender futuramente sobre isso)
 
 {% highlight php linenos %}curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);{% endhighlight %} 
 

@@ -22,7 +22,7 @@ Primeiro você deve configurar sua URL na sua conta do PagSeguro para receber o 
 
 Para fazer a comunicação com o PagSeguro vamos usar a biblioteca do CURL, e a função simplexml\_load\_string  para transformar o XML em objeto, para manipular facilmente.
 
-A primeira coisa e a mais importante a saber é, o PagSeguro envia esses dados via POST em uma outra sessão, e você não irá conseguir imprimir isso na tela ( usar **echo**, **print_r**, **var_dump**&#8230;) <span style="color: #ff0000;"><del> é proibido, se você usar o FBI vai entrar na sua casa&#8230; (to de brinks&#8230;)</del></span>. Para saber o que está chegando via post, <a title="Escrevendo um arquivo de texto, usando PHP" href="./escrevendo-um-arquivo-de-texto-usando-php/#recebendo-post" target="_blank">grave esses dados em arquivos de log</a>.
+A primeira coisa e a mais importante a saber é, o PagSeguro envia esses dados via POST em uma outra sessão, e você não irá conseguir imprimir isso na tela ( usar **echo**, **print_r**, **var_dump**…) <span style="color: #ff0000;"><del> é proibido, se você usar o FBI vai entrar na sua casa… (to de brinks…)</del></span>. Para saber o que está chegando via post, <a title="Escrevendo um arquivo de texto, usando PHP" href="./escrevendo-um-arquivo-de-texto-usando-php/#recebendo-post" target="_blank">grave esses dados em arquivos de log</a>.
   
 <a name="passo-a-passo"></a>
   
@@ -137,7 +137,7 @@ O XML recebido é inutil se não conseguirmos manipular, então vamos transforma
 
 {% highlight php linenos %}$transaction = simplexml_load_string($transaction);{% endhighlight %} 
 
-Perfeito, agora é só pegar o que precisa respeitando a hierarquia do XML&#8230;
+Perfeito, agora é só pegar o que precisa respeitando a hierarquia do XML…
 
 O Mais importante nesse caso é localizar primeiro a informação no XML. Veja no exemplo abaixo como capturar por exemplo o endereço do comprador, veja as tags em verde:
 

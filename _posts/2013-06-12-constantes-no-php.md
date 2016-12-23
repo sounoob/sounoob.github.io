@@ -27,7 +27,7 @@ Ainda difícil? Bom, o PHP facilita para você. Depois da versão 5.3 o PHP dei
 
 Sei criar, mas como eu uso?
   
-Simples, só escrever o nome da constante&#8230; Veja no exemplo abaixo.
+Simples, só escrever o nome da constante… Veja no exemplo abaixo.
 
 {% highlight php linenos %}define("FRASE", "sounoob.com.br");//Criamos uma constante
   

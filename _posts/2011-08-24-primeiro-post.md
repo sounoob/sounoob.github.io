@@ -1,6 +1,6 @@
 ---
 id: 10
-title: 'Primeiro post&#8230;'
+title: 'Primeiro post…'
 date: 2011-08-24T18:51:37+00:00
 author: Sena
 layout: post

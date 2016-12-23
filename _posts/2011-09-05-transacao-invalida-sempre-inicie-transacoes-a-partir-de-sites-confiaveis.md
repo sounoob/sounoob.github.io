@@ -61,6 +61,6 @@ No dia 3 de agosto o PagSeguro lançou as famosas API, uma delas é a de pagamen
   <img class="aligncenter" style="border: 1px solid black;" title="A restrição dos pagamentos com API foi desativada" src="./uploads/2011/09/opcaoDeReceberSomentePagamentosViaAPIDesativada.jpg" alt="A restrição dos pagamentos com API foi desativada" width="761" height="608" />
 </p>
 
-<acronym title="claro se não tiver algum outro problema">Pronto agora você já poderá vender com o PagSeguro</acronym> &#8230;
+<acronym title="claro se não tiver algum outro problema">Pronto agora você já poderá vender com o PagSeguro</acronym> …
 
-Até a próxima&#8230;
+Até a próxima…

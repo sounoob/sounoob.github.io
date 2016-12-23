@@ -26,4 +26,4 @@ Usarei este post como índice das aulas, então acompanhem aqui quais estão dis
   2. <a title="Instalando o CodeIgniter" href="./instalando-o-codeigniter/" target="_blank">Instalação</a>
   3. <a title="Funcionamento básico do CodeIgniter" href="./funcionamento-basico-do-codeigniter/" target="_blank">Funcionamento básico</a>
   4. <a title="Controllers e Views – CodeIgniter" href="./controllers-e-views-codeigniter/" target="_blank">Controllers e Views</a>
-  5.  Models <span style="color: #ff0000;"><del>no forno&#8230;</del></span>
+  5.  Models <span style="color: #ff0000;"><del>no forno…</del></span>

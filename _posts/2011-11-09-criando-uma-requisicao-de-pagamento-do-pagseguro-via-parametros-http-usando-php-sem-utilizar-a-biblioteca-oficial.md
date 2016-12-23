@@ -25,7 +25,7 @@ A primeira coisa a ser definida é para qual URL será enviado os dados, diferen
 
 {% highlight php linenos %}$url = 'https://ws.pagseguro.uol.com.br/v2/checkout';{% endhighlight %} 
 
-De acordo com a documentação os dados devem ser enviados como uma string no padrão parametro1=valor2&parametro2=valor2&parametro3=va&#8230; A mesma estrutura do parâmetro GET. Então os dados a ser enviados ficará dessa forma:
+De acordo com a documentação os dados devem ser enviados como uma string no padrão parametro1=valor2&parametro2=valor2&parametro3=va… A mesma estrutura do parâmetro GET. Então os dados a ser enviados ficará dessa forma:
 
 {% highlight php linenos %}$data = 'email=seuemail@dominio.com.br&amp;token=95112EE828D94278BD394E91C4388F20&amp;currency=BRL&amp;itemId1=0001&amp;itemDescription1=Notebook Prata&amp;itemAmount1=24300.00&amp;itemQuantity1=1&amp;itemWeight1=1000&amp;itemId2=0002&amp;itemDescription2=Notebook Rosa&amp;itemAmount2=25600.00&amp;itemQuantity2=2&amp;itemWeight2=750&amp;reference=REF1234&amp;senderName=Jose Comprador&amp;senderAreaCode=11&amp;senderPhone=56273440&amp;senderEmail=comprador@uol.com.br&amp;shippingType=1&amp;shippingAddressStreet=Av. Brig. Faria Lima&amp;shippingAddressNumber=1384&amp;shippingAddressComplement=5o andar&amp;shippingAddressDistrict=Jardim Paulistano&amp;shippingAddressPostalCode=01452002&amp;shippingAddressCity=Sao Paulo&amp;shippingAddressState=SP&amp;shippingAddressCountry=BRA';{% endhighlight %} 
 
@@ -221,7 +221,7 @@ Lembrando que é possível também enviar informações para incluir uma assinat
   
 Veja detalhes em: <a title="Requisição de pagamento do PagSeguro com assinatura associada usando PHP" href="./requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/" target="_blank">Requisição de pagamento do PagSeguro com assinatura associada usando PHP</a>
 
-Como sempre, duvidas sugestões e qualquer coisa relacionada <span style="color: #ff0000;"><del>excerto reclamações rs </del></span> só comentar abaixo&#8230;
+Como sempre, duvidas sugestões e qualquer coisa relacionada <span style="color: #ff0000;"><del>excerto reclamações rs </del></span> só comentar abaixo…
 
 Veja outros posts como este aqui:
   

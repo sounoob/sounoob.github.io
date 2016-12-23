@@ -13,7 +13,7 @@ dsq_thread_id:
 categories:
   - Aulas
 ---
-Talvez você esteja se perguntando o que é sintaxe, bom pense como uma regra para escrever algo certo. Para entender melhor, imagine você falando o português, tem algumas regras para falar certo não é? Primeiro vem o sujeito, depois o verbo e só então o predicativo do Sujeito e bla bla bla&#8230; Pos é para "falar" com o computador é necessário de algumas regrinhas também para que o sistema possa fazer exatamente o que você quer.<!--more-->
+Talvez você esteja se perguntando o que é sintaxe, bom pense como uma regra para escrever algo certo. Para entender melhor, imagine você falando o português, tem algumas regras para falar certo não é? Primeiro vem o sujeito, depois o verbo e só então o predicativo do Sujeito e bla bla bla… Pos é para "falar" com o computador é necessário de algumas regrinhas também para que o sistema possa fazer exatamente o que você quer.<!--more-->
 
 O primeiro passo é deixar claro que você vai começar a escrever um código em PHP e quando acabou o código,<span style="color: #ff0000;"><del>(o sistema não é tão inteligente a ponto de adivinhar  o que você vai fazer),</del></span> para delimitar usaremos **<?php** para iniciar e **?>** quando terminar. Tenha em mente que o que estiver fora desse delimitador não ser interpretado pelo servidor, e provavelmente irá apenas ser mostrado na tela.
 

@@ -18,9 +18,9 @@ tags:
 ---
 O formato atual que o PagSeguro utiliza para fazer uma requisição de pagamento ou doação é utilizando formulários HTML ou fazendo requisição diretamente pelo servidor.
 
-Em algumas plataformas não é possível fazer requisição diretamente do servidor, ou até inserir formulários, como por exemplo, o blog do WordPress quando hospedado diretamente do servidor do WordPress, no Facebook&#8230;
+Em algumas plataformas não é possível fazer requisição diretamente do servidor, ou até inserir formulários, como por exemplo, o blog do WordPress quando hospedado diretamente do servidor do WordPress, no Facebook…
 
-Estando como contornar essa situação imaginei mil formas de burlar isso porem foram todas frustradas, mas&#8230; Eu consegui gerar um link de pagamento. Como?<!--more-->
+Estando como contornar essa situação imaginei mil formas de burlar isso porem foram todas frustradas, mas… Eu consegui gerar um link de pagamento. Como?<!--more-->
 
 Leve em consideração que os formulários que o PagSeguro utilizam o formulário com método POST para enviar esses dados. Quando escrevi o formulário, acabei esquecendo de especificar o método de envio como post e o formulário enviou os dados como GET, e funcionou normalmente. Logo, se eu passar todos os parâmetros na URL o PagSeguro irá aceitar na boa.
 
@@ -28,7 +28,7 @@ Pensando nisso, porque utilizar o formulário, se eu posso passar tudo como foss
 
 Mas como irá ficar esse link, deve ser a sua pergunta.
 
-Simples. Pegue todos os campos enviados no formulário e adicione na URL como url?campo=valor&outroCampo=valor&#8230;
+Simples. Pegue todos os campos enviados no formulário e adicione na URL como url?campo=valor&outroCampo=valor…
 
 Um exemplo simples seria o botão de doação
 
@@ -78,7 +78,7 @@ Enfim devemos enviar para a URL https://pagseguro.uol.com.br/v2/checkout/payment
 
 _https://pagseguro.uol.com.br/v2/checkout/payment.html?receiverEmail=financeiro@sounoob.com.br&currency=BRL&itemId1=0001&itemDescription1=Cadeira elétrica&itemAmount1=200.00&itemQuantity1=1&itemWeight1=1000&itemId2=0002&itemDescription2=Esponja&itemAmount2=6.00&itemQuantity2=2&itemWeight2=750&reference=REF1234&shippingType=1&shippingAddressPostalCode=01452002&shippingAddressStreet=Av. Brig. Faria Lima&shippingAddressNumber=1384&shippingAddressComplement=5o andar&shippingAddressDistrict=Jardim Paulistano&shippingAddressCity=Sao Paulo&shippingAddressState=SP&shippingAddressCountry=BRA&senderName=José Comprador&senderAreaCode=11&senderPhone=56273440&senderEmail=comprador@uol.com.br_
 
-Resolver um problema, porem gerou outro, ficou um link enorme apenas com dois produtos&#8230; imagina só enviar um link desse tamanho no facebook para alguém pagar alguma coisa&#8230; Nem rola né? Twitter nem se fala.
+Resolver um problema, porem gerou outro, ficou um link enorme apenas com dois produtos… imagina só enviar um link desse tamanho no facebook para alguém pagar alguma coisa… Nem rola né? Twitter nem se fala.
 
 Como resolver esse caso? Simples, use um encurtador de URL, uma sugestão é o encurtador do Google
 

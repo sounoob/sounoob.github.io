@@ -16,7 +16,7 @@ categories:
 tags:
   - CodeIgniter
 ---
-A instalação do CI, não requer muita firula, é bem simples basicamente fazer o download, descompactar e já está funcionando. Porém vou tentar fazer um passo a passo aqui, e dar algumas dicas de configuração inicial, e quem sabe tirar dúvidas de quem não passou ao menos desta etapa.<!--more--> Bom o post será pequeno mesmo, mas será útil para separar as dúvidas daqueles que tiverem neste ponto&#8230;
+A instalação do CI, não requer muita firula, é bem simples basicamente fazer o download, descompactar e já está funcionando. Porém vou tentar fazer um passo a passo aqui, e dar algumas dicas de configuração inicial, e quem sabe tirar dúvidas de quem não passou ao menos desta etapa.<!--more--> Bom o post será pequeno mesmo, mas será útil para separar as dúvidas daqueles que tiverem neste ponto…
 
   1. Primeiro você irá precisar que esteja funcionando PHP no seu servidor (Se não tem na sua maquina use o XAMPP - <a title="PHP para Noobs" href="./php-para-noobs/#xampp" target="_blank">Veja aqui</a> )
   2. <a title="Downloading CodeIgniter" href="http://ellislab.com/codeigniter/user-guide/installation/downloads.html" target="_blank">Baixe aqui</a> ultima versão do CodeIgniter (Estamos trabalhando na versão 2.1.4).

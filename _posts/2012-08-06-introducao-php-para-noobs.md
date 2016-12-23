@@ -15,7 +15,7 @@ categories:
 ---
 ### O que é o PHP?
 
-Antigamente era um acrónimo para “Personal Home Page”, agora virou acrónimo recursivo para "PHP: Hypertext Preprocessor". Confuso né? PHP significar PHP&#8230; enfim, o que você precisa saber é que o PHP é um meio de falar com o servidor como ele irá se comportar em relação a todos informações que serão mostradas para o usuário.<!--more-->
+Antigamente era um acrónimo para “Personal Home Page”, agora virou acrónimo recursivo para "PHP: Hypertext Preprocessor". Confuso né? PHP significar PHP… enfim, o que você precisa saber é que o PHP é um meio de falar com o servidor como ele irá se comportar em relação a todos informações que serão mostradas para o usuário.<!--more-->
 
 É importante entender que o que você escrever em PHP não será o que o usuário irá ver, será o que o servidor irá ver e dependendo do que você tenha escrito ele irá se comportar de um jeito diferente.
 
@@ -31,7 +31,7 @@ Vale a pena lembrar que isso não doí no seu bolso também não. Ou seja, é fr
 
 A verdade é que é legal você aprender o tanto de linguagens for possíveis. Mas o PHP é uma linguagem relativamente fácil de se aprender, e com muito pouco é possível criar sites e sistemas.
 
-Para quem está começando agora, o PHP tem uma enorme vantagem por contar com uma documentação super robusta, tem uma comunidade super ativa, é fácil encontrar material na Internet, enfim, uma forma de ganhar dinheiro&#8230;
+Para quem está começando agora, o PHP tem uma enorme vantagem por contar com uma documentação super robusta, tem uma comunidade super ativa, é fácil encontrar material na Internet, enfim, uma forma de ganhar dinheiro…
 
 🙂
 

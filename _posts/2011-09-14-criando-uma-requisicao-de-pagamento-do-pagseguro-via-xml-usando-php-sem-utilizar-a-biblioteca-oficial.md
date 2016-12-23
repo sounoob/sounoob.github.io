@@ -23,7 +23,7 @@ Um dos maiores pontos fortes da API de pagamento é a possibilidade de enviar os
 
 <!--more-->O que iremos utilizar para a comunicação irá ser a biblioteca do cURL, e para manipular os dados recebidos vamos usar função simplexml\_load\_string  para transformar o XML em objeto, igual utilizamos para receber as notificações em "
 
-[Recebendo notificações do PagSeguro usando PHP](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial")". Enfim, vamos ao que interessa&#8230; Código&#8230;
+[Recebendo notificações do PagSeguro usando PHP](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial")". Enfim, vamos ao que interessa… Código…
   
 <a name="passo-a-passo"></a>
   
@@ -40,7 +40,7 @@ Vamos montar nossa URL juntando a variável **$email** e a **$token**, mais a p
 
 {% highlight php linenos %}$url = 'https://ws.pagseguro.uol.com.br/v2/checkout/?email=' . $email . '&token=' . $token;{% endhighlight %} 
 
-O XML a ser enviado vou colocar na variável  **$XML**, para efeito de testes iremos utilizar dados fixos, a forma que você irá montar o XML irá depender da sua criatividade, sugestão, pegar do banco de dados, percorrer o Array (ou objeto) de dados montando o nó item. Se tiver muita demanda posso até escrever sobre isso mais tarde, porem eu acredito que é algo simples de vocês fazerem. Caso alguma alma bondosa quiser montar o tutorial e disponibilizar poderei publicar aqui&#8230;<del></del>
+O XML a ser enviado vou colocar na variável  **$XML**, para efeito de testes iremos utilizar dados fixos, a forma que você irá montar o XML irá depender da sua criatividade, sugestão, pegar do banco de dados, percorrer o Array (ou objeto) de dados montando o nó item. Se tiver muita demanda posso até escrever sobre isso mais tarde, porem eu acredito que é algo simples de vocês fazerem. Caso alguma alma bondosa quiser montar o tutorial e disponibilizar poderei publicar aqui…<del></del>
 
 {% highlight php linenos %}$xml = '<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
     <checkout>
@@ -248,7 +248,7 @@ Lembrando que é possível também enviar informações para incluir uma assinat
 
 Veja detalhes em: <a title="Requisição de pagamento do PagSeguro com assinatura associada usando PHP" href="./requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/" target="_blank">Requisição de pagamento do PagSeguro com assinatura associada usando PHP</a>
 
-Bom até a próxima, duvidas, sugestões e o qualquer coisa que possa ajudar o blog só comentar abaixo&#8230;
+Bom até a próxima, duvidas, sugestões e o qualquer coisa que possa ajudar o blog só comentar abaixo…
 
 Veja outros posts como este aqui:
   
