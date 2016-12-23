@@ -8,12 +8,12 @@ layout: default
 <div class='shareaholic-canvas end' data-app-id='6427501' data-app='share_buttons' data-title='{{ post.title }}' data-link='{{ post.url }}' data-summary=''></div>
 
 {% if site.comments %}
-<script type="text/rocketscript">
+<script>
 var disqus_url = 'http://sounoob.com.br/curl-usando-e-abusando/';
-var disqus_identifier = '1106 http://sounoob.com.br/?p=1106';
+var disqus_identifier = '{{ post.id }} http://sounoob.com.br/?p=post.id';
 var disqus_container_id = 'disqus_thread';
 var disqus_shortname = 'sounoob';
-var disqus_title = "cURL. Feita para usar e abusar";
+var disqus_title = "{{ post.title }}";
 var disqus_config_custom = window.disqus_config;
 var disqus_config = function () {
     /*
