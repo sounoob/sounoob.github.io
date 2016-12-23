@@ -6,6 +6,7 @@ google_analytics: UA-5016269-14
 baseurl: ""
 paginate: 5
 dateformat: "%d-%m-%Y"
+comments: true
 
 # Gems
 gems:
