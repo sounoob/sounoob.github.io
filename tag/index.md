@@ -3,7 +3,7 @@ layout: default
 ---
 {% capture tags %}
 {% for tag in site.tags %}
-{{ tag }}
+{{ tag[0] }}
 {% endfor %}
 {% endcapture %}
 {% assign sortedtags = tags | newline_to_br | strip_newlines | split:'<br />' | sort %}
