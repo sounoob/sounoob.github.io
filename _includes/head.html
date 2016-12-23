@@ -1,34 +1,39 @@
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  {% feed_meta %}
-  <base href="https://sounoob.com.br">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#157878">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/cayman.css">
-  <link rel="publisher" href="{{ site.google_publisher }}"/>
-  <meta property="og:locale" content="pt_BR"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="{{ site.title }}"/>
-  <meta property="og:description" content="{{ site.description }}"/>
-  <meta property="og:url" content="{{ relative_url }}"/>
-  <meta property="og:site_name" content="{{ site.title }}"/>
-  <meta property="fb:app_id" content="370117756342202"/>
-  <meta name="twitter:card" content="{{ site.twitter_card }}"/>
-  <meta name="twitter:title" content="{{ site.title }}"/>
-  {% if site.og_image %}
-  <meta property="og:image" content="{{ site.og_image }}"/>
-  <meta name="twitter:image" content="{{ site.og_image }}"/>
-  {% endif %}
-  
-<script type='text/javascript' data-cfasync='false' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js' data-shr-siteid='a1332da9b5fbd6cd0d182313b4f41c2f' async='async'>
-</script>
- 
-<meta name='shareaholic:site_name' content='SouNoob'/>
-<meta name='shareaholic:language' content='pt-BR'/>
-<meta name='shareaholic:site_id' content='a1332da9b5fbd6cd0d182313b4f41c2f'/>
+    <meta charset="UTF-8">
+    <title>{{ page.title }}</title>
+    {% feed_meta %}
+    {% if jekyll.environment == "production" %}
+    <base href="https://sounoob.com.br">
+    {% else %}
+    <base href="{{ site.url }}">
+    {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/cayman.css">
+    <link rel="publisher" href="{{ site.google_publisher }}"/>
+    <meta property="og:locale" content="pt_BR"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{ site.title }}"/>
+    <meta property="og:description" content="{{ site.description }}"/>
+    <meta property="og:url" content="{{ relative_url }}"/>
+    <meta property="og:site_name" content="{{ site.title }}"/>
+    <meta property="fb:app_id" content="370117756342202"/>
+    <meta name="twitter:card" content="{{ site.twitter_card }}"/>
+    <meta name="twitter:title" content="{{ site.title }}"/>
+    {% if site.og_image %}
+    <meta property="og:image" content="{{ site.og_image }}"/>
+    <meta name="twitter:image" content="{{ site.og_image }}"/>
+    {% endif %}
+
+    <script type='text/javascript' data-cfasync='false' src='//dsms0mj1bbhn4.cloudfront.net/assets/pub/shareaholic.js'
+            data-shr-siteid='a1332da9b5fbd6cd0d182313b4f41c2f' async='async'>
+    </script>
+
+    <meta name='shareaholic:site_name' content='SouNoob'/>
+    <meta name='shareaholic:language' content='pt-BR'/>
+    <meta name='shareaholic:site_id' content='a1332da9b5fbd6cd0d182313b4f41c2f'/>
 
 </head>
