@@ -12,6 +12,7 @@ comments: true
 gems:
   - jekyll-paginate
   - jekyll-feed
+  - jekyll-archives
 
 #Others
 markdown: kramdown
