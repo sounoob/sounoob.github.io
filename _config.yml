@@ -13,6 +13,7 @@ gems:
   - jekyll-paginate
   - jekyll-feed
   - jekyll-archives
+  - jekyll-seo-tag
 
 #Others
 markdown: kramdown
