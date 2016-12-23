@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    <title>{{ page.title }}</title>
+    {% seo %}
     {% feed_meta %}
     {% if jekyll.environment == "production" %}
     <base href="https://sounoob.com.br">
@@ -8,7 +8,7 @@
     <base href="{{ site.url }}">
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
+    <meta name="theme-color" content="#4f4f4f">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
     <link rel="stylesheet" href="{{ site.baseurl }}/css/font-awesome.css">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -30,5 +30,4 @@
     <meta name='shareaholic:site_name' content='SouNoob'/>
     <meta name='shareaholic:language' content='pt-BR'/>
     <meta name='shareaholic:site_id' content='a1332da9b5fbd6cd0d182313b4f41c2f'/>
-    {% seo %}
 </head>
