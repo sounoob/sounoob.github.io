@@ -8,25 +8,44 @@ layout: default
 <div class='shareaholic-canvas end' data-app-id='6427501' data-app='share_buttons' data-title='{{ post.title }}' data-link='{{ post.url }}' data-summary=''></div>
 
 {% if site.comments %}
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
+<script type="text/rocketscript">
+var disqus_url = 'http://sounoob.com.br/curl-usando-e-abusando/';
+var disqus_identifier = '1106 http://sounoob.com.br/?p=1106';
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = 'sounoob';
+var disqus_title = "cURL. Feita para usar e abusar";
+var disqus_config_custom = window.disqus_config;
 var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    
+    
+    this.language = '';
+        this.callbacks.onReady.push(function () {
+
+        // sync comments in the background so we don't block the page
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = '?cf_action=sync_comments&post_id=1106';
+
+        var firstScript = document.getElementsByTagName('script')[0];
+        firstScript.parentNode.insertBefore(script, firstScript);
+    });
+    
+    if (disqus_config_custom) {
+        disqus_config_custom.call(this);
+    }
 };
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = '//sounoob.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
+
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
 })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-                                
+</script>                          
 {% endif %}
