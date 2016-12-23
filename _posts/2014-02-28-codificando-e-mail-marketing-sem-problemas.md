@@ -10,7 +10,7 @@ short-url:
   - http://bit.ly/1lnr08U
 dsq_thread_id:
   - "2818905238"
-image: /wp-content/uploads/2014/02/emailmarketing.jpg
+image: ./assets/uploads/2014/02/emailmarketing.jpg
 categories:
   - Curiosidades
   - Dicas

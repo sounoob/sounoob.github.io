@@ -10,7 +10,7 @@ short-url:
   - http://bit.ly/P1Fu1f
 dsq_thread_id:
   - "2819434890"
-image: /wp-content/uploads/2014/03/codeIgniter-para-noobs-introducao.jpg
+image: ./assets/uploads/2014/03/codeIgniter-para-noobs-introducao.jpg
 categories:
   - Aulas
 tags:

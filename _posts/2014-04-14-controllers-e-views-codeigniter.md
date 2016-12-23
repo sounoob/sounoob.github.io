@@ -33,7 +33,7 @@ class Home extends CI_Controller {
 
 Salve este arquivo como **home.php** dentro da pasta **application/controllers/** e acesse na URL o endereço **_http://localhost/CI/home _**
 
-<img class="aligncenter size-full wp-image-1036" src="./uploads/2014/04/Ola-eu-sou-goku.jpg" alt="Resultado do processamento do controller" width="760" height="309" srcset="./uploads/2014/04/Ola-eu-sou-goku.jpg 760w, ./uploads/2014/04/Ola-eu-sou-goku-300x121.jpg 300w" sizes="(max-width: 760px) 100vw, 760px" />
+<img class="aligncenter size-full wp-image-1036" src="./assets/uploads/2014/04/Ola-eu-sou-goku.jpg" alt="Resultado do processamento do controller" width="760" height="309" srcset="./assets/uploads/2014/04/Ola-eu-sou-goku.jpg 760w, ./assets/uploads/2014/04/Ola-eu-sou-goku-300x121.jpg 300w" sizes="(max-width: 760px) 100vw, 760px" />
 
 Obviamente você nunca deverá fazer o que acabei de fazer, os controllers nunca deverão mostrar nada na tela, para isso existem as Views.
 

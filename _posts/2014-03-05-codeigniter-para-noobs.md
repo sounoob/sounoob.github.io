@@ -10,7 +10,7 @@ short-url:
   - http://bit.ly/P1DciG
 dsq_thread_id:
   - "2818909588"
-image: /wp-content/uploads/2014/03/codeIgniter-para-noobs.jpg
+image: ./assets/uploads/2014/03/codeIgniter-para-noobs.jpg
 categories:
   - Comunicados
 tags:

@@ -10,7 +10,7 @@ short-url:
   - http://bit.ly/1mUwUPC
 dsq_thread_id:
   - "2829079704"
-image: /wp-content/uploads/2014/04/Removendo-index.jpg
+image: ./assets/uploads/2014/04/Removendo-index.jpg
 categories:
   - Tutoriais
 tags:

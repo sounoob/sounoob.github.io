@@ -10,7 +10,7 @@ short-url:
   - http://bit.ly/GQYD1c
 dsq_thread_id:
   - "2818906285"
-image: /wp-content/uploads/2013/10/Nao-recebo-posts-do-PagSeguro-como-resolver.gif
+image: ./assets/uploads/2013/10/Nao-recebo-posts-do-PagSeguro-como-resolver.gif
 categories:
   - Dicas
 tags:

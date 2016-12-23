@@ -8,7 +8,7 @@ guid: http://sounoob.com.br/?p=1059
 permalink: /informacoes-youtube-usando-php/
 dsq_thread_id:
   - "2819423969"
-image: /wp-content/uploads/2014/05/younoob.jpg
+image: ./assets/uploads/2014/05/younoob.jpg
 categories:
   - Tutoriais
 tags:
