@@ -11,6 +11,8 @@ excerpt_separator: <!--more-->
     <p class="author">
         <span class="date">{{ post.date | date: site.dateformat }}</span>
     </p>
+    <div class='shareaholic-canvas' data-app-id='6427501' data-app='share_buttons' data-title='{{ post.title }}' data-link='{{ post.url }}' data-summary=''></div>
+   
     <div class="content">
         {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
     </div>
