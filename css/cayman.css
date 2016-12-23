@@ -369,3 +369,6 @@ ul.social-links li{
 .pagination {
     height: 0.8em
 }
+.addthis_inline_share_toolbox {
+    text-align: right;
+}
