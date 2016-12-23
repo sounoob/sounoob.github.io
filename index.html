@@ -37,11 +37,11 @@ excerpt_separator: <!--more-->
 
 
 <!-- Pagination links -->
-<div class="pagination">
+<div class="box pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous" title="Página anterior">Anterior</a>
+    <a href="{{ paginator.previous_page_path }}" class="prev" title="Página anterior"> ⇦ </a>
     {% endif %}
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next" title="Próxima página">Próxima</a>
+    <a href="{{ paginator.next_page_path }}" class="next" title="Próxima página"> ⇨ </a>
     {% endif %}
 </div>

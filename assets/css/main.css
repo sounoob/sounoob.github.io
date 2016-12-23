@@ -190,10 +190,6 @@ ul.social-links li {
     padding-bottom: 2rem;
 }
 
-.main-content .post:hover {
-    padding-bottom: 3rem;
-}
-
 .main-content .post .read-more {
     opacity: 0;
     float: right;
@@ -462,12 +458,26 @@ ul.social-links li {
     height: 1px;
 }
 
-.pagination .next {
-    float: right;
+.pagination {
+    position: relative;
+}
+.pagination .prev,
+.pagination .next{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 5rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.7rem;
 }
 
-.pagination {
-    height: 0.8em
+.pagination .prev{
+    left:0;
+}
+.pagination .next{
+    right:0;
 }
 
 .addthis_inline_share_toolbox {
