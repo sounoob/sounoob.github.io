@@ -1,17 +1,4 @@
-{% if site.google_analytics and jekyll.environment == "production" %}
-<script type="text/javascript">
-    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-    try {
-        var pageTracker = _gat._getTracker("{{ site.google_analytics }}");
-        pageTracker._trackPageview();
-    } catch(err) {}
-</script>
-{% endif %}
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-585d1710273a6291"></script>
-
 <footer class="site-footer">
     <div class="copyright box">
         © Copyright {{site.title}} 2011-{{ site.time | date: '%Y' }} - Todos os direitos reservados aos respectivos autores. <br>

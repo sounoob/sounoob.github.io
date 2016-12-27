@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="box">
-    <h1><a href="{{ page.url }}">Categoria: {{ page.category }}</a></h1>
+    <h1>Categoria: {{ page.category }}</h1>
     <ul>
         {% for post in site.categories[page.category] %}
         <li>
