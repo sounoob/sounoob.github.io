@@ -213,7 +213,12 @@ ul.social-links li {
     padding: 0;
     list-style: none;
 }
-
+.main-content .post .footer .fa {
+    margin-left: .5rem;
+}
+.main-content .post .footer .fa-folder-open-o{
+    margin-left: 0;
+}
 .main-content .post .footer .tag-list span + span:before {
     content: ", ";
     margin-right: 0.22rem;
