@@ -3,7 +3,11 @@ layout: default
 ---
 
 <div class="box">
-    <h1>Categoria: {{ page.category }}</h1>
+    <h1>
+        <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+        <span class="screen-reader-text">Categoria </span>
+        {{ page.category }}
+    </h1>
     <ul>
         {% for post in site.categories[page.category] %}
         <li>

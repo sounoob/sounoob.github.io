@@ -20,7 +20,7 @@ excerpt_separator: <!--more-->
             {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
         </div>
         <a href="{{ post.url }}" class="read-more" title="{{ post.title }}">
-            Continuar lendo
+            Continuar lendo <i class="fa fa-arrow-right" aria-hidden="true"></i>
         </a>
         {% include post-footer.html %}
     </div>
@@ -31,9 +31,13 @@ excerpt_separator: <!--more-->
 <!-- Pagination links -->
 <div class="box pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="prev" title="Página anterior"> ⇦ </a>
+    <a href="{{ paginator.previous_page_path }}" class="prev" title="Página anterior">
+        <i class="fa fa-arrow-left" aria-hidden="true"></i>
+    </a>
     {% endif %}
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next" title="Próxima página"> ⇨ </a>
+    <a href="{{ paginator.next_page_path }}" class="next" title="Próxima página">
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+    </a>
     {% endif %}
 </div>

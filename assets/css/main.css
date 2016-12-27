@@ -196,10 +196,6 @@ ul.social-links li {
     transition-duration: 1.5s;
 }
 
-.main-content .post .read-more:after {
-    content: "⇨";
-}
-
 .main-content .post:hover .read-more {
     opacity: 1;
 }
