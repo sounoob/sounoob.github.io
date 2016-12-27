@@ -12,6 +12,8 @@ dsq_thread_id:
   - "2818789380"
 categories:
   - Tutoriais
+tags:
+  - CodeIgniter
 ---
 Basicamente toda informação é processada no controller e mostrada para o usuário por meio das View.
 

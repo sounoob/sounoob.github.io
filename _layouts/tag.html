@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="box">
+    <h1><a href="{{ page.url }}">Tag: {{ page.tag }}</a></h1>
+    <ul>
+        {% for post in site.tags[page.tag] %}
+        <li>
+            {{ post.date | date: site.dateformat }}: <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>

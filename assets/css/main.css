@@ -30,13 +30,12 @@ ul.social-links li {
     list-style: none;
     margin: 0 3px;
 }
-
 .btn {
     display: inline-block;
     margin-bottom: 1rem;
-    color: rgba(255, 255, 255, 0.7);
-    background-color: rgba(255, 255, 255, 0.08);
-    border-color: rgba(255, 255, 255, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.2);
     border-style: solid;
     border-width: 1px;
     border-radius: 0.3rem;
@@ -44,10 +43,10 @@ ul.social-links li {
 }
 
 .btn:hover {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(0, 0, 0, 0.8);
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.3);
 }
 
 .btn + .btn {
@@ -486,4 +485,16 @@ ul.social-links li {
 
 .tag-list .box:first-child {
     display: none;
+}
+
+form>.form-group {
+    display: flex;
+    margin: 1rem 0;
+}
+form>.form-group>label{
+    margin-right: 1rem;
+}
+form>.form-group>input,
+form>.form-group>textarea{
+    flex:1;
 }

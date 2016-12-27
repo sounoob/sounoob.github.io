@@ -1,0 +1,25 @@
+{% assign post = page %}
+<div class="footer">
+    <p>Publicado em: {{ post.date | date: site.dateformat }}</span> por <a href="./author/sena">{{ post.author }}</a></p>
+
+    <div class="category">
+        {% if post.categories.size > 0 %}
+        Categoria{% if post.categories.size > 1 %}s{% endif %}:
+        <span class="tag-list">
+                {% for category in post.categories %}
+                <span><a href="category/{{ category | slugify }}" title="{{ category }}">{{ category }}</a></span>
+                {% endfor %}
+                </span>
+        {% endif %}
+    </div>
+    <div class="tag">
+        {% if post.tags.size > 0 %}
+        Tag{% if post.tags.size > 1 %}s{% endif %}:
+        <span class="tag-list">
+                {% for tag in post.tags %}
+                <span><a href="tag/{{ tag | slugify }}" title="{{ tag }}">{{ tag }}</a></span>
+                {% endfor %}
+                </span>
+        {% endif %}
+    </div>
+</div>

@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class="box">
+<div class="box post">
     {% if page.image %}
     <div class="post_image">
         <a href="{{ post.url }}" title="{{ page.title }}">
@@ -15,16 +15,7 @@ layout: default
     {{ content }}
 
     <div class="addthis_inline_share_toolbox"></div>
-
-    <div class="footer">
-        <p>Publicado em: {{ page.date | date: site.dateformat }}</span> por {{ page.author }}</p>
-        Tags:
-        <span class="tag-list">
-                {% for tag in page.tags %}
-                <span><a href="tag#{{ tag | slugify }}" title="{{ tag }}">{{ tag }}</a></span>
-                {% endfor %}
-            </span>
-    </div>
+    {% include post-footer.html %}
 </div>
 {% if site.comments %}
 <div class="box">

@@ -12,6 +12,7 @@ gems:
   - jekyll-feed
   - jekyll-archives
   - jekyll-seo-tag
+  - jekyll-redirect-from
 
 
 
