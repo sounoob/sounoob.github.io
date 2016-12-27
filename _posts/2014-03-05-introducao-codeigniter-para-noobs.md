@@ -13,6 +13,7 @@ dsq_thread_id:
 image: ./assets/uploads/2014/03/codeIgniter-para-noobs-introducao.jpg
 categories:
   - Aulas
+  - Que bicho é esse?
 tags:
   - CodeIgniter
 ---

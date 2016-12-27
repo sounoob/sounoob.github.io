@@ -11,6 +11,7 @@ short-url:
 dsq_thread_id:
   - "2908529623"
 categories:
+  - Que bicho é esse?
   - Aulas
 ---
 ### O que é o PHP?
