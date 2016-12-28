@@ -2,5 +2,12 @@
   <a href="{{ site.url }}" class="logo">
       {{ site.title }}
   </a>
+    <form action="/search.html" method="get" class="search">
+        <input type="search" id="search-box" name="s" placeholder="Digite alguma coisa para buscar..." width="0">
+        <button type="submit">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            Buscar
+        </button>
+    </form>
   {% include ul.social-links.html %}
 </section>

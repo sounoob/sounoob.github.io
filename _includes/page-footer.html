@@ -1,5 +1,7 @@
+{% if jekyll.environment == "production" %}
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-585d1710273a6291"></script>
 <script id="dsq-count-scr" src="//sounoob.disqus.com/count.js" async></script>
+{% endif %}
 <footer class="site-footer">
     <div class="copyright box">
         <i class="fa fa-copyright" aria-hidden="true"></i> Copyright {{site.title}} 2011-{{ site.time | date: '%Y' }} - Todos os direitos reservados aos respectivos autores. <br>

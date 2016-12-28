@@ -1,0 +1,60 @@
+---
+title: Configurando a página padrão no relatório do Google Analytics
+author: Sena
+layout: post
+categories:
+  - Dicas
+tags:
+  - Google Analytics
+  - Google
+---
+
+<p>
+    A página padrão quando mal configurada pode trazer vários problemas de relatórios no
+    <strong>Google Analytics</strong> de forma a trazer o mesmo conteudo como se estivesse duas URL`s diferentes,
+    causando problemas na hora de contabilizar a página.
+</p>
+<!--more-->
+
+<p>A coisa pode ser percebida com mais clareza quando se olha nos relatórios e temos algo como:
+    <ul>
+        <li>/</li>
+        <li>/index.php</li>
+        <li>pagina-qualquer/</li>
+        <li>pagina-qualquer/index.php</li>
+    </ul>
+    Note que <b>/</b> e <b>/index.php</b> são a mesma página, da mesma forma que <b>pagina-qualquer/</b> e
+<b>pagina-qualquer/index.php</b>, a única diferença entre elas é que existe depois do segiumento
+existe a página padrão (que poderia ser index.asp, default.html, index.hml ...), apesar de tudo apontar
+para o mesmo lugar para o Google, são URL`s distintas.
+</p>
+<p>Outro problema que pode ocorrer é o site está em construição e tem uma página com o código de rastreio
+    o <strong>Google Analytics</strong> identifica essa página como página padrão. </p>
+Então nas configurações fica o nosso index.asp, default.html, index.hml ou algo do tipo.
+Dai quando enviamos o projeto final as URL`s ficam erradas no realtório.
+
+<h3>Entendi o problema, mas como eu resolvo.</h3>
+<p>Uma configuração um pouco escondida no Google Analytics permite colocar ou remover essa página padrão. Siga os prints</p>
+
+<ol>
+    <li>
+        <h4>Depois de logar em sua conta, escolha a sua aplicação</h4>
+        <img src="./assets/uploads/2016/12/escolhendo-conta-do-google-analytics.jpg" alt="Escolhendo a conta do Google Analytics" title="Escolhendo a conta do Google Analytics" class="center-block">
+        <br>
+    </li>
+    <li>
+        <h4>Clique na guia <b>Administrar</b>, em seguida <b>Visualizar configurações</b>, dentro de <b>vista da propriedade</b>.</h4>
+        <img src="./assets/uploads/2016/12/visualizar-configuracoes-google-analytics.jpg" alt="Visualizar configurações do Google Analytics" title="Visualizar configurações do Google Analytics" class="center-block">
+        <br>
+    </li>
+    <li>
+        <h4>Agora em <b>página padrão</b> insira seu index.php, index.html, index.asp
+            (ou qual seja o arquivo padrão da sua aplicação)</h4>
+        <img src="./assets/uploads/2016/12/configuracoes-da-vista-da-propriedade.jpg" alt="Confiurações da vista da propriedade do Google Analytics" title="Confiurações da vista da propriedade do Google Analytics" class="center-block">
+        <br>
+    </li>
+</ol>
+
+<h3>Agora é a vez de vocês</h3>
+
+<p>Vocês já tiveram algum problema com a página padrão da sua aplicação? Como contornou?</p>
