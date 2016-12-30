@@ -21,7 +21,7 @@ A instalação do CI, não requer muita firula, é bem simples basicamente fazer
   1. Primeiro você irá precisar que esteja funcionando PHP no seu servidor (Se não tem na sua maquina use o XAMPP - <a title="PHP para Noobs" href="./php-para-noobs/#xampp" target="_blank">Veja aqui</a> )
   2. <a title="Downloading CodeIgniter" href="http://ellislab.com/codeigniter/user-guide/installation/downloads.html" target="_blank">Baixe aqui</a> ultima versão do CodeIgniter (Estamos trabalhando na versão 2.1.4).
   3. Crie uma pasta na raiz do seu servidor chamada **CI** e extraia o conteudo do zip para dentro dessa pasta.
-  4. Acesse no navegador o endereço do seu servidor referente a pasta que acabamos de criar com o CodeIgniter. Se tudo der certo deverá aparecer uma imagem igual a imagem abaixo:<img class="aligncenter size-full wp-image-986" alt="welcome to codeIgniter" src="./assets/uploads/2014/03/welcome-to-codeIgniter.jpg" width="748" height="523" srcset="./assets/uploads/2014/03/welcome-to-codeIgniter.jpg 748w, ./assets/uploads/2014/03/welcome-to-codeIgniter-300x209.jpg 300w" sizes="(max-width: 748px) 100vw, 748px" />
+  4. Acesse no navegador o endereço do seu servidor referente a pasta que acabamos de criar com o CodeIgniter. Se tudo der certo deverá aparecer uma imagem igual a imagem abaixo:<img class="aligncenter size-full wp-image-986" alt="welcome to codeIgniter" src="./assets/uploads/2014/03/welcome-to-codeIgniter.jpg" srcset="./assets/uploads/2014/03/welcome-to-codeIgniter.jpg 748w, ./assets/uploads/2014/03/welcome-to-codeIgniter-300x209.jpg 300w" sizes="(max-width: 748px) 100vw, 748px" />
 
 Veja outros posts como este aqui:
   
