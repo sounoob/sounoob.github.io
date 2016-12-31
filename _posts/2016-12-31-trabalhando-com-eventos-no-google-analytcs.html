@@ -1,0 +1,151 @@
+---
+title: Trabalhando com eventos no Google Analytics
+author: Sena
+layout: post
+categories:
+- Dicas
+tags:
+- Google Analytics
+- Google
+---
+
+<p>
+    O <strong>Google Analytics</strong> por si só já traz uma gama muito grande de relatórios que dá para ter
+    uma noção bem grande do que o usuário está fazendo em nossa aplicação.<br>
+    O problema é quando nossa aplicação precisa de algo a mais, algo que o <strong>Google Analytics</strong>
+    não captura, é nesse caso que você pode usar os eventos e muita criatividade
+    para capturar tudo que você quiser.
+</p>
+<!--more-->
+
+<p>
+    Os eventos do <strong>Google Analytics</strong> são muito úteis quando a aplicação possui interações
+    são independente do carregamento da página. Exemplo são requisições ajax, execução de vídeos,
+    cliques em áreas específicas, ver se o usuário passou o mouse em cima de algum objeto...
+    As opções são inúmeras, tudo dependerá da sua criatividade.
+</p>
+<p>
+    Primeira coisa, verifique seu código de acompanhamento do <strong>Google Analytics</strong> está funcionando corretamente.
+    Para isso, vá nas opções de tempo real, e verifique se consegue monitorar o próprio acesso.
+</p>
+<p>
+    Com código de acompanhamento funcionando corretamente, agora é hora de sair inserindo os eventos.
+    Usaremos a função <strong>ga</strong> para o código de acompanhamento novo e o <strong>_gaq</strong> para o antigo.
+    Veja a extrutura da função abaixo:
+    {% highlight javscript linenos %}ga('send', 'event', [categoria], [ação], [rótulo], [valor]);{% endhighlight %}
+    {% highlight javscript linenos %}_gaq.push([‘_trackEvent’, [categoria], [ação], [rótulo], [valor]]);{% endhighlight %}
+</p>
+<h3>O que é isso tudo?</h3>
+<p>
+    <b>Categoria</b> Obrigatório<br>
+    Local ou objeto que sofreu interação. <br>
+    Exemplo: Video, Menu... <br>
+    <b>Ação</b> Obrigatório<br>
+    A interação que aconteceu no objeto ou local.<br>
+    Exemplo: Reproduziu, Acessou...<br>
+    <b>Rótulo</b> Não obrigatório<br>
+    Qualquer coisa que facilite distinguir os eventos.<br>
+    Exemplo: Campanha zero erro, campanha natal programando, teste para ver se alguem leu isso... <br>
+    <b>Valor</b> Não obrigatório.<br>
+    Qualquer número associado ao evento.<br>
+    Exemplo: 1, 30, 100 (vocês sabem o que é um número né? Qualquer um...) <br>
+</p>
+<h2>Exemplos de uso</h2>
+<p>
+Marcar o envio de um forumário de contato via ajax
+{% highlight javscript linenos %}
+//Para o código de acompanhamento novo
+ga('send', 'event', 'Formulário', 'Formulário enviado com sucesso!', 'Contato');
+{% endhighlight %}
+{% highlight javscript linenos %}
+//Para o código de acompanhamento novo
+_gaq.push([‘_trackEvent’, 'Formulário', 'Formulário enviado com sucesso!', 'Contato']);
+{% endhighlight %}
+</p>
+<p>
+Marcar reprodução de um vídeo
+{% highlight javscript linenos %}
+//Para o código de acompanhamento novo
+ga('send', 'event', 'Vídeo', 'Reproduzido', 'Vídeo aula PHP', 1);{% endhighlight %}
+{% highlight javscript linenos %}
+//Para o código de acompanhamento antigo
+_gaq.push([‘_trackEvent’, 'Vídeo', 'Reproduzido', 'Vídeo aula PHP', 1]);{% endhighlight %}
+</p>
+<p>
+Capturar links quebrados
+{% highlight javscript linenos %}
+//Para o código de acompanhamento novo
+ga('send', 'event', 'erro', 404, window.location.href);{% endhighlight %}
+{% highlight javscript linenos %}
+//Para o código de acompanhamento antigo
+_gaq.push([‘_trackEvent’, 'erro', 404', window.location.href]);{% endhighlight %}
+</p>
+<p>
+Capturar cliques para links externos
+{% highlight javscript linenos %}
+//Para o código de acompanhamento novo
+window.onload = function () {
+    var externalLinks = document.querySelectorAll('a[href^="http"]');
+    for (var i = externalLinks.length - 1; i >= 0; i--) {
+        if (!externalLinks[i].href.match(/sounoob.com.br/g)) {
+            externalLinks[i].addEventListener('click', function () {
+                if (this.alt) {
+                    var title = this.alt;
+                } else if (this.title) {
+                    var title = this.title;
+                } else {
+                    var title = 'Link sem alt/title';
+                }
+                ga('send', 'event', 'outbound-article', title, this.href);
+            }, false);
+        }
+    }
+}
+{% endhighlight %}
+
+{% highlight javscript linenos %}
+//Para o código de acompanhamento antigo
+window.onload = function () {
+    var externalLinks = document.querySelectorAll('a[href^="http"]');
+    for (var i = externalLinks.length - 1; i >= 0; i--) {
+        if (!externalLinks[i].href.match(/sounoob.com.br/g)) {
+            externalLinks[i].addEventListener('click', function () {
+                if (this.alt) {
+                    var title = this.alt;
+                } else if (this.title) {
+                    var title = this.title;
+                } else {
+                    var title = 'Link sem alt/title';
+                }
+                _gaq.push([‘_trackEvent’, 'outbound-article', title, this.href]);
+            }, false);
+        }
+    }
+}
+{% endhighlight %}
+</p>
+<h3>ga is not defined</h3>
+<p>
+    Quando comecei a inserir evento em tudo que é site esse foi o erro que mais aconteceu,
+    tente fazer o checklist abaixo que um deles vai resolver o seu problema.
+    <ul>
+        <li>
+            Verifique se o código de acompanhamento está funcioando corretamente
+        </li>
+        <li>
+            Verifique se você está chamando a função <strong>ga</strong> antes do código de acompanhamento
+        </li>
+        <li>
+            Verifique se você está usando o código de acompanhamento antigo com a função do novo, ou vice versa.
+        </li>
+    </ul>
+</p>
+<h3>Já inseri, onde isso tudo vai aparecer?</h3>
+<p>Acesse sua conta do <strong>Google Analytics</strong>, vá em <b>Relatório</b>, depois em <b>Comportamento </b>, depois <b>Eventos </b> e por fim <b>Visão geral</b>.
+    <img src="./assets/uploads/2016/12/acessar-eventos-no-google-analytcs.jpg" alt="Acessar eventos no Google Analytcs " title="Acessar eventos no Google Analytcs ">
+</p>
+
+<h3>Agora é a vez de vocês</h3>
+
+<p>O <strong>Google Analytics</strong> da forma padrão já te atende? <br>
+    Se não, como você solucionou esse problema usando os eventos?</p>
