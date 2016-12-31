@@ -9,7 +9,7 @@
     {% endif %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#4f4f4f">
-    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="stylesheet" href="./assets/css/application.css">
     <link rel="publisher" href="{{ site.google_publisher }}"/>
     <meta property="og:locale" content="pt_BR"/>
     <meta property="og:type" content="website"/>
@@ -20,13 +20,6 @@
     <meta name="twitter:image" content="{{ site.og_image }}"/>
     {% endif %}
     {% if site.google_analytics and jekyll.environment == "production" %}
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-        ga('create', '{{ site.google_analytics }}', 'auto');
-        ga('send', 'pageview');
-    </script>
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', '{{ site.google_analytics }}', 'auto');ga('send', 'pageview'); window.onload = function () { var externalLinks = document.querySelectorAll('a[href^="http"]'); for (var i = externalLinks.length-1; i >= 0; i--) { if(!externalLinks[i].href.match(/{{ site.title | slugify}}/g)) { externalLinks[i].addEventListener('click', function() { if(this.alt) { var title = this.alt; }else if(this.title) { var title = this.title; }else{ var title = 'Link sem alt/title'; } ga('send', 'event', 'outbound-article', title, this.href); }, false);}}}</script>
     {% endif %}
 </head>

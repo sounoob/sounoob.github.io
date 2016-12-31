@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  
   {% include head.html %}
-
-  <body>
+  <body id="page{{page.url | replace: '/', '-'}}">
     {% include page-header.html %}
 
     <section class="main-content">
-      
       {{ content }}
-
       {% include page-footer.html %}
-
     </section>
-
   </body>
 </html>

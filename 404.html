@@ -1,15 +1,62 @@
 ---
 layout: default
+title: 404 - Página não encontrada
+description: Lost souls and weary travelers, you're in the wrong way! May You Find a Light
 ---
 <div class="box">
     <h1>
         <i class="fa fa-ban" aria-hidden="true"></i>
         Noob Jr
     </h1>
-    <h2>Lost souls and weary travelers, you're in the wrong way!</h2>
-    <h3>May You Find a Light</h3>
+    <p>Não sei o que dizer... Mas... ehhh... não achei a página que você está buscando.
+        O desenvolvedor já foi notificado, sobre isso.</p>
+    <h4>Tente usar a caixa de busca para encontrar o que você está procurando, ou vá para <a href="./">página inicial</a></h4>
+    {% include search-form.html %}
+    <h4>Se preferir, pode acessar uma de nossas categorias ou tags:</h4>
+    <div class="tag-list">
+        {% capture categories %}
+        {% for category in site.categories %}
+        {{ category[0] }}
+        {% endfor %}
+        {% endcapture %}
+        {% assign sortedcategories = categories | newline_to_br | replace : '  ', '' | strip_newlines | split:'<br />' | uniq | sort %}
+        <i class="fa fa-folder-open-o" aria-hidden="true"></i>
+        <strong>Categorias</strong>:
+        <span class="list-inline-comma">
+            {% for category in sortedcategories %}
+            {% if category.size > 0 %}
+            <span>
+                <a href="category/{{ category | slugify }}">{{ category }}</a>
+            </span>
+            {% endif %}
+            {% endfor %}
+        </span>
+    </div>
 
-    <h4>Almas perdidas e viajantes cansado, vocês estão no caminho errado!</h4>
-    <h5>Que vocês encontrem a luz</h5>
+    <div class="tag-list">
+        {% capture tags %}
+        {% for tag in site.tags %}
+        {{ tag[0] }}
+        {% endfor %}
+        {% endcapture %}
+        {% assign sortedtags = tags | newline_to_br | newline_to_br | replace : '  ', '' | strip_newlines | split:'<br />' | uniq | sort %}
+
+        <i class="fa fa-tags" aria-hidden="true"></i>
+        <strong>Tags</strong>:
+        <span class="list-inline-comma">
+            {% for tag in sortedtags %}
+            {% if tag.size > 0 %}
+            <span>
+                <a href="tag/{{ tag | slugify }}">{{ tag }}</a>
+            </span>
+            {% endif %}
+            {% endfor %}
+        </span>
+    </div>
+    <h5>Lost souls and weary travelers, you're in the wrong way! <br>
+        May You Find a Light</h5>
+
+    <h5>Almas perdidas e viajantes cansado, vocês estão no caminho errado! <br>
+        Que vocês encontrem a luz</h5>
     <script>ga('send', 'event', 'error', 404, window.location.href);</script>
 </div>

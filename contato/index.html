@@ -10,53 +10,20 @@ description: Tem algo para falar? Então bota para fora...
     </h1>
     <h3>Para entrar em contato conosco, preencha o formulário abaixo:</h3>
     <form action="https://iocode.com.br/contact/send" method="post" class="contact-form">
-        <table>
-            <tr>
-                <td>
-                    <label for="name" class="hidden">NOME:</label>
-                </td>
-                <td>
-                    <input type="text" name="name" id="name" placeholder="NOME" class="form-control" required />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="email" class="hidden">E-MAIL:</label>
-                </td>
-                <td>
-                    <input type="email" name="email" id="email" placeholder="E-MAIL" class="form-control" required />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="phone" class="hidden">TEL/CEL:</label>
-                </td>
-                <td>
-                    <input type="text" name="phone" id="phone" placeholder="TEL/CEL" class="form-control" required />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="subject" class="hidden">ASSUNTO:</label>
-                </td>
-                <td>
-                    <input type="text" name="subject" id="subject" placeholder="ASSUNTO" class="form-control" required />
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="msg" class="hidden">MENSAGEM:</label>
-                </td>
-                <td>
-                    <textarea name="msg" id="msg" class="form-control" cols="30" rows="10" placeholder="MENSAGEM" required></textarea>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <button type="submit" class="btn btn-io pull-right" value="enviar" name="enviar">ENVIAR</button>
-                </td>
-            </tr>
-        </table>
+        <div class="form-group">
+            <label for="name" class="hidden">NOME:</label><br>
+            <input type="text" name="name" id="name" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="email" class="hidden">E-MAIL:</label><br>
+            <input type="email" name="email" id="email" class="form-control" required />
+        </div>
+        <div class="form-group">
+            <label for="msg" class="hidden">MENSAGEM:</label><br>
+            <textarea name="msg" id="msg" class="form-control" cols="30" rows="10" required></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn" value="enviar" name="enviar">ENVIAR</button>
+        </div>
     </form>
-
 </div>
