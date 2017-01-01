@@ -1,21 +1,22 @@
 ---
-id: 903
 title: Não recebo posts do PagSeguro, como resolver?
-date: 2013-10-17T09:04:28+00:00
+date: 2013-10-17 09:04:28 Z
+permalink: "/nao-recebo-posts-do-pagseguro-como-resolver/"
+categories:
+- Dicas
+tags:
+- PagSeguro
+id: 903
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=903
-permalink: /nao-recebo-posts-do-pagseguro-como-resolver/
 short-url:
-  - http://bit.ly/GQYD1c
+- http://bit.ly/GQYD1c
 dsq_thread_id:
-  - "2818906285"
-image: ./assets/uploads/2013/10/Nao-recebo-posts-do-PagSeguro-como-resolver.gif
-categories:
-  - Dicas
-tags:
-  - PagSeguro
+- '2818906285'
+image: "./assets/uploads/2013/10/Nao-recebo-posts-do-PagSeguro-como-resolver.gif"
 ---
+
 Já faz muito tempo que vejo frases como estas em fóruns, a maioria são ditas por <del style="color: #ff0000;">pseudo-</del>desenvolvedores que já estão putos da vida pelo fato de não entender o motivo de não estar recebendo posts do PagSeguro. Então… vou tentar ajudar, listando alguns passos que devem ser seguidos, serão apenas alguns testes simples mas que poderão fazer a diferença futuramente.<!--more-->
 
 ### Faça uma coisa de cada vez

@@ -1,21 +1,22 @@
 ---
-id: 454
 title: Instalando XAMPP no Linux
-date: 2012-08-08T11:53:43+00:00
+date: 2012-08-08 11:53:43 Z
+permalink: "/instalando-xampp-no-linux/"
+categories:
+- Aulas
+- Tutoriais
+tags:
+- xampp
+id: 454
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=454
-permalink: /instalando-xampp-no-linux/
 short-url:
-  - http://bit.ly/VjbltA
+- http://bit.ly/VjbltA
 dsq_thread_id:
-  - "2819420478"
-categories:
-  - Aulas
-  - Tutoriais
-tags:
-  - xampp
+- '2819420478'
 ---
+
 No Linux é bem mais fácil configurar um interpretador PHP (apache), e que para alegria dos nerds uma linha de comando resolveria a situação. Mas… Eu gosto muito do XAMPP e nesse tutorial vou mostrar como é simples instalar o XAMPP no Linux também…<!--more-->
 
   1. Baixe o arquivo do XAMPP. <a title="XAMPP versão 1.8 para linux" href="http://www.apachefriends.org/download.php?xampp-linux-1.8.0.tar.gz" target="_blank">http://www.apachefriends.org/download.php?xampp-linux-1.8.0.tar.gz</a>

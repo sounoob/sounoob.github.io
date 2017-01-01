@@ -1,18 +1,19 @@
 ---
-id: 498
 title: Sintaxe basica do PHP
-date: 2012-09-17T16:36:25+00:00
+date: 2012-09-17 16:36:25 Z
+permalink: "/sintaxe-basica-php/"
+categories:
+- Aulas
+id: 498
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=498
-permalink: /sintaxe-basica-php/
 short-url:
-  - http://bit.ly/12GPjkw
+- http://bit.ly/12GPjkw
 dsq_thread_id:
-  - "2821890725"
-categories:
-  - Aulas
+- '2821890725'
 ---
+
 Talvez você esteja se perguntando o que é sintaxe, bom pense como uma regra para escrever algo certo. Para entender melhor, imagine você falando o português, tem algumas regras para falar certo não é? Primeiro vem o sujeito, depois o verbo e só então o predicativo do Sujeito e bla bla bla… Pos é para "falar" com o computador é necessário de algumas regrinhas também para que o sistema possa fazer exatamente o que você quer.<!--more-->
 
 O primeiro passo é deixar claro que você vai começar a escrever um código em PHP e quando acabou o código,<span style="color: #ff0000;"><del>(o sistema não é tão inteligente a ponto de adivinhar  o que você vai fazer),</del></span> para delimitar usaremos **<?php** para iniciar e **?>** quando terminar. Tenha em mente que o que estiver fora desse delimitador não ser interpretado pelo servidor, e provavelmente irá apenas ser mostrado na tela.

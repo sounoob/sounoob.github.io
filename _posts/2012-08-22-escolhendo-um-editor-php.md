@@ -1,19 +1,20 @@
 ---
-id: 476
 title: Escolhendo um editor PHP
-date: 2012-08-22T18:06:32+00:00
+date: 2012-08-22 18:06:32 Z
+permalink: "/escolhendo-um-editor-php/"
+categories:
+- Aulas
+- Dicas
+id: 476
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=476
-permalink: /escolhendo-um-editor-php/
 short-url:
-  - http://bit.ly/12GR8Oe
+- http://bit.ly/12GR8Oe
 dsq_thread_id:
-  - "2820848861"
-categories:
-  - Aulas
-  - Dicas
+- '2820848861'
 ---
+
 Para poder programar na maioria das linguagens pode-se usar até mesmo o mais simples editor possível, (me refiro ao notepad do Windows, gedit do Linux ou textEdit do Mac), o grande problema é que a perca de produtividade é muito alta na maioria dos casos, uma vez que terá que escrever todo o código sem nenhuma ajuda do sistema.
 
 Tendo esse ponto de vista a dúvida mais comum de quem está começando a programar é: qual melhor melhor editor para escrever os código? O que em minha opinião isso irá variar de pessoa para pessoa, o qual todos deveríamos testar alguns editores e ver qual se adapta melhor ao estilo de cada um.<!--more-->

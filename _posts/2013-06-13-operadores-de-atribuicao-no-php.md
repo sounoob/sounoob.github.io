@@ -1,18 +1,19 @@
 ---
-id: 844
 title: Operadores de Atribuição no PHP
-date: 2013-06-13T17:29:09+00:00
+date: 2013-06-13 17:29:09 Z
+permalink: "/operadores-de-atribuicao-no-php/"
+categories:
+- Aulas
+id: 844
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=844
-permalink: /operadores-de-atribuicao-no-php/
 short-url:
-  - http://bit.ly/1a8erqP
+- http://bit.ly/1a8erqP
 dsq_thread_id:
-  - "2821047981"
-categories:
-  - Aulas
+- '2821047981'
 ---
+
 O operador de atribuição mais básico é o sinal de igual (**=**), basicamente ela transfere o valor que estiver na sua direita para a variável ou constante que estiver em sua esquerda. Basicamente temos uma variável ou constante, depois um sinal de igual e o valor que a variável ou constante deverá receber.<!--more--> Veja o exemplo abaixo:
 
 {% highlight php linenos %}$variavel = "Valor que deverá ser atribuído para a variável";

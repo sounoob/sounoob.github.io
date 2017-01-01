@@ -1,18 +1,19 @@
 ---
-id: 407
 title: PHP para Noobs
-date: 2012-08-03T12:10:28+00:00
+date: 2012-08-03 12:10:28 Z
+permalink: "/php-para-noobs/"
+categories:
+- Comunicados
+id: 407
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=407
-permalink: /php-para-noobs/
 short-url:
-  - http://bit.ly/12GW9Gx
+- http://bit.ly/12GW9Gx
 dsq_thread_id:
-  - "2821890687"
-categories:
-  - Comunicados
+- '2821890687'
 ---
+
 Estava pensando sobre o conteúdo do meu blog, e me deparei na seguinte questão… como posso ter um blog voltado para pessoas noobs e passar um tutorial para elas montarem algo, sem antes explicar ao menos o basico de PHP? Pos é, realmente é necessário eu parar e começar do inicio…
 
 Espero manter isso o mais simples possível, não sei explicar nada para ninguem então tentarei do meu jeito confuso de sempre… Para quem está começando agora não preciso que vocês saibam nada… apenas tenham vontade de aprender, o que aparecer de duvidas podemos achar uma solução juntos.

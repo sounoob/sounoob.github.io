@@ -1,22 +1,23 @@
 ---
-id: 151
 title: Escrevendo um arquivo de texto, usando PHP
-date: 2011-09-14T15:07:44+00:00
+date: 2011-09-14 15:07:44 Z
+permalink: "/escrevendo-um-arquivo-de-texto-usando-php/"
+categories:
+- Tutoriais
+tags:
+- Log
+id: 151
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=151
-permalink: /escrevendo-um-arquivo-de-texto-usando-php/
 short-url:
-  - http://bit.ly/VUY1xU
+- http://bit.ly/VUY1xU
 dsq_thread_id:
-  - "4323878794"
+- '4323878794'
 dsq_needs_sync:
-  - "1"
-categories:
-  - Tutoriais
-tags:
-  - Log
+- '1'
 ---
+
 Em muitos códigos que eu desenvolvo, a maioria deles utiliza sistema de log, para poder ir mapeando pontos do sistema a ser analisado posteriormente, como por exemplo, alguma falha de conexão, tentativas de acesso a algum lugar restrito… Enfim são muitas possibilidades de uso de um arquivo de log.
 
 Para isso iremos utilizar apenas três funções, que é o **fopen** para abrir o arquivo, **fwrite** para escrever no arquivo, e o **fclose** para fechar o arquivo.

@@ -1,18 +1,19 @@
 ---
-id: 811
 title: Tipos básicos de variáveis e constantes no PHP
-date: 2013-06-12T22:02:17+00:00
+date: 2013-06-12 22:02:17 Z
+permalink: "/tipos-basicos-de-variaveis-e-constantes-no-php/"
+categories:
+- Aulas
+id: 811
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=811
-permalink: /tipos-basicos-de-variaveis-e-constantes-no-php/
 short-url:
-  - http://bit.ly/11aEIS4
+- http://bit.ly/11aEIS4
 dsq_thread_id:
-  - "2821890774"
-categories:
-  - Aulas
+- '2821890774'
 ---
+
 Existem vários tipos de dados, porem iremos focar apenas nos quatros tipos básico e outra hora podemos falar sobre cada um dos outros tipo especificamente.<!--more-->
 
 Os quatro tipos básicos são:

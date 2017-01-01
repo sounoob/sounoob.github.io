@@ -1,22 +1,23 @@
 ---
-id: 488
 title: Resolvendo o erro senderName invalid do PagSeguro usando PHP
-date: 2012-09-05T23:43:49+00:00
+date: 2012-09-05 23:43:49 Z
+permalink: "/resolvendo-o-erro-sendername-invalid-do-pagseguro-usando-php/"
+categories:
+- Tutoriais
+tags:
+- API Pagamento
+- API PagSeguro
+- PagSeguro
+id: 488
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=488
-permalink: /resolvendo-o-erro-sendername-invalid-do-pagseguro-usando-php/
 short-url:
-  - http://bit.ly/VUVhAR
+- http://bit.ly/VUVhAR
 dsq_thread_id:
-  - "2821890716"
-categories:
-  - Tutoriais
-tags:
-  - API Pagamento
-  - API PagSeguro
-  - PagSeguro
+- '2821890716'
 ---
+
 Desde que a API de pagamentos do PagSeguro foi lançada, alguns desenvolvedores reportaram erros como "senderName invalid", o que já está se tornado um pouco comum a cada dia.
 
 Esse erro ocorre sempre que o nome do comprador é diferente do padrão estabelecido pelo PagSeguro, que é Nome + sobrenome, sem espaços duplicados e obrigatoriamente deve ter apenas letras e espaços, nada de números, o que é até coerente, desde que seu sistema esteja preparado para isso.

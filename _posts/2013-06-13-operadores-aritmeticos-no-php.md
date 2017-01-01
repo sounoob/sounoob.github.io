@@ -1,18 +1,19 @@
 ---
-id: 809
 title: Operadores Aritméticos no PHP
-date: 2013-06-13T06:39:05+00:00
+date: 2013-06-13 06:39:05 Z
+permalink: "/operadores-aritmeticos-no-php/"
+categories:
+- Aulas
+id: 809
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=809
-permalink: /operadores-aritmeticos-no-php/
 short-url:
-  - http://bit.ly/14Zm7WK
+- http://bit.ly/14Zm7WK
 dsq_thread_id:
-  - "2833700567"
-categories:
-  - Aulas
+- '2833700567'
 ---
+
 Se você não sabe o que são os "Operadores Aritméticos" significa que você provavelmente fugiu da escola… Bom isso não importa, tentarei mostrar no PHP como usá-los de uma forma bem simples.
 
 Para você que não sabe, operadores aritméticos são simbolos que representam alguma coisa na matemática, dentre elas a adição (**+**), subtração (**-**), multiplicação (*****) e divisão (**/**). No caso do PHP incluiremos o simbolo **%** que representará o resto da divisão.<!--more-->

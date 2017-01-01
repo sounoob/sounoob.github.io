@@ -1,20 +1,21 @@
 ---
-id: 36
 title: Transação inválida. Sempre inicie transações a partir de sites confiáveis.
-date: 2011-09-05T21:05:36+00:00
+date: 2011-09-05 21:05:36 Z
+permalink: "/transacao-invalida-sempre-inicie-transacoes-a-partir-de-sites-confiaveis/"
+categories:
+- Dicas
+tags:
+- PagSeguro
+id: 36
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=36
-permalink: /transacao-invalida-sempre-inicie-transacoes-a-partir-de-sites-confiaveis/
 short-url:
-  - http://bit.ly/12PDUTK
+- http://bit.ly/12PDUTK
 dsq_thread_id:
-  - "2821890585"
-categories:
-  - Dicas
-tags:
-  - PagSeguro
+- '2821890585'
 ---
+
 <p style="text-align: left;">
   Tenho visto na internet muita gente reclamando que ao tentar implantar o PagSeguro no sistema é exibido o erro: "Transação inválida. Sempre inicie transações a partir de sites confiáveis."<!--more-->
 </p>

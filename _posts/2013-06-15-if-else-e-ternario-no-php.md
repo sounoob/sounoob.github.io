@@ -1,20 +1,21 @@
 ---
-id: 851
 title: If, else e ternário no PHP
-date: 2013-06-15T14:15:54+00:00
+date: 2013-06-15 14:15:54 Z
+permalink: "/if-else-e-ternario-no-php/"
+categories:
+- Aulas
+id: 851
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=851
-permalink: /if-else-e-ternario-no-php/
 short-url:
-  - http://bit.ly/141OZyI
+- http://bit.ly/141OZyI
 dsq_thread_id:
-  - "2824237290"
+- '2824237290'
 dsq_needs_sync:
-  - "1"
-categories:
-  - Aulas
+- '1'
 ---
+
 If, else e o ternário sem dúvida o são os recursos mais utilizados no PHP e na maioria das linguagens, afinal é o que deixa o sistema mais "inteligente", afim de o código tomar algumas decisões com base as condições que foi previamente programado.<!--more-->
 
 

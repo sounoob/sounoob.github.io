@@ -1,21 +1,22 @@
 ---
-id: 961
 title: CodeIgniter para Noobs
-date: 2014-03-05T18:55:37+00:00
+date: 2014-03-05 18:55:37 Z
+permalink: "/codeigniter-para-noobs/"
+categories:
+- Comunicados
+tags:
+- CodeIgniter
+id: 961
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=961
-permalink: /codeigniter-para-noobs/
 short-url:
-  - http://bit.ly/P1DciG
+- http://bit.ly/P1DciG
 dsq_thread_id:
-  - "2818909588"
-image: ./assets/uploads/2014/03/codeIgniter-para-noobs.jpg
-categories:
-  - Comunicados
-tags:
-  - CodeIgniter
+- '2818909588'
+image: "./assets/uploads/2014/03/codeIgniter-para-noobs.jpg"
 ---
+
 Fazem bem 2 anos que trabalho com CodeIgniter e as pessoas me perguntam o motivo de eu escolher este e não outros framework, minha resposta sempre foi: Porque ele é fácil, simples e rápido de se instalar.
 
 Neste mini-curso (de grátis) tentarei mostrar isso para vocês, e vamos ver se consigo trazer novos discipulados ao mundo do CodeIgniter.<!--more-->

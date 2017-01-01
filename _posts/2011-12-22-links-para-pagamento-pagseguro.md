@@ -1,21 +1,22 @@
 ---
+title: Links para pagamento - PagSeguro
+date: 2011-12-22 15:41:02 Z
+permalink: "/links-para-pagamento-pagseguro/"
+categories:
+- Dicas
+- Tutoriais
+tags:
+- PagSeguro
 id: 306
-title: 'Links para pagamento - PagSeguro'
-date: 2011-12-22T15:41:02+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=306
-permalink: /links-para-pagamento-pagseguro/
 short-url:
-  - http://bit.ly/Vja99B
+- http://bit.ly/Vja99B
 dsq_thread_id:
-  - "2818943292"
-categories:
-  - Dicas
-  - Tutoriais
-tags:
-  - PagSeguro
+- '2818943292'
 ---
+
 O formato atual que o PagSeguro utiliza para fazer uma requisição de pagamento ou doação é utilizando formulários HTML ou fazendo requisição diretamente pelo servidor.
 
 Em algumas plataformas não é possível fazer requisição diretamente do servidor, ou até inserir formulários, como por exemplo, o blog do WordPress quando hospedado diretamente do servidor do WordPress, no Facebook…

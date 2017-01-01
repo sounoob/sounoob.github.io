@@ -1,18 +1,19 @@
 ---
-id: 547
 title: Variáveis no PHP
-date: 2012-10-15T11:48:37+00:00
+date: 2012-10-15 11:48:37 Z
+permalink: "/variaveis-php/"
+categories:
+- Aulas
+id: 547
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=547
-permalink: /variaveis-php/
 short-url:
-  - http://bit.ly/Ycc9NN
+- http://bit.ly/Ycc9NN
 dsq_thread_id:
-  - "2821890729"
-categories:
-  - Aulas
+- '2821890729'
 ---
+
 Um resumo rápido e objetivo é que uma variável é um espaço onde guardamos alguma informação para ser usada posteriormente, e essa informação poderá ser alterada a qualquer momento (Dai o nome de variável).<!--more-->
 
 No PHP para definirmos uma variável basta informar o símbolo do dólar (**$**) e depois o nome da variável, depois colocamos o sinal de igual (Vamos falar que a variável é igual a alguma coisa) e escrevemos a informação que estará na variável entre aspas. Veja abaixo um exemplo de variável:

@@ -1,18 +1,19 @@
 ---
-id: 793
 title: Constantes no PHP
-date: 2013-06-12T20:50:22+00:00
+date: 2013-06-12 20:50:22 Z
+permalink: "/constantes-no-php/"
+categories:
+- Aulas
+id: 793
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=793
-permalink: /constantes-no-php/
 short-url:
-  - http://bit.ly/11IbKst
+- http://bit.ly/11IbKst
 dsq_thread_id:
-  - "2822922993"
-categories:
-  - Aulas
+- '2822922993'
 ---
+
 Em resumo uma constante é aquela "variável" que não muda. <del style="color: #f00;" datetime="2013-06-12T21:45:16+00:00">Sim isso foi estranho porém necessário</del>
 
 Criar uma constante é um pouco diferente da forma que criamos uma variável<!--more-->, ela deve ser criada como mostrado no exemplo abaixo:

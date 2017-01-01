@@ -1,18 +1,19 @@
 ---
-id: 1106
 title: cURL. Feita para usar e abusar
-date: 2014-07-05T17:10:52+00:00
+date: 2014-07-05 17:10:52 Z
+permalink: "/curl-usando-e-abusando/"
+categories:
+- Tutoriais
+tags:
+- cURL
+id: 1106
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=1106
-permalink: /curl-usando-e-abusando/
 dsq_thread_id:
-  - "2820349682"
-categories:
-  - Tutoriais
-tags:
-  - cURL
+- '2820349682'
 ---
+
 Cedo ou tarde, todo programador irá precisar fazer uma conexão com algum página para enviar ou buscar alguma informação (ou fazer os dois). É ai que você pede ajuda ao cURL.<!--more-->
 
 ## cURL se você está entre nós, dê um sinal.

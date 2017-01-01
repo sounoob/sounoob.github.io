@@ -1,20 +1,21 @@
 ---
+title: Informações do YouTube - Como capturar usando PHP
+date: 2014-05-15 18:59:07 Z
+permalink: "/informacoes-youtube-usando-php/"
+categories:
+- Tutoriais
+tags:
+- Google
+- Youtube
 id: 1059
-title: 'Informações do YouTube - Como capturar usando PHP'
-date: 2014-05-15T18:59:07+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=1059
-permalink: /informacoes-youtube-usando-php/
 dsq_thread_id:
-  - "2819423969"
-image: ./assets/uploads/2014/05/younoob.jpg
-categories:
-  - Tutoriais
-tags:
-  - Google
-  - Youtube
+- '2819423969'
+image: "./assets/uploads/2014/05/younoob.jpg"
 ---
+
 Hoje em dia temos um sério problema com limite de tráfego de servidores, o que acaba forçando os programadores utilizarem serviços de terceiros para inserir nos sites conteúdo de vídeos. Uma das opções é o serviço do Google: O <span style="color: #000000;">YouTube</span>. O problema que surgia logo após a migração de vídeos para o <span style="color: #000000;">YouTube</span>, é que todas informações cadastradas no <span style="color: #000000;">YouTube </span>eram um pouco difíceis de ser recuperar. Em um dilema como este, resolvi criar uma classe (Um script) que faça todo trabalho pesado para recuperar as Informações do <span style="color: #000000;">YouTube</span>. Vou mostrar para vocês como funciona<!--more-->:
 
 Neste tutorial estarei utilizando uma classe chama youtubeDetails, que disponibilizei no github (caso achem bugs ou queira melhorar, fiquem a vontade). Esta classe consegue atualmente recuperar:

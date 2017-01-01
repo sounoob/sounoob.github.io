@@ -1,24 +1,25 @@
 ---
-id: 919
 title: Codificando e-mail marketing sem problemas
-date: 2014-02-28T09:47:02+00:00
+date: 2014-02-28 09:47:02 Z
+permalink: "/codificando-e-mail-marketing-sem-problemas/"
+categories:
+- Curiosidades
+- Dicas
+tags:
+- css
+- e-mail marketing
+- html
+id: 919
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=919
-permalink: /codificando-e-mail-marketing-sem-problemas/
 short-url:
-  - http://bit.ly/1lnr08U
+- http://bit.ly/1lnr08U
 dsq_thread_id:
-  - "2818905238"
-image: ./assets/uploads/2014/02/emailmarketing.jpg
-categories:
-  - Curiosidades
-  - Dicas
-tags:
-  - css
-  - e-mail marketing
-  - html
+- '2818905238'
+image: "./assets/uploads/2014/02/emailmarketing.jpg"
 ---
+
 Uma coisa eu odiava mais do que o IE6 <del style="color: #ff0000;">(e o funk)</del> era criar um e-mail marketing e fazer funcionar "bonitinho" em todos clientes de e-mail.
 
 Parte do meu trabalho <del style="color: #ff0000;">(Sim meu blog não paga minhas contas então tenho que trabalhar) XD</del> era fazer um monte destes e-mail marketing e como sou muito noob em relação a isso tudo, sofri bastante com e-mails com assuntos do tipo: _"E-mail marketing quebrado", "E-mail marketing sem formatação", "E-mail marketing com espaços entre as imagens"…_ nem preciso dizer que a lista de reclamações é imensa… foi por isso que gastei alguns milésimos de segundos do meu dia em pesquisas para evitar que o telefone toque, vou tentar passar algumas dicas afim de vocês também evitarem esses problemas.<!--more-->

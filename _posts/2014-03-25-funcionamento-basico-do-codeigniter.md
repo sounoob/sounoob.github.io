@@ -1,20 +1,21 @@
 ---
-id: 995
 title: Funcionamento básico do CodeIgniter
-date: 2014-03-25T19:33:12+00:00
+date: 2014-03-25 19:33:12 Z
+permalink: "/funcionamento-basico-do-codeigniter/"
+categories:
+- Aulas
+tags:
+- CodeIgniter
+id: 995
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=995
-permalink: /funcionamento-basico-do-codeigniter/
 short-url:
-  - http://bit.ly/1jS3JIj
+- http://bit.ly/1jS3JIj
 dsq_thread_id:
-  - "2819458222"
-categories:
-  - Aulas
-tags:
-  - CodeIgniter
+- '2819458222'
 ---
+
 Primeira reação de quem nunca trabalhou com o CodeIgniter <del style="color: #ff0000;">(Ou qualquer outro framework)</del> é abrir as pastas e falar: <del style="color: #ff0000;">Que merda é essa…</del> Que estrutura é essa…
 
 Para todos vocês que pensaram ou disseram isso, tenho boas notícias: CodeIgniter é a coisa mais fácil do mundo. Sério, provavelmente quando você entender o básico, provavelmente nunca mais voltará aqui… Mas, enquanto isso descreverei aqui como ele funciona.<!--more-->

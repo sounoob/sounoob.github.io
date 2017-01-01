@@ -1,21 +1,22 @@
 ---
+title: Módulo Joomla 1.7 - Básico
+date: 2012-02-02 12:30:23 Z
+permalink: "/modulo-joomla-1-7-basico/"
+categories:
+- Tutoriais
+tags:
+- Joomla
+- Joomla 1.7
 id: 319
-title: 'Módulo Joomla 1.7 - Básico'
-date: 2012-02-02T12:30:23+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=319
-permalink: /modulo-joomla-1-7-basico/
 short-url:
-  - http://bit.ly/VjbKw0
+- http://bit.ly/VjbKw0
 dsq_thread_id:
-  - "2852522008"
-categories:
-  - Tutoriais
-tags:
-  - Joomla
-  - Joomla 1.7
+- '2852522008'
 ---
+
 Todo modulo em Joomla deverá ter no mínimo dois arquivos, um arquivo XML o qual irá determinar todos os parâmetros e informações do módulo, e um arquivo PHP  o qual irá inicializar e/ou processar todas as tarefas.
 
 Vamos criar um exemplo simples apenas para representar algo básico, esse módulo irá se chamar: "mod\_sou\_goku", esse modulo irá apenas mostrar na tela um texto básico.<!--more-->

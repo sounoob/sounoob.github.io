@@ -1,22 +1,23 @@
 ---
-id: 962
 title: Introdução – CodeIgniter para Noobs
-date: 2014-03-05T19:07:56+00:00
+date: 2014-03-05 19:07:56 Z
+permalink: "/introducao-codeigniter-para-noobs/"
+categories:
+- Aulas
+- Que bicho é esse?
+tags:
+- CodeIgniter
+id: 962
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=962
-permalink: /introducao-codeigniter-para-noobs/
 short-url:
-  - http://bit.ly/P1Fu1f
+- http://bit.ly/P1Fu1f
 dsq_thread_id:
-  - "2819434890"
-image: ./assets/uploads/2014/03/codeIgniter-para-noobs-introducao.jpg
-categories:
-  - Aulas
-  - Que bicho é esse?
-tags:
-  - CodeIgniter
+- '2819434890'
+image: "./assets/uploads/2014/03/codeIgniter-para-noobs-introducao.jpg"
 ---
+
 ### O que é o CodeIgniter?
 
 CodeIgniter é um Framework em PHP, pera, vou explicar de uma forma mais simples. É um  conjunto de código que vai facilitar sua vida na hora de criar um site ou sistema.

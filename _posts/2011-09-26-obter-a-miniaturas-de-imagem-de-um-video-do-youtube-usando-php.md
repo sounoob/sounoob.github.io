@@ -1,20 +1,21 @@
 ---
-id: 194
 title: Obter miniaturas de imagem de um vídeo do YouTube usando PHP
-date: 2011-09-26T15:20:00+00:00
+date: 2011-09-26 15:20:00 Z
+permalink: "/obter-a-miniaturas-de-imagem-de-um-video-do-youtube-usando-php/"
+categories:
+- Tutoriais
+tags:
+- Youtube
+id: 194
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=194
-permalink: /obter-a-miniaturas-de-imagem-de-um-video-do-youtube-usando-php/
 short-url:
-  - http://bit.ly/Vjgn9y
+- http://bit.ly/Vjgn9y
 dsq_thread_id:
-  - "2818804590"
-categories:
-  - Tutoriais
-tags:
-  - Youtube
+- '2818804590'
 ---
+
 O Google padroniza suas URLs e com isso é possível gerar muita coisa dinâmica, e uma delas é as miniaturas de imagem de um vídeo do YouTube.
 
 Para criar o código que gera a URL das imagens é preciso descobrir qual é o link padrão das imagens<!--more-->

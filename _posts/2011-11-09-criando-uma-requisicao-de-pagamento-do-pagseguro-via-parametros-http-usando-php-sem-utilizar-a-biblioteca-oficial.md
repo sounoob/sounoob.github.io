@@ -1,24 +1,26 @@
 ---
+title: Criando uma requisição de pagamento do PagSeguro via parametros HTTP usando
+  PHP – Sem utilizar a biblioteca oficial
+date: 2011-11-09 14:43:56 Z
+permalink: "/criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/"
+categories:
+- Tutoriais
+tags:
+- API Pagamento
+- API PagSeguro
+- cURL
+- PagSeguro
+- recorrencia
 id: 259
-title: Criando uma requisição de pagamento do PagSeguro via parametros HTTP usando PHP – Sem utilizar a biblioteca oficial
-date: 2011-11-09T14:43:56+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=259
-permalink: /criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/
 short-url:
-  - http://bit.ly/VjgUbp
+- http://bit.ly/VjgUbp
 dsq_thread_id:
-  - "2819814603"
-categories:
-  - Tutoriais
-tags:
-  - API Pagamento
-  - API PagSeguro
-  - cURL
-  - PagSeguro
-  - recorrencia
+- '2819814603'
 ---
+
 A requisição de pagamento informando os dados em parâmetros HTTP funciona de forma muito semelhante ao formato XML.<!--more-->
 
 A primeira coisa a ser definida é para qual URL será enviado os dados, diferente do mostrado no formato XML não iremos enviar nenhum parâmetro via GET, então ficará algo mais ou menos assim:

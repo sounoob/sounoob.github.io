@@ -1,19 +1,20 @@
 ---
+title: Introdução - PHP para Noobs
+date: 2012-08-06 17:17:03 Z
+permalink: "/introducao-php-para-noobs/"
+categories:
+- Que bicho é esse?
+- Aulas
 id: 424
-title: 'Introdução - PHP para Noobs'
-date: 2012-08-06T17:17:03+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=424
-permalink: /introducao-php-para-noobs/
 short-url:
-  - http://bit.ly/12PB4y0
+- http://bit.ly/12PB4y0
 dsq_thread_id:
-  - "2908529623"
-categories:
-  - Que bicho é esse?
-  - Aulas
+- '2908529623'
 ---
+
 ### O que é o PHP?
 
 Antigamente era um acrónimo para “Personal Home Page”, agora virou acrónimo recursivo para "PHP: Hypertext Preprocessor". Confuso né? PHP significar PHP… enfim, o que você precisa saber é que o PHP é um meio de falar com o servidor como ele irá se comportar em relação a todos informações que serão mostradas para o usuário.<!--more-->

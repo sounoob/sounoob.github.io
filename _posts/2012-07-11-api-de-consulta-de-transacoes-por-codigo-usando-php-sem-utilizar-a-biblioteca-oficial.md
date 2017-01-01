@@ -1,23 +1,25 @@
 ---
+title: API de consulta de transações por código usando PHP - Sem utilizar a biblioteca
+  oficial
+date: 2012-07-11 17:46:52 Z
+permalink: "/api-de-consulta-de-transacoes-por-codigo-usando-php-sem-utilizar-a-biblioteca-oficial/"
+categories:
+- Tutoriais
+tags:
+- API PagSeguro
+- cURL
+- PagSeguro
+- XML
 id: 384
-title: 'API de consulta de transações por código usando PHP - Sem utilizar a biblioteca oficial'
-date: 2012-07-11T17:46:52+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=384
-permalink: /api-de-consulta-de-transacoes-por-codigo-usando-php-sem-utilizar-a-biblioteca-oficial/
 short-url:
-  - http://bit.ly/12PHehJ
+- http://bit.ly/12PHehJ
 dsq_thread_id:
-  - "2819597866"
-categories:
-  - Tutoriais
-tags:
-  - API PagSeguro
-  - cURL
-  - PagSeguro
-  - XML
+- '2819597866'
 ---
+
 Uma das vantagens de utilizar a API de consulta de transações por código é a opção de poder consultar o detalhe da transação quando der na teia, até mesmo antes de <a title="Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial" href="./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">receber notificações da API de notificações</a>, sem contar que pode ser usada em conjunto com outras APIs, tornado sua integração mais "poderosa".
 
 Talvez você deva estar se perguntando: É difícil? Eu respondo que não. Ela é uma das APIs do PagSeguro mais fácil de trabalhar, e podemos utilizar a mesma lógica usada na [API de notificações](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial").<!--more-->

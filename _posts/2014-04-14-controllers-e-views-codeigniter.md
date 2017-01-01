@@ -1,20 +1,21 @@
 ---
+title: Controllers e Views - CodeIgniter
+date: 2014-04-14 15:56:54 Z
+permalink: "/controllers-e-views-codeigniter/"
+categories:
+- Tutoriais
+tags:
+- CodeIgniter
 id: 1023
-title: 'Controllers e Views - CodeIgniter'
-date: 2014-04-14T15:56:54+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=1023
-permalink: /controllers-e-views-codeigniter/
 short-url:
-  - http://bit.ly/1kpnR6G
+- http://bit.ly/1kpnR6G
 dsq_thread_id:
-  - "2818789380"
-categories:
-  - Tutoriais
-tags:
-  - CodeIgniter
+- '2818789380'
 ---
+
 Basicamente toda informação é processada no controller e mostrada para o usuário por meio das View.
 
 O controller servirá como ponte entre o usuário e o nosso sistema, o usuário irá chamar um controller pela URL e este irá processar todas informações e chamar a View para enfim exibir as informações do usuário. Sendo assim teremos a todo um momento uma troca de informações entre Controllers e Views.

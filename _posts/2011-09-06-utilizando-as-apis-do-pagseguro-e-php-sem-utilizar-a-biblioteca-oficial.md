@@ -1,20 +1,21 @@
 ---
+title: Utilizando as APIs do PagSeguro e PHP - Sem utilizar a biblioteca oficial.
+date: 2011-09-06 21:59:25 Z
+permalink: "/utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/"
+categories:
+- Comunicados
+tags:
+- API PagSeguro
 id: 74
-title: 'Utilizando as APIs do PagSeguro e PHP - Sem utilizar a biblioteca oficial.'
-date: 2011-09-06T21:59:25+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=74
-permalink: /utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/
 short-url:
-  - http://bit.ly/VjgTUP
+- http://bit.ly/VjgTUP
 dsq_thread_id:
-  - "2819595618"
-categories:
-  - Comunicados
-tags:
-  - API PagSeguro
+- '2819595618'
 ---
+
 Junto com o lançamento das APIs o PagSeguro disponibilizou algumas bibliotecas, inicialmente em PHP, JAVA e .NET, o fato é que teve muita gente reclamando que não consegue incluir a biblioteca no framework, outros reclamam que a biblioteca tem muitos arquivos que não irá utilizar no projeto… Enfim não dar para agradar todo mundo sempre tem <span style="text-decoration: line-through; color: #ff0000;"><del>um maldito que nunca está satisfeito</del></span> alguém que quer algo diferenciado. Foi ai que a galera começou a perguntar nos fóruns como utilizar essas APIs de modo fácil sem usar a biblioteca oficial.<!--more-->
 
 Assim que possível irei mostrar como fazer isso de maneira simples, e listando um a um abaixo.

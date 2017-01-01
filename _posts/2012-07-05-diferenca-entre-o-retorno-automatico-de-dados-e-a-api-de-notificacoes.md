@@ -1,24 +1,25 @@
 ---
-id: 376
 title: Diferença entre o Retorno Automático de Dados e a API de notificações
-date: 2012-07-05T13:33:54+00:00
+date: 2012-07-05 13:33:54 Z
+permalink: "/diferenca-entre-o-retorno-automatico-de-dados-e-a-api-de-notificacoes/"
+categories:
+- Curiosidades
+- Dicas
+tags:
+- API Notificação
+- API PagSeguro
+- PagSeguro
+- Retorno Automático de Dados
+id: 376
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=376
-permalink: /diferenca-entre-o-retorno-automatico-de-dados-e-a-api-de-notificacoes/
 short-url:
-  - http://bit.ly/VkhlVk
+- http://bit.ly/VkhlVk
 dsq_thread_id:
-  - "2818998019"
-categories:
-  - Curiosidades
-  - Dicas
-tags:
-  - API Notificação
-  - API PagSeguro
-  - PagSeguro
-  - Retorno Automático de Dados
+- '2818998019'
 ---
+
 Depois de ver bastante questões em fóruns e afins, sobre a diferença entre o <span style="color: #ff0000;"><del datetime="2012-07-05T14:34:56+00:00">finado</del></span> Retorno Automático de Dados e a API de notificações, resolvi citar algumas diferenças entre ambos serviços.<!--more-->
 
 Acho que a primeira coisa que precisamos deixar claro é que a API de notificações veio sim para substituir o Retorno Automático de Dados, ou seja… hora de migrar o sistema para algo melhor nê!

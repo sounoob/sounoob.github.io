@@ -1,24 +1,26 @@
 ---
+title: Criando uma requisição de pagamento do PagSeguro via XML usando PHP – Sem utilizar
+  a biblioteca oficial
+date: 2011-09-14 11:15:51 Z
+permalink: "/criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/"
+categories:
+- Tutoriais
+tags:
+- API Pagamento
+- API PagSeguro
+- cURL
+- PagSeguro
+- XML
 id: 139
-title: Criando uma requisição de pagamento do PagSeguro via XML usando PHP – Sem utilizar a biblioteca oficial
-date: 2011-09-14T11:15:51+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=139
-permalink: /criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/
 short-url:
-  - http://bit.ly/12GOece
+- http://bit.ly/12GOece
 dsq_thread_id:
-  - "2819422718"
-categories:
-  - Tutoriais
-tags:
-  - API Pagamento
-  - API PagSeguro
-  - cURL
-  - PagSeguro
-  - XML
+- '2819422718'
 ---
+
 Um dos maiores pontos fortes da API de pagamento é a possibilidade de enviar os dados, sem que o internauta consiga interceptar e alterar esses dados usando apenas a interface apresentada na tela, sem contar a possibilidade de mudar a URL de redirecionamento (não confunda com a URL de notificação).
 
 <!--more-->O que iremos utilizar para a comunicação irá ser a biblioteca do cURL, e para manipular os dados recebidos vamos usar função simplexml\_load\_string  para transformar o XML em objeto, igual utilizamos para receber as notificações em "

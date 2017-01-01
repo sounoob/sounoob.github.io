@@ -1,23 +1,24 @@
 ---
-id: 670
 title: Requisição de pagamento do PagSeguro com assinatura associada usando PHP
-date: 2013-01-14T04:01:21+00:00
+date: 2013-01-14 04:01:21 Z
+permalink: "/requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/"
+categories:
+- Tutoriais
+tags:
+- API Pagamento
+- API PagSeguro
+- PagSeguro
+- recorrencia
+id: 670
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=670
-permalink: /requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/
 short-url:
-  - http://bit.ly/VjaIAg
+- http://bit.ly/VjaIAg
 dsq_thread_id:
-  - "2819814646"
-categories:
-  - Tutoriais
-tags:
-  - API Pagamento
-  - API PagSeguro
-  - PagSeguro
-  - recorrencia
+- '2819814646'
 ---
+
 Agora a API de pagamentos conta com um novo "Upgrade", que é a possibilidade de fazer uma requisição e incluir um pagamento recorrente tudo em "uma tacada só" . Para isso usaremos o que já foi descrito aqui em no tutorial para <a title="Criando uma requisição de pagamento do PagSeguro via parametros HTTP usando PHP – Sem utilizar a biblioteca oficial" href="./criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">Criando requisição de pagamento via HTTP</a> e <a title="Criando uma requisição de pagamento do PagSeguro via XML usando PHP – Sem utilizar a biblioteca oficial" href="./criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">Criando requisição de pagamento via XML</a>  será necessário apenas incluir uns dados adicionais para enviar ao PagSeguro, o resto segue do mesmo jeito.<!--more-->
 
 No outro tutorial usamos array **$data** para enviar todos os dados, então continuaremos usar o mesmo campo para passar os dados referente a recorrência, no caso do XML criaremos uma tag e chamaremos de **preApproval **essa tag deverá estar dentro da tag **checkout**, depois incluiremos todos parâmetros lá dentro.

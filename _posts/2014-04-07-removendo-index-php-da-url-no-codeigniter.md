@@ -1,23 +1,24 @@
 ---
+title: Removendo "index.php" da URL no CodeIgniter
+date: 2014-04-07 15:26:55 Z
+permalink: "/removendo-index-php-da-url-no-codeigniter/"
+categories:
+- Tutoriais
+tags:
+- CodeIgniter
+- htaccess
+- Web.config
 id: 1005
-title: 'Removendo "index.php" da URL no CodeIgniter'
-date: 2014-04-07T15:26:55+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=1005
-permalink: /removendo-index-php-da-url-no-codeigniter/
 short-url:
-  - http://bit.ly/1mUwUPC
+- http://bit.ly/1mUwUPC
 dsq_thread_id:
-  - "2829079704"
-image: ./assets/uploads/2014/04/Removendo-index.jpg
-categories:
-  - Tutoriais
-tags:
-  - CodeIgniter
-  - htaccess
-  - Web.config
+- '2829079704'
+image: "./assets/uploads/2014/04/Removendo-index.jpg"
 ---
+
 O CodeIgniter por padrão já dá suporte a URL amigáveis,  como os grandes frameworks em PHP, o grande problema é que ele ainda insiste em mostrar o arquivo index.php na URL o que deixa toda requisição horrível.
 
 Veja o padrão de URL na instalação padrão do CodeIgniter:

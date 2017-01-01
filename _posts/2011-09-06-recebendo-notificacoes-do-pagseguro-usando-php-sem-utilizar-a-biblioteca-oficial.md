@@ -1,23 +1,25 @@
 ---
+title: Recebendo notificações do PagSeguro usando PHP - Sem utilizar a biblioteca
+  oficial
+date: 2011-09-06 22:10:00 Z
+permalink: "/recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/"
+categories:
+- Tutoriais
+tags:
+- API Notificação
+- API PagSeguro
+- PagSeguro
+- XML
 id: 72
-title: 'Recebendo notificações do PagSeguro usando PHP - Sem utilizar a biblioteca oficial'
-date: 2011-09-06T22:10:00+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=72
-permalink: /recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/
 short-url:
-  - http://bit.ly/VjdsgV
+- http://bit.ly/VjdsgV
 dsq_thread_id:
-  - "2818796140"
-categories:
-  - Tutoriais
-tags:
-  - API Notificação
-  - API PagSeguro
-  - PagSeguro
-  - XML
+- '2818796140'
 ---
+
 Primeiro você deve configurar sua URL na sua conta do PagSeguro para receber o código da notificação ( <a href="./assets/uploads/2011/09/PagSeguro_UOL_Notificacao_de-transacoes_pagseguro_uol_com_br_integracao_notificacao_de_transacoes.jpg" target="_blank">clique aqui para ver como que se faz</a>),  após isso vamos enviar esse código para o PagSeguro afim de receber os detalhes da transação.<!--more-->
 
 Para fazer a comunicação com o PagSeguro vamos usar a biblioteca do CURL, e a função simplexml\_load\_string  para transformar o XML em objeto, para manipular facilmente.

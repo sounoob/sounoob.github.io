@@ -1,21 +1,22 @@
 ---
+title: Consultar frete utilizando webservice dos correios - PHP
+date: 2012-02-08 07:48:51 Z
+permalink: "/consultar-frete-utilizando-webservice-dos-correios-php/"
+categories:
+- Tutoriais
+tags:
+- Correios
+- cURL
 id: 336
-title: 'Consultar frete utilizando webservice dos correios - PHP'
-date: 2012-02-08T07:48:51+00:00
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=336
-permalink: /consultar-frete-utilizando-webservice-dos-correios-php/
 short-url:
-  - http://bit.ly/VjgHoJ
+- http://bit.ly/VjgHoJ
 dsq_thread_id:
-  - "2819540744"
-categories:
-  - Tutoriais
-tags:
-  - Correios
-  - cURL
+- '2819540744'
 ---
+
 Muito utilizado nos e-commerces é a função para calculo de frete, o que dizer de uma loja virtual que não realiza calculo de frete automaticamente, seria péssimo para as vendas, né? Pois bem, você precisa apenas saber que é fácil e que não precisa pagar por esse serviço. Seu sistema poderá realizar a consulta diretamente nos correios de forma totalmente gratuita. Claro que você pode contratar os serviços dos correios, porem nesse caso já é outra história.<!--more-->
 
 Vamos ao que interessa…

@@ -1,22 +1,23 @@
 ---
-id: 294
 title: Usando encurtador de URL do Google com PHP
-date: 2011-12-22T09:01:00+00:00
+date: 2011-12-22 09:01:00 Z
+permalink: "/usando-encurtador-de-url-do-google-com-php/"
+categories:
+- Tutoriais
+tags:
+- Encurtador
+- Google
+- Qr code
+id: 294
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=294
-permalink: /usando-encurtador-de-url-do-google-com-php/
 short-url:
-  - http://bit.ly/X9K0cB
+- http://bit.ly/X9K0cB
 dsq_thread_id:
-  - "2821890666"
-categories:
-  - Tutoriais
-tags:
-  - Encurtador
-  - Google
-  - Qr code
+- '2821890666'
 ---
+
 Muito útil na hora de tuitar ou enviar um link para alguém é encurtar a URL. Como todos sabem que é <span style="color: #ff0000;"><del style="color: #ff0000;">um saco</del></span> estressante ficar entrando no site do encurtador para fazer gerar o novo link. Então porque não gerar isso dinâmico para os visitantes do seu site ou blog <del style="color: #ff0000;">ou seja lá o que você  utiliza</del> .<!--more-->
 
 Iremos especificar na variável **$url** o endereço do webservice do Google que irá receber os nossos dados e gerar a URL encurtada

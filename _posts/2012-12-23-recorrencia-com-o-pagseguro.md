@@ -1,23 +1,24 @@
 ---
-id: 668
 title: Recorrência (Assinaturas) com o PagSeguro
-date: 2012-12-23T08:32:15+00:00
+date: 2012-12-23 08:32:15 Z
+permalink: "/recorrencia-com-o-pagseguro/"
+categories:
+- Dicas
+tags:
+- API Assinatura
+- API PagSeguro
+- PagSeguro
+- recorrencia
+id: 668
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=668
-permalink: /recorrencia-com-o-pagseguro/
 short-url:
-  - http://bit.ly/XbrxdV
+- http://bit.ly/XbrxdV
 dsq_thread_id:
-  - "2819473564"
-categories:
-  - Dicas
-tags:
-  - API Assinatura
-  - API PagSeguro
-  - PagSeguro
-  - recorrencia
+- '2819473564'
 ---
+
 Depois de todos pedirem, depois de muito código, depois de muitos testes, enfim saiu o sistema de recorrências do PagSeguro com direito a API de tudo mais.
 
 **Oh Wait,  o que é essa tal de Recorrência ?**
