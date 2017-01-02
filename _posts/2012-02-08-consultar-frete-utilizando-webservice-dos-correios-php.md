@@ -2,6 +2,7 @@
 title: Consultar frete utilizando webservice dos correios - PHP
 date: 2012-02-08 07:48:51 Z
 permalink: "/consultar-frete-utilizando-webservice-dos-correios-php/"
+redirect_from: "/2012/02/08/consultar-frete-utilizando-webservice-dos-correios-php/"
 categories:
 - Tutoriais
 tags:
