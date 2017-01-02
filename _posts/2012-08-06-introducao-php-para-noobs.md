@@ -2,10 +2,10 @@
 title: Introdução - PHP para Noobs
 date: 2012-08-06 17:17:03 Z
 permalink: "/introducao-php-para-noobs/"
-redirect_from: "/2012/08/06/introducao-php-para-noobs/"
 categories:
 - Que bicho é esse?
 - Aulas
+redirect_from: "/2012/08/06/introducao-php-para-noobs/"
 id: 424
 author: Sena
 layout: post

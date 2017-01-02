@@ -1,11 +1,11 @@
 ---
 title: Funcionamento básico do CodeIgniter
 date: 2014-03-25 19:33:12 Z
-redirect_from: "/2014/03/25/funcionamento-basico-do-codeigniter/"
 categories:
 - Aulas
 tags:
 - CodeIgniter
+redirect_from: "/2014/03/25/funcionamento-basico-do-codeigniter/"
 id: 995
 author: Sena
 layout: post

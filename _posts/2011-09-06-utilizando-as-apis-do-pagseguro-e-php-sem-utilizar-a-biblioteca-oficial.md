@@ -2,11 +2,11 @@
 title: Utilizando as APIs do PagSeguro e PHP - Sem utilizar a biblioteca oficial.
 date: 2011-09-06 21:59:25 Z
 permalink: "/utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/"
-redirect_from: "/2011/09/06/utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/"
 categories:
 - Comunicados
 tags:
 - API PagSeguro
+redirect_from: "/2011/09/06/utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/"
 id: 74
 author: Sena
 layout: post

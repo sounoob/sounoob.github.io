@@ -2,9 +2,9 @@
 title: Variáveis no PHP
 date: 2012-10-15 11:48:37 Z
 permalink: "/variaveis-php/"
-redirect_from: "/2012/10/15/variaveis-php/"
 categories:
 - Aulas
+redirect_from: "/2012/10/15/variaveis-php/"
 id: 547
 author: Sena
 layout: post

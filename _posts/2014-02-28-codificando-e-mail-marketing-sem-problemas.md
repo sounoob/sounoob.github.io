@@ -2,7 +2,6 @@
 title: Codificando e-mail marketing sem problemas
 date: 2014-02-28 09:47:02 Z
 permalink: "/codificando-e-mail-marketing-sem-problemas/"
-redirect_from: "/2014/02/28/codificando-e-mail-marketing-sem-problemas/"
 categories:
 - Curiosidades
 - Dicas
@@ -10,6 +9,7 @@ tags:
 - css
 - e-mail marketing
 - html
+redirect_from: "/2014/02/28/codificando-e-mail-marketing-sem-problemas/"
 id: 919
 author: Sena
 layout: post

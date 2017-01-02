@@ -2,11 +2,11 @@
 title: Obter miniaturas de imagem de um vídeo do YouTube usando PHP
 date: 2011-09-26 15:20:00 Z
 permalink: "/obter-a-miniaturas-de-imagem-de-um-video-do-youtube-usando-php/"
-redirect_from: "/2011/09/26/obter-a-miniaturas-de-imagem-de-um-video-do-youtube-usando-php/"
 categories:
 - Tutoriais
 tags:
 - Youtube
+redirect_from: "/2011/09/26/obter-a-miniaturas-de-imagem-de-um-video-do-youtube-usando-php/"
 id: 194
 author: Sena
 layout: post

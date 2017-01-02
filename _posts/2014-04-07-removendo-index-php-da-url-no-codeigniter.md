@@ -2,13 +2,13 @@
 title: Removendo "index.php" da URL no CodeIgniter
 date: 2014-04-07 15:26:55 Z
 permalink: "/removendo-index-php-da-url-no-codeigniter/"
-redirect_from: "/2014/04/07/removendo-index-php-da-url-no-codeigniter/"
 categories:
 - Tutoriais
 tags:
 - CodeIgniter
 - htaccess
 - Web.config
+redirect_from: "/2014/04/07/removendo-index-php-da-url-no-codeigniter/"
 id: 1005
 author: Sena
 layout: post

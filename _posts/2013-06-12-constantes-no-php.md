@@ -2,9 +2,9 @@
 title: Constantes no PHP
 date: 2013-06-12 20:50:22 Z
 permalink: "/constantes-no-php/"
-redirect_from: "/2013/06/12/constantes-no-php/"
 categories:
 - Aulas
+redirect_from: "/2013/06/12/constantes-no-php/"
 id: 793
 author: Sena
 layout: post

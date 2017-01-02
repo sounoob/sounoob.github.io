@@ -2,11 +2,11 @@
 title: Instalando o CodeIgniter
 date: 2014-03-22 15:29:28 Z
 permalink: "/instalando-o-codeigniter/"
-redirect_from: "/2014/03/22/instalando-o-codeigniter/"
 categories:
 - Aulas
 tags:
 - CodeIgniter
+redirect_from: "/2014/03/22/instalando-o-codeigniter/"
 id: 978
 author: Sena
 layout: post

@@ -2,11 +2,11 @@
 title: Controllers e Views - CodeIgniter
 date: 2014-04-14 15:56:54 Z
 permalink: "/controllers-e-views-codeigniter/"
-redirect_from: "/2014/04/14/controllers-e-views-codeigniter/"
 categories:
 - Tutoriais
 tags:
 - CodeIgniter
+redirect_from: "/2014/04/14/controllers-e-views-codeigniter/"
 id: 1023
 author: Sena
 layout: post
