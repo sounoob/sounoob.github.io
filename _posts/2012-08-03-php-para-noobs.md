@@ -2,9 +2,9 @@
 title: PHP para Noobs
 date: 2012-08-03 12:10:28 Z
 permalink: "/php-para-noobs/"
-redirect_from: "/2012/08/03/php-para-noobs/"
 categories:
 - Comunicados
+redirect_from: "/2012/08/03/php-para-noobs/"
 id: 407
 author: Sena
 layout: post

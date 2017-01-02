@@ -2,9 +2,9 @@
 title: Primeiro post…
 date: 2011-08-24 18:51:37 Z
 permalink: "/primeiro-post/"
-redirect_from: "/2011/08/24/primeiro-post/"
 categories:
 - Comunicados
+redirect_from: "/2011/08/24/primeiro-post/"
 id: 10
 author: Sena
 layout: post

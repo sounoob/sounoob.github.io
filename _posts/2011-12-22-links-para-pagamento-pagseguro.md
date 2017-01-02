@@ -2,12 +2,12 @@
 title: Links para pagamento - PagSeguro
 date: 2011-12-22 15:41:02 Z
 permalink: "/links-para-pagamento-pagseguro/"
-redirect_from: "/2011/12/22/links-para-pagamento-pagseguro/"
 categories:
 - Dicas
 - Tutoriais
 tags:
 - PagSeguro
+redirect_from: "/2011/12/22/links-para-pagamento-pagseguro/"
 id: 306
 author: Sena
 layout: post

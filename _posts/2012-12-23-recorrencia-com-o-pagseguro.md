@@ -2,7 +2,6 @@
 title: Recorrência (Assinaturas) com o PagSeguro
 date: 2012-12-23 08:32:15 Z
 permalink: "/recorrencia-com-o-pagseguro/"
-redirect_from: "/2012/12/23/recorrencia-com-o-pagseguro/"
 categories:
 - Dicas
 tags:
@@ -10,6 +9,7 @@ tags:
 - API PagSeguro
 - PagSeguro
 - recorrencia
+redirect_from: "/2012/12/23/recorrencia-com-o-pagseguro/"
 id: 668
 author: Sena
 layout: post

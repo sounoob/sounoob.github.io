@@ -2,7 +2,6 @@
 title: Diferença entre o Retorno Automático de Dados e a API de notificações
 date: 2012-07-05 13:33:54 Z
 permalink: "/diferenca-entre-o-retorno-automatico-de-dados-e-a-api-de-notificacoes/"
-redirect_from: "2012/07/05/diferenca-entre-o-retorno-automatico-de-dados-e-a-api-de-notificacoes/"
 categories:
 - Curiosidades
 - Dicas
@@ -11,6 +10,7 @@ tags:
 - API PagSeguro
 - PagSeguro
 - Retorno Automático de Dados
+redirect_from: 2012/07/05/diferenca-entre-o-retorno-automatico-de-dados-e-a-api-de-notificacoes/
 id: 376
 author: Sena
 layout: post

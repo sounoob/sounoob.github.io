@@ -3,7 +3,6 @@ title: Criando uma requisição de pagamento do PagSeguro via parametros HTTP us
   PHP – Sem utilizar a biblioteca oficial
 date: 2011-11-09 14:43:56 Z
 permalink: "/criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/"
-redirect_from: "/2011/11/09/criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/"
 categories:
 - Tutoriais
 tags:
@@ -12,6 +11,7 @@ tags:
 - cURL
 - PagSeguro
 - recorrencia
+redirect_from: "/2011/11/09/criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/"
 id: 259
 author: Sena
 layout: post
