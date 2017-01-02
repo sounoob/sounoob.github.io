@@ -1,6 +1,7 @@
 ---
 title: CodeIgniter para Noobs
 date: 2014-03-05 18:55:37 Z
+permalink: "/codeigniter-para-noobs/"
 categories:
 - Comunicados
 tags:

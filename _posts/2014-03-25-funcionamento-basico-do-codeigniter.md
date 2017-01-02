@@ -1,6 +1,7 @@
 ---
 title: Funcionamento básico do CodeIgniter
 date: 2014-03-25 19:33:12 Z
+permalink: "/funcionamento-basico-do-codeigniter/"
 categories:
 - Aulas
 tags:
