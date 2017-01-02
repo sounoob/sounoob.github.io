@@ -2,12 +2,12 @@
 title: Instalando XAMPP no Windows
 date: 2012-08-07 11:36:28 Z
 permalink: "/instalando-xampp-no-windows/"
-redirect_from: "/2012/08/07/instalando-xampp-no-windows/"
 categories:
 - Aulas
 - Tutoriais
 tags:
 - xampp
+redirect_from: "/2012/08/07/instalando-xampp-no-windows/"
 id: 439
 author: Sena
 layout: post

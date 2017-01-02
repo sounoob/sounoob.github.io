@@ -1,11 +1,11 @@
 ---
 title: CodeIgniter para Noobs
 date: 2014-03-05 18:55:37 Z
-redirect_from: "/2014/03/05/codeigniter-para-noobs/"
 categories:
 - Comunicados
 tags:
 - CodeIgniter
+redirect_from: "/2014/03/05/codeigniter-para-noobs/"
 id: 961
 author: Sena
 layout: post

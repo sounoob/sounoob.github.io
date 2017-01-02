@@ -2,12 +2,12 @@
 title: Instalando XAMPP no Linux
 date: 2012-08-08 11:53:43 Z
 permalink: "/instalando-xampp-no-linux/"
-redirect_from: "/2012/08/08/instalando-xampp-no-linux/"
 categories:
 - Aulas
 - Tutoriais
 tags:
 - xampp
+redirect_from: "/2012/08/08/instalando-xampp-no-linux/"
 id: 454
 author: Sena
 layout: post

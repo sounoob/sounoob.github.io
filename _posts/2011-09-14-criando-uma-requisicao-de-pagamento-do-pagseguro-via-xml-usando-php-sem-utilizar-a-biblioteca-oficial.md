@@ -3,7 +3,6 @@ title: Criando uma requisição de pagamento do PagSeguro via XML usando PHP –
   a biblioteca oficial
 date: 2011-09-14 11:15:51 Z
 permalink: "/criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/"
-redirect_from: "/2011/09/14/criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/"
 categories:
 - Tutoriais
 tags:
@@ -12,6 +11,7 @@ tags:
 - cURL
 - PagSeguro
 - XML
+redirect_from: "/2011/09/14/criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/"
 id: 139
 author: Sena
 layout: post

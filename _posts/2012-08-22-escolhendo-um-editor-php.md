@@ -2,10 +2,10 @@
 title: Escolhendo um editor PHP
 date: 2012-08-22 18:06:32 Z
 permalink: "/escolhendo-um-editor-php/"
-redirect_from: "/2012/08/22/escolhendo-um-editor-php/"
 categories:
 - Aulas
 - Dicas
+redirect_from: "/2012/08/22/escolhendo-um-editor-php/"
 id: 476
 author: Sena
 layout: post
