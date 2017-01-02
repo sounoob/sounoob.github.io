@@ -2,6 +2,7 @@
 title: Usando encurtador de URL do Google com PHP
 date: 2011-12-22 09:01:00 Z
 permalink: "/usando-encurtador-de-url-do-google-com-php/"
+redirect_from: "/2011/12/22/usando-encurtador-de-url-do-google-com-php/"
 categories:
 - Tutoriais
 tags:

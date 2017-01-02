@@ -2,6 +2,7 @@
 title: Escrevendo um arquivo de texto, usando PHP
 date: 2011-09-14 15:07:44 Z
 permalink: "/escrevendo-um-arquivo-de-texto-usando-php/"
+redirect_from: "/2011/09/14/escrevendo-um-arquivo-de-texto-usando-php/"
 categories:
 - Tutoriais
 tags:

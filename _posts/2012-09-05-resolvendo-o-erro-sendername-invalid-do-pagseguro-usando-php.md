@@ -2,6 +2,7 @@
 title: Resolvendo o erro senderName invalid do PagSeguro usando PHP
 date: 2012-09-05 23:43:49 Z
 permalink: "/resolvendo-o-erro-sendername-invalid-do-pagseguro-usando-php/"
+redirect_from: "/2012/09/05/resolvendo-o-erro-sendername-invalid-do-pagseguro-usando-php/"
 categories:
 - Tutoriais
 tags:

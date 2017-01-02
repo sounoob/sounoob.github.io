@@ -2,6 +2,7 @@
 title: Módulo Joomla 1.7 - Básico
 date: 2012-02-02 12:30:23 Z
 permalink: "/modulo-joomla-1-7-basico/"
+redirect_from: "/2012/02/02/modulo-joomla-1-7-basico/"
 categories:
 - Tutoriais
 tags:

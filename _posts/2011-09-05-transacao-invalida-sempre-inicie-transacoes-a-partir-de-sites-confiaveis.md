@@ -2,6 +2,7 @@
 title: Transação inválida. Sempre inicie transações a partir de sites confiáveis.
 date: 2011-09-05 21:05:36 Z
 permalink: "/transacao-invalida-sempre-inicie-transacoes-a-partir-de-sites-confiaveis/"
+redirect_from: "/2011/09/05/transacao-invalida-sempre-inicie-transacoes-a-partir-de-sites-confiaveis/"
 categories:
 - Dicas
 tags:

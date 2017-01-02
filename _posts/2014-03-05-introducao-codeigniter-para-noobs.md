@@ -2,6 +2,7 @@
 title: Introdução – CodeIgniter para Noobs
 date: 2014-03-05 19:07:56 Z
 permalink: "/introducao-codeigniter-para-noobs/"
+redirect_from: "/2014/03/05/introducao-codeigniter-para-noobs/"
 categories:
 - Aulas
 - Que bicho é esse?

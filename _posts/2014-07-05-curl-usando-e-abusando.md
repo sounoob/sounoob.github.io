@@ -2,6 +2,7 @@
 title: cURL. Feita para usar e abusar
 date: 2014-07-05 17:10:52 Z
 permalink: "/curl-usando-e-abusando/"
+redirect_from: "/2014/07/05/curl-usando-e-abusando/"
 categories:
 - Tutoriais
 tags:

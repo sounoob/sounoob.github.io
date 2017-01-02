@@ -3,6 +3,7 @@ title: API de consulta de transações por código usando PHP - Sem utilizar a b
   oficial
 date: 2012-07-11 17:46:52 Z
 permalink: "/api-de-consulta-de-transacoes-por-codigo-usando-php-sem-utilizar-a-biblioteca-oficial/"
+redirect_from: "2012/07/11/api-de-consulta-de-transacoes-por-codigo-usando-php-sem-utilizar-a-biblioteca-oficial/"
 categories:
 - Tutoriais
 tags:

@@ -2,6 +2,7 @@
 title: Operadores Aritméticos no PHP
 date: 2013-06-13 06:39:05 Z
 permalink: "/operadores-aritmeticos-no-php/"
+redirect_from: "/2013/06/13/operadores-aritmeticos-no-php/"
 categories:
 - Aulas
 id: 809

@@ -2,6 +2,7 @@
 title: Sintaxe basica do PHP
 date: 2012-09-17 16:36:25 Z
 permalink: "/sintaxe-basica-php/"
+redirect_from: "/2012/09/17/sintaxe-basica-php/"
 categories:
 - Aulas
 id: 498

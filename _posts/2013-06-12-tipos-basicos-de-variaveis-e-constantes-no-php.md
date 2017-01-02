@@ -2,6 +2,7 @@
 title: Tipos básicos de variáveis e constantes no PHP
 date: 2013-06-12 22:02:17 Z
 permalink: "/tipos-basicos-de-variaveis-e-constantes-no-php/"
+redirect_from: "/2013/06/22/tipos-basicos-de-variaveis-e-constantes-no-php/"
 categories:
 - Aulas
 id: 811
