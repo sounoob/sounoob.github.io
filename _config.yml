@@ -1,5 +1,4 @@
 ---
-excerpt_separator: "<!--more-->"
 title: SouNoob
 timezone: UTC
 collections:
@@ -9,6 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+excerpt_separator: "<!--more-->"
 tagline: Repita comigo, eu sou noob. eu sou noob...
 google_analytics: UA-5016269-14
 baseurl: ''
