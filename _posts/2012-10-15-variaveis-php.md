@@ -1,6 +1,6 @@
 ---
 title: Variáveis no PHP
-date: 2012-10-15 11:48:37 Z
+date: 2012-10-15 11:48:37
 permalink: "/variaveis-php/"
 categories:
 - Aulas

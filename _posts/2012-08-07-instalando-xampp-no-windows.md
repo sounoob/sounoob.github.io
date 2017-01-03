@@ -1,6 +1,6 @@
 ---
 title: Instalando XAMPP no Windows
-date: 2012-08-07 11:36:28 Z
+date: 2012-08-07 11:36:28
 permalink: "/instalando-xampp-no-windows/"
 categories:
 - Aulas

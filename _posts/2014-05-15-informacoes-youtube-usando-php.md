@@ -1,6 +1,6 @@
 ---
 title: Informações do YouTube - Como capturar usando PHP
-date: 2014-05-15 18:59:07 Z
+date: 2014-05-15 18:59:07
 permalink: "/informacoes-youtube-usando-php/"
 categories:
 - Tutoriais

@@ -1,6 +1,6 @@
 ---
 title: Introdução - PHP para Noobs
-date: 2012-08-06 17:17:03 Z
+date: 2012-08-06 17:17:03
 permalink: "/introducao-php-para-noobs/"
 categories:
 - Que bicho é esse?

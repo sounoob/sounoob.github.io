@@ -1,6 +1,6 @@
 ---
 title: Recorrência (Assinaturas) com o PagSeguro
-date: 2012-12-23 08:32:15 Z
+date: 2012-12-23 08:32:15
 permalink: "/recorrencia-com-o-pagseguro/"
 categories:
 - Dicas

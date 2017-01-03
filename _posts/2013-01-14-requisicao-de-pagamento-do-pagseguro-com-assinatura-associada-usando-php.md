@@ -1,6 +1,6 @@
 ---
 title: Requisição de pagamento do PagSeguro com assinatura associada usando PHP
-date: 2013-01-14 04:01:21 Z
+date: 2013-01-14 04:01:21
 permalink: "/requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/"
 categories:
 - Tutoriais

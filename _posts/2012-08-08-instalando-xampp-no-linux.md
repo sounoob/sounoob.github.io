@@ -1,6 +1,6 @@
 ---
 title: Instalando XAMPP no Linux
-date: 2012-08-08 11:53:43 Z
+date: 2012-08-08 11:53:43
 permalink: "/instalando-xampp-no-linux/"
 categories:
 - Aulas

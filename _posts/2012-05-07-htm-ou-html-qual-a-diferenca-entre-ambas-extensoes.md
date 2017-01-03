@@ -1,6 +1,6 @@
 ---
 title: htm ou html qual a diferença entre ambas extensões?
-date: 2012-05-07 17:20:13 Z
+date: 2012-05-07 17:20:13
 permalink: "/htm-ou-html-qual-a-diferenca-entre-ambas-extensoes/"
 categories:
 - Curiosidades

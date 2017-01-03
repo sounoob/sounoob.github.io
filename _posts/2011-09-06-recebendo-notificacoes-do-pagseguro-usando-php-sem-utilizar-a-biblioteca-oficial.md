@@ -1,7 +1,7 @@
 ---
 title: Recebendo notificações do PagSeguro usando PHP - Sem utilizar a biblioteca
   oficial
-date: 2011-09-06 22:10:00 Z
+date: 2011-09-06 22:10:00
 permalink: "/recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/"
 categories:
 - Tutoriais

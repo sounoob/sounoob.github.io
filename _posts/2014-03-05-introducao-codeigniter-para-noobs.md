@@ -1,6 +1,6 @@
 ---
 title: Introdução – CodeIgniter para Noobs
-date: 2014-03-05 19:07:56 Z
+date: 2014-03-05 19:07:56
 permalink: "/introducao-codeigniter-para-noobs/"
 categories:
 - Aulas

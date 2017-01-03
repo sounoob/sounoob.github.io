@@ -1,6 +1,6 @@
 ---
 title: Codificando e-mail marketing sem problemas
-date: 2014-02-28 09:47:02 Z
+date: 2014-02-28 09:47:02
 permalink: "/codificando-e-mail-marketing-sem-problemas/"
 categories:
 - Curiosidades

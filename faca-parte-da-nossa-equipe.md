@@ -1,6 +1,6 @@
 ---
 title: Faça parte da nossa equipe
-date: 2011-09-19 15:45:01 Z
+date: 2011-09-19 15:45:01
 id: 179
 author: Sena
 layout: page

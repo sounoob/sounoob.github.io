@@ -1,6 +1,6 @@
 ---
 title: If, else e ternário no PHP
-date: 2013-06-15 14:15:54 Z
+date: 2013-06-15 14:15:54
 permalink: "/if-else-e-ternario-no-php/"
 categories:
 - Aulas

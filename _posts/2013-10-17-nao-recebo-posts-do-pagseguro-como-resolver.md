@@ -1,6 +1,6 @@
 ---
 title: Não recebo posts do PagSeguro, como resolver?
-date: 2013-10-17 09:04:28 Z
+date: 2013-10-17 09:04:28
 permalink: "/nao-recebo-posts-do-pagseguro-como-resolver/"
 categories:
 - Dicas

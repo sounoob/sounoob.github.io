@@ -1,6 +1,6 @@
 ---
 title: PHP para Noobs
-date: 2012-08-03 12:10:28 Z
+date: 2012-08-03 12:10:28
 permalink: "/php-para-noobs/"
 categories:
 - Comunicados

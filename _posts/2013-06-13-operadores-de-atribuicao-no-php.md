@@ -1,6 +1,6 @@
 ---
 title: Operadores de Atribuição no PHP
-date: 2013-06-13 17:29:09 Z
+date: 2013-06-13 17:29:09
 permalink: "/operadores-de-atribuicao-no-php/"
 categories:
 - Aulas
