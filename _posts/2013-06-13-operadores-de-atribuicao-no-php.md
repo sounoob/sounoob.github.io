@@ -21,9 +21,9 @@ O operador de atribuição mais básico é o sinal de igual (**=**), basicamente
   
 const constante = "Valor que deverá ser atribuído para a constante";{% endhighlight %} 
 
-Bom, se você estiver acompanhando nossa série de tutoriais e viu sobre <a title="Variáveis no PHP" href="./variaveis-php/" target="_blank">Variáveis</a> então já deve ter visto algo parecido com o que mostramos no exemplo acima.
+Bom, se você estiver acompanhando nossa série de tutoriais e viu sobre <a title="Variáveis no PHP" href="/variaveis-php/" target="_blank">Variáveis</a> então já deve ter visto algo parecido com o que mostramos no exemplo acima.
 
-Os outros operadores de atribuição vamos descobrir juntos, antes disso vamos relembrar os <a title="Operadores Aritméticos no PHP" href="./operadores-aritmeticos-no-php/" target="_blank">operadores aritméticos</a> onde conseguimos fazer o PHP realizar alguns cálculos. Agora imagine a necessidade de realizar um calculo básico com um valor que já está em uma variável e manter o resultado do calculo na mesma variável. A primeiro momento as pessoas fazem como no exemplo abaixo:
+Os outros operadores de atribuição vamos descobrir juntos, antes disso vamos relembrar os <a title="Operadores Aritméticos no PHP" href="/operadores-aritmeticos-no-php/" target="_blank">operadores aritméticos</a> onde conseguimos fazer o PHP realizar alguns cálculos. Agora imagine a necessidade de realizar um calculo básico com um valor que já está em uma variável e manter o resultado do calculo na mesma variável. A primeiro momento as pessoas fazem como no exemplo abaixo:
 
 {% highlight php linenos %}$variavel = 4;
   
@@ -35,7 +35,7 @@ Criamos uma variável e incluímos o valor número 4 para ela, na linha abaixo p
   
 $variavel += 10;{% endhighlight %} 
 
-O lógica utilizada foi a mesma, porem utilizamos menos código. Já que na segunda linha iremos usar a adição e depois atribuir o resultado para a mesma variável que já tínhamos, porque não usar os dois de uma única vez? Sim, isso é possível, descobrimos os outros operadores de atribuição, que é a ideia de fazer um calculo básico utilizando o valor de uma variável existente e incluir o resultado nesta mesma variável. Ou seja, podemos combinar os <a title="Operadores Aritméticos no PHP" href="./operadores-aritmeticos-no-php/" target="_blank">operadores aritméticos</a> sempre que quisermos realizar cálculos simples como uma adição, subtração, multiplicação e até achar o resto entre dois números onde um deles já está em uma variável. Vamos tentar utilizar todos novos operadores?
+O lógica utilizada foi a mesma, porem utilizamos menos código. Já que na segunda linha iremos usar a adição e depois atribuir o resultado para a mesma variável que já tínhamos, porque não usar os dois de uma única vez? Sim, isso é possível, descobrimos os outros operadores de atribuição, que é a ideia de fazer um calculo básico utilizando o valor de uma variável existente e incluir o resultado nesta mesma variável. Ou seja, podemos combinar os <a title="Operadores Aritméticos no PHP" href="/operadores-aritmeticos-no-php/" target="_blank">operadores aritméticos</a> sempre que quisermos realizar cálculos simples como uma adição, subtração, multiplicação e até achar o resto entre dois números onde um deles já está em uma variável. Vamos tentar utilizar todos novos operadores?
 
 {% highlight php linenos %}$variavel = 4; //Valor da variável é 4
   
@@ -49,7 +49,7 @@ $variavel /= 2; //Valor da variável é 55
   
 $variavel %= 10; //Valor da variável é 5{% endhighlight %} 
 
-Esses são todos? Resposta: Não. Tem um o qual sem dúvida é o mais utilizado entre os programadores, que é a concatenação com atribuição. (Falamos sobre concatenação no post sobre <a title="Variáveis no PHP" href="./variaveis-php/" target="_blank">variáveis</a>), o legal de usar essa combinação é que podemos no ir incrementando pedaços do texto no decorrer que nosso código é executado. Veja o exemplo abaixo.
+Esses são todos? Resposta: Não. Tem um o qual sem dúvida é o mais utilizado entre os programadores, que é a concatenação com atribuição. (Falamos sobre concatenação no post sobre <a title="Variáveis no PHP" href="/variaveis-php/" target="_blank">variáveis</a>), o legal de usar essa combinação é que podemos no ir incrementando pedaços do texto no decorrer que nosso código é executado. Veja o exemplo abaixo.
 
 {% highlight php linenos %}$variavel = "sounoob.com.br";
   
@@ -77,4 +77,4 @@ Até a próxima…
 
 Veja outros posts como este aqui:
   
-[PHP para noobs](./php-para-noobs/ "PHP para Noobs")
+[PHP para noobs](/php-para-noobs/ "PHP para Noobs")

@@ -14,7 +14,7 @@ layout: post
 guid: http://sounoob.com.br/?p=1059
 dsq_thread_id:
 - '2819423969'
-image: "./assets/uploads/2014/05/younoob.jpg"
+image: "/assets/uploads/2014/05/younoob.jpg"
 ---
 
 Hoje em dia temos um sério problema com limite de tráfego de servidores, o que acaba forçando os programadores utilizarem serviços de terceiros para inserir nos sites conteúdo de vídeos. Uma das opções é o serviço do Google: O <span style="color: #000000;">YouTube</span>. O problema que surgia logo após a migração de vídeos para o <span style="color: #000000;">YouTube</span>, é que todas informações cadastradas no <span style="color: #000000;">YouTube </span>eram um pouco difíceis de ser recuperar. Em um dilema como este, resolvi criar uma classe (Um script) que faça todo trabalho pesado para recuperar as Informações do <span style="color: #000000;">YouTube</span>. Vou mostrar para vocês como funciona<!--more-->:
@@ -104,4 +104,4 @@ echo $infor['author'];{% endhighlight %}
 
  
 
-Este post, foi inicialmente inspirado no <a title="Obter miniaturas de imagem de um vídeo do YouTube usando PHP" href="./obter-a-miniaturas-de-imagem-de-um-video-do-youtube-usando-php/" target="_blank">Obter miniaturas de imagem de um vídeo do YouTube usando PHP</a>
+Este post, foi inicialmente inspirado no <a title="Obter miniaturas de imagem de um vídeo do YouTube usando PHP" href="/obter-a-miniaturas-de-imagem-de-um-video-do-youtube-usando-php/" target="_blank">Obter miniaturas de imagem de um vídeo do YouTube usando PHP</a>

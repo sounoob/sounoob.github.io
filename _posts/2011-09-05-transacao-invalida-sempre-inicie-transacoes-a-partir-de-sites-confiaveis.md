@@ -22,7 +22,7 @@ dsq_thread_id:
 </p>
 
 <p style="text-align: left;">
-  <img class="aligncenter" style="border: 1px solid black;" title="Transação inválida. Sempre inicie transações a partir de sites confiáveis." src="./assets/uploads/2011/09/Transacao-invalida.-Sempre-inicie-transacoes-a-partir-de-sites-confiaveis..jpg" alt="Transação inválida. Sempre inicie transações a partir de sites confiáveis." /><br /> Porque isso ocorre?
+  <img class="aligncenter" style="border: 1px solid black;" title="Transação inválida. Sempre inicie transações a partir de sites confiáveis." src="/assets/uploads/2011/09/Transacao-invalida.-Sempre-inicie-transacoes-a-partir-de-sites-confiaveis..jpg" alt="Transação inválida. Sempre inicie transações a partir de sites confiáveis." /><br /> Porque isso ocorre?
 </p>
 
 No dia 3 de agosto o PagSeguro lançou as famosas API, uma delas é a de pagamento, onde a finalidade é fazer uma integração mais dinâmica e ao mesmo tempo segura. O fato é que junto com o lançamento dessa API foi liberado uma opção que permite que a conta receba apenas pagamento usando essa nova API e demonstrarei abaixo o procedimento completo para corrigir o erro mostrado acima.
@@ -32,7 +32,7 @@ No dia 3 de agosto o PagSeguro lançou as famosas API, uma delas é a de pagamen
 </p>
 
 <p style="text-align: center;">
-  <img class="aligncenter" style="border: 1px solid black;" title="Tela de Login do PagSeguro" src="./assets/uploads/2011/09/PagSeguro-FazendoLogin.jpg" alt="Tela de Login do PagSeguro" />
+  <img class="aligncenter" style="border: 1px solid black;" title="Tela de Login do PagSeguro" src="/assets/uploads/2011/09/PagSeguro-FazendoLogin.jpg" alt="Tela de Login do PagSeguro" />
 </p>
 
 <p style="text-align: left;">
@@ -40,7 +40,7 @@ No dia 3 de agosto o PagSeguro lançou as famosas API, uma delas é a de pagamen
 </p>
 
 <p style="text-align: center;">
-  <img class="aligncenter" style="border: 1px solid black;" title="Menu - integrações" src="./assets/uploads/2011/09/MenuIntegracoes.jpg" alt="Menu - integrações"  />
+  <img class="aligncenter" style="border: 1px solid black;" title="Menu - integrações" src="/assets/uploads/2011/09/MenuIntegracoes.jpg" alt="Menu - integrações"  />
 </p>
 
 <p style="text-align: left;">
@@ -48,19 +48,19 @@ No dia 3 de agosto o PagSeguro lançou as famosas API, uma delas é a de pagamen
 </p>
 
 <p style="text-align: center;">
-  <img class="aligncenter" style="border: 1px solid black;" title="Menu - Integrações - Pagamento Via API" src="./assets/uploads/2011/09/MenuIntegracoes_PagamentoViaAPI.jpg" alt="Menu - Integrações - Pagamento Via API" /><br /> <strong>Desmarque a opção "Quero receber somente pagamentos via API".</strong>
+  <img class="aligncenter" style="border: 1px solid black;" title="Menu - Integrações - Pagamento Via API" src="/assets/uploads/2011/09/MenuIntegracoes_PagamentoViaAPI.jpg" alt="Menu - Integrações - Pagamento Via API" /><br /> <strong>Desmarque a opção "Quero receber somente pagamentos via API".</strong>
 </p>
 
 <p style="text-align: center;">
-  <img class="aligncenter" style="border: 1px solid black;" title="Quero receber somente pagamentos via API" src="./assets/uploads/2011/09/desmarcarOpcaoDeReceberSomentePagamentosViaAPI.jpg" alt="Quero receber somente pagamentos via API" /><br /> <strong>Será exibida uma caixa de diálogo com a seguinte pergunta: “Deseja desativar a restrição de pagamentos com API?”</strong>
+  <img class="aligncenter" style="border: 1px solid black;" title="Quero receber somente pagamentos via API" src="/assets/uploads/2011/09/desmarcarOpcaoDeReceberSomentePagamentosViaAPI.jpg" alt="Quero receber somente pagamentos via API" /><br /> <strong>Será exibida uma caixa de diálogo com a seguinte pergunta: “Deseja desativar a restrição de pagamentos com API?”</strong>
 </p>
 
 <p style="text-align: center;">
-  <img class="aligncenter" style="border: 1px solid black;" title="Deseja desativar a restrição dos pagamentos com API?" src="./assets/uploads/2011/09/confirmarDesmarcarOpcaoDeReceberSomentePagamentosViaAPI.jpg" alt="Deseja desativar a restrição dos pagamentos com API?" /><strong>Seguindo todos os passos corretamente, será exibida a tela abaixo:<br /> </strong>
+  <img class="aligncenter" style="border: 1px solid black;" title="Deseja desativar a restrição dos pagamentos com API?" src="/assets/uploads/2011/09/confirmarDesmarcarOpcaoDeReceberSomentePagamentosViaAPI.jpg" alt="Deseja desativar a restrição dos pagamentos com API?" /><strong>Seguindo todos os passos corretamente, será exibida a tela abaixo:<br /> </strong>
 </p>
 
 <p style="text-align: center;">
-  <img class="aligncenter" style="border: 1px solid black;" title="A restrição dos pagamentos com API foi desativada" src="./assets/uploads/2011/09/opcaoDeReceberSomentePagamentosViaAPIDesativada.jpg" alt="A restrição dos pagamentos com API foi desativada" />
+  <img class="aligncenter" style="border: 1px solid black;" title="A restrição dos pagamentos com API foi desativada" src="/assets/uploads/2011/09/opcaoDeReceberSomentePagamentosViaAPIDesativada.jpg" alt="A restrição dos pagamentos com API foi desativada" />
 </p>
 
 <acronym title="claro se não tiver algum outro problema">Pronto agora você já poderá vender com o PagSeguro</acronym> …

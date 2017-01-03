@@ -40,4 +40,4 @@ Para quem está começando agora, o PHP tem uma enorme vantagem por contar com u
 
 Veja outros posts como este aqui:
   
-[PHP para noobs](./php-para-noobs/ "PHP para Noobs")
+[PHP para noobs](/php-para-noobs/ "PHP para Noobs")

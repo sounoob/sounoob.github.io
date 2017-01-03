@@ -18,7 +18,7 @@ short-url:
 - http://bit.ly/1lnr08U
 dsq_thread_id:
 - '2818905238'
-image: "./assets/uploads/2014/02/emailmarketing.jpg"
+image: "/assets/uploads/2014/02/emailmarketing.jpg"
 ---
 
 Uma coisa eu odiava mais do que o IE6 <del style="color: #ff0000;">(e o funk)</del> era criar um e-mail marketing e fazer funcionar "bonitinho" em todos clientes de e-mail.

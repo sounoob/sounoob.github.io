@@ -1,6 +1,6 @@
 {% assign post = page %}
 <div class="footer">
-    <p>Publicado em: {{ post.date | date: site.dateformat }} por <a href="./author/{{ post.author | slugify }}">{{ post.author }}</a></p>
+    <p>Publicado em: {{ post.date | date: site.dateformat }} por <a href="/author/{{ post.author | slugify }}">{{ post.author }}</a></p>
     {% if post.categories.size > 0 %}
         <i class="fa fa-folder-open-o" aria-hidden="true"></i>
         <span class="screen-reader-text">Categorias </span>

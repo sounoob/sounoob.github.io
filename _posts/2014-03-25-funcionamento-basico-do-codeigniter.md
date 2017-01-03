@@ -41,4 +41,4 @@ Se você manter tudo separado, cada um fazendo sua parte, o seu código irá fic
 
 Veja outros posts como este aqui:
   
-[CodeIgniter para Noobs](./codeigniter-para-noobs/ "CodeIgniter para Noobs")
+[CodeIgniter para Noobs](/codeigniter-para-noobs/ "CodeIgniter para Noobs")

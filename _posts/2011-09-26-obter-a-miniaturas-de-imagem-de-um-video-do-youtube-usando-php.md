@@ -133,6 +133,6 @@ return $url; }
   
 <img src="<?php echo youtubeImage("http://www.youtube.com/watch?v=R4NLeQLlScE&list=UUMykmfJDKL1EVNgl4sdRNbQ&index=46", "big");?>" alt="" />{% endhighlight %} 
 
-Veja nosso post mostrando como recuperar não só as imagens, como também outras **[informações do YouTube](./informacoes-youtube-usando-php/ "Informações do YouTube – Como capturar usando PHP")**
+Veja nosso post mostrando como recuperar não só as imagens, como também outras **[informações do YouTube](/informacoes-youtube-usando-php/ "Informações do YouTube – Como capturar usando PHP")**
 
 Comentários, duvidas, sugestões e até mesmo criticas é só comentar

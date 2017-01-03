@@ -119,4 +119,4 @@ Vou tentar listar alguns nomes abaixo (Caso souber de algum que não está na li
 
 Veja outros posts como este aqui:
   
-[PHP para noobs](./php-para-noobs/ "PHP para Noobs")
+[PHP para noobs](/php-para-noobs/ "PHP para Noobs")

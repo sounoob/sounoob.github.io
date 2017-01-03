@@ -26,7 +26,7 @@ Um dos maiores pontos fortes da API de pagamento é a possibilidade de enviar os
 
 <!--more-->O que iremos utilizar para a comunicação irá ser a biblioteca do cURL, e para manipular os dados recebidos vamos usar função simplexml\_load\_string  para transformar o XML em objeto, igual utilizamos para receber as notificações em "
 
-[Recebendo notificações do PagSeguro usando PHP](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial")". Enfim, vamos ao que interessa… Código…
+[Recebendo notificações do PagSeguro usando PHP](/recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial")". Enfim, vamos ao que interessa… Código…
   
 <a name="passo-a-passo"></a>
   
@@ -249,10 +249,10 @@ header('Location: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=' .
 
 Lembrando que é possível também enviar informações para incluir uma assinatura(cobrança recorrente) tudo nesse mesmo processo.
 
-Veja detalhes em: <a title="Requisição de pagamento do PagSeguro com assinatura associada usando PHP" href="./requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/" target="_blank">Requisição de pagamento do PagSeguro com assinatura associada usando PHP</a>
+Veja detalhes em: <a title="Requisição de pagamento do PagSeguro com assinatura associada usando PHP" href="/requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/" target="_blank">Requisição de pagamento do PagSeguro com assinatura associada usando PHP</a>
 
 Bom até a próxima, duvidas, sugestões e o qualquer coisa que possa ajudar o blog só comentar abaixo…
 
 Veja outros posts como este aqui:
   
-[Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.](./utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/ "Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.")
+[Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.](/utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/ "Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.")

@@ -15,7 +15,7 @@ short-url:
 - http://bit.ly/GQYD1c
 dsq_thread_id:
 - '2818906285'
-image: "./assets/uploads/2013/10/Nao-recebo-posts-do-PagSeguro-como-resolver.gif"
+image: "/assets/uploads/2013/10/Nao-recebo-posts-do-PagSeguro-como-resolver.gif"
 ---
 
 Já faz muito tempo que vejo frases como estas em fóruns, a maioria são ditas por <del style="color: #ff0000;">pseudo-</del>desenvolvedores que já estão putos da vida pelo fato de não entender o motivo de não estar recebendo posts do PagSeguro. Então… vou tentar ajudar, listando alguns passos que devem ser seguidos, serão apenas alguns testes simples mas que poderão fazer a diferença futuramente.<!--more-->
@@ -46,7 +46,7 @@ Okay, não sei defender este quesito, mas se você usar postas especificas em su
 
 ### Grave logs de tudo que seja possível (de preferência em arquivo de texto).
 
-Espere. Antes de gravar logs, verifique se sua aplicação consegue gravar log, primeiro tenha na sua pagina APENAS uma instrução onde grava um teste de log. Exemplo: "Teste de log". Realize o teste, se sua aplicação conseguir fazer esta tarefa então próximo passo é mandar gravar todos POSTs e GETs, assim você saberá o que está chegando via POST e o que está chegando via GET. PS: Se você usa PHP clique aqui e veja <a title="Escrevendo um arquivo de texto, usando PHP" href="./escrevendo-um-arquivo-de-texto-usando-php/" target="_blank">como gravar arquivo de log</a>.
+Espere. Antes de gravar logs, verifique se sua aplicação consegue gravar log, primeiro tenha na sua pagina APENAS uma instrução onde grava um teste de log. Exemplo: "Teste de log". Realize o teste, se sua aplicação conseguir fazer esta tarefa então próximo passo é mandar gravar todos POSTs e GETs, assim você saberá o que está chegando via POST e o que está chegando via GET. PS: Se você usa PHP clique aqui e veja <a title="Escrevendo um arquivo de texto, usando PHP" href="/escrevendo-um-arquivo-de-texto-usando-php/" target="_blank">como gravar arquivo de log</a>.
 
 ### Seu próprio teste.
 

@@ -1,0 +1,124 @@
+---
+title: 404 a página não encontrada
+date: 2017-01-03 00:00:01 Z
+permalink: "/404-a-pagina-nao-encontrada/"
+redirect_from: "/404-pagina-nao-encontrada/"
+categories:
+- Tutoriais
+- Dicas
+tags:
+- SEO
+- Google Analytics
+author: Sena
+layout: post
+image: "/assets/uploads/2017/01/not-fuking-found.jpg"
+---
+
+<p>
+    Uma das páginas tão importante quando a home é a 404, acredite.
+    Ela pode ajudar o usuário decidir sair da sua página ou tentar achar o
+    link quebrado o qual ele estava procurando.
+</p>
+<p>
+    Mas ela não basta apenas existir, precisa ser útil e cativar o usuário. Mostraremos alguns truques.
+</p>
+<!--more-->
+<h2>Antes de mais nada, crie sua página de erro customizada</h2>
+<p>
+    Vai por mim, se você manter a página padrão o usuário vai entrar e vai dizer:
+    "Deu um erro lá em inglês" e vai sair da tua página. <br>
+    Contorne isso criando sua própria página personalizada com seu próprio layout escrito de uma forma
+    ele entenda que a página que ele procura não existe.
+</p>
+<p>
+    A primeira coisa a se fazer é informar ao servidor qual será o arquivo que deverá ser o arquivo,
+    no meu caso usarei o arquivo 404.html como exemplo, mas você poderá dar o nome que quiser,
+    com a extenção que preferir. O importante é o arquivo funcionar e ser acessivel.
+</p>
+<h3>
+    Configurando página 404 no Jekyll <small><i class="fa fa-heart-o" aria-hidden="true"></i></small>
+</h3>
+<p>Nesse caso não tem muito segredos, apenas coloque um arquivo 404.html na raiz e já irá funcionar.
+    Lembre precisa ser esse nome e extenção para funcionar corretamente no <strong>Jekyll</strong></p>.
+<h3>Criando página 404 via .htaccess</h3>
+<p>
+    Se seu servidor suporta .htaccess, basa inserir:
+    <pre>ErrorDocument 400 /400.html</pre>
+</p>
+<h3>Criando página 404 via web.config</h3>
+{% highlight xml linenos %}
+<?xml version="1.0"?>
+<configuration>
+    <system.webServer>
+        <httpErrors>
+            <remove statusCode="404" subStatusCode="-1" />
+            <error statusCode="404" path="404.html" responseMode="ExecuteURL" />
+        </httpErrors>
+        <modules runAllManagedModulesForAllRequests="true"/>
+    </system.webServer>
+</configuration>
+{% endhighlight %}
+<h3>Frameworks e CMS</h3>
+<p>
+    Se você utiliza um framework ou qualquer CMS provavelmente já existe um arquivo chamado 404.ext
+    (ext entenda como extensão da linguagem que você está trabalhando). Basta apenas editar esse arquivo.
+</p>
+<h2>Está criado, já posso descançar?</h2>
+<p>
+    Não basta apenas ter uma página escrito: "Página não encontrada".
+    De acordo com uma pesquisa que fiz, pude notar que quanto mais a página
+    chama a atenção e é diferente, o usuário se sente melhor. Então não siga nada padrão,
+    se manjar de arte, apele para a arte, deixe a página de uma forma que o usuário entre, pare e preste
+    atenção no que está lá.
+</p>
+<p>Veja algumas referências:</p>
+<ul>
+    <li><a href="http://www.newyorker.com/{{site.title}}" rel="noreferrer nofollow" target="_blank">http://www.newyorker.com/{{site.title}}</a></li>
+    <li><a href="https://mailchimp.com/{{site.title}}" rel="noreferrer nofollow" target="_blank">https://mailchimp.com/{{site.title}}</a></li>
+    <li><a href="http://www.fluther.com/{{site.title}}" rel="noreferrer nofollow" target="_blank">http://www.fluther.com/{{site.title}}</a></li>
+    <li><a href="http://www.fnac.pt/{{site.title}}" rel="noreferrer nofollow" target="_blank">http://www.fnac.pt/{{site.title}}</a></li>
+    <li><a href="https://app.adsim.co/{{site.title}}" rel="noreferrer nofollow" target="_blank">https://app.adsim.co/{{site.title}}</a></li>
+</ul>
+
+<h2>Página está bonita, agora é hora de capturar dados.</h2>
+<p>
+    De nada serve uma página 404 para falar para o usuário que algo deu errado, se na próxima semana outros
+    100 usuários provavelmente entrará pelo mesmo caminho.
+</p>
+<p>
+    A recomendação aqui é capturar a link que ele entrou, para analisar no futuro e criar um possível
+    redirecionamento para a área correta.
+</p>
+<p>
+    Caso você não possua um banco de dados para salvar esses links errados, pode usar o próprio
+    <strong>Google Analytics</strong> para guardar isso utilizando eventos. (Fiz um post sobre <a href="/trabalhando-com-eventos-no-google-analytcs#capturar-links-quebrados" target="_blank">eventos</a> )
+</p>
+<h2>Por ultimo a página precisa ter alguma saida para o usuário.</h2>
+<p>
+    <b>Caixa de busca</b>, por favor. <br>
+    Se seu tiver tiver uma página de pbusca coloque.
+    É muito importante, assim o usuário digita logo o que quer acha e fica feliz.
+</p>
+<p>
+    <b>Principais áreas do site.</b><br>
+    Mesmo que seu usuário estiver perdido, com as principais áreas a vista ele poderá achar o próprio caminho.
+    Se você tiver sorte mesmo ele não achando que procura, você poderá converter o usuário
+    mostrando mais coisa que seu site pode oferecer.
+</p>
+<p>
+    <b>Página inicial</b> <br>
+    As vezes o usuário já conhece o teu site, e pela página inicial ele consegue achar o que procura.
+    Ter esse link visivel é uma boa sacada.
+</p>
+<p>
+    <b>Tenha os 3 anteriores</b> <br>
+    Imagine que o usuário está perdido, tudo que você puder para fazer ele continuar no seu site, faça.
+</p>
+<h3>Agora a vez de vocês&nbsp;</h3>
+<p>
+    Escreva nos comentários, sua interação com as páginas 404.
+    Quais páginas 404 vocês já viram e acharam legais? <br>
+    O que de legal vocês já fizeram em uma página 404?<br>
+    O que de experiência vocês já tiverem usando/criando uma página 404?<br>
+    Quais dados consutma capturar e como capturam esses dados na página 404?
+</p>

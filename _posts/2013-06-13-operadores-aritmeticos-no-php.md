@@ -83,4 +83,4 @@ Claro que você pode controlar isso utilizando parenteses, informando assim o qu
 
 Veja outros posts como este aqui:
   
-[PHP para noobs](./php-para-noobs/ "PHP para Noobs")
+[PHP para noobs](/php-para-noobs/ "PHP para Noobs")

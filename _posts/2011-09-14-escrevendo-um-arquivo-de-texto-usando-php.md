@@ -60,7 +60,7 @@ $file = fopen($name, 'a');
 fwrite($file, $text);
 fclose($file);{% endhighlight %} 
 
-<a name="recebendo-post"></a>Um exemplo de uso nisso é gravar log do que o PagSeguro retorna no retorno automático de dados e <a title="Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial" href="./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">API de notificações</a>, veja abaixo como você iria capturar os posts.
+<a name="recebendo-post"></a>Um exemplo de uso nisso é gravar log do que o PagSeguro retorna no retorno automático de dados e <a title="Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial" href="/recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">API de notificações</a>, veja abaixo como você iria capturar os posts.
 
 {% highlight php linenos %}<?php
 $name = 'arquivo.txt';

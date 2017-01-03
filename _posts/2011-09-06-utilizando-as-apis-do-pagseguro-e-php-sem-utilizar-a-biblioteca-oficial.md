@@ -21,8 +21,8 @@ Junto com o lançamento das APIs o PagSeguro disponibilizou algumas bibliotecas,
 
 Assim que possível irei mostrar como fazer isso de maneira simples, e listando um a um abaixo.
 
-  * [Recebendo notificações do PagSeguro](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial "Recebendo notificações do PagSeguro usando PHP - Sem utilizar a biblioteca oficial")
-  * [Criando uma requisição de pagamento via XML](./criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/ "Criando uma requisição de pagamento do PagSeguro via XML usando PHP – Sem utilizar a biblioteca oficial")
-  * [Criando uma requisição de pagamento via HTTP](./criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/ "Criando uma requisição de pagamento do PagSeguro via parametros http usando PHP – Sem utilizar a biblioteca oficial")
-  * [Criando uma requisição de pagamento com assinatura associada](./requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/ "Requisição de pagamento do PagSeguro com assinatura associada usando PHP")
-  * [API de consulta de transações por código](./api-de-consulta-de-transacoes-por-codigo-usando-php-sem-utilizar-a-biblioteca-oficial/ "API de consulta de transações por código usando PHP – Sem utilizar a biblioteca oficial")
+  * [Recebendo notificações do PagSeguro](/recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial "Recebendo notificações do PagSeguro usando PHP - Sem utilizar a biblioteca oficial")
+  * [Criando uma requisição de pagamento via XML](/criando-uma-requisicao-de-pagamento-do-pagseguro-via-xml-usando-php-sem-utilizar-a-biblioteca-oficial/ "Criando uma requisição de pagamento do PagSeguro via XML usando PHP – Sem utilizar a biblioteca oficial")
+  * [Criando uma requisição de pagamento via HTTP](/criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/ "Criando uma requisição de pagamento do PagSeguro via parametros http usando PHP – Sem utilizar a biblioteca oficial")
+  * [Criando uma requisição de pagamento com assinatura associada](/requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/ "Requisição de pagamento do PagSeguro com assinatura associada usando PHP")
+  * [API de consulta de transações por código](/api-de-consulta-de-transacoes-por-codigo-usando-php-sem-utilizar-a-biblioteca-oficial/ "API de consulta de transações por código usando PHP – Sem utilizar a biblioteca oficial")

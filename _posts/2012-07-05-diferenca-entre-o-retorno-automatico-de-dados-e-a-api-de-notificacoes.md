@@ -27,7 +27,7 @@ Acho que a primeira coisa que precisamos deixar claro é que a API de notificaç
 
 Segundo item importante, a API de notificações vai alem de receber dados referente a compra, toda a estrutura da API foi desenhada para atender qualquer tipo de notificação (sim terá outros serviços que irão utilizar essa API), um exemplo claro e simples de entender isso quando o o PagSeguro enviar no primeiro POST o tipo de notificações (notificationType) onde por enquanto está chegando sempre transação (transaction), quando tivermos outros serviços o tipo da notificação irá mudar.
 
-Terceiro e não menos importante e que tanto o Retorno Automático de Dados e a API de notificações são enviados em segundo plano, logo NÃO DÁ PARA VER OS DADOS NA TELA, use arquivos de log ([veja como criar log](./escrevendo-um-arquivo-de-texto-usando-php/ "Escrevendo um arquivo de texto, usando PHP")) para ver os dados que estão sendo passados para seu servidor.
+Terceiro e não menos importante e que tanto o Retorno Automático de Dados e a API de notificações são enviados em segundo plano, logo NÃO DÁ PARA VER OS DADOS NA TELA, use arquivos de log ([veja como criar log](/escrevendo-um-arquivo-de-texto-usando-php/ "Escrevendo um arquivo de texto, usando PHP")) para ver os dados que estão sendo passados para seu servidor.
 
 Agora para entender as diferenças entre ambas, separei em 3 passos os quais considero importante, os quais seguem abaixo
 

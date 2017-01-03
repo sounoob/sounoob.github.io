@@ -34,11 +34,11 @@ No Linux é bem mais fácil configurar um interpretador PHP (apache), e que para
         Para ver se está tudo correto, vamos iniciar. Use o comando abaixo para iniciar:</p> 
         {% highlight php linenos %}sudo /opt/lampp/lampp start{% endhighlight %} 
         
-        Caso tudo ocorra correto o Linux irá exibir o texto: “XAMPP for Linux started”, assim como mostrado na imagem abaixo:[<img class="aligncenter size-full wp-image-455" title="xampp-start-linux" alt="" src="./assets/uploads/2012/08/xampp-start-linux.png" srcset="./assets/uploads/2012/08/xampp-start-linux.png 387w, ./assets/uploads/2012/08/xampp-start-linux-300x160.png 300w" sizes="(max-width: 387px) 100vw, 387px" />](./assets/uploads/2012/08/xampp-start-linux.png)</li> 
+        Caso tudo ocorra correto o Linux irá exibir o texto: “XAMPP for Linux started”, assim como mostrado na imagem abaixo:[<img class="aligncenter size-full wp-image-455" title="xampp-start-linux" alt="" src="/assets/uploads/2012/08/xampp-start-linux.png" srcset="/assets/uploads/2012/08/xampp-start-linux.png 387w, /assets/uploads/2012/08/xampp-start-linux-300x160.png 300w" sizes="(max-width: 387px) 100vw, 387px" />](/assets/uploads/2012/08/xampp-start-linux.png)</li> 
         
           * Abra um browser qualquer e digite http://localhost, deverá aparecer uma tela similar a mostrada abaixo
   
-            [<img class="aligncenter size-full wp-image-444" title="xamp_home_page" alt="Pagina inicial do XAMPP" src="./assets/uploads/2012/08/xamp_home_page.png" srcset="./assets/uploads/2012/08/xamp_home_page.png 800w, ./assets/uploads/2012/08/xamp_home_page-300x199.png 300w" sizes="(max-width: 800px) 100vw, 800px" />](./assets/uploads/2012/08/xamp_home_page.png)</ol> 
+            [<img class="aligncenter size-full wp-image-444" title="xamp_home_page" alt="Pagina inicial do XAMPP" src="/assets/uploads/2012/08/xamp_home_page.png" srcset="/assets/uploads/2012/08/xamp_home_page.png 800w, /assets/uploads/2012/08/xamp_home_page-300x199.png 300w" sizes="(max-width: 800px) 100vw, 800px" />](/assets/uploads/2012/08/xamp_home_page.png)</ol> 
         
         Só para lembrar, a pasta onde seu código PHP deverá estar para o interpretador consiga ler é no endereço:
         
@@ -52,4 +52,4 @@ No Linux é bem mais fácil configurar um interpretador PHP (apache), e que para
         
         Veja outros posts como este aqui:
   
-        [PHP para noobs](./php-para-noobs/ "PHP para Noobs")
+        [PHP para noobs](/php-para-noobs/ "PHP para Noobs")

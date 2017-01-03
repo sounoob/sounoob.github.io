@@ -17,7 +17,7 @@ short-url:
 - http://bit.ly/1mUwUPC
 dsq_thread_id:
 - '2829079704'
-image: "./assets/uploads/2014/04/Removendo-index.jpg"
+image: "/assets/uploads/2014/04/Removendo-index.jpg"
 ---
 
 O CodeIgniter por padrão já dá suporte a URL amigáveis,  como os grandes frameworks em PHP, o grande problema é que ele ainda insiste em mostrar o arquivo index.php na URL o que deixa toda requisição horrível.
@@ -66,4 +66,4 @@ Se você estiver utilizando IIS você deverá criar um arquivo **web.config**
 
 Se você não conhece muito o CodeIgniter você poderá conhecer o nosso manual básico:
   
-[Curso básico de CodeIgniter para Noobs](./codeigniter-para-noobs/ "CodeIgniter para Noobs")
+[Curso básico de CodeIgniter para Noobs](/codeigniter-para-noobs/ "CodeIgniter para Noobs")

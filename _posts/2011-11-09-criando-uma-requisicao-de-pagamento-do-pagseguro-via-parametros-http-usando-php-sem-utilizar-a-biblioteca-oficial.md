@@ -222,10 +222,10 @@ header('Location: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=' .
 
 Lembrando que é possível também enviar informações para incluir uma assinatura(cobrança recorrente) tudo nesse mesmo processo.
   
-Veja detalhes em: <a title="Requisição de pagamento do PagSeguro com assinatura associada usando PHP" href="./requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/" target="_blank">Requisição de pagamento do PagSeguro com assinatura associada usando PHP</a>
+Veja detalhes em: <a title="Requisição de pagamento do PagSeguro com assinatura associada usando PHP" href="/requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/" target="_blank">Requisição de pagamento do PagSeguro com assinatura associada usando PHP</a>
 
 Como sempre, duvidas sugestões e qualquer coisa relacionada <span style="color: #ff0000;"><del>excerto reclamações rs </del></span> só comentar abaixo…
 
 Veja outros posts como este aqui:
   
-[Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.](./utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/ "Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.")
+[Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.](/utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/ "Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.")

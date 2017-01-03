@@ -16,7 +16,7 @@ short-url:
 - http://bit.ly/P1Fu1f
 dsq_thread_id:
 - '2819434890'
-image: "./assets/uploads/2014/03/codeIgniter-para-noobs-introducao.jpg"
+image: "/assets/uploads/2014/03/codeIgniter-para-noobs-introducao.jpg"
 ---
 
 ### O que é o CodeIgniter?
@@ -35,4 +35,4 @@ Existem muitos outros Frameworks no mercado, uns melhores que os outros, e boa p
 
 Veja outros posts como este aqui:
   
-[CodeIgniter para Noobs](./codeigniter-para-noobs/ "CodeIgniter para Noobs")
+[CodeIgniter para Noobs](/codeigniter-para-noobs/ "CodeIgniter para Noobs")

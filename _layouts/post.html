@@ -5,7 +5,7 @@ layout: default
 <div class="box post">
     {% if page.image %}
     <div class="post_image">
-        <a href="{{ post.url }}" title="{{ page.title }}">
+        <a href="{{ page.url }}" title="{{ page.title }}">
             <img src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}">
         </a>
     </div>
@@ -25,7 +25,7 @@ layout: default
     </h3>
     <p>Nós também cometemos erro, as vezes erros até grotesco.
         Então se você encontrou algo errado, ou algo que deveria ser acrescentado, ou removido
-        escreva nos comentários abaixo ou em nossa <a href="./contato">página de contato</a> que faremos atualização do post e mencionaremos você (Caso queira).</p>
+        escreva nos comentários abaixo ou em nossa <a href="/contato">página de contato</a> que faremos atualização do post e mencionaremos você (Caso queira).</p>
 </div>
 {% if site.comments and jekyll.environment == "production" %}
 <div class="box" id="comentario">

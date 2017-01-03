@@ -23,7 +23,7 @@ No PHP ao final de cada instrução que damos ao servidor devemos incluir um pon
 
 Como o PHP é uma linguagem que apenas o servidor irá ler e mais ninguém conseguirá ver sempre que quisermos via PHP mostrar alguma coisa na tela, devemos colocar na frente a palavra **echo**, tudo o que incluirmos após o echo irá ser mostrado na tela. Um detalhe muito importante é que nosso texto deverá estar dentro de aspas.
 
-Abra um <a title="Escolhendo um editor PHP" href="./escolhendo-um-editor-php/" target="_blank">editor PHP</a> de sua preferência e vamos colocar essa teoria em pratica, escreva o código abaixo, salve como **sintaxe.php** e mante rodar no seu servidor.
+Abra um <a title="Escolhendo um editor PHP" href="/escolhendo-um-editor-php/" target="_blank">editor PHP</a> de sua preferência e vamos colocar essa teoria em pratica, escreva o código abaixo, salve como **sintaxe.php** e mante rodar no seu servidor.
 
 {% highlight php linenos %}<?php echo "Olá. Eu sou Goku"; ?>{% endhighlight %} 
 
@@ -39,4 +39,4 @@ echo "Olá. Eu sou Goku"; #Apartir desse ponto tudo da linha será um comentári
 
 Veja outros posts como este aqui:
   
-[PHP para noobs](./php-para-noobs/ "PHP para Noobs")
+[PHP para noobs](/php-para-noobs/ "PHP para Noobs")

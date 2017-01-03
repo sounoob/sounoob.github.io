@@ -21,11 +21,11 @@ dsq_thread_id:
 - '2818796140'
 ---
 
-Primeiro você deve configurar sua URL na sua conta do PagSeguro para receber o código da notificação ( <a href="./assets/uploads/2011/09/PagSeguro_UOL_Notificacao_de-transacoes_pagseguro_uol_com_br_integracao_notificacao_de_transacoes.jpg" target="_blank">clique aqui para ver como que se faz</a>),  após isso vamos enviar esse código para o PagSeguro afim de receber os detalhes da transação.<!--more-->
+Primeiro você deve configurar sua URL na sua conta do PagSeguro para receber o código da notificação ( <a href="/assets/uploads/2011/09/PagSeguro_UOL_Notificacao_de-transacoes_pagseguro_uol_com_br_integracao_notificacao_de_transacoes.jpg" target="_blank">clique aqui para ver como que se faz</a>),  após isso vamos enviar esse código para o PagSeguro afim de receber os detalhes da transação.<!--more-->
 
 Para fazer a comunicação com o PagSeguro vamos usar a biblioteca do CURL, e a função simplexml\_load\_string  para transformar o XML em objeto, para manipular facilmente.
 
-A primeira coisa e a mais importante a saber é, o PagSeguro envia esses dados via POST em uma outra sessão, e você não irá conseguir imprimir isso na tela ( usar **echo**, **print_r**, **var_dump**…) <span style="color: #ff0000;"><del> é proibido, se você usar o FBI vai entrar na sua casa… (to de brinks…)</del></span>. Para saber o que está chegando via post, <a title="Escrevendo um arquivo de texto, usando PHP" href="./escrevendo-um-arquivo-de-texto-usando-php/#recebendo-post" target="_blank">grave esses dados em arquivos de log</a>.
+A primeira coisa e a mais importante a saber é, o PagSeguro envia esses dados via POST em uma outra sessão, e você não irá conseguir imprimir isso na tela ( usar **echo**, **print_r**, **var_dump**…) <span style="color: #ff0000;"><del> é proibido, se você usar o FBI vai entrar na sua casa… (to de brinks…)</del></span>. Para saber o que está chegando via post, <a title="Escrevendo um arquivo de texto, usando PHP" href="/escrevendo-um-arquivo-de-texto-usando-php/#recebendo-post" target="_blank">grave esses dados em arquivos de log</a>.
   
 <a name="passo-a-passo"></a>
   
@@ -299,4 +299,4 @@ Bom esse era para ser uma explicação simples, caso alguem não entender qualqu
 
 Veja outros posts como este aqui:
   
-[Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.](./utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/ "Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.")
+[Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.](/utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/ "Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.")

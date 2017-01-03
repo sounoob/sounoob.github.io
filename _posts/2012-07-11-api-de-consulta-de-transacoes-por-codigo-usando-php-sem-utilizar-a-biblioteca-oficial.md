@@ -21,9 +21,9 @@ dsq_thread_id:
 - '2819597866'
 ---
 
-Uma das vantagens de utilizar a API de consulta de transações por código é a opção de poder consultar o detalhe da transação quando der na teia, até mesmo antes de <a title="Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial" href="./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">receber notificações da API de notificações</a>, sem contar que pode ser usada em conjunto com outras APIs, tornado sua integração mais "poderosa".
+Uma das vantagens de utilizar a API de consulta de transações por código é a opção de poder consultar o detalhe da transação quando der na teia, até mesmo antes de <a title="Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial" href="/recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/" target="_blank">receber notificações da API de notificações</a>, sem contar que pode ser usada em conjunto com outras APIs, tornado sua integração mais "poderosa".
 
-Talvez você deva estar se perguntando: É difícil? Eu respondo que não. Ela é uma das APIs do PagSeguro mais fácil de trabalhar, e podemos utilizar a mesma lógica usada na [API de notificações](./recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial").<!--more-->
+Talvez você deva estar se perguntando: É difícil? Eu respondo que não. Ela é uma das APIs do PagSeguro mais fácil de trabalhar, e podemos utilizar a mesma lógica usada na [API de notificações](/recebendo-notificacoes-do-pagseguro-usando-php-sem-utilizar-a-biblioteca-oficial/ "Recebendo notificações do PagSeguro usando PHP – Sem utilizar a biblioteca oficial").<!--more-->
 
 Basicamente o PagSeguro requer 3 dados o e-mail, token e o código da transação, sendo assim vamos inserir cada informação suas respectivas variáveis.
 
@@ -43,7 +43,7 @@ Vamos montar nossa URL igual ao exemplo, utilizando nossas variáveis:
 
 Com as informações prontas basta apenas enviar tudo paro PagSeguro. Usaremos o cURL como de costume, para isso vamos iniciar a lib.
 
-Para facilitar usarei a função do tutorial <a title="cURL. Feita para usar e abusar" href="./curl-usando-e-abusando/#curlExec" target="_blank">sobre cURL (Clique aqui para ver) </a>e gravar a resposta dentro de uma variável.
+Para facilitar usarei a função do tutorial <a title="cURL. Feita para usar e abusar" href="/curl-usando-e-abusando/#curlExec" target="_blank">sobre cURL (Clique aqui para ver) </a>e gravar a resposta dentro de uma variável.
 
 {% highlight php linenos %}$transaction = curlExec($url);{% endhighlight %} 
 
@@ -106,4 +106,4 @@ Bom acho que é isso… Qualquer dúvida postem nos comentários abaixo. Curtiu,
 
 Veja outros posts como este aqui:
   
-[Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.](./utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/ "Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.")
+[Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.](/utilizando-as-apis-do-pagseguro-e-php-sem-utilizar-a-biblioteca-oficial/ "Utilizando as APIs do PagSeguro e PHP – Sem utilizar a biblioteca oficial.")

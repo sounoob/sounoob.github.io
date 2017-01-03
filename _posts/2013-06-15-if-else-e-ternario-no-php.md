@@ -45,7 +45,7 @@ O que ocorreu?
   
 O conteúdo da variável foi diferente da condição imposta, tente alterar na linha 1 o conteúdo da variável **$nome** para "Gandalf" e veja o que acontece.
 
-Você deve ter notado que utilizamos duas vezes o sinal de = no momento da condição, dai você lembrou do [operador de atribuição](./operadores-de-atribuicao-no-php/ "Operadores de Atribuição no PHP") e deve estar se perguntando <del style="color: #ff0000;" datetime="2013-06-15T16:11:18+00:00">WTF is it?</del> o que é isso? Não criemos pânico, deixe me explicar: Quando utilizamos somente um sinal de igual (=) estamos atribuindo algo para a variável, quando utilizamos dois sinais de iguais (**==**) então estamos comparando o que está a direita, com o que está na esquerda, o resultado disso será um valor booleano (TRUE ou FALSE).
+Você deve ter notado que utilizamos duas vezes o sinal de = no momento da condição, dai você lembrou do [operador de atribuição](/operadores-de-atribuicao-no-php/ "Operadores de Atribuição no PHP") e deve estar se perguntando <del style="color: #ff0000;" datetime="2013-06-15T16:11:18+00:00">WTF is it?</del> o que é isso? Não criemos pânico, deixe me explicar: Quando utilizamos somente um sinal de igual (=) estamos atribuindo algo para a variável, quando utilizamos dois sinais de iguais (**==**) então estamos comparando o que está a direita, com o que está na esquerda, o resultado disso será um valor booleano (TRUE ou FALSE).
 
 Estamos entendidos? Então vamos ao segundo nivel: O else
   
