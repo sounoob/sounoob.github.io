@@ -35,7 +35,7 @@ A partir daqui, todos parâmetros que precisar passar para o cURL precisaremos u
   
 Primeiro e obrigatório será a URL
 
-{% highlight php linenos %}curl_setopt($ch, CURLOPT_URL, 'http://sounoob.com.br/labs/testCurl.php');{% endhighlight %} 
+{% highlight php linenos %}curl_setopt($ch, CURLOPT_URL, 'http://sounoob.com.br/labs/pagseguro-test-curl');{% endhighlight %}
 
 Agora é só mandar executar a ação.
 
@@ -59,7 +59,7 @@ Agora no momento que mandarmos executar, a função **curl_exec** irá retornar 
 
 GET (Ou querystring) é a forma mais simples que existe, basta apenas injetar todos dados na URL e pronto, a página de destino já estará recendo os dados.
 
-{% highlight php linenos %}curl_setopt($ch, CURLOPT_URL, 'http://sounoob.com.br/labs/testeCurl.php?parameter1=value&parameter2=secondevalue');{% endhighlight %} 
+{% highlight php linenos %}curl_setopt($ch, CURLOPT_URL, 'http://sounoob.com.br/labs/pagseguro-test-curl?parameter1=value&parameter2=secondevalue');{% endhighlight %}
 
 Funcionou, mas não aconselho usar desta forma, fica feio e difícil de entender. Ao invés disso utilize um array para distribuir as informações a serem enviadas e depois use a função http\_build\_query para formatar no padrão.
 
@@ -70,7 +70,7 @@ $queryString = array(
 );
  
 //Monta a URL
-$url = 'http://sounoob.com.br/labs/testeCurl.php?' . http_build_query($queryString);
+$url = 'http://sounoob.com.br/labs/pagseguro-test-curl?' . http_build_query($queryString);
  
 //envia a URL como parâmetro para o cURL;
 curl_setopt($ch, CURLOPT_URL, $url);{% endhighlight %} 
