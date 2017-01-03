@@ -1,6 +1,6 @@
 ---
 title: Operadores Aritméticos no PHP
-date: 2013-06-13 06:39:05
+date: 2013-06-13 03:39:05 -03:00
 permalink: "/operadores-aritmeticos-no-php/"
 categories:
 - Aulas

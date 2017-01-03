@@ -1,6 +1,6 @@
 ---
 title: Diferença entre o Retorno Automático de Dados e a API de notificações
-date: 2012-07-05 13:33:54
+date: 2012-07-05 10:33:54 -03:00
 permalink: "/diferenca-entre-o-retorno-automatico-de-dados-e-a-api-de-notificacoes/"
 categories:
 - Curiosidades

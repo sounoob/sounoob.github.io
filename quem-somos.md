@@ -1,6 +1,6 @@
 ---
 title: Quem somos
-date: 2011-08-24 18:05:16
+date: 2011-08-24 15:05:16 -03:00
 id: 6
 author: Sena
 layout: page

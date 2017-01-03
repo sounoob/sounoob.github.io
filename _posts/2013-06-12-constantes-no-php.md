@@ -1,6 +1,6 @@
 ---
 title: Constantes no PHP
-date: 2013-06-12 20:50:22
+date: 2013-06-12 17:50:22 -03:00
 permalink: "/constantes-no-php/"
 categories:
 - Aulas

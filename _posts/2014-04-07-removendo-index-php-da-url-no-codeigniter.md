@@ -1,6 +1,6 @@
 ---
 title: Removendo "index.php" da URL no CodeIgniter
-date: 2014-04-07 15:26:55
+date: 2014-04-07 12:26:55 -03:00
 permalink: "/removendo-index-php-da-url-no-codeigniter/"
 categories:
 - Tutoriais

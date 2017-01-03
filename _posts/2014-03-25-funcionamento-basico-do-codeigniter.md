@@ -1,6 +1,6 @@
 ---
 title: Funcionamento básico do CodeIgniter
-date: 2014-03-25 19:33:12
+date: 2014-03-25 16:33:12 -03:00
 permalink: "/funcionamento-basico-do-codeigniter/"
 categories:
 - Aulas

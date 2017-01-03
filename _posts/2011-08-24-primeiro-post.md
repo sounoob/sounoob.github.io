@@ -1,6 +1,6 @@
 ---
 title: Primeiro post…
-date: 2011-08-24 18:51:37
+date: 2011-08-24 15:51:37 -03:00
 permalink: "/primeiro-post/"
 categories:
 - Comunicados

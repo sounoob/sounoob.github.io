@@ -1,6 +1,6 @@
 ---
 title: CodeIgniter para Noobs
-date: 2014-03-05 18:55:37
+date: 2014-03-05 15:55:37 -03:00
 permalink: "/codeigniter-para-noobs/"
 categories:
 - Comunicados

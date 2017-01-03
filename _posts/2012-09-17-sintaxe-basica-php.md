@@ -1,6 +1,6 @@
 ---
 title: Sintaxe basica do PHP
-date: 2012-09-17 16:36:25
+date: 2012-09-17 13:36:25 -03:00
 permalink: "/sintaxe-basica-php/"
 categories:
 - Aulas

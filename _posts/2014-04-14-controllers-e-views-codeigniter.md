@@ -1,6 +1,6 @@
 ---
 title: Controllers e Views - CodeIgniter
-date: 2014-04-14 15:56:54
+date: 2014-04-14 12:56:54 -03:00
 permalink: "/controllers-e-views-codeigniter/"
 categories:
 - Tutoriais

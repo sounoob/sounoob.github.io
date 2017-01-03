@@ -1,6 +1,6 @@
 ---
 title: Escolhendo um editor PHP
-date: 2012-08-22 18:06:32
+date: 2012-08-22 15:06:32 -03:00
 permalink: "/escolhendo-um-editor-php/"
 categories:
 - Aulas

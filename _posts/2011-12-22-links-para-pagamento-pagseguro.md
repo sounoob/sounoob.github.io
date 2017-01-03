@@ -1,6 +1,6 @@
 ---
 title: Links para pagamento - PagSeguro
-date: 2011-12-22 15:41:02
+date: 2011-12-22 13:41:02 -02:00
 permalink: "/links-para-pagamento-pagseguro/"
 categories:
 - Dicas

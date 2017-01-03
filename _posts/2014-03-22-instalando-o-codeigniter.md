@@ -1,6 +1,6 @@
 ---
 title: Instalando o CodeIgniter
-date: 2014-03-22 15:29:28
+date: 2014-03-22 12:29:28 -03:00
 permalink: "/instalando-o-codeigniter/"
 categories:
 - Aulas
