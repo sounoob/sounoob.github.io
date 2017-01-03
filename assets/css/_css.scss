@@ -242,6 +242,12 @@ h2 {
   position: absolute;
   right: 2rem;
   top: 1rem;
+  opacity: 0.2;
+  -webkit-transition-duration: 1s; /* Safari */
+  transition-duration: 1s;
+}
+.main-content .box.post:hover .reading-time {
+  opacity:1;
 }
 .main-content .post_image img {
   width: 100%;
@@ -283,8 +289,8 @@ h2 {
 .main-content .post .footer {
   margin-top: 2rem;
   font-size: .8rem;
+  position: relative;
 }
-
 .main-content .post .footer .fa {
   margin-left: .5rem;
 }
