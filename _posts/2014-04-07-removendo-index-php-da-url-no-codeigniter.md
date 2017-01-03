@@ -21,14 +21,14 @@ image: "/assets/uploads/2014/04/Removendo-index.jpg"
 ---
 
 O CodeIgniter por padrão já dá suporte a URL amigáveis,  como os grandes frameworks em PHP, o grande problema é que ele ainda insiste em mostrar o arquivo index.php na URL o que deixa toda requisição horrível.
-
+<!--more-->
 Veja o padrão de URL na instalação padrão do CodeIgniter:
   
 _http://seusite.com.br/index.php/controller/method/parameter_
 
 Como deveria ser:
   
-_http://seusite.com.br/controller/method/parameter<!--more-->_
+_http://seusite.com.br/controller/method/parameter_
 
 Este problema é muito simples de resolver, basta configurar o servidor para trabalhar com uma sobrescrita de URL, siga o passo-a-passo a baixo:
 

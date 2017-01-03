@@ -1,0 +1,144 @@
+---
+title: Estimativa de tempo de leitura da página
+date: 2017-01-10 00:00:01 Z
+permalink: "/estimativa-de-tempo-de-leitura-da-pagina/"
+categories:
+- Tutoriais
+tags:
+- Jekyll
+redirect_from: "/estimativa-de-tempo-de-leitura-do-post/"
+author: Sena
+layout: post
+---
+
+<p>
+    Criaremos para <strong>Jekyll</strong> sem utilizar plugins, um jeito de fazer esta estimativa de um jeito tão simples que você conseguirá aplicar a mesma lógica para qualque sistema.
+</p>
+<!--more-->
+<b>Se você já entende de programação, <a href="#code">clique aqui</a> ir direto ao código completo.</b>
+<p>
+A lógica é bem simples, em média o ser humano ler 250 palavras por minutos <del>(se você discordar poderá mudar a variável com esse valor depois)</del>.
+Então primeiro passo é calcular quantas palavras o post tem e guardar em uma variável para usarmos depois.
+{% highlight ruby linenos %}{% raw %}
+{% assign content = post.content %}
+{% assign words = content | number_of_words %}
+{% endraw %}{% endhighlight %}
+
+Com esse valor basta apenas dividir pelo número de palavras que o ser humano ler em média. Com isso já temos a estimativa de minutos do post.
+
+{% highlight ruby linenos %}{% raw %}
+{% assign wpm = 250 %}
+{% assign content = post.content %}
+{% assign words = content | number_of_words %}
+{{words | divided_by:wpm}} minutos de leitura
+{% endraw %}{% endhighlight %}
+
+Com isso acabamos de criar um problema. Se der menos de 1 minuto o texto mostrará 0 minutos de leitura.
+Faremos a divisão antes e verificaremos se é menor que 1 para colocar um texto mais adequado.
+
+{% highlight ruby linenos %}{% raw %}
+{% assign wpm = 250 %}
+{% assign content = post.content %}
+{% assign words = content | number_of_words %}
+{% assign estimated_minutes = words | divided_by:wpm %}
+
+{% if estimated_minutes < 1 %}
+    Menos de um minuto
+{% else %}
+    {{words | divided_by:wpm}} minutos
+{% endif %} de leitura
+{% endraw %}{% endhighlight %}
+
+Agora só verificar se deu 1 minuto para tirar o plural da frase.
+
+{% highlight ruby linenos %}{% raw %}
+{% assign wpm = 250 %}
+{% assign content = post.content %}
+{% assign words = content | number_of_words %}
+{% assign estimated_minutes = words | divided_by:wpm %}
+
+{% if estimated_minutes < 1 %}
+    Menos de um minuto
+{% elsif estimated_minutes == 1 %}
+    1 minuto
+{% else %}
+    {{words | divided_by:wpm}} minutos
+{% endif %} de leitura
+{% endraw %}{% endhighlight %}
+
+Daqui já poderiamos parar. Mas digamos que os posts são muito grandes, tipo livro. Será estranho mostrar 999 minutos. Melhor reduzir para horas.
+
+{% highlight ruby linenos %}{% raw %}
+{% assign wpm = 250 %}
+{% assign hour = 60 %}
+{% assign content = post.content %}
+{% assign words = content | number_of_words %}
+{% assign estimated_minutes = words | divided_by:wpm %}
+
+{% if estimated_minutes < 1 %}
+    Menos de um minuto
+{% elsif estimated_minutes == 1 %}
+    1 minuto
+{% elsif estimated_minutes < hour %}
+    {{ estimated_minutes }} minutos
+{% else %}
+    {{ estimated_minutes | divided_by:hour }} horas
+{% endif %} de leitura
+{% endraw %}{% endhighlight %}
+
+Agora para deixar o código pronto para textos muito extenso, marcaremos quando a leitura passar de um dia para um texto melhor.
+
+{% highlight ruby linenos %}{% raw %}
+{% assign wpm = 250 %}
+{% assign hour = 60 %}
+{% assign one_day = 1440 %}
+{% assign content = post.content %}
+{% assign words = content | number_of_words %}
+{% assign estimated_minutes = words | divided_by:wpm %}
+
+{% if estimated_minutes < 1 %}
+    Menos de um minuto
+{% elsif estimated_minutes == 1 %}
+    1 minuto
+{% elsif estimated_minutes < hour %}
+    {{ estimated_minutes }} minutos
+{% elsif estimated_minutes < one_day %}
+    {{ estimated_minutes | divided_by:hour }} horas
+{% else %}
+    {{ estimated_minutes | divided_by:one_day }} dias
+{% endif %} de leitura
+{% endraw %}{% endhighlight %}
+
+Para finalizar, verificamos se é um dia ou mais, para deixar o texto no plural ou singular.
+<span id="code"></span>
+{% highlight ruby linenos %}{% raw %}
+{% assign wpm = 250 %}
+{% assign hour = 60 %}
+{% assign one_day = 1440 %}
+{% assign content = post.content %}
+{% assign words = content | number_of_words %}
+{% assign estimated_minutes = words | divided_by:wpm %}
+
+{% if estimated_minutes < 1 %}
+    Menos de um minuto
+{% elsif estimated_minutes == 1 %}
+    1 minuto
+{% elsif estimated_minutes < hour %}
+    {{ estimated_minutes }} minutos
+{% elsif estimated_minutes < one_day %}
+    {{ estimated_minutes | divided_by:hour }} horas
+{% else %}
+    {% assign days = estimated_minutes | divided_by:one_day %}
+    {% if days <= 1 %}
+        {{ days }} dia
+    {% else %}
+        {{ days }} dias
+    {% endif %}
+{% endif %} de leitura
+{% endraw %}{% endhighlight %}
+</p>
+<h3>Sua vez</h3>
+<p>
+    Agora mostre que você entendeu o post, e tente portar esse código para outra linguagem.
+    Já até criamos um repositório para você criar sua versão lá. <a href="https://github.com/Sena/reading_time" target="_blank" rel="nofollow noreferrer">Repositório</a>
+</p>
