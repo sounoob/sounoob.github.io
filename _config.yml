@@ -37,3 +37,4 @@ category_dir: topics
 sass:
   sass_dir: assets/css/
   style: compressed
+permalink: /:title/
