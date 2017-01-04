@@ -16,6 +16,7 @@ paginate: 5
 dateformat: "%d-%m-%Y"
 comments: true
 gems:
+- jekyll-sitemap
 - jekyll-paginate
 - jekyll-feed
 - jekyll-archives
