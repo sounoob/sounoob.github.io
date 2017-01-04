@@ -26,13 +26,6 @@ description: Este blog é para essas pessoas que vivem estudando coisas complexa
   esquecem de como fazer as coisas mais simples.
 facebook:
   app_id: 370117756342202
-social:
-  name: Sena
-  links:
-  - https://github.com/sena
-  - https://facebook.com/alcaidedigital
-  - https://twitter.com/alcaidedigital
-  - https://www.instagram.com/alcaidedigital
 google_site_verification: AN1qzV2xb-W-75y34Vdnqi2WEFKaqg1XsfN2RJ3GRkg
 markdown: kramdown
 category_dir: topics
