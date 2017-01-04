@@ -38,3 +38,13 @@ sass:
   sass_dir: assets/css/
   style: compressed
 permalink: "/:title/"
+
+
+social:
+  name: Sena
+  links:
+    - https://github.com/sena
+    - https://facebook.com/alcaidedigital
+    - https://twitter.com/alcaidedigital
+    - https://www.instagram.com/alcaidedigital
+    - https://www.snapchat.com/add/bman4789
