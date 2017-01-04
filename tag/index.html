@@ -12,7 +12,7 @@ layout: default
     {% for tag in sortedtags %}
     <div class="box" id="{{ tag | slugify }}">
     <h3>
-        <a href="./tag/{{ tag | slugify }}">{{ tag }}</a>
+        <a href="/tag/{{ tag | slugify }}">{{ tag }}</a>
     </h3>
     <ul>
         {% for post in site.tags[tag] %}

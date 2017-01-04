@@ -6,7 +6,7 @@
         <span class="screen-reader-text">Categorias </span>
         <span class="tag-list list-inline-comma">
             {% for category in post.categories %}
-                <span><a href="category/{{ category | slugify }}" title="{{ category }}">{{ category }}</a></span>
+                <span><a href="/category/{{ category | slugify }}" title="{{ category }}">{{ category }}</a></span>
             {% endfor %}
         </span>
     {% endif %}
@@ -16,7 +16,7 @@
         <span class="screen-reader-text">Tags </span>
         <span class="tag-list list-inline-comma">
             {% for tag in post.tags %}
-                <span><a href="tag/{{ tag | slugify }}" title="{{ tag }}">{{ tag }}</a></span>
+                <span><a href="/tag/{{ tag | slugify }}" title="{{ tag }}">{{ tag }}</a></span>
             {% endfor %}
         </span>
     {% endif %}
