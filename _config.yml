@@ -27,10 +27,13 @@ description: Este blog é para essas pessoas que vivem estudando coisas complexa
 facebook:
   app_id: 370117756342202
 social:
-  name: Sounoob
+  name: Sena
   links:
-  - https://www.facebook.com/sounoob
-  - https://plus.google.com/+SounoobBr
+  - https://github.com/sena
+  - https://facebook.com/alcaidedigital
+  - https://twitter.com/alcaidedigital
+  - https://www.instagram.com/alcaidedigital
+  - https://www.snapchat.com/add/bman4789
 google_site_verification: AN1qzV2xb-W-75y34Vdnqi2WEFKaqg1XsfN2RJ3GRkg
 markdown: kramdown
 category_dir: topics
@@ -38,13 +41,3 @@ sass:
   sass_dir: assets/css/
   style: compressed
 permalink: "/:title/"
-
-
-social:
-  name: Sena
-  links:
-    - https://github.com/sena
-    - https://facebook.com/alcaidedigital
-    - https://twitter.com/alcaidedigital
-    - https://www.instagram.com/alcaidedigital
-    - https://www.snapchat.com/add/bman4789
