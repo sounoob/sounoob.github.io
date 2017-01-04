@@ -576,3 +576,22 @@ h2 {
 .contact-form .form-group {
   padding: .5rem 1rem;
 }
+
+#page-apoie-esta-causa- .inline-text .social-links li{
+  display: none;
+}
+#page-apoie-esta-causa- .inline-text .social-links li.social{
+  display: list-item;
+  float: none;
+  list-style-type: circle;
+}
+#page-apoie-esta-causa- .inline-text .social-links li .fa{
+  display: none;
+}
+#page-apoie-esta-causa- .inline-text .social-links li .screen-reader-text{
+  overflow: auto;
+  clip: auto;
+  position: relative;
+  width: auto;
+  height:auto;
+}

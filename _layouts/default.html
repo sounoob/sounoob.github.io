@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   {% include head.html %}
-  <body id="page{{page.url | replace: '/', '-'}}">
+  <body id="page{{page.url | replace: '/', '-' | replace: '.html', ''}}">
     {% include page-header.html %}
 
     <section class="main-content">
