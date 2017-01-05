@@ -1,5 +1,4 @@
 ---
-highlighter: rouge
 title: SouNoob
 timezone: America/Sao_Paulo
 collections:
@@ -9,6 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+highlighter: rouge
 future: false
 url: https://sounoob.com.br
 excerpt_separator: "<!--more-->"
