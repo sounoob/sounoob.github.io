@@ -1,5 +1,4 @@
 ---
-future: false
 title: SouNoob
 timezone: America/Sao_Paulo
 collections:
@@ -9,6 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+future: false
 url: https://sounoob.com.br
 excerpt_separator: "<!--more-->"
 tagline: Repita comigo, eu sou noob. eu sou noob...
