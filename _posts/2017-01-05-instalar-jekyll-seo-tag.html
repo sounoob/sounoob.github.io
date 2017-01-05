@@ -1,0 +1,76 @@
+---
+title: Instalar Jekyll-seo-tag
+date: 2017-01-18 05:00:00 -02:00
+permalink: "/instalar-jekyll-seo-tag/"
+categories:
+- Tutoriais
+tags:
+- Jekyll
+author: Sena
+layout: post
+---
+
+<p>
+    <strong>Jekyll SEO Tag</strong> que vai te ajudar a criar metatags para otimizar o rastreio da sua página, quanto a exibição nas redes sociais.
+</p>
+<!--more-->
+
+Siga os passos abaixo:
+<ol>
+    <li>
+        Adicione no arquivo <b>Gemfile</b>
+        <pre>gem 'jekyll-seo-tag'</pre>
+    </li>
+    <li>
+        Adicione dentro da tag <b>head</b>
+        <pre>{% raw %}{% seo %}{% endraw %}</pre>
+    </li>
+    <li>
+        Adicione no arquivo <b>_config.yml</b>
+        <pre>gems:
+    - jekyll-seo-tag</pre>
+        Agora precisamos colocar as configurações padrões do teu site.
+        Utilize as seguintes configurações nesse mesmo aquivo.
+        <ul>
+            <li><b>title</b> - O título do seu site</li>
+            <li><b>description</b> - Uma breve descrição do site</li>
+            <li><b>url</b> - a URL completa para a raiz do seu site</li>
+            <li><b>author</b> - O autor padrão dos seus posts</li>
+            <li><b>logo</b> - A URL do logo do site</li>
+            <li><b>google_site_verification</b> - O código de verificação do <b>Google webmaster tools</b></li>
+            <li><b>facebook</b>
+                <ul>
+                    <li><b>facebook:app_id</b> - O ID do aplicativo</li>
+                    <li><b>facebook:publisher</b> - A URL da página do Facebook</li>
+                    <li><b>facebook:admins</b> - O ID de usuário do Facebook que gerencia a página</li>
+                </ul>
+                Deverá ser algo parecido com o código abaixo.
+                <pre>facebook:
+    app_id: 1234
+    publisher: 1234
+    admins: 1234</pre>
+            </li>
+            <li><b>twitter:username</b> - A conta do twitter
+                <pre>twitter:
+    username</pre>
+            </li>
+        </ul>
+    </li>
+</ol>
+<p>
+    Abaixo as configurações feita no <b>_config.yml</b> que podem ser reescrita no <i>YAML front matter</i> da sua página, post ou documento.
+    <ul>
+        <li><b>title</b> - Título da página</li>
+        <li><b>description</b> - Uma breve descrição do conteudo da página</li>
+        <li><b>author</b> - autor do post</li>
+        <li><b>image</b> - URL de alguma imagem para ser associada ao post</li>
+    </ul>
+</p>
+<p>
+    Mais informações veja o site oficial do <a href="https://github.com/jekyll/jekyll-seo-tag" title="Jekyll SEO Tag" alt="Jekyll SEO Tag" target="_blank">Jekyll SEO Tag</a>
+</p>
+<h3>Sua vez</h3>
+<p>
+    Esse plugin facilitou a sua vida na construção da página?<br>
+    O que você acha mais eficiente, utilizar esse plugin ou construir as tags na mão?
+</p>

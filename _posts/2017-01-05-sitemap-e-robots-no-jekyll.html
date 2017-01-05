@@ -1,0 +1,85 @@
+---
+title: Sitemap e robots no Jekyll
+date: 2017-01-11 05:00:00 -02:00
+permalink: "/sitemap-e-robots-no-jekyll/"
+categories:
+- Tutoriais
+tags:
+- Jekyll
+redirect_from: "/sitemap-robots-no-jekyll/"
+author: Sena
+layout: post
+---
+
+<p>
+    A idéia é listar todas páginas e falar para os mecanismos de busca o que deve ser indexado e o que não deve ser indexado.
+</p>
+<!--more-->
+
+<h2>Instalar sitemap</h2>
+Primeira coisa e mais importante é criar um mapa de site para informar aos buscadores onde está nossas URL`s que queremos indexar.
+<p>
+    Para isso adicione no arquivo <b>_config.yml</b>.
+<pre>gems:
+    - jekyll-sitemap</pre>
+Por padrão todas páginas irão serem incluidas no sitemp, as que você não quiser, utilize <b><i>sitemap: false</i></b> no <i>YAML front matter</i> do seus documentos ou páginas.
+</p>
+<h2>Adicione robots.txt</h2>
+Crie um aquivo chamado robots.txt na raiz da aplicação, defina como será o link de acesso dele, e informe que não usará layout nenhum.
+<br>
+<b>Se você já manja dos códigos, <a href="#code">clique aqui</a> ir direto ao código completo.</b>
+<br>
+Prevendo que usarmeos uma configuração padrão para todos user agents, colocaremos um * ali no meio.
+<pre>---
+permalink: robots.txt
+layout:
+---
+User-agent: *
+</pre>
+Como acabamos de criar o mapa de site, primeira coisa coisa é mostrar aos buscadores qual endereço fica nosso sitemap. Logo adicionamos a linha abaixo em nosso arquivo
+<pre>{% raw %}Sitemap: {{ site.url }}/sitemap.xml{% endraw %}</pre>
+<p>Próximo passo é mostrar aos buscadores tudo que não queremos indexar.</p>
+<p>
+    Se você configurou no <i>YAML front matter</i> do seus documentos ou páginas a opção <b><i>sitemap: false</i></b> para os itens que não quer indexar.
+    Então usaremos um código usando essa propriedade para listar essas URL`s para serem bloqueadas.
+</p>
+{% highlight ruby linenos %}{% raw %}
+{% assign noindexPages = site.pages | where: 'sitemap', false %}
+{% assign noindexDocuments = site.documents | where: 'sitemap', false %}
+{% endraw %}{% endhighlight %}
+<p>
+    Verificamos se existe URL`s. Caso exista, teremos dois loops, um para cada lista de URL`s imprimindo a instrução de bloqueio.
+    <br> Caso não exista URL`s a serem bloqueadas, colocamos a instrução para liberar acesso para a aplicação inteira.
+</p>
+{% highlight ruby linenos %}{% raw %}
+{% for node in noindexPages %}
+    Disallow: {{ node.url }}
+{% endfor %}
+{% for node in noindexDocuments %}
+    Disallow: {{ node.url }}
+{% endfor %}
+{% endraw %}{% endhighlight %}
+<p id="code">O código completo deverá ficar algo como isso:</p>
+
+{% highlight ruby linenos %}{% raw %}---
+permalink: robots.txt
+layout:
+---
+
+User-agent: *
+Sitemap: {{ site.url }}/sitemap.xml
+
+{% assign noindexPages = site.pages | where: 'sitemap', false %}
+{% assign noindexDocuments = site.documents | where: 'sitemap', false %}
+
+{% if noindexDocuments or noindexPages %}
+    {% for node in noindexPages %}
+        Disallow: {{ node.url }}
+    {% endfor %}
+    {% for node in noindexDocuments %}
+        Disallow: {{ node.url }}
+    {% endfor %}
+{% else %}
+    Disallow:
+{% endif %}
+{% endraw %}{% endhighlight %}
