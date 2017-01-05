@@ -40,6 +40,5 @@ sass:
   sass_dir: assets/css/
   style: compressed
 permalink: "/:title/"
-
 jekyll-archives:
   enabled: all
