@@ -15,8 +15,8 @@
     {% endif %}
     {% if page.author %}
         {% assign author = site.data.authors[page.author] %}
-        {% if author %}
-            <meta property="article:author" content="{{ author.facebook }}" />
+        {% if author.facebook %}
+            <meta property="article:author" content="https://www.facebook.com/{{ author.facebook }}" />
         {% endif %}
     {% endif %}
     {% if site.google_analytics and jekyll.environment == "production" %}
