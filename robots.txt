@@ -1,13 +1,14 @@
 ---
 permalink: robots.txt
-layout: 
+layout:
 ---
 
-# filter pages and documents for the noindex key
-{% assign noindexPages = site.pages | where: 'sitemap', false %}
-{% assign noindexDocuments = site.documents | where: 'sitemap', false %}
 User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
+
+{% assign noindexPages = site.pages | where: 'sitemap', false %}
+{% assign noindexDocuments = site.documents | where: 'sitemap', false %}
+
 {% if noindexDocuments or noindexPages %}
     {% for node in noindexPages %}
         Disallow: {{ node.url }}
@@ -18,4 +19,3 @@ Sitemap: {{ site.url }}/sitemap.xml
 {% else %}
     Disallow:
 {% endif %}
-
