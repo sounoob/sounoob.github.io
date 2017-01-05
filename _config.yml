@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-site: https://sounoob.com.br
+url: https://sounoob.com.br
 excerpt_separator: "<!--more-->"
 tagline: Repita comigo, eu sou noob. eu sou noob...
 google_analytics: UA-5016269-14
