@@ -8,7 +8,6 @@ collections:
   uploads:
     title: Uploads
     output: true
-highlighter: rouge
 future: false
 url: https://sounoob.com.br
 excerpt_separator: "<!--more-->"
@@ -41,3 +40,6 @@ sass:
   sass_dir: assets/css/
   style: compressed
 permalink: "/:title/"
+
+jekyll-archives:
+  enabled: all
