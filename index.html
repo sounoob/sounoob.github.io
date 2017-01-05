@@ -2,15 +2,9 @@
 title: Página inicial
 layout: default
 ---
-
-{% capture nowunix %}{{'now' | date: '%s'}}{% endcapture %}
-{% assign nowunix = nowunix | plus: 0 %}
 <div id="home">
     <!-- This loops through the paginated posts -->
     {% for post in paginator.posts %}
-    {% capture posttime %}{{post.date | date: '%s'}}{% endcapture %}
-    {% assign posttime = posttime | plus: 0 %}
-    {% if posttime < nowunix %}
     <div class="post box">
         {% if post.image %}
         <div class="post_image">
@@ -29,7 +23,6 @@ layout: default
         </a>
         {% include post-footer.html %}
     </div>
-    {% endif %}
     {% endfor %}
 </div>
 
