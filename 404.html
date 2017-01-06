@@ -30,7 +30,7 @@ sitemap: false
             {% for category in sortedcategories %}
             {% if category.size > 0 %}
             <span>
-                <a href="category/{{ category | slugify }}">{{ category }}</a>
+                <a href="/category/{{ category | slugify }}">{{ category }}</a>
             </span>
             {% endif %}
             {% endfor %}
@@ -51,7 +51,7 @@ sitemap: false
             {% for tag in sortedtags %}
             {% if tag.size > 0 %}
             <span>
-                <a href="tag/{{ tag | slugify }}">{{ tag }}</a>
+                <a href="/tag/{{ tag | slugify }}">{{ tag }}</a>
             </span>
             {% endif %}
             {% endfor %}
