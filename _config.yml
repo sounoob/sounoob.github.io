@@ -8,6 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
+future: false
 url: https://sounoob.com.br
 excerpt_separator: "<!--more-->"
 tagline: Repita comigo, eu sou noob. eu sou noob...
@@ -20,7 +21,6 @@ gems:
 - jekyll-sitemap
 - jekyll-paginate
 - jekyll-feed
-- jekyll-archives
 - jekyll-seo-tag
 - jekyll-redirect-from
 description: Este blog é para essas pessoas que vivem estudando coisas complexas e
