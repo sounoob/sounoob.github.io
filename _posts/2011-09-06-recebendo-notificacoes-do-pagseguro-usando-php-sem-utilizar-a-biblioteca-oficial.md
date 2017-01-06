@@ -145,7 +145,7 @@ Perfeito, agora é só pegar o que precisa respeitando a hierarquia do XML…
 O Mais importante nesse caso é localizar primeiro a informação no XML. Veja no exemplo abaixo como capturar por exemplo o endereço do comprador, veja as tags em verde:
 
 {% highlight xml linenos %}<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-	<strong><span style="color: #008000;"><transaction></span></strong>
+	<transaction>
 		<date>2011-02-10T16:13:41.000-03:00</date>
 		<code>9E884542-81B3-4419-9A75-BCC6FB495EF1</code>
 		<reference>REF1234</reference>
@@ -184,9 +184,9 @@ O Mais importante nesse caso é localizar primeiro a informação no XML. Veja n
 				<number>56273440</number>
 			</phone>
 		</sender>
-		<strong><span style="color: #008000;"><shipping></span></strong>
-			<strong><span style="color: #008000;"> <address></span></strong>
-                                <strong><span style="color: #008000;"> <street>Av. Brig. Faria Lima</street></span></strong>
+		<shipping>
+			<address>
+			    <street>Av. Brig. Faria Lima</street>
 				<number>1384</number>
 				<complement>5o andar</complement>
 				<district>Jardim Paulistano</district>
@@ -207,7 +207,7 @@ Como ficaria no objeto.
 Se fossemos buscar por exemplo o e-mail do comprador:
 
 {% highlight xml linenos %}<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
-	<strong><span style="color: #008000;"><transaction></span></strong>
+	<transaction>
 		<date>2011-02-10T16:13:41.000-03:00</date>
 		<code>9E884542-81B3-4419-9A75-BCC6FB495EF1</code>
 		<reference>REF1234</reference>
@@ -238,9 +238,9 @@ Se fossemos buscar por exemplo o e-mail do comprador:
 				<amount>25600.00</amount>
 			</item>
 		</items>
-		<span style="color: #008000;"><strong><sender></strong></span>
+		<sender>
 			<name>José Comprador</name>
-			<strong><span style="color: #008000;"><email>comprador@uol.com.br</email></span></strong>
+			<email>comprador@uol.com.br</email>
 			<phone>
 				<areaCode>11</areaCode>
 				<number>56273440</number>
