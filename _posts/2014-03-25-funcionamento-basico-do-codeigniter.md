@@ -37,7 +37,7 @@ Segundo item e um dos mais essenciais. O CodeIgniter trabalha com o padrão **M
 
 Bom o conceito de **MVC** vai além destas simples palavras, recomendo que você procure mais detalhes em outro momento com mais calma, mas, para trabalhar com o CodeIgniter basta entender esta parte, o interessante é nunca usar um **controller** para acessar o banco de dados ou uma **view** para processar uma informação.
   
-wSe você manter tudo separado, cada um fazendo sua parte, o seu código irá ficar melhor para outros entenderem e até você mesmo, então evite misturar as coisas, mesmo se a tentação vier. Seja forte!
+Se você manter tudo separado, cada um fazendo sua parte, o seu código irá ficar melhor para outros entenderem e até você mesmo, então evite misturar as coisas, mesmo se a tentação vier. Seja forte!
 
 Veja outros posts como este aqui:
   
