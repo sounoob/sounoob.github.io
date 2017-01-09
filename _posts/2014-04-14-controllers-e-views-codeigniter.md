@@ -25,7 +25,13 @@ O controller servirá como ponte entre o usuário e o nosso sistema, o usuário
 
 ### Como os controllers funcionam no CodeIgniter
 
-O CodeIgniter utiliza classes como controllers e essas classes podem ser acessadas pela URL, todo novo controller deve ser estendido do controller padrão do CodeIgniter, que é chamado de CI_Controller. As URLs do CodeIgniter por padrão são configuradas para trabalhar em cima desses controllers, ou seja, cada link diferente que o usuário acessar, possivelmente estará acessando um controller diferente. Considerando que nosso CodeIgniter pode ser acessado na URL _http://localhost/CI/_, vamos considerar a seguinte URL: _http://localhost/CI/home_ Ao acessar esta URL o CodeIgniter irá procurar um controller chamado "home" e carregará o método chamado index. Vamos tentar criar nosso primeiro controller.
+O CodeIgniter utiliza classes como controllers e essas classes podem ser acessadas pela URL, todo novo controller deve ser estendido do controller padrão do CodeIgniter, que é chamado de CI_Controller.
+
+Cada URL que você tentar acessar, possivelmente estará acessando um controller diferente.
+
+Por padrão você deve acessar raiz/index.php/controler/método. Se você não diginar um controler, ele irá chamar o controler padrão (falaremos disso mais tarde) e ele carregará o método index caso você não digite nenhum método na URL
+
+Considerando que nosso CodeIgniter pode ser acessado na URL _http://localhost/ci/_, vamos considerar a seguinte URL: _http://localhost/ci/index.php/home_.  Ao acessar esta URL o CodeIgniter irá procurar um controller chamado "Home" e carregará o método chamado index. Vamos tentar criar nosso primeiro controller.
 
 {% highlight php linenos %}<?php
 class Home extends CI_Controller {
@@ -35,9 +41,13 @@ class Home extends CI_Controller {
     }
 }{% endhighlight %} 
 
-Salve este arquivo como **home.php** dentro da pasta **application/controllers/** e acesse na URL o endereço **_http://localhost/CI/home _**
+Salve este arquivo como **Home.php** dentro da pasta **application/controllers/** e acesse na URL o endereço **_http://localhost/ci/index.php/home _**
 
-<img class="aligncenter size-full wp-image-1036" src="/assets/uploads/2014/04/Ola-eu-sou-goku.jpg" alt="Resultado do processamento do controller" srcset="/assets/uploads/2014/04/Ola-eu-sou-goku.jpg 760w, /assets/uploads/2014/04/Ola-eu-sou-goku-300x121.jpg 300w" sizes="(max-width: 760px) 100vw, 760px" />
+**Informação importante, todo controller precisa necessáriamente começar com letra maiuscula, caso contrário não irá funcionar.**
+
+Se tudo der certo deverá aparecer na sua tela o texto:
+
+<pre>Olá, Eu sou Goku!</pre>
 
 Obviamente você nunca deverá fazer o que acabei de fazer, os controllers nunca deverão mostrar nada na tela, para isso existem as Views.
 
@@ -61,7 +71,7 @@ Usaremos a rotina abaixo do CodeIgniter para chamar nossa View:
 
 {% highlight php linenos %}$this->load->view('nomedaview');{% endhighlight %} 
 
-Essa rotina deverá estar dentro de um controller, nesse caso usaremos o controller home.php que criamos anteriormente, veja o código como ficou:
+Essa rotina deverá estar dentro de um controller, nesse caso usaremos o controller Home.php que criamos anteriormente, veja o código como ficou:
 
 {% highlight php linenos %}<?php
 class Home extends CI_Controller {
