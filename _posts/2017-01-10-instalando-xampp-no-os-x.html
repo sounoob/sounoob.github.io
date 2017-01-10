@@ -1,0 +1,81 @@
+---
+title: Instalando XAMPP no OS X
+permalink: "/instalando-xampp-no-osx/"
+categories:
+- Tutoriais
+tags:
+- xampp
+redirect_from: "/instalando-xampp-no-os-x/"
+redirect_from: "/instalando-xampp-no-mac/"
+author: Sena
+layout: post
+---
+<p>O OS X já vem pré instalado o apache, mas precisamos configurar algumas coisinhas nele e o banco. Para evitar a fadiga e mater o padrão de preguiça, instale o XAMPP com poucos cliques e acabou.</p>
+<!--more-->
+<ol>
+    <li>
+        Baixe o arquivo do XAMPP, no site oficial (Estamos usando a versão 5.6.28-1) -
+        <a title="XAMPP para OS X" alt="XAMPP para OS X" href="https://www.apachefriends.org/download.html#download-apple" target="_blank">Link aqui</a>
+    </li>
+    <li>
+        Abra o arquivo <b>.dmg</b>, depois clique em <b>XAMPP.app</b><br>
+        <b>Talvés apareça uma mensagem informando que o programa foi baixado da internet. Ignore e clique em abrir.</b>
+    </li>
+    <li>
+        O programa deverá abrir automáticamente após a instalação. <br>
+        Se não abrir vá no Spotlight e digite manager-osx <br>
+        (Estará dentro de /Applications/XAMPP/manager-osx.app)
+    </li>
+</ol>
+<p>
+    Abra o arquivo <strong>manager-osx</strong>. Esse arquivo, será o seu gerenciador.
+</p>
+<img src="/assets/uploads/2017/01/xampp-welcome.png" alt="XAMPP página inicial">
+<p>
+    Aqui temos a tela de boas vindas, com algumas opções rápidas
+<ul>
+    <li><b>Go to Application</b>: Abre o navegador com o localhost</li>
+    <li><b>Open Application folder</b>: Vai abrir a pasta do XAMPP,
+        aqui que você editará a maioria das configurações sobre o apache e o mysql quando precisar <br>
+        Você salvará seus projetos dentro da pasta <b>htdocs</b>
+    </li>
+    <li><b>Visite Apache Friends</b>: Vai para página inicial do grupo que criou a parada</li>
+    <li><b>Get Started</b>: Terá uma breve explicação de como funciona o XAMPP (Você não precisa, você tem essa página aqui já)</li>
+</ul>
+</p>
+<p>No menu, vamos para segunda tela <strong>Manage Servers</strong>, aqui iremos <strong>gerenciar os serviços do XAMPP</strong></p>
+<img src="/assets/uploads/2017/01/xampp-manage-servers.png" alt="XAMPP gerenciamento os serviços do XAMPP">
+<p>
+    Temos uma lista com todos serviços disponíveis no XAMPP.
+<ul>
+    <li>
+        <strong>Apache</strong> faz funcionar o PHP
+    </li>
+    <li>
+        <strong>MySQL</strong> é o banco de dados
+    </li>
+    <li>
+        <strong>ProFTPD</strong> vai permitir acessar o computador usando FTP
+    </li>
+</ul>
+<p>
+    Do lado direito, conseguimos interagir com os serviços listados. Basta clicar em um serviço e depois clicar me <b>Start</b> para iniciar, <b>Stop</b> para parar ou <b>Restart</b> para reiniciar.
+</p>
+<p>Na parte inferior, temos as mesmas opções que citei anteriormente, porem inicia, para ou reinicia todos serviços de só vez</p>
+
+<p><strong>Para evitar gastar os recursos do seu MAC sem motivos, recomendo iniciar apenas os serviços que você irá utilizar.</strong></p>
+<p>A ultima opção nessa tela é a <strong>Configure</strong>. Nela abrirá a imagem abaixo:</p>
+
+<img src="/assets/uploads/2017/01/xampp-configure.png" alt="Configuração do XAMPP">
+<p>Não recomendo alterar essas opções, somente faça qualquer coisa aqui quando realmente for preciso.</p>
+<p>
+    Voltando para nossa ultima parte. <strong>Application Log</strong> ou <strong>Log da aplicação</strong>.
+</p>
+<img src="/assets/uploads/2017/01/xampp-application-log.png" alt="Logs do XAMPP">
+<p>
+    Quando for pedir ajuda de alguem sobre o Apache, banco ou FTP não estiver funcioando corretamente, esses logs serão muito úteis.
+</p>
+
+<p>
+    Veja outros posts como este aqui: <a href="/php-para-noobs/" title="PHP para Noobs">PHP para Noobs</a>
+</p>

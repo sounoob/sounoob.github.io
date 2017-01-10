@@ -1,0 +1,53 @@
+---
+title: Instalando XAMPP no Linux
+date: 2012-08-08 08:53:43 -03:00
+permalink: "/instalando-xampp-no-linux/"
+categories:
+- Tutoriais
+tags:
+- xampp
+redirect_from: "/2012/08/08/instalando-xampp-no-linux/"
+author: Sena
+layout: post
+---
+
+<p>No Linux é bem mais fácil configurar um interpretador PHP (apache), e que para alegria dos nerds uma linha de comando resolveria a situação. Mas… Eu gosto muito do XAMPP e nesse tutorial vou mostrar como é simples instalar o XAMPP no Linux também…</p>
+<!--more-->
+
+
+<p>Baixe o arquivo do XAMPP. <a title="XAMPP versão 1.8 para linux" href="http://www.apachefriends.org/download.php?xampp-linux-1.8.0.tar.gz" target="_blank">http://www.apachefriends.org/download.php?xampp-linux-1.8.0.tar.gz</a></p>
+<p>Usando o terminal navegue até a pasta onde foi realizado o download e descompacte o arquivo para o diretório /opt.</p>
+<p>
+  Você poderá descompacatar e mover usando o comando abaixo:
+  <pre>sudo tar xvfz xampp-linux-1.8.0.tar.gz -C /opt</pre>
+</p>
+<p>
+  Caso você esteja utilizando Ubuntu 64 bits será necessário baixar uma biblioteca adicional para fazer o XAMPP funcionar, para isso digite a comando abaixo no terminal:
+  <pre>sudo apt-get install ia32-libs</pre>
+</p>
+<p>Caso o sistema solicite confirmação para baixar arquivos adicionais confirme digitando Y.</p>
+<p>
+  Com o terminal acessando o arquivo lampp dentro da pasta lampp dentro de /opt, use o parâmetro start para iniciar e stop para finalizar, lembre-se de executar esses comandos como administrador.
+  <br>
+  Para ver se está tudo correto, vamos iniciar. Use o comando abaixo para iniciar:
+  <pre>sudo /opt/lampp/lampp start</pre>
+</p>
+<p>
+  Caso tudo ocorra correto o Linux irá exibir o texto: “XAMPP for Linux started”, assim como mostrado na imagem abaixo:
+  <br>
+  <img class="aligncenter size-full wp-image-455" title="xampp-start-linux" alt="" src="/assets/uploads/2012/08/xampp-start-linux.png" srcset="/assets/uploads/2012/08/xampp-start-linux.png 387w, /assets/uploads/2012/08/xampp-start-linux-300x160.png 300w" sizes="(max-width: 387px) 100vw, 387px" />
+</p>
+<p>
+  Abra um browser qualquer e digite http://localhost, deverá aparecer uma tela similar a mostrada abaixo: <br>
+  <img class="aligncenter size-full wp-image-444" title="xamp_home_page" alt="Pagina inicial do XAMPP" src="/assets/uploads/2012/08/xamp_home_page.png" srcset="/assets/uploads/2012/08/xamp_home_page.png 800w, /assets/uploads/2012/08/xamp_home_page-300x199.png 300w" sizes="(max-width: 800px) 100vw, 800px" />
+</p>
+
+<p>
+  Só para lembrar, a pasta onde seu código PHP deverá estar para o interpretador consiga ler é no endereço: <b>/opt/lampp/htdocs/</b>
+</p>
+<p>Veja outros posts como este aqui:</p>
+
+
+<p>
+  Veja outros posts como este aqui: <a href="/php-para-noobs/" title="PHP para Noobs">PHP para Noobs</a>
+</p>

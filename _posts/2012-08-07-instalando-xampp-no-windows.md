@@ -3,19 +3,12 @@ title: Instalando XAMPP no Windows
 date: 2012-08-07 08:36:28 -03:00
 permalink: "/instalando-xampp-no-windows/"
 categories:
-- Aulas
 - Tutoriais
 tags:
 - xampp
 redirect_from: "/2012/08/07/instalando-xampp-no-windows/"
-id: 439
 author: Sena
 layout: post
-guid: http://sounoob.com.br/?p=439
-short-url:
-- http://bit.ly/12GRbd2
-dsq_thread_id:
-- '2820512017'
 ---
 
 Para o seu código PHP funcionar corretamente é necessário que tenha um interpretador para ler o seu código e falar para o servidor o que deve ser feito. Existem vários meios de instalar e configurar esse interpretador, alguns mais fáceis outros pouco mais difíceis. O mais comum é o apache, utilizaremos o XAMPP, para instalar esse tal apache.<!--more-->

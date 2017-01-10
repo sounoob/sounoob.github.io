@@ -4,16 +4,9 @@ date: 2012-08-06 14:17:03 -03:00
 permalink: "/introducao-php-para-noobs/"
 categories:
 - Que bicho é esse?
-- Aulas
 redirect_from: "/2012/08/06/introducao-php-para-noobs/"
-id: 424
 author: Sena
 layout: post
-guid: http://sounoob.com.br/?p=424
-short-url:
-- http://bit.ly/12PB4y0
-dsq_thread_id:
-- '2908529623'
 ---
 
 ### O que é o PHP?

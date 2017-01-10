@@ -3,16 +3,10 @@ title: PHP para Noobs
 date: 2012-08-03 09:10:28 -03:00
 permalink: "/php-para-noobs/"
 categories:
-- Comunicados
+- Aulas
 redirect_from: "/2012/08/03/php-para-noobs/"
-id: 407
 author: Sena
 layout: post
-guid: http://sounoob.com.br/?p=407
-short-url:
-- http://bit.ly/12GW9Gx
-dsq_thread_id:
-- '2821890687'
 ---
 
 Estava pensando sobre o conteúdo do meu blog, e me deparei na seguinte questão… como posso ter um blog voltado para pessoas noobs e passar um tutorial para elas montarem algo, sem antes explicar ao menos o basico de PHP? Pos é, realmente é necessário eu parar e começar do inicio…
@@ -29,6 +23,7 @@ Vou usar esse post como índice das aulas, então acompanhem aqui quais estão d
   2. Ambiente de desenvolvimento 
       * <a name="xampp" title="Instalando XAMPP no Windows" href="/instalando-xampp-no-windows/" target="_blank">Instalando XAMPP no Windows</a>
       * <a title="Instalando XAMPP no Linux" href="/instalando-xampp-no-linux/" target="_blank">Instalando XAMPP no Linux</a>
+      * <a title="Instalando XAMPP no OS X" href="/instalando-xampp-no-osx/" target="_blank">Instalando XAMPP no OS X</a>
       * <a title="Escolhendo um editor PHP" href="/escolhendo-um-editor-php/" target="_blank">Escolhendo um editor</a>
   3. <a title="Sintaxe basica PHP" href="/sintaxe-basica-php/" target="_blank">Sintaxe basica</a>
   4. <a title="Variáveis em PHP" href="/variaveis-php/" target="_blank">Variáveis</a>
