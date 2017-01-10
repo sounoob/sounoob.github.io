@@ -1,7 +1,8 @@
 ---
 permalink: robots.txt
 layout: 
----{% assign noindexPages = site.pages | where: 'sitemap', false %}{% assign noindexDocuments = site.documents | where: 'sitemap', false %}User-agent: *
+---
+{% assign noindexPages = site.pages | where: 'sitemap', false %}{% assign noindexDocuments = site.documents | where: 'sitemap', false %}User-agent: *
 Sitemap: {{ site.url }}/sitemap.xml
 {% if noindexDocuments or noindexPages %}{% for node in noindexPages %}Disallow: {{ node.url }}
 {% endfor %}{% for node in noindexDocuments %}Disallow: {{ node.url }}
