@@ -32,7 +32,7 @@ layout: default
 {% if jekyll.environment == "production" %}
 {% if page.categories.size > 0 %}
 {% for category in page.categories %}
-<script>ga('send', 'event', 'category', '{{ category }})';</script>
+<script>ga('send', 'event', 'category', '{{ category }}');</script>
 {% endfor %}
 {% endif %}
 {% if site.comments %}
