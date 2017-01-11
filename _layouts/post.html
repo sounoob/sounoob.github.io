@@ -30,9 +30,9 @@ layout: default
 </div>
 
 {% if jekyll.environment == "production" %}
-{% if page.categories.size > 0 %}
-{% for category in page.categories %}
-<script>ga('send', 'event', 'category', '{{ category }}');</script>
+{% if post.tags.size > 0 %}
+{% for tag in post.tags %}
+<script>ga('send', 'event', 'tag', '{{ tag }}');</script>
 {% endfor %}
 {% endif %}
 {% if site.comments %}
