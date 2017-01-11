@@ -14,7 +14,7 @@ excerpt_separator: "<!--more-->"
 tagline: Repita comigo, eu sou noob. eu sou noob...
 google_analytics: UA-5016269-14
 baseurl: ''
-paginate: 8
+paginate: 10
 dateformat: "%d-%m-%Y"
 comments: true
 gems:
