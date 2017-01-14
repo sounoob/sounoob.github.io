@@ -1,0 +1,231 @@
+---
+title: Slugify - Converter texto em slug com PHP
+date: 2017-01-14 16:00:00 -02:00
+permalink: "/slugify-converter-texto-em-slug-com-php/"
+categories:
+- Tutoriais
+redirect_from:
+ - "/converter-texto-em-slug-com-php-slugify/"
+ - "/converter-texto-em-slug/"
+author: Sena
+layout: post
+---
+
+<p>
+ Gerar o padrão dos links em um formato amigável sempre foi o desafio de muita gente que não utiliza CMS.
+ Isso até ontem, porque a partir de hoje você vai conseguir gerar também.
+</p>
+<!--more-->
+<b>Se você manda bem no PHP, <a href="#code">clique aqui</a> ir direto ao código completo.</b>
+
+<p>Primeira coisa é jogar o nosso texto em uma variável chamada <b>string</b> para manipularmos ela.</p>
+
+<pre>
+$string = 'Esse é o texto a ser trabalhado.          deixei espaço de propósito
+ uma quebra de linha aqui';
+</pre>
+
+
+<p>Substituiremos as quebras de linhas e tabulações da nossa string.</p>
+<pre>$string = preg_replace('/[\t\n]/', ' ', $string);</pre>
+
+<p>
+ Agora criaremos um array com uma lista de caracteres que queremos substituir.
+ Usaremos a chave da para os que queremos remover e o valor para o que queremos colocar no lugar.
+</p>
+
+{% highlight php linenos %}$list = array(
+ 'Š' => 'S',
+ 'š' => 's',
+ 'Đ' => 'Dj',
+ 'đ' => 'dj',
+ 'Ž' => 'Z',
+ 'ž' => 'z',
+ 'Č' => 'C',
+ 'č' => 'c',
+ 'Ć' => 'C',
+ 'ć' => 'c',
+ 'À' => 'A',
+ 'Á' => 'A',
+ 'Â' => 'A',
+ 'Ã' => 'A',
+ 'Ä' => 'A',
+ 'Å' => 'A',
+ 'Æ' => 'A',
+ 'Ç' => 'C',
+ 'È' => 'E',
+ 'É' => 'E',
+ 'Ê' => 'E',
+ 'Ë' => 'E',
+ 'Ì' => 'I',
+ 'Í' => 'I',
+ 'Î' => 'I',
+ 'Ï' => 'I',
+ 'Ñ' => 'N',
+ 'Ò' => 'O',
+ 'Ó' => 'O',
+ 'Ô' => 'O',
+ 'Õ' => 'O',
+ 'Ö' => 'O',
+ 'Ø' => 'O',
+ 'Ù' => 'U',
+ 'Ú' => 'U',
+ 'Û' => 'U',
+ 'Ü' => 'U',
+ 'Ý' => 'Y',
+ 'Þ' => 'B',
+ 'ß' => 'Ss',
+ 'à' => 'a',
+ 'á' => 'a',
+ 'â' => 'a',
+ 'ã' => 'a',
+ 'ä' => 'a',
+ 'å' => 'a',
+ 'æ' => 'a',
+ 'ç' => 'c',
+ 'è' => 'e',
+ 'é' => 'e',
+ 'ê' => 'e',
+ 'ë' => 'e',
+ 'ì' => 'i',
+ 'í' => 'i',
+ 'î' => 'i',
+ 'ï' => 'i',
+ 'ð' => 'o',
+ 'ñ' => 'n',
+ 'ò' => 'o',
+ 'ó' => 'o',
+ 'ô' => 'o',
+ 'õ' => 'o',
+ 'ö' => 'o',
+ 'ø' => 'o',
+ 'ù' => 'u',
+ 'ú' => 'u',
+ 'û' => 'u',
+ 'ý' => 'y',
+ 'ý' => 'y',
+ 'þ' => 'b',
+ 'ÿ' => 'y',
+ 'Ŕ' => 'R',
+ 'ŕ' => 'r',
+ '/' => '-',
+ ' ' => '-',
+ '.' => '-',
+);{% endhighlight %}
+<p>
+ Usando a função <strong>strtr</strong> passaremos a string mais a lista a fim de que ocorra as
+ substituições.
+</p>
+<pre>$string = strtr($string, $list);</pre>
+<p>
+ As vezes pode ficar alguns hifens seguidos, precisamos remover os excessos.
+</p>
+<pre>$string = preg_replace('/-{2,}/', '-', $string);</pre>
+<p>
+ Para finalizar, deixaremos tudo em minúsculo.
+</p>
+<pre>$string = strtolower($string);</pre>
+<p id="code">Imagino que usará esse mesmo código multiplas vezes,
+ legal ele estar dentro de uma função assim, quando precisar só chama a função.
+ <br>
+
+Código completo e já na função ficará algo como abaixo:</p>
+
+{% highlight php linenos %}
+function slugify($string) {
+    $string = preg_replace('/[\t\n]/', ' ', $string);
+    $string = preg_replace('/\s{2,}/', ' ', $string);
+    $list = array(
+        'Š' => 'S',
+        'š' => 's',
+        'Đ' => 'Dj',
+        'đ' => 'dj',
+        'Ž' => 'Z',
+        'ž' => 'z',
+        'Č' => 'C',
+        'č' => 'c',
+        'Ć' => 'C',
+        'ć' => 'c',
+        'À' => 'A',
+        'Á' => 'A',
+        'Â' => 'A',
+        'Ã' => 'A',
+        'Ä' => 'A',
+        'Å' => 'A',
+        'Æ' => 'A',
+        'Ç' => 'C',
+        'È' => 'E',
+        'É' => 'E',
+        'Ê' => 'E',
+        'Ë' => 'E',
+        'Ì' => 'I',
+        'Í' => 'I',
+        'Î' => 'I',
+        'Ï' => 'I',
+        'Ñ' => 'N',
+        'Ò' => 'O',
+        'Ó' => 'O',
+        'Ô' => 'O',
+        'Õ' => 'O',
+        'Ö' => 'O',
+        'Ø' => 'O',
+        'Ù' => 'U',
+        'Ú' => 'U',
+        'Û' => 'U',
+        'Ü' => 'U',
+        'Ý' => 'Y',
+        'Þ' => 'B',
+        'ß' => 'Ss',
+        'à' => 'a',
+        'á' => 'a',
+        'â' => 'a',
+        'ã' => 'a',
+        'ä' => 'a',
+        'å' => 'a',
+        'æ' => 'a',
+        'ç' => 'c',
+        'è' => 'e',
+        'é' => 'e',
+        'ê' => 'e',
+        'ë' => 'e',
+        'ì' => 'i',
+        'í' => 'i',
+        'î' => 'i',
+        'ï' => 'i',
+        'ð' => 'o',
+        'ñ' => 'n',
+        'ò' => 'o',
+        'ó' => 'o',
+        'ô' => 'o',
+        'õ' => 'o',
+        'ö' => 'o',
+        'ø' => 'o',
+        'ù' => 'u',
+        'ú' => 'u',
+        'û' => 'u',
+        'ý' => 'y',
+        'ý' => 'y',
+        'þ' => 'b',
+        'ÿ' => 'y',
+        'Ŕ' => 'R',
+        'ŕ' => 'r',
+        '/' => '-',
+        ' ' => '-',
+        '.' => '-',
+    );
+
+    $string = strtr($string, $list);
+    $string = preg_replace('/-{2,}/', '-', $string);
+    $string = strtolower($string);
+
+    return $string;
+}
+$string = 'Esse é o texto a ser trabalhado.          deixei espaço de propósito
+uma quebra de linha aqui';
+
+$slug = slugify($string);
+
+echo $slug;
+{% endhighlight %}
+
+

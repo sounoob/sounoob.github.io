@@ -32,9 +32,16 @@ layout: default
 {% if jekyll.environment == "production" %}
 {% if post.tags.size > 0 %}
 {% for tag in post.tags %}
-<script>ga('send', 'event', 'tag', '{{ tag }}');</script>
+<script>ga('send', 'event', 'tag', '{{ tag }}', this.href);</script>
 {% endfor %}
 {% endif %}
+
+{% if post.categories.size > 0 %}
+{% for category in post.categories %}
+<script>ga('send', 'event', 'category', '{{ category }}', this.href);</script>
+{% endfor %}
+{% endif %}
+
 {% if site.comments %}
 <div class="box" id="comentario">
     <div id="disqus_thread"></div>
