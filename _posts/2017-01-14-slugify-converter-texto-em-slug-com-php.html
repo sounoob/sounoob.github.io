@@ -31,7 +31,7 @@ $string = 'Esse é o texto a ser trabalhado.          deixei espaço de propósi
 
 <p>
  Agora criaremos um array com uma lista de caracteres que queremos substituir.
- Usaremos a chave da para os que queremos remover e o valor para o que queremos colocar no lugar.
+ Usaremos a chave da para o que queremos remover e o valor para o que queremos colocar no lugar.
 </p>
 
 {% highlight php linenos %}$list = array(
@@ -113,7 +113,7 @@ $string = 'Esse é o texto a ser trabalhado.          deixei espaço de propósi
  '.' => '-',
 );{% endhighlight %}
 <p>
- Usando a função <strong>strtr</strong> passaremos a string mais a lista a fim de que ocorra as
+ Usando a função <strong>strtr</strong> passaremos a string mais a lista, a fim de que ocorra as
  substituições.
 </p>
 <pre>$string = strtr($string, $list);</pre>
@@ -125,11 +125,11 @@ $string = 'Esse é o texto a ser trabalhado.          deixei espaço de propósi
  Para finalizar, deixaremos tudo em minúsculo.
 </p>
 <pre>$string = strtolower($string);</pre>
-<p id="code">Imagino que usará esse mesmo código multiplas vezes,
- legal ele estar dentro de uma função assim, quando precisar só chama a função.
+<p id="code">Imagino que você usará esse mesmo código multiplas vezes,
+ legal ele estar dentro de uma função, assim quando precisar só chama a função.
  <br>
-
-Código completo e já na função ficará algo como abaixo:</p>
+</p>
+<p>Código completo e já na função ficará algo como abaixo:</p>
 
 {% highlight php linenos %}
 function slugify($string) {
