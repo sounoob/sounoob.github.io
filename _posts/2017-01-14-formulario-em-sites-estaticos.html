@@ -1,0 +1,134 @@
+---
+title: Formulário em sites estáticos
+date: 2017-01-15 16:00:00 -02:00
+permalink: "/formulario-em-sites-estaticos/"
+categories:
+- Tutoriais
+author: Sena
+layout: post
+---
+
+<p>
+    Quem disse que você não pode? Agora seu site estático poderá enviar emails tambem.
+</p>
+<!--more-->
+
+<p>
+    A problemática todo mundo já conhece, em sites estáticos não é possivel enviar emails pelo motivo de não ter uma linguagem backend para processar a informação.
+    <br> <b>Errado:</b> Você sempre pode, basta tercerizar a tarefa para outro servidor. :)
+</p>
+<p>
+    A dica de hoje vai para o <a href="http://formspree.io/" alt="formspree" title="formspree" target="_blank" rel="nofollow noreferrer">formspree</a>. Um serviço gratuito onde você pode jogar a responsabilidade
+    processar o formulário e encaminhar os emails para você. A parte melhor é que você não precisa nem se registrar, não precisa pagar, é só usar.
+</p>
+<p>
+    Com apenas poucos passos você consegue facilmente fazer funcionar em seu site.
+ç
+<h2>Construindo o formulário</h2>
+<ol>
+    <li>
+        Crie um formulário semelhante ao abaixo (Troque <b>meuemail@meusite.com.br</b> pelo email que irá receber os contatos):
+{% highlight html linenos %}<form action="https://formspree.io/meuemail@meusite.com.br"
+                                  method="POST">
+    <input type="submit" value="Send">
+</form>{% endhighlight %}
+    </li>
+    <li>
+        Dentro do formulário você poderá incluir quantos <b>input</b>, <b>select</b> e <b>textarea</b> quiser,
+        desde que possua o atributo <b>name</b>. Caso contrário os dados do campo não irá funcionar corretamente.
+        <br>
+        Veja nosso exemplo abaixo.
+{% highlight html linenos %}<form action="https://formspree.io/meuemail@meusite.com.br"
+                                  method="POST">
+    <div class="form-group">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="_replyto">Email:</label>
+        <input type="email" id="_replyto" name="_replyto" class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="_subject">Assunto:</label>
+        <select name="_subject" id="_subject">
+            <option>Testar email</option>
+            <option>Ver se funciona</option>
+            <option>Pedido de ajuda</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" id="mensagem" cols="30" rows="10" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-default">Enviar</button>
+    </div>
+</form>{% endhighlight %}
+    </li>
+    <li>
+        Envie um email de teste, no primeiro envio irá aparecer uma tela semelhante a tela abaixo:
+        <p><img src="/assets/uploads/2017/01/formspree-confirme.png" class="center-block" alt="formspree - confirme seu email" title="formspree - confirme seu email"></p>
+    </li>
+    <li>
+        Vá até seu email e clique em <strong>Confirm Form</strong> para ativar o serviço
+        <p><img src="/assets/uploads/2017/01/formspree-confirmacao.png" class="center-block" alt="formspree - email de confirmação" title="formspree - email de confirmação"></p>
+    </li>
+    <li>
+        Se tudo estiver certo deverá aparecer uma mensagem igual a mensagem abaixo:
+        <p><img src="/assets/uploads/2017/01/formspree-confirmado.png" class="center-block" alt="formspree - email confirmado" title="formspree - email confirmado"></p>
+    </li>
+    <li>
+        Faça um novo teste. Se tudo estiver configurado corretamente você deverá ver a mensagem abaixo:
+        <p><img src="/assets/uploads/2017/01/formspree-formulario-enviado.png" class="center-block" alt="formspree - formulário enviado" title="formspree - formulário enviado"></p>
+    </li>
+    <li>
+        Verifique seu email. Você deverá receber o email com as informações preenchidas.
+    </li>
+</ol>
+
+<h2>Configurações avançadas</h2>
+<p>
+    Como falado anteriormente, você pode criar qualquer campo que quiser, mas o sistema aceita alguns campos por padrão os quais tomam certos comportamentos na hora do envio.<br>
+    <b>Nenhum deles é obrigatório, mas recomendo a implementação de todos.</b>
+</p>
+
+<h3>_replyto</h3>
+<p>
+    Nesse campo deve conter o email pessoa que estará te enviando email.
+    {% highlight html %}<input type="text" name="_replyto" placeholder="Digite seu email" />{% endhighlight %}</pre>
+</p>
+<h3>_next</h3>
+<p>
+    Esse campo recomendo deixar como campo oculto, ele deve conter o endereço da sua página de agradecimento.
+    {% highlight html %}<input type="hidden" name="_next" value="https://sounoob/com.br/contato/obrigado" />{% endhighlight %}</pre>
+</p>
+<h3>_subject</h3>
+<p>
+    Nesse campo deve conter o assunto do email, pode deixar oculto ou livre para o usuário escolher. Fica a seu critério.
+    {% highlight html %}<input type="hidden" name="_subject" value="Novo contato do site" />{% endhighlight %}</pre>
+</p>
+
+<h3>_cc</h3>
+<p>
+    Esse campo deve estar oculto, o sistema usará o valor dele para enviar uma cópia de cada contato. <br>
+    Nesse campo você poderá passar multiplos emails, basta colocar uma virgula separando cada email
+    {% highlight html %}<input type="hidden" name="_cc" value="email@seudominio.com.br,outroemail@seudominio.com.br" />{% endhighlight %}</pre>
+</p>
+<h3>_gotcha</h3>
+<p>
+    Esse campo irá reduzir os spans que você eventualmente pode receber. <br>
+    Basta copiar e colar do jeito que está abaixo
+    {% highlight html %}<input type="text" name="_gotcha" style="display:none" />{% endhighlight %}</pre>
+</p>
+<h2>
+    É de graça mesmo? Possui limitações?
+</h2>
+<p>
+    Sim, o serviço é gratuito, mas possui algumas limitações. Uma delas é 1000 envios por mês, o que para a maioria das pessoas é algo relativamente tranquilo.
+</p>
+<h3>Agora é a vez de vocês</h3>
+<p>
+    Qual solução vocês utilizam para fazer funcionar o formulário de contato em seu site? <br>
+    Já conheciam o <strong>formspree</strong>? <br>
+    Conhecem outra solução melhor?
+</p>
