@@ -13,8 +13,8 @@
     </header>
     <div class="post-content">
         {% if post.image %}
-        <figure class="aligncenter">
-            <img src="{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}">
+        <figure>
+            <img src="{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}" class="aligncenter">
         </figure>
         {% endif %}
         {% if post_content %}

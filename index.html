@@ -7,19 +7,12 @@ layout: default
     {% include post.html %}
 {% endfor %}
 
-
-<!-- Pagination links -->
-<div class="box pagination">
+<div class="pagination">
     {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="prev" title="Página anterior">
-        <i class="fa fa-arrow-left" aria-hidden="true"></i>
-    </a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">Anterior</a>
     {% endif %}
+    <span class="page_number ">Página: {{ paginator.page }} de {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next" title="Próxima página">
-        <i class="fa fa-arrow-right" aria-hidden="true"></i>
-    </a>
+    <a href="{{ paginator.next_page_path }}" class="next">Próxima</a>
     {% endif %}
 </div>
-
-{% include page-footer.html %}

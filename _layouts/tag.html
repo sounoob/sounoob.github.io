@@ -1,18 +1,10 @@
 ---
-layout: default
+layout: page
 ---
-
-<div class="box">
-    <h1>
-        <i class="fa fa-tags" aria-hidden="true"></i>
-        <span class="screen-reader-text">Tag </span>
-        {{ page.tag }}
-    </h1>
-    <ul>
-        {% for post in site.tags[page.tag] %}
-        <li>
-            {{ post.date | date: site.dateformat }}: <a href="{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
-    </ul>
-</div>
+<ul>
+    {% for post in site.tags[page.tag] %}
+    <li>
+        {{ post.date | date: site.dateformat }}: <a href="{{ post.url }}">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
