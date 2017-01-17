@@ -4,7 +4,6 @@ date: 2011-08-24 15:05:16 -03:00
 id: 6
 author: Sena
 layout: page
-guid: http://sounoob.com.br/?page_id=6
 short-url:
 - http://bit.ly/tjeC6r
 dsq_thread_id:

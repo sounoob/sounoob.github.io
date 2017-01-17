@@ -8,7 +8,6 @@ redirect_from: "/2013/06/12/constantes-no-php/"
 id: 793
 author: Sena
 layout: post
-guid: http://sounoob.com.br/?p=793
 short-url:
 - http://bit.ly/11IbKst
 dsq_thread_id:

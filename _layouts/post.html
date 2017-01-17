@@ -1,34 +1,8 @@
 ---
 layout: default
 ---
-
-<div class="box post">
-    {% include reading_time.html %}
-    {% if page.image %}
-    <div class="post_image">
-        <a href="{{ page.url }}" title="{{ page.title }}">
-            <img src="{{ page.image }}" alt="{{ page.title }}" title="{{ page.title }}">
-        </a>
-    </div>
-    {% endif %}
-
-    <h1>{{ page.title }}</h1>
-
-    {{ content }}
-
-    <div class="addthis_inline_share_toolbox"></div>
-    {% include post-footer.html %}
-</div>
-<div class="box">
-    <h3>
-        <i class="fa fa-wrench" aria-hidden="true"></i>
-        Encontrou algo errado?
-    </h3>
-    <p>Nós também cometemos erro, as vezes erros até grotesco.
-        Então se você encontrou algo errado, ou algo que deveria ser acrescentado, ou removido
-        escreva nos comentários abaixo ou em nossa <a href="/contato">página de contato</a> que faremos atualização do post e mencionaremos você (Caso queira).</p>
-</div>
-
+{% assign post_content = content %}
+{% include post.html %}
 {% if jekyll.environment == "production" %}
 {% if post.tags.size > 0 %}
 {% for tag in post.tags %}

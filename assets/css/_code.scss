@@ -1,0 +1,84 @@
+
+.the-content .post .post-content samp, .the-content .post .post-content code, .the-content .post .post-content kbd, .the-content .post .post-content pre {
+    margin: 0;
+    font-family: monospace;
+}
+.the-content .post .post-content ul li > code, .the-content .post .post-content ol li > code {
+    font-size: 14px;
+    padding: 3px 6px;
+    background: #fcfcfc;
+    border: 1px solid #eee
+}
+
+.the-content .post .post-content dl dd > code {
+    font-size: 14px;
+    padding: 3px 6px;
+    background: #fcfcfc;
+    border: 1px solid #eee
+}
+.the-content .post .post-content p > code {
+    font-size: 14px;
+    padding: 3px 6px;
+    background: #fcfcfc;
+    border: 1px solid #eee
+}
+
+
+
+pre {
+    overflow: auto
+}
+
+.post-content .gutter {
+    padding: 0
+}
+
+.post-content .gutter > pre {
+    padding: 0
+}
+
+.post-content pre > code {
+    padding: 0;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #567482;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0
+}
+
+.post-content .highlight {
+    margin-bottom: 1rem
+}
+
+.post-content .highlight pre {
+    margin-bottom: 0;
+    word-break: normal;
+    border: none
+}
+
+.post-content .highlight pre, .post-content pre {
+    padding: 0.8rem;
+    overflow: auto;
+    font-size: 0.9rem;
+    line-height: 1.45;
+    border-radius: 0.3rem;
+    -webkit-overflow-scrolling: touch
+}
+
+.post-content pre code, .post-content pre tt {
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0
+}
+
+.post-content pre code:before, .post-content pre code:after, .post-content pre tt:before, .post-content pre tt:after {
+    content: normal
+}

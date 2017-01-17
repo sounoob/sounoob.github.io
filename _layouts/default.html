@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  {% include head.html %}
-  <body id="page{{page.url | replace: '/', '-' | replace: '.html', ''}}">
-    {% include page-header.html %}
-
-    <section class="main-content">
-      {{ content }}
-      {% include page-footer.html %}
-    </section>
-  </body>
+{% include head.html %}
+<body id="page{{page.url | replace: '/', '-' | replace: '.html', ''}}">
+<div class="wrapper clear">
+    {% include aside.html %}
+    <main class="the-content" role="main">
+        {% include search-form.html %}
+        {{ content }}
+    </main>
+</div>
+</body>
 </html>

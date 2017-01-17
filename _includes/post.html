@@ -1,0 +1,76 @@
+{% assign post = page %}
+<article class="post" role="article" itemscope="" itemtype="http://schema.org/BlogPosting">
+    <header class="post-header">
+        <ul class="clear">
+            <li><time datetime="{{ post.date }}" itemprop="datePublished">{{ post.date | date: site.dateformat }}</time></li>
+            <li class="cats">
+                {% for category in post.categories %}
+                <a href="/category/{{ category | slugify }}" title="{{ category }}">{{ category }}</a>
+                {% endfor %}
+            </li>
+        </ul>
+        <h2 itemprop="name headline"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </header>
+    <div class="post-content">
+        {% if post.image %}
+        <figure class="aligncenter">
+            <img src="{{ post.image }}" alt="{{ post.title }}" title="{{ post.title }}">
+        </figure>
+        {% endif %}
+        {% if post_content %}
+        <div class="excerpt">
+            {{ post_content }}
+        </div>
+        {% else %}
+        <div class="excerpt">
+            {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+        </div>
+        {% endif %}
+        {% if post_content == null %}
+        <p><a href="{{ post.url }}" role="button">Leia mais</a></p>
+        {% endif %}
+    </div>
+    <footer class="post-footer">
+        <div class="share">Compartilhar
+            <ul class="social-networks">
+                <li class="share-facebook">
+                    <a href="https://www.facebook.com/sharer.php?u={{ site.url }}{{ post.url }}" class="s_facebook" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;">
+                        <svg title="" width="16" height="16">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#facebook-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="share-twitter">
+                    <a href="http://twitter.com/share?url={{ site.url }}{{ post.url }}&amp;hashtags={% for tag in post.tags %}{{ tag | slugify }},{% endfor %}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;">
+                        <svg title="" width="16" height="16">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#twitter-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="google-plus-icon">
+                    <a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}&t={{ post.title }}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;">
+                        <svg title="" width="16" height="16">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#google-plus-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="linkedin-icon">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ post.url }}&title={{ post.title }}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;">
+                        <svg title="" width="16" height="16">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#linkedin-icon"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tags">
+            <ul>
+                {% for tag in post.tags %}
+                <li><a href="/tag/{{ tag | slugify }}">{{ tag }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    </footer>
+</article>
