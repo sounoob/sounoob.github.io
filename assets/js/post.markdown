@@ -1,6 +1,7 @@
 ---
 permalink: "/assets/js/post.js"
 ---
+
 window.store = {
 {% for post in site.posts %}"{{ post.url | slugify }}": {
     "title": "{{ post.title | xml_escape }}",
