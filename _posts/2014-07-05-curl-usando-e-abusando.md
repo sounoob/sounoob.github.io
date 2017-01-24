@@ -114,8 +114,8 @@ Algumas vezes alguns servidores possuem certificados de segurança e o cURL poss
 <span style="font-size: 17px; line-height: 1.55;">Pronto. Agora conseguimos fazer o básico com o cURL.</span>
 
 Para facilitar a vida algumas pessoas costumam jogar isso em alguma função assim, não precisa ficar escrevendo todo código toda vez, veja um exemplo
-{% highlight php linenos %}
 <div id="curlExec"></div>
+{% highlight php linenos %}
 function curlExec($url, $post = NULL, array $header = array()){
  
     //Inicia o cURL

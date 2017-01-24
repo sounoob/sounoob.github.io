@@ -1,0 +1,144 @@
+---
+title: Consultando CEP direto dos correios com PHP
+date: 2017-01-20 16:00:00 -02:00
+permalink: "/consultando-cep-no-site-correio-com-php/"
+categories:
+- Tutoriais
+tags:
+- Correios
+- cURL
+author: Sena
+layout: post
+---
+
+<p>
+    A idéia é usar o PHP para conectar no site dos <strong>Correios</strong> enviando o <strong>CEP</strong> a ser pesquisado, pelo mesmo endereço que os usuários normalmente consultam.
+</p>
+<!--more-->
+
+<p>
+    Antes de mais nada, existem soluções melhores que essa, mas eu quis ser diferente e capturar os dados de outra maneira. Já podem me julgar...
+    <br>
+    <b>Como de costume: Se você manda bem no PHP, <a href="#code">clique aqui</a> ir direto ao código completo.</b>
+
+</p>
+<h2>Começando a mineração</h2>
+<p>Os correios espera dois campos, o CEP e um parametro metodo com valor buscarCep. Deixaremos esses dados prontos para enviar via POST depois.</p>
+{% highlight php linenos %}$data = array(
+    'cepEntrada' => '04476240',
+    'metodo' => 'buscarCep',
+);{% endhighlight %}
+<p>Hora de converter o array em uma query para facilitar no envio.</p>
+<pre>$data = http_build_query($data);</pre>
+<p>Iniciando o cURL e passando a URL dos correios</p>
+<pre>$curl = curl_init('http://m.correios.com.br/movel/buscaCepConfirma.do');</pre>
+<p>Configurar o envio como post e passar a variável com os dados do post</p>
+{% highlight php linenos %}curl_setopt($curl, CURLOPT_POST, true);
+curl_setopt($curl, CURLOPT_POSTFIELDS, $data);{% endhighlight %}
+<p>Informando ao cURL que queremos o resultado em uma variável</p>
+<pre>curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);</pre>
+<p>Executando a conexão e guardando o resultado na variável</p>
+<pre>$html = curl_exec($curl);</pre>
+<p>Fechando a conexão</p>
+<pre>curl_close($curl);</pre>
+
+<p>Se você mandar imprimir na tela a variável <b>$html</b> vai ver que ele trouxe toda página dos correios com o resultado do frete.</p>
+<p>
+    É exatamente o que nós queremos. Agora é hora de eliminar o que não queremos da página. Usaremos a função <b>explode</b>
+    para ir "partindo", os pedaços que queremos.
+</p>
+<p>
+    Se você ver a estrutura do HTML da página dos correios, poderá notar que se explodirmos <b>resposta"></b>
+    teremos a informação que precisamos.
+</p>
+<img src="/assets/uploads/2017/01/correios-codigo-resposta.png"  alt="Correios classe resposta">
+<pre>$html = explode('resposta">', $html);</pre>
+<p>Elininando o indice zero onde temos apenas o começo do HTML sem informação útil.</p>
+<pre>unset($html[0]);</pre>
+<p>Já temos um array com as informações que precisamos, vamos navegar pelos dados pegando só o necessário.
+Criaremos um array <b>$cep</b> para deixar as informações que recebemos do CEP.</p>
+{% highlight php linenos %}$cep = array();
+foreach ($html as $key => $row) {
+//Trataremos tudo aqui
+}{% endhighlight %}
+<p>Dentro do laço (foreach) nossa missão é pegar o nome da informação, colocar na variável <b>$label</b>
+    e o valor da informação
+colocando na variável <b>$value</b></p>
+<p>Pegando a primeira parte antes do ":", teremos nosso rótulo</p>
+{% highlight php linenos %}$label = explode(':', $row);
+$label = current($label);{% endhighlight %}
+<p>Se quisermos deixar "bonitinho" e padronizado, poderemos usar a função <a target="_blank" href="/slugify-converter-texto-em-slug-com-php#code"><strong>Slugify</strong></a></p>
+<pre>$label = slugify($label);</pre>
+<p>Pronto, nosso rótulo já está pronto. Podemos seguir para o próximo.</p>
+<img src="/assets/uploads/2017/01/correios-codigo-respostadestaque.png" alt="Correios classe resposta destaque">
+<p>Note que podemos explodir respostadestaque"> e termos o valor da informação</p>
+<pre>$value = explode('respostadestaque">', $row);</pre>
+<p>O que importa para nós é o conteudo do indice 1</p>
+<pre>$value = $value[1];</pre>
+<p>O primeiro valor antes do span</p>
+{% highlight php linenos %}$value = explode('</span>', $value);
+$value = current($value);{% endhighlight %}
+<p>Removendo os espaços antes e depois</p>
+<pre>$value = trim($value);</pre>
+<p>Removendo as quebras de linhas, tabs e retornos</p>
+<pre>$value = preg_replace('/[\n\t\r]/', ' ', $value);</pre>
+<p>Qualquer espaço duplo</p>
+<pre>$value = preg_replace('/\s(?=\s)/', '', $value);</pre>
+<p>Se sua página estiver em UTF-8, inclua a linha abaixo</p>
+<pre>$value = utf8_encode($value);</pre>
+<p>Pronto. Agora já temos toda informação que precisamos, do jeito que precisamos.
+Basta popular o array <b>$cep</b>, usando o <b>$label</b> como indice e <b>$value</b> como valor.</p>
+<pre>$cep[$label] = $value;</pre>.
+<p><b>Missão cumprida.</b></p>
+<p>Agora a idéia é colocar tudo dentro de uma função que receba o $cep e retorne as informações.</p>
+
+{% highlight php linenos %}function CEP($cep) {
+//Todo conteúdo passado anteriormente
+    return $cep;
+}{% endhighlight %}
+
+
+
+
+
+<p id="code">Código completo e já na função ficará algo como abaixo:</p>
+
+{% highlight php linenos %}function CEP($cep) {
+    $data = array(
+        'cepEntrada' => $cep,
+        'metodo' => 'buscarCep',
+    );
+
+    $data = http_build_query($data);
+
+    $curl = curl_init('http://m.correios.com.br/movel/buscaCepConfirma.do');
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+
+    $html = curl_exec($curl);
+    curl_close($curl);
+
+    $html = explode('resposta">', $html);
+    unset($html[0]);
+
+    $cep = array();
+    foreach ($html as $key => $row) {
+        $label = explode(':', $row);
+        $label = current($label);
+        $label = slugify($label);
+
+        $value = explode('respostadestaque">', $row);
+        $value = $value[1];
+        $value = explode('</span>', $value);
+        $value = current($value);
+        $value = trim($value);
+        $value = preg_replace('/[\n\t\r]/', ' ', $value);
+        $value = preg_replace('/\s(?=\s)/', '', $value);
+        $value = utf8_encode($value);
+
+        $cep[$label] = $value;
+    }
+
+    return $cep;
+}{% endhighlight %}
