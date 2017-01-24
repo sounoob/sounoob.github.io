@@ -11,15 +11,11 @@ tags:
 - cURL
 - PagSeguro
 - recorrencia
-redirect_from: "/2011/11/09/criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/"
-id: 259
+redirect_from:
+- "/2011/11/09/criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-sem-utilizar-a-biblioteca-oficial/"
+- "/2011/11/09/criando-uma-requisicao-de-pagamento-do-pagseguro-via-parametros-http-usando-php-%E2%80%93-sem-utilizar-a-biblioteca-oficial/"
 author: Sena
 layout: post
-guid: http://sounoob.com.br/?p=259
-short-url:
-- http://bit.ly/VjgUbp
-dsq_thread_id:
-- '2819814603'
 ---
 
 A requisição de pagamento informando os dados em parâmetros HTTP funciona de forma muito semelhante ao formato XML.<!--more-->
