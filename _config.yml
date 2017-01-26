@@ -8,7 +8,7 @@ collections:
   uploads:
     title: Uploads
     output: true
-future: false
+future: true
 url: https://sounoob.com.br
 excerpt_separator: "<!--more-->"
 tagline: Repita comigo, eu sou noob. eu sou noob...

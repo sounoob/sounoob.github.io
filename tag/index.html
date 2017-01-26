@@ -5,7 +5,7 @@ layout: page
 
 {% capture tags %}
 {% for tag in site.tags %}
-{{ tag[0] }}
+{{ tag | first }}
 {% endfor %}
 {% endcapture %}
 {% assign sortedtags = tags | newline_to_br | strip_newlines | split:'<br />' | uniq | sort %}

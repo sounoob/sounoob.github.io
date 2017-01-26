@@ -1,0 +1,55 @@
+---
+title: Tags e Categorias no Jekyll
+date: 2017-02-01 16:00:00 -02:00
+permalink: "/tags-e-categorias-no-jekyll/"
+categories:
+- Tutoriais
+tags:
+- Jekyll
+- GitHub Pages
+author: Sena
+layout: post
+---
+
+<p>
+    Veja como exibir <strong>Tags</strong> e <strong>Categorias</strong> sem usar nenhum nenhum plugin adicional,
+    de forma que funcione inclusive no <strong>GitHub Pages</strong>
+</p>
+<!--more-->
+
+<p>
+    A idéia é ter criarmos uma página para listar todas tags do nosso blog e listar os posts referente a cada tag.
+    <br>
+    <b>Só para os manjadores, <a href="#code">clique aqui</a> ir direto ao código completo.</b>
+
+</p>
+
+
+
+<p id="code">Código completo e já na função ficará algo como abaixo:</p>
+
+{% highlight jekyll linenos %}{% raw %}---
+title: Todas tags
+layout: page
+---
+
+{% capture tags %}
+{% for tag in site.tags %}
+{{ tag | first }}
+{% endfor %}
+{% endcapture %}
+{% assign sortedtags = tags | newline_to_br | strip_newlines | split:'<br />' | uniq | sort %}
+<div class="tag-list">
+    {% for tag in sortedtags %}
+    <div class="box" id="{{ tag | slugify }}">
+        <h3>
+            <a href="/tag/{{ tag | slugify }}">{{ tag }}</a>
+        </h3>
+        <ul>
+            {% for post in site.tags[tag] %}
+            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
+</div>{% endraw %}{% endhighlight %}

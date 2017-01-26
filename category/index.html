@@ -5,7 +5,7 @@ layout: page
 
 {% capture categories %}
 {% for category in site.categories %}
-{{ category[0] }}
+{{ category | first }}
 {% endfor %}
 {% endcapture %}
 {% assign sortedcategories = categories | newline_to_br | strip_newlines | split:'<br />' | uniq | sort %}
