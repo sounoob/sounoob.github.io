@@ -73,6 +73,6 @@ $name = trim($name);
 $name = explode(' ', $name);
  
 if(count($name) == 1 ) {
-    $name[] = ' dos Santos';
+    $name[] = 'dos Santos';
 }
 $name = implode(' ', $name);{% endhighlight %} 
