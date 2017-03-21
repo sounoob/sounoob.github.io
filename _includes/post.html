@@ -14,7 +14,7 @@
     <div class="post-content">
         {% if post.image %}
         <figure>
-            <img src="{{ post.image }}" alt="{{ post.title | strip_html }}" title="{{ post.title | strip_html }}" class="aligncenter">
+            <img src="{{ post.image }}" alt="{{ post.title | strip_html | replace: '"', '' }}" title="{{ post.title | strip_html | replace: '"', '' }}" class="aligncenter">
         </figure>
         {% endif %}
         {% if post_content %}
