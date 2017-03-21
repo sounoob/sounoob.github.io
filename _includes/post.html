@@ -48,14 +48,14 @@
                     </a>
                 </li>
                 <li class="google-plus-icon">
-                    <a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}&t={{ post.title }}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;">
+                    <a href="https://plus.google.com/share?url={{ site.url }}{{ post.url }}&t={{ post.title | strip_html | replace: '"', '' }}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;">
                         <svg title="" width="16" height="16">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#google-plus-icon"></use>
                         </svg>
                     </a>
                 </li>
                 <li class="linkedin-icon">
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ post.url }}&title={{ post.title }}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{ post.url }}&title={{ post.title | strip_html | replace: '"', '' }}" rel="noreferrer" target="_blank" onclick="window.open(this.href, '','width=700,height=300');return false;">
                         <svg title="" width="16" height="16">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/svg/social-icons.svg#linkedin-icon"></use>
                         </svg>
