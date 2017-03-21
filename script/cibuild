@@ -3,4 +3,4 @@ set -e # halt script on error
 
 bundle update
 bundle exec jekyll build
-bundle exec htmlproofer ./_site --check-opengraph --check-html --report-invalid_tags
+bundle exec htmlproofer ./_site --check-opengraph --check-html --report-invalid-tags
