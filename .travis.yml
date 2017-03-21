@@ -4,11 +4,11 @@ rvm:
 
 before_install:
  - gem install sinatra
-  - gem install json
-  - gem install bundler
-  - gem install kramdown
-  - gem install jekyll
-  - chmod +x ./script/cibuild # or do this locally and commit
+ - gem install json
+ - gem install bundler
+ - gem install kramdown
+ - gem install jekyll
+ - chmod +x ./script/cibuild # or do this locally and commit
 install: bundle install
 
 # Assume bundler is being used, therefore
