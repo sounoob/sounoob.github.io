@@ -39,3 +39,4 @@ sass:
   sass_dir: assets/css/
   style: compressed
 permalink: "/:title/"
+exclude: [vendor]
