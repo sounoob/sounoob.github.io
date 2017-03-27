@@ -13,7 +13,7 @@ layout: page
     {% for category in sortedcategories %}
     <div class="box" id="{{ category | slugify }}">
     <h3>
-        <a href="category/{{ category | slugify }}">{{ category }}</a>
+        <a href="/category/{{ category | slugify }}">{{ category }}</a>
     </h3>
     <ul>
         {% for post in site.categories[category] %}
