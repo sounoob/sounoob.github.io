@@ -1,0 +1,38 @@
+---
+title: Recebendo dados do Webhook - Typeform
+date: 2017-01-26 00:00:01 -02:00
+permalink: "/recebendo-dados-do-webhook-typeform/"
+categories:
+- Tutoriais
+tags:
+- Typeform
+author: Sena
+layout: post
+---
+
+<p>
+    Tudo que é código o Jekyll tenta executar, mas as vezes queremos apenas mostrar um trexo deste código em um
+    post ou página. Vem e veja como forçar a exbição.
+</p>
+<!--more-->
+
+<p>
+    Em minha jornada de blogueiro passei raiva com o <strong>Jekyll</strong> enquanto tentava escrever sobre como programar
+    com <strong>Jekyll</strong>.
+</p>
+<p>Digamos que você precise mostrar o seguinte código:</p>
+{% highlight jekyll linenos %}{% raw %}{% if post.size > 0 %}
+{% endif %}{% endraw %}{% endhighlight %}
+<p>
+    Esse apenas copiando e colando ele será executado, já que o <strong>Jekyll</strong>
+    consegue entender a instrução.
+</p>
+<p>Para evitar que o <strong>Jekyll</strong> execute o código, insira-o dentro de raw, exatamente como no código abaixo:</p>
+
+{% highlight jekyll linenos %}{% raw %}{% raw %}
+{% if post.size > 0 %}
+{% endif %}
+{% {% endraw %}endraw %}{% raw %}
+{% endraw %}{% endhighlight %}
+
+<p>Bom, por hoje é só. Espero que tenham gostado da novidade.</p>

@@ -55,6 +55,7 @@ layout: post
 <h2>Exemplos de uso</h2>
 <p>
 Marcar o envio de um forumário de contato via ajax
+</p>
 {% highlight javscript linenos %}
 //Para o código de acompanhamento novo
 ga('send', 'event', 'Formulário', 'Formulário enviado com sucesso!', 'Contato');
@@ -63,25 +64,24 @@ ga('send', 'event', 'Formulário', 'Formulário enviado com sucesso!', 'Contato'
 //Para o código de acompanhamento novo
 _gaq.push([‘_trackEvent’, 'Formulário', 'Formulário enviado com sucesso!', 'Contato']);
 {% endhighlight %}
-</p>
 <p>
 Marcar reprodução de um vídeo
+</p>
 {% highlight javscript linenos %}
 //Para o código de acompanhamento novo
 ga('send', 'event', 'Vídeo', 'Reproduzido', 'Vídeo aula PHP', 1);{% endhighlight %}
 {% highlight javscript linenos %}
 //Para o código de acompanhamento antigo
 _gaq.push([‘_trackEvent’, 'Vídeo', 'Reproduzido', 'Vídeo aula PHP', 1]);{% endhighlight %}
-</p>
 <p id="capturar-links-quebrados">
 Capturar links quebrados
+</p>
 {% highlight javscript linenos %}
 //Para o código de acompanhamento novo
 ga('send', 'event', 'erro', 404, window.location.href);{% endhighlight %}
 {% highlight javscript linenos %}
 //Para o código de acompanhamento antigo
 _gaq.push([‘_trackEvent’, 'erro', 404', window.location.href]);{% endhighlight %}
-</p>
 <p>
 Capturar cliques para links externos
 {% highlight javscript linenos %}
@@ -130,18 +130,18 @@ window.onload = function () {
 <p>
     Quando comecei a inserir evento em tudo que é site esse foi o erro que mais aconteceu,
     tente fazer o checklist abaixo que um deles vai resolver o seu problema.
-    <ul>
-        <li>
-            Verifique se o código de acompanhamento está funcioando corretamente
-        </li>
-        <li>
-            Verifique se você está chamando a função <strong>ga</strong> antes do código de acompanhamento
-        </li>
-        <li>
-            Verifique se você está usando o código de acompanhamento antigo com a função do novo, ou vice versa.
-        </li>
-    </ul>
 </p>
+<ul>
+    <li>
+        Verifique se o código de acompanhamento está funcioando corretamente
+    </li>
+    <li>
+        Verifique se você está chamando a função <strong>ga</strong> antes do código de acompanhamento
+    </li>
+    <li>
+        Verifique se você está usando o código de acompanhamento antigo com a função do novo, ou vice versa.
+    </li>
+</ul>
 <h3>Já inseri, onde isso tudo vai aparecer?</h3>
 <p>Acesse sua conta do <strong>Google Analytics</strong>, vá em <b>Relatório</b>, depois em <b>Comportamento </b>, depois <b>Eventos </b> e por fim <b>Visão geral</b>.
     <img src="/assets/uploads/2016/12/acessar-eventos-no-google-analytcs.jpg" alt="Acessar eventos no Google Analytcs " title="Acessar eventos no Google Analytcs ">
