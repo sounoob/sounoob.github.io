@@ -38,7 +38,7 @@ Primeiro a<span style="line-height: 18px;">bra o arquivo config.php dentro da pa
   
 $config["uri_protocol"] = "AUTO";** para **$config["uri\_protocol"] = "REQUEST\_URI";**
 
-Se você estiver usando um apache crie um arquivo **.htacces** com o seguinte conteúdo:
+Se você estiver usando um apache crie um arquivo **.htaccess** com o seguinte conteúdo:
 
 {% highlight php linenos %}RewriteEngine on
 RewriteCond $1 !^(index\.php|assets|robots\.txt)
