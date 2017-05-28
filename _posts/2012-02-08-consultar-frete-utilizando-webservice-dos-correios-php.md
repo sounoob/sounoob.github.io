@@ -135,7 +135,7 @@ Já podemos iniciar nossa conexão para isso usaremos o biblioteca **cURL**. Ao 
 
 Como nossa intenção realizar uma consulta então precisamos configurar o **cURL** que iremos precisar disso.
 
-{% highlight php linenos %}curl\_setopt($curl, CURLOPT\_RETURNTRANSFER, true);{% endhighlight %} 
+{% highlight php linenos %}curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);{% endhighlight %} 
 
 Por sorte o webservice dos correios não precisa de muita frescura então podemos inciar a comunicação, e gravaremos o resultado na variavel **$result.**
 
