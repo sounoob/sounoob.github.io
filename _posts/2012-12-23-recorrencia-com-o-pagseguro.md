@@ -37,7 +37,7 @@ Toda vez que seu sistema precisar ficar gerando cobranças automaticamente para 
 O sistema de recorrência já está ativo em todas contas do PagSeguro, basta apenas integrar o seu sistema para fazer as requisições, o que poderá ser feito de três maneiras:
 
 <li dir="ltr">
-  Usando código gerado pelo PagSeguro - <a title="Botão de assinatura PagSeguro" href="https://pagseguro.uol.com.br/integracao/botoes_de_pagamento.jhtml#assinar" target="_blank">Clique aqui para ver</a>.
+  Usando código gerado pelo PagSeguro - <a title="Botão de assinatura PagSeguro" href="https://pagseguro.uol.com.br/integracao/botoes_de_pagamento.jhtml" target="_blank">Clique aqui para ver</a>.
 </li>
 <li dir="ltr">
   <a title="Requisição de pagamento do PagSeguro com assinatura associada usando PHP" href="/requisicao-de-pagamento-do-pagseguro-com-assinatura-associada-usando-php/" target="_blank">Usando a API de pagamentos com a assinatura associada.</a>
