@@ -44,9 +44,15 @@ Esses dados são passados para o PagSeguro junto a uma URL como no exemplo abai
 
 {% highlight php linenos %}https://ws.pagseguro.uol.com.br/v2/transactions/notifications/766B9C-AD4B044B04DA-77742F5FA653-E1AB24?email=seuemail@dominio.com.br&token=95112EE828D94278BD394E91C4388F20{% endhighlight %} 
 
+Ou caso esteja usando sandbox.
+
+{% highlight php linenos %}https://ws.sandbox.pagseguro.uol.com.br/v2/transactions/notifications/766B9C-AD4B044B04DA-77742F5FA653-E1AB24?email=seuemail@dominio.com.br&token=95112EE828D94278BD394E91C4388F20{% endhighlight %} 
+
 Vamos montar nossa URL juntando a variável do e-mail mais a variável do token e o código da notificação, mais a parte fixa da URL ficará algo assim.
 
 {% highlight php linenos %}$url = 'https://ws.pagseguro.uol.com.br/v2/transactions/notifications/' . $_POST['notificationCode'] . '?email=' . $email . '&token=' . $token;{% endhighlight %} 
+Caso estejas usando ambiente de sandbox utilize a linha abaixo
+{% highlight php linenos %}$url = 'https://ws.sandbox.pagseguro.uol.com.br/v2/transactions/notifications/' . $_POST['notificationCode'] . '?email=' . $email . '&token=' . $token;{% endhighlight %} 
 
 Agora vamos chamar o CURL e passar como endereço, a URL que acabamos de montar.
 
@@ -280,6 +286,8 @@ if(isset($_POST['notificationType']) && $_POST['notificationType'] == 'transacti
     $token = '95112EE828D94278BD394E91C4388F20';
 
     $url = 'https://ws.pagseguro.uol.com.br/v2/transactions/notifications/' . $_POST['notificationCode'] . '?email=' . $email . '&token=' . $token;
+    //Caso use sandbox descontente a linha abaixo.
+    //$url = 'https://ws.sandbox.pagseguro.uol.com.br/v2/transactions/notifications/' . $_POST['notificationCode'] . '?email=' . $email . '&token=' . $token;
 
     $curl = curl_init($url);
     curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
