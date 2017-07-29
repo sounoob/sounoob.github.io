@@ -1,0 +1,42 @@
+---
+title: Transação inválida. Sempre inicie transações a partir de sites confiáveis.
+date: 2011-09-05 18:05:36 -03:00
+permalink: "/transacao-invalida-sempre-inicie-transacoes-a-partir-de-sites-confiaveis/"
+categories:
+- Dicas
+tags:
+- PagSeguro
+redirect_from: "/2011/09/05/transacao-invalida-sempre-inicie-transacoes-a-partir-de-sites-confiaveis/"
+image: "/assets/uploads/2017/07/Transacao-invalida.Sempre-inicie-transacoes-a-partir-de-sites-confiaveis.png"
+layout: post
+---
+<p>
+  Tenho visto na internet muita gente reclamando que ao tentar implantar o PagSeguro no sistema é exibido o erro: "Transação inválida. Sempre inicie transações a partir de sites confiáveis."<!--more-->
+</p>
+<p>
+  No dia 3 de agosto de 2011 o PagSeguro lançou as famosas API, uma delas é a de pagamento, onde a finalidade é fazer uma integração mais dinâmica e ao mesmo tempo segura. O fato é que junto com o lançamento dessa API foi liberado uma opção que permite que a conta receba apenas pagamento usando essa nova API o que pode acabar gerando esse erro.
+</p>
+<p>
+  Muita coisa mudou de lá até aqui, antes você bloqueava os formulários HTML para receber só via API, mas com o fato dos formulários não receberem mais atualizações a opção está inversa. Você desbloqueia sua conta para receber formulários HTML e assim evitar mostrar esse erro.
+</p>
+<p>
+  Para desbloquear clique no link:
+
+  <a href="https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmPaymentAPI" target="_blank">
+    Pagamento via Formulário HTML
+  </a>
+</p>
+<p>
+  Na tela que irá carregar você irá marcar a opção: "Deseja ativar Pagamentos via Formulário HTML?" e clicar em salvar.
+</p>
+
+<p style="text-align: center;">
+  <img class="aligncenter" style="border: 1px solid black;" title="Tela de Login do PagSeguro" src="/assets/uploads/2017/07/deseja-ativar-pagamentos-via-formulario-html.png" alt="Deseja ativar Pagamentos via Formulário HTML" />
+</p>
+
+<p>
+  Pronto agora você já poderá vender com o PagSeguro, mas atenção, formulários estão defasados e não são seguros, alguém pode burlar sua venda e fazer um belo de um estrago... Melhor usar as APIs, se você não for programador ou não souber programar, pague alguém...
+</p>
+<p>
+  Até a próxima…
+</p>
