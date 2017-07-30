@@ -1,0 +1,32 @@
+---
+title: Verificando seu token do PagSeguro.
+categories:
+- Ferramentas
+tags:
+- PagSeguro
+author: Sena
+layout: post
+---
+
+<p>
+    Quando o PagSeguro dá o erro Unauthorized, e temos certeza que nosso token está correto. O que fazer?
+    <br>
+    Bom, minha minha recomendação sempre será: Teste em nossa ferramenta, assim você terá certeza se é o token ou não.
+</p>
+<!--more-->
+<p>Essa ferramenta utiliza uma das APIs de consulta do PagSeguro para realizar a validação, não fazemos nenhuma alteração na sua conta, pode ficar tranquilo.</p>
+<script src="/assets/js/checkTokenPagSeguro.js"> </script>
+<h3 id="result"></h3>
+<form onsubmit="return sayTheTrue();" class="contact" action="" method="post">
+    <div class="form-group">
+        <label for="email">E-mail do PagSeguro:</label><br>
+        <input type="email" name="email" id="email" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="token">Token:</label><br>
+        <input type="text" name="token" id="token" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn" value="enviar" name="enviar">ENVIAR</button>
+    </div>
+</form>
