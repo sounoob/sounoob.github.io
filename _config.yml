@@ -17,7 +17,7 @@ baseurl: ''
 paginate: 6
 dateformat: "%d-%m-%Y"
 comments: true
-gems:
+plugins:
 - jekyll-sitemap
 - jekyll-paginate
 - jekyll-feed
