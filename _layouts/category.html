@@ -1,7 +1,9 @@
 ---
 layout: page
 ---
+{% if page.description %}
 <h2>{{ page.description }}</h2>
+{% endif %}
 <ul>
     {% for post in site.categories[page.category] %}
     <li>
