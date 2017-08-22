@@ -8,14 +8,8 @@ tags:
 - Correios
 - cURL
 redirect_from: "/2012/02/08/consultar-frete-utilizando-webservice-dos-correios-php/"
-id: 336
 author: Sena
 layout: post
-guid: http://sounoob.com.br/?p=336
-short-url:
-- http://bit.ly/VjgHoJ
-dsq_thread_id:
-- '2819540744'
 ---
 
 Muito utilizado nos e-commerces é a função para calculo de frete, o que dizer de uma loja virtual que não realiza calculo de frete automaticamente, seria péssimo para as vendas, né? Pois bem, você precisa apenas saber que é fácil e que não precisa pagar por esse serviço. Seu sistema poderá realizar a consulta diretamente nos correios de forma totalmente gratuita. Claro que você pode contratar os serviços dos correios, porem nesse caso já é outra história.<!--more-->
@@ -92,17 +86,20 @@ Por ultimo podemos informar qual formato queremos a consulta seja retornada, pod
 
 Por fim o código do serviço.
 
-  * 40010 SEDEX sem contrato.
-  * 40045 SEDEX a Cobrar, sem contrato.
+  * 40010 SEDEX Varejo.
+  * 40045 SEDEX a Cobrar Varejo.
+  * 40215 SEDEX 10 Varejo.
+  * 40290 SEDEX Hoje Varejo.
+  * 41106 PAC Varejo.
+  
+Existem oturos códigos que só podem ser usado com contrato, os correios tirou do ar esses códigos, e deixou a instrução "para outros serviços, consulte o código no seu contrato.", mas... eu tenho os códigos da antiga documentação que são (Nada garante que continuam sendo esses, melhor confirmar antes):
+  
   * 40126 SEDEX a Cobrar, com contrato.
-  * 40215 SEDEX 10, sem contrato.
-  * 40290 SEDEX Hoje, sem contrato.
   * 40096 SEDEX com contrato.
   * 40436 SEDEX com contrato.
   * 40444 SEDEX com contrato.
   * 40568 SEDEX com contrato.
   * 40606 SEDEX com contrato.
-  * 41106 PAC sem contrato.
   * 41068 PAC com contrato.
   * 81019 e-SEDEX, com contrato.
   * 81027 e-SEDEX Prioritário, com conrato.
@@ -213,7 +210,7 @@ Como sempre, segue o código na integra…
  $data['sCdAvisoRecebimento'] = 'n';
  $data['StrRetorno'] = 'xml';
  //$data['nCdServico'] = '40010';
- $data['nCdServico'] = '40010,40045,40215,40290,41106';
+ $data['nCdServico'] = '40010,40045,40215,41106';
  $data = http_build_query($data);
 
  $url = 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.aspx';
