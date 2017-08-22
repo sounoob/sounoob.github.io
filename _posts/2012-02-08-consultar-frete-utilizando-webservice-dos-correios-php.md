@@ -92,7 +92,7 @@ Por fim o código do serviço.
   * 40290 SEDEX Hoje Varejo.
   * 41106 PAC Varejo.
   
-Existem oturos códigos que só podem ser usado com contrato, os correios tirou do ar esses códigos, e deixou a instrução "para outros serviços, consulte o código no seu contrato.", mas... eu tenho os códigos da antiga documentação que são (Nada garante que continuam sendo esses, melhor confirmar antes):
+Existem outros códigos que só podem ser usado com contrato, os correios tirou do ar esses códigos, e deixou a instrução "para outros serviços, consulte o código no seu contrato.", mas... eu tenho os códigos da antiga documentação que são (Nada garante que continuam sendo esses, melhor confirmar antes):
   
   * 40126 SEDEX a Cobrar, com contrato.
   * 40096 SEDEX com contrato.
