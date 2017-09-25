@@ -1,0 +1,22 @@
+---
+title: PagSeguro - Checkout de serviço
+categories:
+- Tutoriais
+tags:
+- PagSeguro
+author: Sena
+layout: post
+---
+
+<p>
+    Veja como fazer a API do PagSeguro deixar os campos de endereço de entrega como opcionais. Ótimo para quem vende serviços ao invés de produtos.
+</p>
+<!--more-->
+<p>
+    Aqui não falaremos de nenhuma API nova, e sim de um complemento para as APIs que já existem.
+</p>
+<h3>API de pagamentos (Checkout do PagSeguro), Checkout lightbox e API de pagamentos transparente</h3>
+<p>Quando você estiver enviando no formato <strong>x-www-form-urlencoded</strong>, basta adicionar mas um parâmetro</p>
+{% highlight php linenos %}shippingAddressRequired=false{% endhighlight %}
+<p>Quando você estiver enviando no formato <strong>XML</strong>, basta adicionar mas um nó dentro do nó <strong>checkout</strong>:</p>
+{% highlight php linenos %}<shippingAddressRequired>false</shippingAddressRequired>{% endhighlight %}
