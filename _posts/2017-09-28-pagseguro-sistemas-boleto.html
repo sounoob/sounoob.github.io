@@ -1,0 +1,35 @@
+---
+title: PagSeguro - Geração sistema de boletos.
+categories:
+- Tutoriais
+tags:
+- PagSeguro
+author: Sena
+layout: post
+---
+
+<p>
+    Agora dá para gerar boletos em lote (Aquele carnê maroto), dá para definir a data do vencimento do boleto... e é de longe o serviço mais simples de se utilizar.
+</p>
+<!--more-->
+<p>
+    Esse post será reeditado para mais um detalhamento melhor. Mas só para falar que o PagSeguro acabou de lançar um serviço de geração de boletos.
+    <br>Ainda sabemos pouca coisa sobre o serviço mas já conseguimos entender alguns benefícios:
+</p>
+
+<ul>
+    <li>Totalmente transparente (Primeira API do PagSeguro transparente que não usa senderHash)</li>
+    <li>É posssivel controlar a data do vencimento do boleto.</li>
+    <li>Gerar boletos em lote</li>
+    <li>Capturar o código de barras do boleto pelo código.</li>
+</ul>
+
+<p>
+    Quanto às vantagens que citei acima, existe algumas limitações, imagino que pelo fato de ser algo novo e eles precisarem controlar melhor
+    para em caso de problemas, conseguir contornar mais rápidamente.
+</p>
+<p>Nesse post não irei falar sobre a API necessariamente, mas irei compartilhar um exemplo do nosso SDK que já utiliza essa API.</p>
+<p>
+    O projeto pode ser baixado em <a href="https://github.com/sounoob/pagseguro-php-sdk" target="_blank">pagseguro-php-sdk</a> e o
+    exemplo do boleto está em <a href="https://github.com/sounoob/pagseguro-php-sdk/blob/master/exemple/boleto.php" target="_blank">'/exemple/boleto.php'</a>.
+</p>
