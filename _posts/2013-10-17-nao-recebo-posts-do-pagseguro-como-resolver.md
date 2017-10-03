@@ -20,6 +20,13 @@ image: "/assets/uploads/2013/10/Nao-recebo-posts-do-PagSeguro-como-resolver.gif"
 
 Já faz muito tempo que vejo frases como estas em fóruns, a maioria são ditas por <del style="color: #ff0000;">pseudo-</del>desenvolvedores que já estão putos da vida pelo fato de não entender o motivo de não estar recebendo posts do PagSeguro. Então… vou tentar ajudar, listando alguns passos que devem ser seguidos, serão apenas alguns testes simples mas que poderão fazer a diferença futuramente.<!--more-->
 
+### O problema é seu ou do PagSeguro?
+
+Antes de mais nada, use um serviço de terceiros para capturar a requisição e monitore o que chegou. 
+Se não funcionar, dê print e envie para o PagSeguro como evidência que a ferramenta deles não está funcionando.
+
+Minha recomendação é o [RequestBin](https://requestb.in "RequestBin"){:target="_blank"}, você gera uma URL, configura para receber a notificação e monitora o resultado. Se passar desse ponto, de fato o problema está contigo, então siga os outros passos.
+
 ### Faça uma coisa de cada vez
 
 Antes de sair programando igual louco, tente inserir instrução por instrução e ir testando. As vezes uma instrução equivocada no começo do teu código pode fazer a ultima linha dar pau, e o pior você poderá perder muito tempo tentando descobrir a origem do problema. Sendo assim faça por etapas, e vá testando, ative o modo debugger que existe dentro de você, tenha certeza do que está dentro de cada variável
