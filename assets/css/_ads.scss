@@ -1,0 +1,10 @@
+p.gad:before {
+  content: "Aqui deveria ter carregado uma propaganda marota...";
+  position: absolute;
+  left: 20px;
+}
+p.gad {
+    background-color: $silver2;
+  padding: 10px 0;
+  position: relative;
+}
