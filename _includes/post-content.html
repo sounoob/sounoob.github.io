@@ -4,7 +4,7 @@
 
 {% assign count = 0 %}
 {% for paragraph in paragraphs %}
-    {{ paragraph }}</p>
+    {{ paragraph }} {% if forloop.last != false %}</p>{% endif %}
     {% if count == middle %}
         {% include post-content-ads-1.html %}
     {% endif %}
