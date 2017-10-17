@@ -19,7 +19,7 @@
         {% endif %}
         {% if post_content %}
         <div class="excerpt">
-            {{ post_content }}
+            {% include post-content.html %}
         </div>
         {% else %}
         <div class="excerpt">
