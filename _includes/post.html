@@ -17,9 +17,10 @@
             <img src="{{ post.image }}" alt="{{ post.title | strip_html | replace: '"', '' }}" title="{{ post.title | strip_html | replace: '"', '' }}" class="aligncenter">
         </figure>
         {% endif %}
+        {% if post_content %}{% include post-content-ads-1.html %}{% endif %}
         {% if post_content %}
         <div class="excerpt">
-            {% include post-content.html %}
+            {{ post_content }}
         </div>
         {% else %}
         <div class="excerpt">
