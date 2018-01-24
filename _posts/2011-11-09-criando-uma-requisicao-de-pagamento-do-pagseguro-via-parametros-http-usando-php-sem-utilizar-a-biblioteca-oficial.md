@@ -120,14 +120,14 @@ Caso ocorra erro você terá algo como:
 
 {% highlight xml linenos %}<?xml version="1.0" encoding="UTF-8"?>
 <errors>
-<error>
-<code>11004</code>
-<message>Currency is required.</message>
-</error>
-<error>
-<code>11005</code>
-<message>Currency invalid value: 100</message>
-</error>
+    <error>
+        <code>11004</code>
+        <message>Currency is required.</message>
+    </error>
+    <error>
+        <code>11005</code>
+        <message>Currency invalid value: 100</message>
+    </error>
 </errors>{% endhighlight %} 
 
 Utilizaremos a simplexml\_load\_string para converter a resposta em um objeto
@@ -137,10 +137,9 @@ Utilizaremos a simplexml\_load\_string para converter a resposta em um objeto
 Próximo passo é verificar o PagSeguro enviou algum erro
 
 {% highlight php linenos %}if(count($xml -> error) > 0){
-//Insira seu código de tratamento de erro, talvez seja útil enviar os códigos de erros.
-
-header('Location: erro.php?tipo=dadosInvalidos');
-exit;
+    //Insira seu código de tratamento de erro, talvez seja útil enviar os códigos de erros.
+    header('Location: erro.php?tipo=dadosInvalidos');
+    exit;
 }{% endhighlight %} 
 
 Caso não tenha parado no caso acima é só pegar o código de pagamento e redirecionar o comprador para a tela de pagamento.
@@ -200,19 +199,17 @@ curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
 $xml= curl_exec($curl);
 
 if($xml == 'Unauthorized'){
-//Insira seu código de prevenção a erros
-
-header('Location: erro.php?tipo=autenticacao');
-exit;//Mantenha essa linha
+    //Insira seu código de prevenção a erros
+    header('Location: erro.php?tipo=autenticacao');
+    exit;//Mantenha essa linha
 }
 curl_close($curl);
 
 $xml= simplexml_load_string($xml);
 if(count($xml -> error) > 0){
-//Insira seu código de tratamento de erro, talvez seja útil enviar os códigos de erros.
-
-header('Location: erro.php?tipo=dadosInvalidos');
-exit;
+    //Insira seu código de tratamento de erro, talvez seja útil enviar os códigos de erros.
+    header('Location: erro.php?tipo=dadosInvalidos');
+    exit;
 }
 header('Location: https://pagseguro.uol.com.br/v2/checkout/payment.html?code=' . $xml -> code);{% endhighlight %} 
 
