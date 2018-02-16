@@ -1,0 +1,87 @@
+---
+title: Por que o PagSeguro cancela minhas transações?
+categories:
+- Curiosidades
+- Dicas
+tags:
+- PagSeguro
+author: Sena
+layout: post
+redirect_from:
+- "/porque-pagseguro-cancela-minha-transacao/"
+- "/porque-o-pagseguro-cancela-minha-transacao/"
+- "/por-que-pagseguro-cancela-minha-transacao/"
+- "/por-que-o-pagseguro-cancela-minha-transacao/"
+- "/porque-pagseguro-cancela-minhas-transacoes/"
+- "/porque-o-pagseguro-cancela-minhas-transacoes/"
+- "/por-que-pagseguro-cancela-minhas-transacoes/"
+- "/por-que-o-pagseguro-cancela-minhas-transacoes/"
+---
+
+<p>
+    Hoje você vai aprender o motivo e como contornar aquele momento em que a loja foi para o ar, e em todos testes em
+    produção o PagSeguro cancela a transação,
+    mesmo quando os dados do comprador estão corretos.
+</p>
+<!--more-->
+<p>
+    Para entender o motivo disso, precisamos entender quem é o PagSeguro.
+</p>
+<blockquote cite="https://pagseguro.uol.com.br/sobre">
+    <p>
+        O PagSeguro é uma solução para receber e enviar pagamentos com flexibilidade e segurança.
+    </p>
+</blockquote>
+<p>
+    Isso significa que a ideia do PagSeguro, é facilitar de uma forma onde você precise programar o mínimo e ter o
+    máximo de ferramentas no momento de incluir opções de pagamento em seu site. <br>
+    <strong>Você não precisa concordar ou discordar se ele faz esse papel, só precisa ter ciência do que ele quer fazer.</strong>
+</p>
+<p>
+    Agora que entendemos o PagSeguro, precisamos entender que, ao colocar o PagSeguro como solução de pagamento, estamos
+    incluido uma série de sistemas embutidos.
+</p>
+<ul>
+    <li>Pagamento com cartão de crédito (17 bandeiras e contando...), boleto, débto online (em 5 bancos e contando), etc;</li>
+    <li>Pagamento recorrente;</li>
+    <li>
+        Dar opção para o comprador usar a própria conta do PagSeguro para acessar os cartões já salvos e algumas de suas preferências e afins;
+    </li>
+    <li>Proteção contra chargeback;</li>
+    <li>AntiFraude;</li>
+    <li>Outros...</li>
+</ul>
+<p>
+    Parei no AntiFraude de propósito, ele é o motivo deste post ser escrito. Sim, suas transações são canceladas quando você testa em produção por conta do AntiFraude (Não, ainda não é possível desativar esse serviço).
+</p>
+<h3>Como sei que o AntiFraude está agindo?</h3>
+<p>
+    Sempre que consultar detalhes de uma transação - Seja pela API de notificações ou API de consulta por código de transação - você poderá, ver em cancellationSource <small>(linha 8 do exemplo)</small>.
+</p>
+{% highlight xml linenos %}
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<transaction>
+    <date>2018-02-15T13:01:15.000-02:00</date>
+    <code>0BED7D1B-DC00-4DE8-8828-082F8FCC7D55</code>
+    <reference>REF1234</reference>
+    <type>1</type>
+    <status>7</status>
+    <cancellationSource>INTERNAL</cancellationSource>
+    <lastEventDate>2018-02-15T13:01:16.000-02:00</lastEventDate>
+    <paymentMethod>
+        <type>1</type>
+        <code>101</code>
+    </paymentMethod>
+    <!-- Código reduzido, para economizar espaço -->
+</transaction>
+{% endhighlight %}
+<p class="text-right">
+    <small>
+        O exemplo foi reduzido para ocupar menos espaço, porém você pode ver o XML de exemplo completo <a href="https://ws.pagseguro.uol.com.br/v3/transactions/0BED7D1B-DC00-4DE8-8828-082F8FCC7D55?email=dev@sounoob.com.br&token=5179DCD806314BD6A77B774DF6148CA9"  target="_blank" rel="nofollow noreferrer">clicando aqui</a>.
+    </small>
+</p>
+<p>O campo cancellationSource, significa a origem do cancelamento. Sempre que a origem do cancelamento for interna (Internal), significa que o antifraude barrou essa transação.</p>
+<!--
+https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/115004491193-Pagamento-Cancelado-cancellationSource-INTERNAL
+https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360000816293-Transações-canceladas-somente-em-Produção-Checkout-transparente-
+-->
