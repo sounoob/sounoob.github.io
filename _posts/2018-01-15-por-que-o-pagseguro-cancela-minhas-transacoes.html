@@ -1,5 +1,5 @@
 ---
-title: Por que o PagSeguro cancela minhas transações?
+title: Intermediador de pagamentos cancelando todas transaçõess
 categories:
 - Curiosidades
 - Dicas
@@ -16,47 +16,85 @@ redirect_from:
 - "/porque-o-pagseguro-cancela-minhas-transacoes/"
 - "/por-que-pagseguro-cancela-minhas-transacoes/"
 - "/por-que-o-pagseguro-cancela-minhas-transacoes/"
+- "/por-que-o-pagseguro-cancela-minhas-transacoes/"
+- "/porque-payu-cancela-minha-transacao/"
+- "/porque-o-payu-cancela-minha-transacao/"
+- "/por-que-payu-cancela-minha-transacao/"
+- "/por-que-o-payu-cancela-minha-transacao/"
+- "/porque-payu-cancela-minhas-transacoes/"
+- "/porque-o-payu-cancela-minhas-transacoes/"
+- "/por-que-payu-cancela-minhas-transacoes/"
+- "/por-que-o-payu-cancela-minhas-transacoes/"
+- "/por-que-o-payu-cancela-minhas-transacoes/"
+- "/porque-mercadopago-cancela-minha-transacao/"
+- "/porque-o-mercadopago-cancela-minha-transacao/"
+- "/por-que-mercadopago-cancela-minha-transacao/"
+- "/por-que-o-mercadopago-cancela-minha-transacao/"
+- "/porque-mercadopago-cancela-minhas-transacoes/"
+- "/porque-o-mercadopago-cancela-minhas-transacoes/"
+- "/por-que-mercadopago-cancela-minhas-transacoes/"
+- "/por-que-o-mercadopago-cancela-minhas-transacoes/"
+- "/por-que-o-mercadopago-cancela-minhas-transacoes/"
+- "/porque-moip-cancela-minha-transacao/"
+- "/porque-o-moip-cancela-minha-transacao/"
+- "/por-que-moip-cancela-minha-transacao/"
+- "/por-que-o-moip-cancela-minha-transacao/"
+- "/porque-moip-cancela-minhas-transacoes/"
+- "/porque-o-moip-cancela-minhas-transacoes/"
+- "/por-que-moip-cancela-minhas-transacoes/"
+- "/por-que-o-moip-cancela-minhas-transacoes/"
+- "/por-que-o-moip-cancela-minhas-transacoes/"
 ---
-
 <p>
     Hoje você vai aprender o motivo e como contornar aquele momento em que a loja foi para o ar, e em todos testes em
-    produção o PagSeguro cancela a transação,
-    mesmo quando os dados do comprador estão corretos.
+    produção o intermediador de pagamentos cancela a transação, mesmo quando os dados do comprador estão corretos.
 </p>
 <!--more-->
 <p>
-    Para entender o motivo disso, precisamos entender quem é o PagSeguro.
+    Para entender o motivo disso, precisamos entender o que é um intermediador de pagamentos.
 </p>
-<blockquote cite="https://pagseguro.uol.com.br/sobre">
+<blockquote>
     <p>
-        O PagSeguro é uma solução para receber e enviar pagamentos com flexibilidade e segurança.
+        O Intermediador de pagamentos é uma solução para receber e enviar pagamentos com flexibilidade e segurança.
     </p>
 </blockquote>
 <p>
-    Isso significa que a ideia do PagSeguro, é facilitar de uma forma onde você precise programar o mínimo e ter o
-    máximo de ferramentas no momento de incluir opções de pagamento em seu site. <br>
-    <strong>Você não precisa concordar ou discordar se ele faz esse papel, só precisa ter ciência do que ele quer fazer.</strong>
+    Isso significa que a ideia do intermediador de pagamentos, é facilitar de uma forma onde você precise programar o
+    mínimo e ter o máximo de ferramentas no momento de incluir opções de pagamento em seu site. <br>
+    <strong>Você não precisa concordar ou discordar se ele faz esse papel, só precisa ter ciência do que ele quer
+        fazer.</strong>
 </p>
 <p>
-    Agora que entendemos o PagSeguro, precisamos entender que, ao colocar o PagSeguro como solução de pagamento, estamos
-    incluido uma série de sistemas embutidos.
+    Agora que entendemos o intermediador de pagamentos, precisamos entender que, ao colocar o intermediador como solução
+    de pagamento, estamos incluido uma série de sistemas embutidos.
 </p>
 <ul>
-    <li>Pagamento com cartão de crédito (17 bandeiras e contando...), boleto, débto online (em 5 bancos e contando), etc;</li>
+    <li>
+        Pagamento com cartão de crédito, boleto, débto, online, etc;
+    </li>
     <li>Pagamento recorrente;</li>
     <li>
-        Dar opção para o comprador usar a própria conta do PagSeguro para acessar os cartões já salvos e algumas de suas preferências e afins;
+        Dar opção para o comprador usar a própria para acessar os cartões já salvos e algumas de suas preferências entre
+        outras customizações;
     </li>
     <li>Proteção contra chargeback;</li>
     <li>AntiFraude;</li>
     <li>Outros...</li>
 </ul>
 <p>
-    Parei no AntiFraude de propósito, ele é o motivo deste post ser escrito. Sim, suas transações são canceladas quando você testa em produção por conta do AntiFraude (Não, ainda não é possível desativar esse serviço).
+    Parei no AntiFraude de propósito, ele é o motivo deste post ser escrito. Sim, suas transações são canceladas quando
+    você testa em produção por conta do AntiFraude (na maioria das vezes não é possivel desativar esse serviço).
 </p>
-<h3>Como sei que o AntiFraude está agindo?</h3>
+<h2>Como sei que foi o AntiFraude que cancelou uma transação?</h2>
 <p>
-    Sempre que consultar detalhes de uma transação - Seja pela API de notificações ou API de consulta por código de transação - você poderá, ver em cancellationSource <small>(linha 8 do exemplo)</small>.
+    Dependendo do intermediador que você estiver utilizando, ele pode falar explicitamente ou informar que foi por
+    motivos interno. Usarei o PagSeguro como exemplo.
+</p>
+<p>
+    Consultando os detalhes detalhes de uma transação - Seja pela API de notificações ou API de consulta por código de
+    transação - procure por <strong>&lt;transaction&gt;&lt;cancellationSource&gt;</strong>
+    <small>, (linha 8 do exemplo)</small>
+    .
 </p>
 {% highlight xml linenos %}
 <?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
@@ -77,11 +115,67 @@ redirect_from:
 {% endhighlight %}
 <p class="text-right">
     <small>
-        O exemplo foi reduzido para ocupar menos espaço, porém você pode ver o XML de exemplo completo <a href="https://ws.pagseguro.uol.com.br/v3/transactions/0BED7D1B-DC00-4DE8-8828-082F8FCC7D55?email=dev@sounoob.com.br&token=5179DCD806314BD6A77B774DF6148CA9"  target="_blank" rel="nofollow noreferrer">clicando aqui</a>.
+        O exemplo foi reduzido para ocupar menos espaço, porém você pode ver o XML de exemplo completo <a
+            href="https://ws.pagseguro.uol.com.br/v3/transactions/0BED7D1B-DC00-4DE8-8828-082F8FCC7D55?email=dev@sounoob.com.br&token=5179DCD806314BD6A77B774DF6148CA9"
+            target="_blank" rel="nofollow noreferrer">clicando aqui</a>.
     </small>
 </p>
-<p>O campo cancellationSource, significa a origem do cancelamento. Sempre que a origem do cancelamento for interna (Internal), significa que o antifraude barrou essa transação.</p>
-<!--
-https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/115004491193-Pagamento-Cancelado-cancellationSource-INTERNAL
-https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360000816293-Transações-canceladas-somente-em-Produção-Checkout-transparente-
--->
+<p>
+    O campo <strong>cancellationSource</strong>, significa a origem do cancelamento. Sempre que a origem do cancelamento
+    for interna (Internal), significa que o antifraude barrou essa transação.</p>
+<p>
+    <strong>
+        Cada intermediador terá sua peculiaridade, entre em contato com o suporte e procure entender como funciona no
+        seu.
+        Aproveite e poste nos comentários afim de ajudar o próximo que estiver pesquisando.
+    </strong>
+</p>
+
+<h2>Como evitar que AntiFraude cancele transações legitimas</h2>
+<p>
+    Não sabemos ao certo como o AntiFraude dos intermediadores funcionam, caso você pergunte no SAC, eles não irão
+    responder, por motivos de segurança. Eles acreditam que se todos tiverem ciência dos critérios do AntiFraude, a
+    segurança das transações fica comprometida, e alguém mal intencionado poderá burlar esse sistema e fazer compras
+    indevidas.
+</p>
+<p>Juntamos algumas dicas espalhadas pela intenet e vou citar algumas aqui:</p>
+
+<h3>Respeite as regras de uso do intermediador</h3>
+<p>
+    Cada intermediador de pagamento tem um termo/regras de uso. Lá existem uma série de itens a serem cumpridos, como
+    por exemplo não vender drogas, órgãos... Leia todos itens, a inteligência do AntiFraude pode usar algum dessas
+    regras para permitir ou não a venda.
+</p>
+<h3>Divergência de dados</h3>
+<p>
+    Diversos campos são de preenchimento obrigatórios na requisição de pagamento, muitas vezes para pular alguns passos
+    o programador pega alguns desses campos e deixa com valor padrão e assim o comprador não precisa preencher. O ponto
+    é: O AntiFraude pega o padrão e imagina ser uma fraude, bloqueando tudo.
+</p>
+<p>
+    Lembre, na internet tudo se conversa, se esse mesmo comprador realizou alguma compra recentemente online usando
+    dados
+    totalmente diferentes do usado na compra atual, o AntiFraude pode bloquear a transação também.
+</p>
+<h3>CPF com pendências</h3>
+<p>
+    Maioria dos sitemas podem verificar se não existem restrições no nome da pessoa, e/ou se aquele CPF já foi usado
+    anteriormente para fraude.
+</p>
+<h3>Padrão de compra alterado</h3>
+<p>
+    Em todo cadastro no intermediador de pagamento, você vai precisar categorizar seu comércio, é importante preencher
+    corretamente esse item. Caso contrário suas vendas entrará fora do padrão o que acabará dando cancelamento indevido.
+</p>
+<h3>Compras repetitivas</h3>
+<p>
+    Normalmente você faz uma compra no site e só volta lá depois de um tempo, se no meio de seus testes, você faz duas,
+    três, ou seja lá quantos testes, o AntiFraude pode pegar seu IP e cookie
+    <small>(ou sabe lá Deus o que ele pega)</small>
+    e detectar um padrão diferente e realizar o bloqueio, então testes em produção apenas com usuários reais, ou de
+    locais e ambientes diferentes.
+</p>
+<h2>Sua vez</h2>
+<p>
+    Você já caiu em algum ciclo onde o AntiFraude cancelava suas transações? O que você fez para contornar isso?
+</p>
