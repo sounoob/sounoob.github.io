@@ -83,7 +83,7 @@ redirect_from:
 </ul>
 <p>
     Parei no AntiFraude de propósito, ele é o motivo deste post ser escrito. Sim, suas transações são canceladas quando
-    você testa em produção por conta do AntiFraude (na maioria das vezes não é possivel desativar esse serviço).
+    você testa em produção por conta do AntiFraude <small>(na maioria das vezes não é possivel desativar esse serviço)</small>.
 </p>
 <h2>Como sei que foi o AntiFraude que cancelou uma transação?</h2>
 <p>
@@ -143,14 +143,14 @@ redirect_from:
 <h3>Respeite as regras de uso do intermediador</h3>
 <p>
     Cada intermediador de pagamento tem um termo/regras de uso. Lá existem uma série de itens a serem cumpridos, como
-    por exemplo não vender drogas, órgãos... Leia todos itens, a inteligência do AntiFraude pode usar algum dessas
-    regras para permitir ou não a venda.
+    por exemplo não vender drogas, órgãos... Leia todos itens, a inteligência do AntiFraude pode usar alguma
+    regras dessas para permitir ou não a venda.
 </p>
 <h3>Divergência de dados</h3>
 <p>
     Diversos campos são de preenchimento obrigatórios na requisição de pagamento, muitas vezes para pular alguns passos
     o programador pega alguns desses campos e deixa com valor padrão e assim o comprador não precisa preencher. O ponto
-    é: O AntiFraude pega o padrão e imagina ser uma fraude, bloqueando tudo.
+    é: O AntiFraude pega o padrão e classificar como uma fraude, negando tudo.
 </p>
 <p>
     Lembre, na internet tudo se conversa, se esse mesmo comprador realizou alguma compra recentemente online usando
@@ -162,7 +162,7 @@ redirect_from:
     Maioria dos sitemas podem verificar se não existem restrições no nome da pessoa, e/ou se aquele CPF já foi usado
     anteriormente para fraude.
 </p>
-<h3>Padrão de compra alterado</h3>
+<h3>Desvio no padrão de compra</h3>
 <p>
     Em todo cadastro no intermediador de pagamento, você vai precisar categorizar seu comércio, é importante preencher
     corretamente esse item. Caso contrário suas vendas entrará fora do padrão o que acabará dando cancelamento indevido.
