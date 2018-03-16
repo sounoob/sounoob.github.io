@@ -9,7 +9,10 @@ p.gad {
   position: relative;
 }
 .google-auto-placed.ap_container {
-    background-color: #0a0a0a26;
-    padding: 7px 5px 5px;
-    margin-left: -5px;
+    margin-left: -3px;
+}
+.google-auto-placed.ap_container>ins>ins {
+    border: 3px solid #00000045 !important;
+    border-top-width: 4px !important;
+    border-bottom-width: 7px !important;
 }
