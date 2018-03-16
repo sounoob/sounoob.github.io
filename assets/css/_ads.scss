@@ -15,4 +15,8 @@ p.gad {
     border: 3px solid #00000045 !important;
     border-top-width: 4px !important;
     border-bottom-width: 7px !important;
+    opacity: 0.3 !important;
+}
+.google-auto-placed.ap_container>ins>ins:hover {
+    opacity: 1 !important;
 }
