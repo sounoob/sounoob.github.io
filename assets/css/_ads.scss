@@ -1,22 +1,15 @@
-p.gad:before {
-  content: "Aqui deveria ter carregado uma propaganda marota...";
-  position: absolute;
-  left: 20px;
-}
-p.gad {
-    background-color: $silver2;
-  padding: 10px 0;
-  position: relative;
-}
+p.gad,
 .google-auto-placed.ap_container {
     margin-left: -3px;
 }
+p.gad,
 .google-auto-placed.ap_container>ins>ins {
-    border: 3px solid #00000045 !important;
+    border: 3px solid $silver2 !important;
     border-top-width: 4px !important;
     border-bottom-width: 7px !important;
-    opacity: 0.3 !important;
+    opacity: 0.8 !important;
 }
+p.gad,
 .google-auto-placed.ap_container>ins>ins:hover {
     opacity: 1 !important;
 }
