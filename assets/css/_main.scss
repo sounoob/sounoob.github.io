@@ -463,7 +463,8 @@ header, nav, section, main, article, aside, figure, footer, iframe, object, svg 
 }
 
 .the-content .post .post-content ul li, .the-content .post .post-content ol li {
-    margin: 5px 0
+    margin: 0.3em 0 0.3em 1em;
+    list-style-position: outside;
 }
 
 
