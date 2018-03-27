@@ -82,9 +82,9 @@ Melhor assim né? Outros quem for dar manutenção ao seu código irá agradecer
 No caso do POST devemos usar um parâmetro adicional em nossa biblioteca **CURLOPT_POSTFIELDS.** Este parâmetro recebe como valor um array, que irá ser enviado como POST. Simples né?
 
 {% highlight php linenos %}//distribuindo a informação a ser enviada
-$post = array('
-    post1' => 'postvalue',
-    post2' => 'othervalue'
+$post = array(
+    'post1' => 'postvalue',
+    'post2' => 'othervalue'
 );
  
 curl_setopt($ch, CURLOPT_POSTFIELDS, $post);{% endhighlight %} 
@@ -98,7 +98,7 @@ $xml = '<?xml version="1.0" encoding="utf-8">
 <xml>
     <parameter1>value</parameter1>
     <parameter1>secondevalue</parameter1>
-</xml>
+</xml>';
 
 //Enviando o XML como POST
 curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
