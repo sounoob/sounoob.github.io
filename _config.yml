@@ -1,6 +1,7 @@
 ---
 title: SouNoob
 timezone: America/Sao_Paulo
+lang: pt_BR
 collections:
   posts:
     title: Posts
