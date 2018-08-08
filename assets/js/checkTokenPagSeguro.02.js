@@ -8,7 +8,7 @@ function searchInProd() {
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
             if(this.responseText == 'True') {
-                document.getElementById('result').innerHTML = 'Seu email e token é valido apenas em produção';
+                document.getElementById('result').innerHTML = 'Seu email e token é valido apenas em produção. <br>Isso significa que você não conseguirá testar sua aplicação no ambiente de sandbox. <br> Você estará apto apenas para realizar transações reais.';
             }else{
                 searchInSandbox();
             }
@@ -29,11 +29,9 @@ function searchInSandbox() {
 
     xhr.addEventListener("readystatechange", function () {
         if (this.readyState === 4) {
-            if(this.responseText == 'True') {
-                document.getElementById('result').innerHTML = 'Seu email e token é valido apenas em sandbox';
-            }else{
-                document.getElementById('result').innerHTML = 'Seu email ou token não é valido nem em produção nem em sandbox';
-            }
+            document.getElementById('result').innerHTML = this.responseText == 'True' ?
+                'Seu email e token é valido apenas em sandbox.<br> Isso significa que você não conseguirá realizar transações reais.<br> Você estará apto apenas para testar sua aplicação no ambiente de sandbox.' :
+                'Seu email ou token não é valido nem em produção nem em sandbox. <br> Isso significa que você não conseguirá testar sua aplicação no ambiente de sandbox muito menos realizar transações reais.';
         }
     });
 
