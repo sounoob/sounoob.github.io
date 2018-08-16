@@ -21,6 +21,8 @@ dsq_thread_id:
 
 Muito útil na hora de tuitar ou enviar um link para alguém é encurtar a URL. Como todos sabem que é <span style="color: #ff0000;"><del style="color: #ff0000;">um saco</del></span> estressante ficar entrando no site do encurtador para fazer gerar o novo link. Então porque não gerar isso dinâmico para os visitantes do seu site ou blog <del style="color: #ff0000;">ou seja lá o que você  utiliza</del> .<!--more-->
 
+##Atenção, essa a API foi descontinuada conforme link <https://developers.google.com/url-shortener/v1/getting_started>, o conteudo do post ficará disponível apenas por motivos de histórico
+
 Iremos especificar na variável **$url** o endereço do webservice do Google que irá receber os nossos dados e gerar a URL encurtada
 
 {% highlight php linenos %}$url = 'https://www.googleapis.com/urlshortener/v1/url';{% endhighlight %} 
