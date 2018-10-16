@@ -37,5 +37,8 @@ fields:
   name: author
   label: author
   default: sena
+- type: file
+  label: image
+  name: image
 pages:
 - _posts/pagseguro-agora-atende-desenvolvedores.md
