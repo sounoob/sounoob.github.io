@@ -1,0 +1,39 @@
+---
+label: posts
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: TITLE
+  name: title
+  config:
+    required: true
+- type: text
+  name: layout
+  label: LAYOUT
+  default: post
+  config:
+    required: true
+  hidden: true
+- type: datetime
+  name: date
+  label: DATE
+  config:
+    required: true
+    date_format: YYYY-MM-DD
+    time_format: h:mm:ss ZZ
+    display_utc: false
+  default: 2018-10-16 13:24:30 +0000
+- type: tag_list
+  label: categories
+  name: categories
+- type: tag_list
+  name: tags
+  label: tags
+- type: text
+  name: redirect_from
+  label: redirect_from
+- type: text
+  name: author
+  label: author
+  default: sena
