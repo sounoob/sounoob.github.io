@@ -8,7 +8,7 @@ categories:
 tags:
 - PagSeguro
 redirect_from: ''
-image: "/assets/uploads/2018/10/16/atendimento-dev-pagseguro.gif"
+image: ''
 
 ---
 Sem muito alarde, PagSeguro disponibiliza um chatbot com um formulário secreto para os Devs abrir chamados. Veja como funciona.
