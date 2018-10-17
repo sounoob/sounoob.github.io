@@ -12,7 +12,7 @@
         <h1 itemprop="name headline"><a href="{{ post.url }}">{{ post.title }}</a></h1>
     </header>
     <div class="post-content">
-        {% if post.image %}
+        {% if post.image && post.image.size > 0 %}
         <figure>
             <img src="{{ post.image }}" alt="{{ post.title | strip_html | replace: '"', '' }}" title="{{ post.title | strip_html | replace: '"', '' }}" class="aligncenter">
         </figure>
