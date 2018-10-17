@@ -7,7 +7,7 @@ categories:
 - Dicas
 tags:
 - PagSeguro
-redirect_from: ''
+redirect_from: pagseguro-atende-desenvolvedores
 image: ''
 
 ---
