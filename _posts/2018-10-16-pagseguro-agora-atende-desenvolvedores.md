@@ -17,5 +17,7 @@ Ao acessar qualquer página da documentação do PagSeguro, agora aparece um bot
 
 ![Acessar formulário secreto para abertura de chamado](/assets/uploads/2018/10/16/atendimento-dev-pagseguro.gif "Acessar formulário secreto para abertura de chamado")
 
+Quer testar? basta acessar a documentação em <a href="https://devs.pagseguro.uol.com.br/docs/introducao" target="_blank" alt="Documentação PagSeguro" title="Documentação PagSeguro" rel="nofollow noreferrer">https://devs.pagseguro.uol.com.br/docs/introducao</a> e você já terá o botão "mágico" liberado.
+
 E vocês o que acharam da novidade?  
-Comente abaixo como foi a experiência com o PagSeguro nessa nova experiência.
+Comente abaixo como foi a experiência com o PagSeguro com essa nova funcionalidade.
