@@ -18,4 +18,4 @@ Ao acessar qualquer página da documentação do PagSeguro, agora aparece um bot
 ![Acessar formulário secreto para abertura de chamado](/assets/uploads/2018/10/16/atendimento-dev-pagseguro.gif "Acessar formulário secreto para abertura de chamado")
 
 E vocês o que acharam da novidade?  
-Posta nos comentários como foi a experiência com o PagSeguro.
+Comente abaixo como foi a experiência com o PagSeguro nessa nova experiência.
