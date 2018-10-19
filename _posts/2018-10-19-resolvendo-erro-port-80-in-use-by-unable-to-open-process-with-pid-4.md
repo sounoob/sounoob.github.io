@@ -23,4 +23,4 @@ Depois o comando
 
 Pronto, execute o xampp e verifique se o problema foi resolvido.
 
-![](/assets/uploads/2018/10/19/xampp-normal.png)
+![XAMPP - Painel de controle ](/assets/uploads/2018/10/19/xampp-normal.png "XAMPP - Painel de controle ")
