@@ -3,8 +3,10 @@ title: 'Resolvendo erro: Port 80 in use by “Unable to open process” with PID
 layout: post
 date: 2018-10-19 09:36:40 +0000
 author: sena
-categories: []
-tags: []
+categories:
+- xampp
+tags:
+- tutoriais
 redirect_from: erro-port-80-in-use-by-unable-to-open-process-with-pid-4-md
 image: "/assets/uploads/2018/10/19/xampp-erro-port80.pid4.png"
 
