@@ -41,5 +41,5 @@ fields:
   label: image
   name: image
 pages:
-- _posts/2018-10-16-pagseguro-agora-atende-desenvolvedores.md
 - _posts/2018-10-19-resolvendo-erro-port-80-in-use-by-unable-to-open-process-with-pid-4.md
+- _posts/2018-10-16-pagseguro-agora-atende-desenvolvedores.md
