@@ -4,9 +4,9 @@ layout: post
 date: 2018-10-19 09:36:40 +0000
 author: sena
 categories:
-- xampp
-tags:
 - tutoriais
+tags:
+- xampp
 redirect_from: erro-port-80-in-use-by-unable-to-open-process-with-pid-4-md
 image: "/assets/uploads/2018/10/19/xampp-erro-port80.pid4.png"
 
