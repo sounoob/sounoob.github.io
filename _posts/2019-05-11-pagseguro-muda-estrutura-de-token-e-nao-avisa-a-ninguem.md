@@ -7,7 +7,7 @@ categories:
 - curiosidades
 tags:
 - pagseguro
-image: ''
+image: "./assets/uploads/2019/05/11/pagseguro-health-check-de-api.jpg"
 
 ---
 Manhã de domingo, crianças correndo, pássaros cantando, porém tinha e o PagSeguro mudando o padrão do token de acesso de suas APIs.
