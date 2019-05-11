@@ -7,7 +7,6 @@ categories:
 - curiosidades
 tags:
 - pagseguro
-redirect_from: ''
 image: ''
 
 ---
