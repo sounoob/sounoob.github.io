@@ -1,7 +1,6 @@
 ---
 label: posts
 hide_body: false
-is_partial: false
 fields:
 - type: text
   label: TITLE
@@ -23,7 +22,7 @@ fields:
     date_format: YYYY-MM-DD
     time_format: h:mm:ss ZZ
     display_utc: false
-  default: 2018-10-16 13:24:30 +0000
+  default: '2018-10-16T13:24:30.000+00:00'
 - type: tag_list
   label: categories
   name: categories
@@ -41,5 +40,6 @@ fields:
   label: image
   name: image
 pages:
+- _posts/token-pagseguro-mudou-e-ninguém-ficou-sabendo.md
 - _posts/2018-10-19-resolvendo-erro-port-80-in-use-by-unable-to-open-process-with-pid-4.md
 - _posts/2018-10-16-pagseguro-agora-atende-desenvolvedores.md
