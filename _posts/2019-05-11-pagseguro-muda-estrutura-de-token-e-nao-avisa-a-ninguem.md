@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2019-05-11 10:24:30 -0300
+date: 2019-05-11 00:00:30 -0300
 author: sena
 title: PagSeguro muda estrutura de token e não avisa a ninguém.
 categories:
