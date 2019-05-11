@@ -16,13 +16,12 @@ Brincadeiras a parte, notamos recentemente uma movimentação um tanto estranha 
 
 A postagem mais antiga é de 01/04/19, onde a galera falava referente o número de caracteres do token passar de 32 para 100 caracteres.
 
-> [Boa tarde, estou configurando o pag seguro para o open cart na versao 3.0.3.1 , mas apresentou o erro Unauthorized, ja peguei as soluções de forum e no outro site deu certo já nesse nao está. Uma coisa que reparei o Token ao gerar, esta muito extenso, o do outro cliente é mais curto..](https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360029376833-Estrutura-do-Token- "Fórum PagSeguro - Estrutura do Token")
->
-> [Teria alguma forma de testar se o token está gerando certo? o que esse cliente nova gerou seria o token com 101 caracteres.](https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360029376833-Estrutura-do-Token- "Fórum PagSeguro - Estrutura do Token")
+> <a target="_blank" rel="external noreferrer nofollow" href="https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360029376833-Estrutura-do-Token-" title="Fórum PagSeguro - Estrutura do Token">Boa tarde, estou configurando o pag seguro para o open cart na versao 3.0.3.1 , mas apresentou o erro Unauthorized, ja peguei as soluções de forum e no outro site deu certo já nesse nao está. Uma coisa que reparei o Token ao gerar, esta muito extenso, o do outro cliente é mais curto..</a>
+> <a target="_blank" rel="external noreferrer nofollow" href="https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360029376833-Estrutura-do-Token-" title="Fórum PagSeguro - Estrutura do Token">Teria alguma forma de testar se o token está gerando certo? o que esse cliente nova gerou seria o token com 101 caracteres.</a>
 
-> [Estou tentando realizar a integração do meu site com o pagseguro.](https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360028993894-Problema-com-o-Token-gerado "Fórum PagSeguro - Problema com o Token gerado")
->
-> [O token solicitado pelo meu site é de apenas 32 dígitos e o token enviado pelo sistema do pagseguro é muito maior, alguém sabe como consigo este token de 32 dígitos?](https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360028993894-Problema-com-o-Token-gerado "Fórum PagSeguro - Problema com o Token gerado")
+
+> <a target="_blank" rel="external noreferrer nofollow" href="https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360028993894-Problema-com-o-Token-gerado" title="Fórum PagSeguro - Problema com o Token gerado">Estou tentando realizar a integração do meu site com o pagseguro.</a>
+> <a target="_blank" rel="external noreferrer nofollow" href="https://comunidade.pagseguro.uol.com.br/hc/pt-br/community/posts/360028993894-Problema-com-o-Token-gerado" title="Fórum PagSeguro - Problema com o Token gerado">O token solicitado pelo meu site é de apenas 32 dígitos e o token enviado pelo sistema do pagseguro é muito maior, alguém sabe como consigo este token de 32 dígitos?</a>
 
 Fizemos uma análise no novo token e pudemos temos alguns pontos:
 
