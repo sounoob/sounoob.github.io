@@ -1,13 +1,13 @@
 ---
 layout: post
-date: 2019-05-11 00:00:30 -0300
+date: 2019-05-11T03:00:30.000+00:00
 author: sena
 title: PagSeguro muda estrutura de token e não avisa a ninguém.
 categories:
 - curiosidades
 tags:
 - pagseguro
-image: "./assets/uploads/2019/05/11/pagseguro-health-check-de-api.jpg"
+image: "/assets/uploads/2019/05/11/pagseguro-health-check-de-api.jpg"
 
 ---
 Manhã de domingo, crianças correndo, pássaros cantando, porém tinha e o PagSeguro mudando o padrão do token de acesso de suas APIs.
