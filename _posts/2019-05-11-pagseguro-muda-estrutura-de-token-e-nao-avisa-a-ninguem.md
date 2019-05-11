@@ -11,7 +11,7 @@ image: "./assets/uploads/2019/05/11/pagseguro-health-check-de-api.jpg"
 
 ---
 Manhã de domingo, crianças correndo, pássaros cantando, porém tinha e o PagSeguro mudando o padrão do token de acesso de suas APIs.
-<!--more->
+<!--more-->
 Brincadeiras a parte, notamos recentemente uma movimentação um tanto estranha no fórum do PagSeguro com a galera estranhando a estrutura do post do PagSeguro.
 
 A postagem mais antiga é de 01/04/19, onde a galera falava referente o número de caracteres do token passar de 32 para 100 caracteres.
