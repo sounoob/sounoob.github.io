@@ -27,7 +27,7 @@ Antes de mais nada, verifique se está configurado em sua conta uma URL para rec
 * Produção: [https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmTransactionNotification](https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmTransactionNotification "https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmTransactionNotification"){:target="_blank"}
 * Sandbox: [https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html#page-seller-data](https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html#page-seller-data "https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html#page-seller-data"){:target="_blank"}
 
-Além desta opção a maioria das APIs aceitam um parâmetro chamado notificationURL, o qual pode sobrescrever as configurações da sua conta (as do link acima).
+Além desta opção a maioria das APIs aceitam um parâmetro chamado `notificationURL`, o qual pode sobrescrever as configurações da sua conta (as do link acima).
 
 ### O problema é seu ou do PagSeguro?
 
