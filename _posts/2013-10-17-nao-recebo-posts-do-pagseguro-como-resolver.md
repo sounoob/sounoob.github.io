@@ -59,7 +59,11 @@ A URL deve ser acessível, mas isso não vale aplicar uma restrição para um IP
 
 ### "Houve erro ao tentar conexão"
 
-Se o PagSeguro informar essa mensagem, provavelmente o script não retornou nada de cabeçalho, pode ter funcionado ou não, o seu servidor não trouxe nada de comunicação.
+Se você caiu nesse cenário, pode ser um problema no seu site ou um problema no PagSeguro, nunca saberemos. Segundo alguns posts no fórum, o sistema está sendo refeito para esse cenário não ocorrer novamente. Meu conselho para você nesse cenário é:
+
+* Tente utilizar uma URL sem https (okay, é feio isso, mas é uma saida).
+* Tente um segundo servidor para receber as notificações.
+* Abra uma reclamação no reclame aqui. - [https://www.reclameaqui.com.br/reclamar/10023/detalhes/](https://www.reclameaqui.com.br/reclamar/10023/detalhes/ "https://www.reclameaqui.com.br/reclamar/10023/detalhes/"){:target="_blank"}
 
 ### Seja amigo dos _robots_
 
