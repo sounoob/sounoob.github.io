@@ -23,8 +23,9 @@ Já faz muito tempo que vejo frases como estas em fóruns, a maioria são ditas 
 ### Você configurou corretamente?
 
 Antes de mais nada, verifique se está configurado em sua conta uma URL para receber essas notificações.
-Produção: [https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmTransactionNotification](){:target="_blank"}
-Sandbox: [https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html#page-seller-data](){:target="_blank"}
+
+* Produção: [https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmTransactionNotification](){:target="_blank"}
+* Sandbox: [https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html#page-seller-data](){:target="_blank"}
 
 Além desta opção a maioria das APIs aceitam um parâmetro chamado notificationURL, o qual pode sobrescrever as configurações da sua conta (as do link acima).
 
