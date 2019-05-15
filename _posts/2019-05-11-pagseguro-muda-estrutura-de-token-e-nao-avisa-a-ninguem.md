@@ -6,7 +6,7 @@ title: PagSeguro muda estrutura de token e não avisa a ninguém.
 categories:
 - curiosidades
 tags:
-- pagseguro
+- PagSeguro
 image: "/assets/uploads/2019/05/11/pagseguro-health-check-de-api.jpg"
 
 ---
