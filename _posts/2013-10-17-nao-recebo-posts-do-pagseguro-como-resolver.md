@@ -1,13 +1,13 @@
 ---
 title: Não recebo posts do PagSeguro, como resolver?
-date: 2013-10-17 06:04:28 -03:00
+date: 2013-10-17T09:04:28.000+00:00
 permalink: "/nao-recebo-posts-do-pagseguro-como-resolver/"
 categories:
 - Dicas
 tags:
 - PagSeguro
 redirect_from: "/2013/10/17/nao-recebo-posts-do-pagseguro-como-resolver/"
-id: 903
+id: "903"
 author: Sena
 layout: post
 guid: http://sounoob.com.br/?p=903
@@ -16,16 +16,25 @@ short-url:
 dsq_thread_id:
 - '2818906285'
 image: "/assets/uploads/2013/10/Nao-recebo-posts-do-PagSeguro-como-resolver.gif"
----
 
+---
 Já faz muito tempo que vejo frases como estas em fóruns, a maioria são ditas por <del style="color: #ff0000;">pseudo-</del>desenvolvedores que já estão putos da vida pelo fato de não entender o motivo de não estar recebendo posts do PagSeguro. Então… vou tentar ajudar, listando alguns passos que devem ser seguidos, serão apenas alguns testes simples mas que poderão fazer a diferença futuramente.<!--more-->
+
+### Você configurou corretamente?
+
+Antes de mais nada, verifique se está configurado em sua conta uma URL para receber essas notificações.
+Produção: https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmTransactionNotification
+Sandbox: https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html#page-seller-data
+
+Além desta opção a maioria das APIs aceitam um parâmetro chamado notificationURL, o qual pode sobrescrever as configurações da sua conta (as do link acima).
+
 
 ### O problema é seu ou do PagSeguro?
 
-Antes de mais nada, use um serviço de terceiros para capturar a requisição e monitore o que chegou. 
+Use um serviço de terceiros para capturar a requisição e monitore o que chegou. 
 Se não funcionar, dê print e envie para o PagSeguro como evidência que a ferramenta deles não está funcionando.
 
-Minha recomendação é o [RequestBin](https://requestb.in "RequestBin"){:target="_blank"}, você gera uma URL, configura para receber a notificação e monitora o resultado. Se passar desse ponto, de fato o problema está contigo, então siga os outros passos.
+Minha recomendação é o [Webhook.site](https://webhook.site/ "Webhook.site"){:target="_blank"}, você gera uma URL, configura para receber a notificação e monitora o resultado. Se passar desse ponto, de fato o problema está contigo, então siga os outros passos.
 
 ### Faça uma coisa de cada vez
 
@@ -33,7 +42,7 @@ Antes de sair programando igual louco, tente inserir instrução por instrução
 
 ### Sua URL está acessível?
 
-Pode parecer uma pergunta tanto quanto estranha, mas acredite em mim, as vezes <del>a merda d</del>o problema está ai. Deixe apenas uma instrução para exibir na tela do usuário um texto qualquer e peça para um amigo <del>de outro estado ou país,</del> acessar a pagina e ver se ele consegue visualizar o resultado da página. Se seu amigo não conseguir ver, nada poderá ser feito.
+Pode parecer uma pergunta tanto quanto estranha, mas acredite em mim, as vezes <del>a merda</del> do problema está ai. Deixe apenas uma instrução para exibir na tela do usuário um texto qualquer e peça para um amigo <del>de outro estado ou país,</del> acessar a pagina e ver se ele consegue visualizar o resultado da página. Se seu amigo não conseguir ver, nada poderá ser feito.
 
 ### 3xx você não é bem-vindo
 
@@ -73,7 +82,3 @@ Pode parecer pergunta para idiotas, mas isso é mais comum do que se imagina, en
 Não importa o status que o PagSeguro informe ter recebido de sua URL, as vezes seu arquivo recebeu o parâmetro e ainda assim processou a informação. Se isso acontecer e ele fizer requisição no PagSeguro para pegar os detalhes da notificação, você vai receber a coluna "Data de consulta", que o PagSeguro vai entender que você recebeu o código e pegou detalhes sobre ele. Então se isso ocorrer ele nem vai fazer outra retentiva.
 
 Se na coluna "Data de consulta" tiver algum valor, significa que parte do seu script rodou e a parte que ele consulta no PagSeguro foi concluída. Nisso eu recomendo revisar seu código, e colocar log na primeira linha do código para gravar em arquivo tudo que o PagSeguro enviou. Assim você terá certeza se o problema é da sua aplicação ou do PagSeguro.
-
-
-
-
