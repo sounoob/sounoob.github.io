@@ -23,15 +23,14 @@ Já faz muito tempo que vejo frases como estas em fóruns, a maioria são ditas 
 ### Você configurou corretamente?
 
 Antes de mais nada, verifique se está configurado em sua conta uma URL para receber essas notificações.
-Produção: https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmTransactionNotification
-Sandbox: https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html#page-seller-data
+Produção: [https://pagseguro.uol.com.br/preferencias/integracoes.jhtml#frmTransactionNotification](){:target="_blank"}
+Sandbox: [https://sandbox.pagseguro.uol.com.br/vendedor/configuracoes.html#page-seller-data](){:target="_blank"}
 
 Além desta opção a maioria das APIs aceitam um parâmetro chamado notificationURL, o qual pode sobrescrever as configurações da sua conta (as do link acima).
 
-
 ### O problema é seu ou do PagSeguro?
 
-Use um serviço de terceiros para capturar a requisição e monitore o que chegou. 
+Use um serviço de terceiros para capturar a requisição e monitore o que chegou.
 Se não funcionar, dê print e envie para o PagSeguro como evidência que a ferramenta deles não está funcionando.
 
 Minha recomendação é o [Webhook.site](https://webhook.site/ "Webhook.site"){:target="_blank"}, você gera uma URL, configura para receber a notificação e monitora o resultado. Se passar desse ponto, de fato o problema está contigo, então siga os outros passos.
@@ -49,13 +48,16 @@ Pode parecer uma pergunta tanto quanto estranha, mas acredite em mim, as vezes 
 Muita gente comete um erro grave ter uma URL para receber informações, e redirecionar para outra URL para fazer o trabalho. Se a URL primária não for fazer o serviço, esqueça ela, trabalhe direto com a URL final. Muitos problemas ocorrem quando fazemos esse redirecionamento de pagina e no meio do caminho esquecemos que os dados que a primeira URL recebeu deve ser enviados para a segunda URL. Então evite usar redirecionamentos.
 
 ### 5xxx você fez merda em seu código.
+
 Se o PagSeguro informar que seu site está retornando algum código 5xx então, seu servidor está com problemas, e você precisa analisar com calma a sua aplicação.
 
 ### 4xxx é necessário abrir caminhos para o PagSeguro.
+
 Seu servidor ou aplicação está bloqueando o PagSeguro de alguma forma, nesse caso você precisa aplicar alguma exceção seu servidor.
 A URL deve ser acessível, mas isso não vale aplicar uma restrição para um IP ou para quem segue determinado caminho em seu sistema ou por uso de senhas… a URL deve ser acessível de forma instantânea para qualquer host externo. Esqueça a parte de segurança frenética que você tenha em seu servidor, para esta URL em especifica não poderá ter nenhuma restrição de acesso por parte do seu servidor.
 
 ### "Houve erro ao tentar conexão"
+
 Se o PagSeguro informar essa mensagem, provavelmente o script não retornou nada de cabeçalho, pode ter funcionado ou não, o seu servidor não trouxe nada de comunicação.
 
 ### Seja amigo dos _robots_
@@ -79,6 +81,7 @@ Já que o PagSeguro não tem um ambiente de testes você mesmo poderá fazer par
 Pode parecer pergunta para idiotas, mas isso é mais comum do que se imagina, então quando for informar a URL, primeiro acesse ela, verifique se é esta URL mesmo, só então informe para o servidor do PagSeguro ou qualquer outro que esteja trabalhando. Se todos estes testes foram feitos e refeitos e ainda assim seu sistema não recebe nenhuma informação, então o caso pode ser mais grave. Se você lembra de algum passo que pode ser importante verificar coloque nos comentários abaixo que incluiremos na lista.
 
 ### Item importante a sempre saber.
+
 Não importa o status que o PagSeguro informe ter recebido de sua URL, as vezes seu arquivo recebeu o parâmetro e ainda assim processou a informação. Se isso acontecer e ele fizer requisição no PagSeguro para pegar os detalhes da notificação, você vai receber a coluna "Data de consulta", que o PagSeguro vai entender que você recebeu o código e pegou detalhes sobre ele. Então se isso ocorrer ele nem vai fazer outra retentiva.
 
 Se na coluna "Data de consulta" tiver algum valor, significa que parte do seu script rodou e a parte que ele consulta no PagSeguro foi concluída. Nisso eu recomendo revisar seu código, e colocar log na primeira linha do código para gravar em arquivo tudo que o PagSeguro enviou. Assim você terá certeza se o problema é da sua aplicação ou do PagSeguro.
