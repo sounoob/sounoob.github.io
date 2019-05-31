@@ -13,4 +13,4 @@ Para facilitar assimilar o que a documentação do PagSeguro diz, com a forma qu
 
 Esse projeto não é algo novo, tenho disponibilizado no GitHub desde 2017, porém nunca divulguei abertamente o repositório. Após conversar com algumas pessoas, pensei: Já que está público para o mundo, porque não divulgar?
 
-Para usar as collections, basta baixar o projeto no repositório <a target="_blank" rel="external noreferrer nofollow" href="https://github.com/sounoob/pagseguroXpostman" title="Collections do postman para o PagSeguro" alt="Collections do postman para o PagSeguro">pagseguroXpostman</a>, importar no postman, e ao final incluir seu e-mail e token nas variáveis locais, e pronto... tudo está funcionando.
+Para usar as collections, basta baixar o projeto no repositório <a target="_blank" rel="external noreferrer nofollow" href="https://github.com/sounoob/pagseguroXpostman" title="Collections do postman para o PagSeguro" alt="Collections do postman para o PagSeguro">pagseguroXpostman</a>, importar no postman, e ao final incluir seu e-mail e token nas variáveis locais, e pronto... tudo está funcionando. 
