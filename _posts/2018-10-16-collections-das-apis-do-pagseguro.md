@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2018-10-16T13:24:30.000+00:00
+date: 2019-05-31 11:14:42 -0300
 author: sena
 title: Collections das APIs do PagSeguro
 categories: []
