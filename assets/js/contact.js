@@ -1,3 +1,5 @@
+---
+---
 function send() {
     const xhttp = new XMLHttpRequest();
     xhttp.open("POST", "https://magic.sounoob.com.br/contato.php");
