@@ -708,6 +708,31 @@ header, nav, section, main, article, aside, figure, footer, iframe, object, svg 
     padding: 40px;
     font-size: 16px
 }
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+    url('../img/ajax-loader.gif')
+    50% 50%
+    no-repeat;
+}
+
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading  {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
 
 @media screen and (max-width: 768px), screen and (max-device-width: 768px) {
     body {
