@@ -7,12 +7,12 @@ function send() {
     xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xhttp.onreadystatechange = function () {
         if (this.readyState == 4) {
-            document.getElementsByTagName('body')[0].classList.remove('loading');
             if (this.status == 200) {
                 const response = JSON.parse(this.responseText);
                 if (response.status == 200) {
                     window.location = '/contato/obrigado';
                 } else {
+                    document.getElementsByTagName('body')[0].classList.remove('loading');
                     alert(response.msg);
                 }
             }else {
