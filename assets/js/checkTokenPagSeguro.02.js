@@ -1,3 +1,10 @@
+---
+---
+window.onload = function() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://magic.sounoob.com.br/wakeup.php");
+    xhttp.send();
+}
 function searchInProd() {
     document.getElementById('result').innerHTML = 'Pesquisando no ambiente de produção...';
 

@@ -1,5 +1,10 @@
 ---
 ---
+window.onload = function() {
+    const xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "http://magic.sounoob.com.br/wakeup.php");
+    xhttp.send();
+}
 function send() {
     document.getElementsByTagName('body')[0].classList.add('loading');
     const xhttp = new XMLHttpRequest();
