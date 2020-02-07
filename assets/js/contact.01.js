@@ -2,7 +2,7 @@
 ---
 window.onload = function() {
     const xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "http://magic.sounoob.com.br/wakeup.php");
+    xhttp.open("GET", "https://magic.sounoob.com.br/wakeup.php");
     xhttp.send();
 }
 function send() {
