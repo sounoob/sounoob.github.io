@@ -1,6 +1,6 @@
 <head>
     <meta charset="UTF-8">
-    {% seo %}
+    {% seo | remove_first: "meta" %}
     {% feed_meta %}
     <meta name="msvalidate.01" content="8EA1A0479084B45F2F4CC903ED580BD8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
