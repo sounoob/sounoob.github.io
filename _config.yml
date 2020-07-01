@@ -33,7 +33,9 @@ social:
   links:
   - https://www.facebook.com/sounoob
   - https://plus.google.com/+SounoobBr
-google_site_verification: AN1qzV2xb-W-75y34Vdnqi2WEFKaqg1XsfN2RJ3GRkg
+webmaster_verifications:
+  bing: 8EA1A0479084B45F2F4CC903ED580BD8
+  google: AN1qzV2xb-W-75y34Vdnqi2WEFKaqg1XsfN2RJ3GRkg
 markdown: kramdown
 category_dir: topics
 sass:
