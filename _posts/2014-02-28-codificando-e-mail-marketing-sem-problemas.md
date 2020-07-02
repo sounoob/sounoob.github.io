@@ -37,13 +37,13 @@ Sem panico, isso é mais normal do que se parece. Primeira coisa, utilize tabela
 
 Toda em toda **<table>** defina o espaço entre espaço do lado de fora das células **cellspacing="0&#8243;** e espaço do lado de dentro das das células **cellpadding="0&#8243;**
 
-Toda **<tr>**, deve ter sua largura e altura definida **width="600&#8243; height**="600&#8243;****, e evite o máximo usar
+Toda **<tr>**, deve ter sua largura e altura definida ex: **width="600" height="600"**, e evite o máximo usar
 
-Toda imagem informe que ela é um bloco **style="display:block" **e defina a borda **border="0&#8243;**, evitando assim espaços entre as imagens e o elemento pai. Nunca utilize caminho relativo, use sempre o caminho completo da imagem, alguns sistemas de envios consegue enviar apenas o HTML.
+Toda imagem informe que ela é um bloco **style="display:block"** e defina a borda **border="0"**, evitando assim espaços entre as imagens e o elemento pai. Nunca utilize caminho relativo, use sempre o caminho completo da imagem, alguns sistemas de envios consegue enviar apenas o HTML.
 
 ### CSS - Somente inline e uso muito moderado.
 
-Nunca use uma folha de estilo externa, procure utilizar sempre de forma inline, e sempre que for utilizar dê uma olhada nesta tabela para ver quais elementos css irá funcionar: <a title="Campaign monitor - CSS" href="http://www.campaignmonitor.com/css/" target="_blank" rel="external nofollow">campaignmonitor.com/css/</a>
+Nunca use uma folha de estilo externa, procure utilizar sempre de forma inline, e sempre que for utilizar dê uma olhada nesta tabela para ver quais elementos css irá funcionar: <a title="Campaign monitor - CSS" href="http://www.campaignmonitor.com/css/" target="_blank" rel="external nofollow">campaignmonitor.com/css/</a>.
 
 ### Imagens - E se não carregar?
 
