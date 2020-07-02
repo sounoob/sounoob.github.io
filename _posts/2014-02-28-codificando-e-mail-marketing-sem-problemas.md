@@ -35,9 +35,9 @@ Então largue de preguiça e monte algo decente com o mínimo de imagens possív
 
 Sem panico, isso é mais normal do que se parece. Primeira coisa, utilize tabelas para alinhar tudo. - Isso mesmo, nada de abusar das **<div>** para criar seu layout, a maioria das coisas legais que você for tentar utilizar provavelmente não irá funcionar.
 
-Toda em toda **<table>** defina o espaço entre espaço do lado de fora das células **cellspacing="0&#8243;** e espaço do lado de dentro das das células **cellpadding="0&#8243;**
+Toda em toda **<table>** defina o espaço entre espaço do lado de fora das células **cellspacing="0"** e espaço do lado de dentro das das células **cellpadding="0"**
 
-Toda **<tr>**, deve ter sua largura e altura definida ex: **width="600" height="600"**, e evite o máximo usar
+Toda **<tr>**, deve ter sua largura e altura definida ex: **width="600" height="600"**
 
 Toda imagem informe que ela é um bloco **style="display:block"** e defina a borda **border="0"**, evitando assim espaços entre as imagens e o elemento pai. Nunca utilize caminho relativo, use sempre o caminho completo da imagem, alguns sistemas de envios consegue enviar apenas o HTML.
 
