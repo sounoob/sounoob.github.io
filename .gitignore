@@ -6,3 +6,8 @@ Gemfile.lock
 .gitignore3
 .idea/
 .jekyll-metadata
+.env
+
+# Node e TinaCMS
+node_modules/
+tina/__generated__/
