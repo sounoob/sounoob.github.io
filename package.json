@@ -1,0 +1,13 @@
+{
+  "name": "sounoob.github.io",
+  "version": "1.0.0",
+  "description": "SouNoob.com.br",
+  "scripts": {
+    "dev": "tinacms dev -c \"bundle exec jekyll serve --watch --drafts --trace\"",
+    "build": "tinacms build"
+  },
+  "dependencies": {
+    "@tinacms/cli": "^1.6.0",
+    "tinacms": "^1.6.0"
+  }
+}

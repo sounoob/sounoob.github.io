@@ -25,9 +25,21 @@ jobs:
         with:
           ruby-version: '3.3'
           bundler-cache: true
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
+      - name: Install Node Dependencies
+        run: npm install
+      - name: Build TinaCMS
+        run: npx tinacms build
+        env:
+          TINA_CLIENT_ID: ${{ secrets.TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+          TINA_SEARCH_TOKEN: ${{ secrets.TINA_SEARCH_TOKEN }}
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
